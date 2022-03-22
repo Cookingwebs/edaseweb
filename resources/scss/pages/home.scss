@@ -1,0 +1,679 @@
+#home-page{
+    #b_cabecera{
+        min-height: 91vh;
+        display: flex;
+        width: 100%;
+        // background-image: url('/images/fondo_home.webp');
+        // background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 60%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #00000085 42%, rgba(0, 0, 0, 0) 100%);
+        }
+        .--copy{
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            margin-left: 12%;
+            margin-bottom: 50px;
+            .--title{
+                font-weight: normal;
+                color: $white;
+                font-size: 84px;
+                text-transform: uppercase;
+                span{
+                    color: $green;
+                }
+            }
+            .--subtitle{
+                color: $white;
+                font-size: 34px;
+                text-transform: uppercase;
+                font-weight: normal;
+                
+            }
+        }
+        .--arrow{
+            position: absolute;
+            right: 4%;
+            bottom: 9%;
+            img{
+                max-width: 30px;
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    #b_creamos{
+        margin-top: 50px;
+        .--copy{
+            top: 50px;
+        }
+        .--content{
+            padding-right: 0;
+        }
+        .--title{
+            font-size: 60px;
+            color: $blue-dark;
+            font-weight: normal;
+            text-indent: -90px;
+            margin-left: 90px;
+        }
+        .--subaside_1{
+            display: grid;
+            grid-template-columns: 43.4% 1fr;
+            grid-template-areas: "subaside_1_copy subaside_1_carrousel";
+            min-height: 300px;
+            .--subaside_1_copy{
+                grid-area: subaside_1_copy;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: $grey-light;
+                }
+                ul{
+                    border-left: 1px solid $grey-light;
+                    padding-left: 60px;
+                    margin-left: 60px;
+                    position: relative;
+                    margin-top: 28px;
+                    &::before{
+                        content: url('/images/svg/ayudat.svg');
+                        width: 63px;
+                        position: absolute;
+                        left: -100px;
+                        top: 30%;
+                    }
+                    li{
+                        font-size: 39px;
+                        color: $grey-dark;
+                        font-weight: 300;
+                        padding-left: 10px;
+                        span{
+                            font-weight: 500;
+                        }
+                        &::marker{
+                            content: "+";
+                            color: $green;
+                        }
+                    }
+                }
+            }
+            .--subaside_1_carrousel{
+                grid-area: subaside_1_carrousel;
+                .--container_carrousel{
+                    padding-left: 60px;
+                    position: relative;
+                    #__page_carrousel{
+                        position: absolute;
+                        top: -50px;
+                        font-size: 30px;
+                        color: $blue;
+                        font-weight: normal;
+                        left: 130px;
+                    }
+                    .--b_title_carrousel{
+                        overflow: hidden;
+                        min-height: 225px;
+                        h3{
+                            margin-top: 30px;
+                            color: $blue;
+                            margin-left: 70px;
+                            font-size: 40px;
+                            font-weight: bold;
+                            max-width: 490px;
+                            text-transform: uppercase;
+                            line-height: 1.3em;
+                            display: none;
+                            &.--active{
+                                display: block;
+                            }
+                            &[data="4"]{
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                    .--b_copy_carrousel{
+                        background-color: $grey-light;
+                        padding: 40px 70px;
+                        p{
+                            font-size: 34px;
+                            font-weight: 300;
+                            color: $grey-dark;
+                            max-width: 480px;
+                            display: none;
+                            line-height: 1.3em;
+                            margin: 0;
+                            min-height: 200px;
+                            &.--active{
+                                display: block;
+                            }
+                        }
+                    }
+                    .--franja_carrousel{
+                        background-color: $blue;
+                        width: 68px;
+                        height: 560px;
+                        position: absolute;
+                        right: 25%;
+                        top: 5%;
+                        transition: 500ms all ease-in-out;
+                        cursor: pointer;
+                        &[data="2"], &[data="4"]{
+                            background-color: $green;
+                            &::after{
+                                content: url('/images/svg/arrow-next-blue.svg');
+                            }
+                        }
+                        &::after{
+                            content: url('/images/svg/arrow-next.svg');
+                            width: 40px;
+                            height: auto;
+                            position: absolute;
+                            right: 15px;
+                            bottom: 2%
+                        }
+                        &.--transition{
+                            width: 65%;
+                            transition: 500ms all ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #b_niveles{
+        .--content{
+            padding-right: 0;
+            .--content_copy{
+                .--title{
+                    font-size: 75px;
+                    color: $blue;
+                    font-weight: normal;
+                    line-height: 1.3em;
+                    text-transform: uppercase;
+                }
+            }
+            .--transition_niveles{
+                margin-top: 50px;
+                position: relative;
+                cursor: pointer;
+                .--content_transition{
+                    background-color: $grey-light;
+                    padding: 80px 100px;
+                    .--b_title_transition{
+                        h3{
+                            color: $blue-dark;
+                            font-weight: bold;
+                            font-size: 39px;
+                            text-transform: uppercase;
+                            display: none;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                            line-height: 1.3em;
+                            &.--active{
+                                display: block;
+                            }
+                        }
+                    }
+                    .--b_copy_transition{
+                        p{
+                            color: $blue-dark;
+                            font-weight: 300;
+                            font-size: 39px;
+                            display: none;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                            line-height: 1.3em;
+                            &.--active{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .--mascara_transition{
+                    position: absolute;
+                    background-color: $grey-dark;
+                    width: 30%;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    transition: 500ms all ease-in-out;
+                    &.--transition{
+                        width: 100%;
+                        transition: 500ms all ease-in-out;
+                    }
+                    &::after{
+                        content: url('/images/SVG/arrow-next-big.svg');
+                        max-width: 200px;
+                        width: 100%;
+                        position: absolute;
+                        right: 200px;
+                        top: 40%;
+                    }
+                }
+                .--progress_transition{
+                    position: absolute;
+                    bottom: -10px;
+                    height: 10px;
+                    left: 0;
+                    background-color: $green;
+                    transition: 500ms width ease-in-out;
+                    cursor: pointer;
+                    &[data="1"]{
+                        width: 25%;
+                    }
+                    &[data="2"]{
+                        width: 50%;
+                    }
+                    &[data="3"]{
+                        width: 75%;
+                    }
+                    &[data="4"]{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #b_experiencias{
+        .--content{
+            padding: 0 250px;
+            overflow-x: hidden;
+            margin-bottom: 10%;
+        }
+        .--testimonios__1{
+            position: relative;
+            min-height: 365px;
+            margin-bottom: 150px;
+            .--content_testimonios{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 80px 0;
+                display: none;
+                grid-template-columns: auto 500px 66px;
+                column-gap: 38px;
+                grid-template-areas: "content_testimonios_1_copy content_testimonios_1_foto content_testimonios_1_franja";
+                transition: 500ms transform ease-in-out;
+                transform: translateX(-50vw);
+                &.--visible{
+                    display: grid;
+                    transform: translateX(0);
+                    transition: 500ms transform ease-in-out;
+                }
+                .--content_testimonios_copy{
+                    grid-area: content_testimonios_1_copy;
+                    .--content_testimonios_quote{
+                        margin-top: 0;
+                        font-size: 38px;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-style: italic;
+                        padding-right: 100px;
+                        b{
+                            font-weight: 500;
+                        }
+                    }
+                    .--content_testimonios_author{
+                        font-size: 24px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
+                .--content_testimonios_foto{
+                    grid-area: content_testimonios_1_foto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .--content_testimonios_franja{
+                    grid-area: content_testimonios_1_franja;
+                    background-color: $green;
+                    position: relative;
+                    cursor: pointer;
+                    &::after{
+                        width: 40px;
+                        height: auto;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 2%;
+                        content: url('/images/svg/arrow-next-blue.svg');
+                    }
+                }
+            }
+        }
+        .--testimonios__2{
+            position: relative;
+            min-height: 365px;
+            margin-top: 150px;
+            .--content_testimonios{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin: 80px 0;
+                display: none;
+                grid-template-columns: 66px 500px auto;
+                column-gap: 38px;
+                grid-template-areas: "content_testimonios_2_franja content_testimonios_2_foto content_testimonios_2_copy";
+                transition: 500ms transform ease-in-out;
+                transform: translateX(50vw);
+                &.--visible{
+                    display: grid;
+                    transform: translateX(0);
+                    transition: 500ms transform ease-in-out;
+                }
+                .--content_testimonios_copy{
+                    grid-area: content_testimonios_2_copy;
+                    .--content_testimonios_quote{
+                        margin-top: 0;
+                        font-size: 38px;
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-style: italic;
+                        padding-left: 100px;
+                        text-align: right;
+                        b{
+                            font-weight: 500;
+                        }
+                    }
+                    .--content_testimonios_author{
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: right;
+                        font-style: italic;
+                    }
+                }
+                .--content_testimonios_foto{
+                    grid-area: content_testimonios_2_foto;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .--content_testimonios_franja{
+                    grid-area: content_testimonios_2_franja;
+                    background-color: $green;
+                    position: relative;
+                    cursor: pointer;
+                    &::after{
+                        width: 40px;
+                        height: auto;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 2%;
+                        transform: rotate(180deg);
+                        content: url('/images/svg/arrow-next-blue.svg');
+                    }
+                }
+            }
+        }
+    }
+    #b_profesorado{
+        .--content{
+            padding-right: 0;
+            .--profesorado{
+                display: grid;
+                grid-template-columns: 604px auto ;
+                grid-template-areas: "profesorado_content_1 profesorado_content_2";
+                column-gap: 125px;
+                position: relative;
+                margin-top: 120px;
+                min-height: 530px;
+                .--profesorado_content_1{
+                    grid-area: profesorado_content_1;
+                    position: relative;
+                    .--profesorado_foto_principal{
+                        position: relative;
+                        min-height: 435px;
+                        background-color: $white;
+                        overflow: hidden;
+                        width: 600px;
+                        .--profesorado_mascara_img_principal{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            transition: .5s all ease-in-out;
+                            background-size: cover;
+                            &[data="1"]{
+                                background-image: url('/images/foto-1.jpg');
+                                z-index: 3;
+                            }
+                            &[data="2"]{
+                                background-image: url('/images/foto-2.jpg');
+                                z-index: 2;
+                            }
+                            &[data="3"]{
+                                z-index: 1;
+                                background-image: url('/images/fondo_home.webp');
+                            }
+                        }
+                        
+                    }
+                    .--profesorado_copy{
+                        padding-left: 50px;
+                        position: absolute;
+                        z-index: 2;
+                        .--profesorado_nombre{
+                            margin-top: 20px;
+                            color: $blue;
+                            font-size: 37px;
+                            font-weight: bold;
+                            margin-bottom: 0;
+                            text-transform: uppercase;
+                            transition: .3s color;
+                        }
+                        .--profesorado_cargo{
+                            font-size: 23px;
+                            font-weight: normal;
+                            bottom: -30px;
+                            transition: .3s color;
+                        }
+                        &[data="2"]{
+                            .--profesorado_nombre{
+                                color: $white;
+                                transition: .3s color;
+                            }
+                            .--profesorado_cargo{
+                                color: $white;
+                                transition: .3s color;
+                            }
+                        }
+                        &[data="3"]{
+                            .--profesorado_nombre{
+                                color: $white;
+                                transition: .3s color;
+                            }
+                            .--profesorado_cargo{
+                                color: $white;
+                                transition: .3s color;
+                            }
+                        }
+                    }
+                }
+                .--profesorado_content_2{
+                    grid-area: profesorado_content_2;
+                    position: relative;
+                    .--profesorado_foto_secundaria{
+                        position: absolute;
+                        top: 0;
+                        left: -75px;
+                        z-index: 1;
+                        min-height: 320px;
+                        min-width: 445px;
+                        overflow: hidden;
+                        .--profesorado_mascara_img_secundaria{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            transition: .5s all ease-in-out;
+                            background-size: cover;
+                            &[data="1"]{
+                                background-image: url('/images/foto-1.jpg');
+                                z-index: 3;
+                            }
+                            &[data="2"]{
+                                background-image: url('/images/foto-2.jpg');
+                                z-index: 2;
+                            }
+                            &[data="3"]{
+                                z-index: 1;
+                                background-image: url('/images/fondo_home.webp');
+                            }
+                        }
+                    }
+                    .--profesorado_texto{
+                        top: 130px;
+                        height: 380px;
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 30px 80px 30px 40px;
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        z-index: 1;
+                        p{
+                            max-width: 407px;
+                            color: $white;
+                            font-size: 17px;
+                            font-weight: normal;
+                            font-style: italic;
+                            position: absolute;
+                            transition: .5s color ease-in-out;
+                        }
+                        &[data="3"]{
+                            p{
+                                color: $grey-dark;
+                                transition: .5s color ease-in-out;
+                            }
+                        }
+                    }
+                    .--profesorado_bloque{
+                        position: relative;
+                        top: 130px;
+                        height: 380px;
+                        display: flex;
+                        background-color: $blue;
+                        align-items: flex-end;
+                        padding: 30px 80px;
+                        position: absolute;
+                        right: 0%;
+                        left: 0%;
+                        transition: 500ms all ease-in-out;
+                        &[data="2"]{
+                            transition: 500ms all ease-in-out;
+                            left: -85.5%;
+                        }
+                        &[data="3"]{
+                            transition: 500ms all ease-in-out;
+                            left: -85.5%;
+                            right: 104%;
+                        }
+                    }
+                }
+                .--profesorado_franja{
+                    position: absolute;
+                    top: -60px;
+                    bottom: -110px;
+                    right: 20%;
+                    width: 66px;
+                    transition: 500ms all ease-in-out;
+                    opacity: 1;
+                    background-color: $grey-light;
+                    &::after{
+                        content: url('/images/svg/arrow-next-blue.svg');
+                        width: 40px;
+                        height: auto;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 2%
+                    }
+                }
+            }
+        }
+    }
+    #b_huella{
+        background-color: $grey-dark;
+        min-height: 580px;
+        padding-bottom: 140px;
+        .--content{
+            padding-right: 0;
+            display: grid;
+            grid-template-columns: 650px 331px auto;
+            column-gap: 75px;
+            .--huella_claim{
+                display: flex;
+                align-items: center;
+                .--huella_title{
+                    font-size: 84px;
+                    color: $white;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    line-height: 1.3em;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    span{
+                        color: $green;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .--huella_copy{
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                justify-content: center;
+                .--huella_subtitle{
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: $white;
+                    text-align: right;
+                    span{
+                        color: $green;
+                    }
+                }
+                .--huella_text{
+                    color: $green;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                    text-align: right;
+                }
+            }
+            .--huella_img{
+                display: flex;
+                align-items: center;
+                .--huella_img_mascara{
+                    display: grid;
+                    grid-template-columns: auto 64px;
+                    img{
+                        max-width: 100%;
+                    }
+                    .--huella_franja{
+                        background-color: $green;
+                    }
+                }
+            }
+        }
+    }
+}
