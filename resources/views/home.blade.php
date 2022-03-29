@@ -6,7 +6,10 @@
 
 @section('content')
     <div id="home-page">
-        <div id="b_cabecera" snake-parallax="hero">
+        <div id="b_cabecera">
+            <video autoplay muted loop id="myVideo">
+                <source src="/images/HOME_EDASE.mp4" type="video/mp4">
+              </video>
             <div class="--copy">
                 <h2 class="--title">Tu<br>
                     futuro
@@ -64,6 +67,7 @@
             <div class="--section">
             </div>
             <div class="--content">
+                <p class="--section_title d-xl-none">niveles</p>
                 <div class="--content_copy">
                     <h2 class="--title">Preparamos<br> a profesionales<br> de la asesoría a todos<br> los niveles</h2>
                 </div>
@@ -95,7 +99,8 @@
             <div class="--section">
             </div>
             <div class="--content">
-                <div class="--testimonios__1" data="1">
+                <p class="--section_title d-xl-none">EXPERIENCIAS</p>
+                <div class="--testimonios__1" data="1" id="__testimonios__1">
                     <div class="--content_testimonios --visible" data="1">
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. <b>Esto es como jugar en el Real Madrid”</b></p>
@@ -116,9 +121,29 @@
                         </div>
                         <div class="--content_testimonios_franja"></div>
                     </div>
+                    <div class="--content_testimonios d-lg-none" data="3">
+                        <div class="--content_testimonios_copy">
+                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
+                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                        </div>
+                        <div class="--content_testimonios_foto">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                        </div>
+                        <div class="--content_testimonios_franja"></div>
+                    </div>
+                    <div class="--content_testimonios d-lg-none" data="4">
+                        <div class="--content_testimonios_copy">
+                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
+                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                        </div>
+                        <div class="--content_testimonios_foto">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                        </div>
+                        <div class="--content_testimonios_franja"></div>
+                    </div>
                 </div>
 
-                <div class="--testimonios__2" data="1">
+                <div class="--testimonios__2 d-none d-xl-block" data="1" id="__testimonios__2">
                     <div class="--content_testimonios --visible" data="1">
                         <div class="--content_testimonios_franja"></div>
                         <div class="--content_testimonios_foto">
@@ -150,6 +175,7 @@
             <div class="--section">
             </div>
             <div class="--content">
+                <p class="--section_title d-xl-none">PROFESORADO</p>
                 <div class="--profesorado" data="1">
                     <div class="--profesorado_content_1">
                         <div class="--profesorado_foto_principal">
@@ -183,7 +209,7 @@
                             <div class="--profesorado_mascara_img_secundaria" data="3"></div>
                         </div>
                         <div class="--profesorado_texto" data="1">
-                            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</p>
+                            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. <b>Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</b></p>
                         </div>
                         <div class="--profesorado_texto" data="2" style="display: none">
                             <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</p>
@@ -222,4 +248,10 @@
             </div>
         </div>
     </div>
+    <script>
+        moveCarrousel();
+        moveTransition();
+        moveTestimonios();
+        moveProfesores();
+    </script>
 @endsection

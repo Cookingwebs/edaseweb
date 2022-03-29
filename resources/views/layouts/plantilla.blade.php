@@ -15,7 +15,8 @@
 
     gtag('config', 'UA-205246474-2');
     </script>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src='/assets/js/app.js'></script>
 </head>
 <div class="--wrapper" id="@yield('id-page')">
 @include('layouts.nav')
@@ -25,6 +26,4 @@
     @include('layouts.footer')
 </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="{{ mix('assets/js/app.js')}}"></script>
 </html>

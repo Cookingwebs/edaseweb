@@ -1,8 +1,10 @@
 <?php
 
-
+use App\Http\Controllers\BecasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ConocenosController;
+use App\Http\Controllers\MetodologiaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class);
+Route::get('/conocenos', ConocenosController::class);
+Route::get('/metodologia', MetodologiaController::class);
+Route::get('/admisiones', BecasController::class);

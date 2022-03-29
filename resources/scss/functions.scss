@@ -28,6 +28,11 @@ $default: 'quasimoda';
     @content;
   }
 }
+@mixin notebook-small {
+  @media only screen and (max-width: 1330px) {
+    @content;
+  }
+}
 @mixin notebook-delimiter {
   @media only screen and (max-width: 1450px) and (min-width: 1025px) {
     @content;

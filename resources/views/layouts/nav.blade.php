@@ -46,6 +46,8 @@
                 <li class="--desplegable_list_item">Lorem ipsum 3</li>
                 <li class="--desplegable_list_item">Lorem ipsum</li>
                 <li class="--desplegable_list_item">Lorem ipsum</li>
+                <li class="--desplegable_list_item">Lorem ipsum</li>
+                <li class="--desplegable_list_item">Lorem ipsum</li>
             </ul>
         </div>
         <div class="--content_menu">
@@ -64,6 +66,9 @@
                 </li>
                 <li class="--content_menu_link" data-link="5">
                     BECAS Y ADMINISIONES
+                </li>
+                <li class="--content_menu_link" data-link="6">
+                    RRSS
                 </li>
             </ul>
             <ul class="--links" data-select="2">
@@ -89,6 +94,14 @@
             </ul>
             <ul class="--links" data-select="5">
                 <li class="--return">< Volver</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+            </ul>
+            <ul class="--links" data-select="6">
+                <li class="--return">< Volver</li>
+                <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
