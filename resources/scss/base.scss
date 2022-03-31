@@ -31,6 +31,39 @@ p{
     line-height: 1.3em;
 }
 
+.--cta{
+    background-color: $green;
+    display: block;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    max-width: max-content;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    color: $grey-dark;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 500ms opacity ease-in-out;
+    &:hover{
+        opacity: .7;
+        transition: 500ms opacity ease-in-out;
+    }
+    @include notebook{
+        font-size: 22px;
+    }
+} 
+
+.--cta_sub{
+    max-width: max-content;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: $grey-dark;
+    @include notebook{
+        font-size: 22px;
+    }
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -58,6 +91,7 @@ p{
         }
         @include ipad-portrait{
             background-color: $blue-dark;
+            grid-template-columns: 240px 69% 1fr;
         }
         @include mobile{
             grid-template-columns: 140px 1fr;
@@ -106,9 +140,48 @@ p{
                 padding-right: 5%;
             }
             @include ipad-portrait{
+               background-color: $blue-dark;
+            }
+            .--acceder_mobile{
                 display: none;
+                color: $green;
+                font-size: 12px;
+                text-transform: uppercase;
+                position: relative;
+                top: -10px;
+                right: 60px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                @include ipad-portrait{
+                    right: 65px;
+                    display: block;
+                }
+                @include mobile{
+                    right: 67px;
+                    display: block;
+                }
+            }
+            .--phone_tablet{
+                display: none;
+                color: $green;
+                font-size: 12px;
+                text-transform: uppercase;
+                position: relative;
+                top: -10px;
+                right: 90px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                @include ipad-portrait{
+                    display: block;
+                }
+                @include mobile{
+                    display: none;
+                }
             }
             .--menu_list {
+                @include ipad-portrait{
+                    display: none;
+                }
                 padding-left: 0;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -461,6 +534,31 @@ p{
     }
 }
 
+.--llamar_mobile{
+    display: none;
+    @include mobile{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        background-color: $blue-dark;
+        z-index: 999;
+        p{
+            text-align: center;
+            margin-bottom: 0;
+            color: $green;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+}
+
 // Aside
 
 .--aside{
@@ -483,6 +581,11 @@ p{
     }
     @include tablet{
         border-bottom: 1px solid $grey-light;
+        max-width: 77%;
+        margin: 0 auto;
+    }
+    @include mobile{
+        max-width: 100%;
     }
     .--copy{
         top: 70px;
@@ -574,9 +677,9 @@ p{
 #footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 210px 80px 140px;
+    padding: 120px 74px 140px;
     @include notebook{
-        padding: 110px 88px 140px;
+        padding: 80px 74px 140px;
     }
     @include tablet{
         grid-template-columns: 1fr;
@@ -918,5 +1021,89 @@ p{
     column-gap: 150px;
     @include notebook{
         column-gap: 120px;
+    }
+}
+.--3_columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 90px;
+    @include notebook{
+        column-gap: 60px;
+    }
+}
+.--2_rows{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 150px;
+    @include notebook{
+        row-gap: 120px;
+    }
+}
+
+// CHATBOT
+
+
+#buttonContainer{
+    z-index: 3!important;
+    @include ipad-portrait{
+        bottom: 5%;
+        right: -2%;
+    }
+    @include tablet{
+        bottom: 13%;
+        right: 5%;
+    }
+    @include mobile{
+        bottom: 5%;
+        right: -2%;
+    }
+    #imgAlma{
+        width: 53px;
+        height: 53px;
+        background-color: transparent;
+        box-shadow: none !important;
+        // border: 2px solid $green;
+        // animation-name: rotacion;
+        // animation-duration: 300ms;
+        // animation-delay: 3s;
+        // animation-iteration-count: infinite;
+        // transform: rotate(0deg)
+    }
+    .notificacionAlma{
+        top: 8px;
+        right: 22px;
+    }
+}
+@keyframes rotacion{
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(-10deg) }
+    100% { transform: rotate(0deg) }
+}
+.neutro{
+    background-color: $green !important;
+    color: $grey-dark !important;
+}
+
+#bloqueDespliegueAlmaMovil{
+    @include ipad-portrait{
+        bottom: 13%;
+    }
+    @include tablet{
+        bottom: 13%;
+    }
+    #superiorIframeMovil, .superiorInferiorMovil{
+        background-color: $white;
+    }
+}
+#iframeAlma{
+    z-index: 99999999!important;
+    @include ipad-portrait{
+        bottom: 7.7vh;
+    }
+    @include tablet{
+        bottom: 7.7vh;
+    }
+    @include mobile{
+        bottom: 2.7vh;
     }
 }

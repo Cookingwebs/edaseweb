@@ -20,7 +20,7 @@
         <div class="--content">
             <h2 class="--title">Bienvenid@ al portal<br>
                 de admisiones de <b>EDASE</b></h2>
-            <p class="--subtitle">ENVÍA TU AUTOMATRÍCULA Y UN DINAMIZADOR FORMATIVO SE PONDRÁ EN CONTACTO CONTIGO <b>EN MENOS DE 24 HORAS.</b></p>
+            <p class="--subtitle">ENVÍA TU AUTOMATRÍCULA Y UN FORMADOR SE PONDRÁ EN CONTACTO CONTIGO <b>EN MENOS DE 24 HORAS.</b></p>
             <div class="--admision_bloque_formulario">
                 <form action="" method="post" name="admision_form" id="admision_form">
                     <div class="--form_bloque">
@@ -121,7 +121,7 @@
                         <p>1,2 <span>M</span></p>
                     </div>
                     <div class="--cifras_tabla_item_copy">
-                        <p>1’2 millones de euros invertidos desde 2019</p>
+                        <p>1’2 millones de euros otorgados desde 2019</p>
                     </div>
                 </div>
             </div>
