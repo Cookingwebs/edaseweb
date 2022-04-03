@@ -1,5 +1,5 @@
 #home-page{
-    #b_cabecera{
+    #b_cabecera_home{
         video{
             position: absolute;
             top: 0;
@@ -19,6 +19,9 @@
         justify-content: flex-start;
         align-items: center;
         overflow: hidden;
+        @include desktop-big{
+            min-height: 80vh;
+        }
         @include ipad-landscape{
             min-height: auto;
             padding: 70px 0px;
@@ -36,6 +39,7 @@
         }
         @include mobile{
             min-height: 90vh;
+            padding-top: 0;
         }
         &::before{
             content: "";
@@ -103,11 +107,8 @@
             right: 4%;
             bottom: 9%;
             @include mobile{
-                position: absolute;
-                left: 11%;
-                bottom: 15%;
-                z-index: 1;
-                right: auto;
+                position: initial;
+                margin-top: 60px;
             }
             img{
                 max-width: 30px;
@@ -176,6 +177,9 @@
                     bottom: 0;
                     right: 0;
                     background-color: $grey-light;
+                    @include tablet{
+                        display:  none;
+                    }
                 }
                 ul{
                     border-left: 1px solid $grey-light;
@@ -220,6 +224,10 @@
                         padding-left: 10px;
                         @include notebook{
                             font-size: 27px;
+                        }
+                        @include mobile{
+                            line-height: 1.3em;
+                            margin-bottom: 10px;
                         }
                         span{
                             font-weight: 500;
@@ -441,6 +449,9 @@
                         flex-direction: column;
                         justify-content: center;
                     }
+                    @include mobile{
+                        padding: 40px 20% 40px 10%;
+                    }
                     .--b_title_transition{
                         h3{
                             color: $blue-dark;
@@ -459,6 +470,10 @@
                             }
                             @include tablet{
                                 font-size: 24px;
+                            }
+                            @include mobile{
+                                font-size: 22px;
+                                margin-bottom: 10px;
                             }
                             &.--active{
                                 display: block;
@@ -483,6 +498,9 @@
                             @include tablet{
                                 font-size: 24px;
                             }
+                            @include mobile{
+                                font-size: 22px;
+                            }
                             &.--active{
                                 display: block;
                             }
@@ -505,7 +523,7 @@
                         width: 12%;
                     }
                     &::after{
-                        content: url('/images/SVG/arrow-next-big.svg');
+                        content: url('/images/svg/arrow-next-big.svg');
                         max-width: 200px;
                         width: 100%;
                         position: absolute;

@@ -18,8 +18,8 @@
         <div class="--section">
         </div>
         <div class="--content">
-            <h2 class="--title">Bienvenid@ al portal<br>
-                de admisiones de <b>EDASE</b></h2>
+            <h2 class="--title">Bienvenid@ al portal<br class="d-none d-md-block">
+                de admisiones<br class="d-md-none"> de <b>EDASE</b></h2>
             <p class="--subtitle">ENVÍA TU AUTOMATRÍCULA Y UN FORMADOR SE PONDRÁ EN CONTACTO CONTIGO <b>EN MENOS DE 24 HORAS.</b></p>
             <div class="--admision_bloque_formulario">
                 <form action="" method="post" name="admision_form" id="admision_form">

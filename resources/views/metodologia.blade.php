@@ -19,7 +19,7 @@
         </div>
         <div class="--content">
            <h2 class="--title">ESTUDIAR EN <b>EDASE</b></h2>
-           <h2 class="--subtitle">LA ESCUELA DE ASESORES APUESTA POR<br>UNA METODOLOGÍA <b>BASADA EN 3 PILARES:</b></h2>
+           <h2 class="--subtitle">LA ESCUELA DE ASESORES APUESTA POR<br class="d-none d-md-block">UNA METODOLOGÍA <b>BASADA EN 3 PILARES:</b></h2>
            <div class="--2_columns">
                <div class="--pilares_bloque_copy">
                 <h3 class="--pilares_bloque_copy_title">- Empleabilidad real</h3>

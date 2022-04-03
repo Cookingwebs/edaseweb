@@ -5,10 +5,16 @@
     row-gap: 40px;
     .--aside{
         min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
         .--content{
             padding: 0px 200px 40px;
             @include notebook{
-                padding: 0px 230px 40px 120px;
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
             }
         }
         .--copy{
@@ -18,33 +24,14 @@
             padding-bottom: 40px;
         }
     }
-    #b_cabecera{
-        min-height: 223px;
-        background-color: $grey-light;
-        @include notebook{
-            min-height: 173px;
-        }
-        .--copy{
-            margin-left: 17%;
-            padding-top: 125px;
-            @include notebook{
-                padding-top: 83px;
-            }
-            .--title{
-                color: $grey-dark;
-                font-weight: 500;
-                font-size: 50px;
-                margin: 0;
-                text-transform: uppercase;
-                @include notebook{
-                    font-size: 45px;
-                }
-            }
-        }
-    }
     #b_pilares{
         .--copy{
             top: 100px;
+        }
+        .--2_columns{
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
         }
         .--title{
             font-size: 70px;
@@ -55,6 +42,17 @@
             margin-top: 75px;
             @include notebook{
                 font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            @include mobile{
+                font-size: 35px;
+                margin-top: 0;
             }
         }
         .--subtitle{
@@ -74,6 +72,10 @@
             @include notebook{
                 font-size: 27px;
             }
+            @include mobile{
+                font-size: 18px;
+                margin-bottom: 70px;
+            }
         }
         .--pilares_bloque_copy{
             .--pilares_bloque_copy_title{
@@ -87,6 +89,9 @@
                 @include notebook{
                     font-size: 27px;
                 }
+                @include mobile{
+                    font-size: 18px;
+                }
             }
             .--pilares_boque_copy_text{
                 font-weight: 300;
@@ -94,6 +99,9 @@
                 margin-bottom: 50px;
                 @include notebook{
                     font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
                 }
             }
         }
@@ -106,6 +114,13 @@
     #b_especialistas{
         .--2_columns{
                 margin-top: 50px;
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    row-gap: 40px;
+                }
+                @include mobile{
+                    margin-top: 0;
+                }
         }
         .--title{
             font-size: 55px;
@@ -116,16 +131,25 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
         }
         .--especialistas_bloque_copy_1{
             display: flex;
             align-items: center;
+            @include mobile{
+                margin-bottom: 50px;
+            }
         }
         p{
             font-weight: 300;
             font-size: 33px;
             @include notebook{
                 font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
             }
         }
         .--pilares_bloque_copy_title{
@@ -139,6 +163,9 @@
             @include notebook{
                 font-size: 27px;
             }
+            @include mobile{
+                font-size: 18px;
+            }
         }
         .--pilares_boque_copy_text{
             margin-bottom: 40px;
@@ -151,6 +178,12 @@
         .--2_columns{
             margin-top: 100px;
             margin-bottom: 100px;
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
+            @include mobile{
+                margin-top: 0;
+            }
         }
         .--title{
             font-size: 55px;
@@ -161,6 +194,9 @@
             text-transform: uppercase;
             @include notebook{
                 font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
             }
         }
         .--experiencias_bloque_copy_1{

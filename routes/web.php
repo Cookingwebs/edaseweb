@@ -7,6 +7,7 @@ use App\Http\Controllers\ConocenosController;
 use App\Http\Controllers\MasterController;
 use App\Http\Controllers\MbaController;
 use App\Http\Controllers\MetodologiaController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\TecnicoController;
 
 /*
@@ -27,6 +28,10 @@ Route::get('/admisiones', BecasController::class)->name('becas');
 Route::get('/master-asesoria', MasterController::class)->name('master');
 Route::get('/mba', MbaController::class)->name('mba');
 Route::get('/tecnico-asesoria', TecnicoController::class)->name('tecnico');
+
+Route::get('/sitemap-manually', [SitemapController::class, "manually"]);
+Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
+
 
 
 

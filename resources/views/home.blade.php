@@ -6,8 +6,8 @@
 
 @section('content')
     <div id="home-page">
-        <div id="b_cabecera">
-            <video autoplay muted loop id="myVideo">
+        <div id="b_cabecera_home">
+            <video autoplay muted loop id="myVideo" preload="none" class="lazyload">
                 <source src="/images/HOME_EDASE.mp4" type="video/mp4">
               </video>
             <div class="--copy">
@@ -16,11 +16,16 @@
                     <b>empieza
                     <span>aquí</span></b></h2>
                 <h1 class="--subtitle">Escuela de formación para asesores del mañana</h1>
+                <div class="--arrow d-md-none">
+                    <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
+                </div>
             </div>
-            <div class="--arrow">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="">
+            <div class="--arrow d-none d-md-block">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
             </div>
         </div>
         <div class="--aside" id="b_creamos">
@@ -92,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="--aside" id="b_experiencias">
+        {{-- <div class="--aside" id="b_experiencias">
             <div class="--copy">
                 <p class="--section_title">EXPERIENCIAS </p>
             </div>
@@ -107,7 +112,7 @@
                             <p class="--content_testimonios_author">José Miguel Molina</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_franja"></div>
                     </div>
@@ -117,7 +122,7 @@
                             <p class="--content_testimonios_author">José Miguel Molina</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_franja"></div>
                     </div>
@@ -127,7 +132,7 @@
                             <p class="--content_testimonios_author">José Miguel Molina</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_franja"></div>
                     </div>
@@ -137,7 +142,7 @@
                             <p class="--content_testimonios_author">José Miguel Molina</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_franja"></div>
                     </div>
@@ -147,7 +152,7 @@
                     <div class="--content_testimonios --visible" data="1">
                         <div class="--content_testimonios_franja"></div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. <b>Esto es como jugar en el Real Madrid”</b></p>
@@ -157,7 +162,7 @@
                     <div class="--content_testimonios" data="2">
                         <div class="--content_testimonios_franja"></div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="">
+                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
                         </div>
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
@@ -166,7 +171,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="--aside" id="b_profesorado">
             <div class="--copy">
@@ -191,15 +196,15 @@
                         </div>
                         <div class="--profesorado_copy" data="1">
                             <p class="--profesorado_nombre" data="1">Cristina Castell</p>
-                            <p class="--profesorado_cargo" data="1">Profesora y responsable fiscal</p>
+                            <p class="--profesorado_cargo" data="1">Profesora y coordinadora</p>
                         </div>
                         <div class="--profesorado_copy" data="2" style="display: none">
                             <p class="--profesorado_nombre" data="2">Cristina Marin</p>
-                            <p class="--profesorado_cargo" data="2">Profesora y responsable fiscal</p>
+                            <p class="--profesorado_cargo" data="2">Profesora y coordinadora</p>
                         </div>
                         <div class="--profesorado_copy" data="3" style="display: none">
                             <p class="--profesorado_nombre" data="3">María José Izquierdo</p>
-                            <p class="--profesorado_cargo" data="3">Profesora y responsable fiscal</p>
+                            <p class="--profesorado_cargo" data="3">Profesora y responsable contable</p>
                         </div>
                     </div>
                     <div class="--profesorado_content_2">
@@ -212,10 +217,10 @@
                             <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. <b>Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</b></p>
                         </div>
                         <div class="--profesorado_texto" data="2" style="display: none">
-                            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</p>
+                            <p>Licenciada en Administración y Dirección de Empresas, y coaching profesional por Crearte (Madrid). Ejerció como asesora fiscal, laboral y contable durante más de 6 años. <b>Es profesora y coordinadora de nuestras formaciones, a la vez que coordina el dpto. laboral de Ayuda T Pymes que ya cuenta con 30 personas aproximadamente.</b></p>
                         </div>
                         <div class="--profesorado_texto" data="3" style="display: none">
-                            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</p>
+                            <p>Licenciada en Administración y Dirección de Empresas, Finanzas y Contabilidad, es especialista en Contabilidad y Auditoría. <b>Trabajó como asesora fiscal, laboral y contable durante más de 3 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes, con equipos de entre 30 y 50 trabajadores.</b></p>
                         </div>
                         <div class="--profesorado_bloque" data="1"></div>
                     </div>
@@ -241,7 +246,7 @@
                 </div>
                 <div class="--huella_img">
                     <div class="--huella_img_mascara">
-                        <img src="{{ URL::to('/') }}/images/foto-3.jpg" alt="">
+                        <img src="{{ URL::to('/') }}/images/foto-3.jpg" alt="" class="lazyload">
                         <div class="--huella_franja"></div>
                     </div>
                 </div>
@@ -249,9 +254,6 @@
         </div>
     </div>
     <script>
-        moveCarrousel();
-        moveTransition();
-        moveTestimonios();
-        moveProfesores();
+
     </script>
 @endsection

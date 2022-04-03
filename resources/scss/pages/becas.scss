@@ -5,10 +5,19 @@
     row-gap: 40px;
     .--aside{
         min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
         .--content{
             padding: 0px 230px 40px 120px;
             @include notebook{
                 padding: 0px 230px 40px 120px;
+            }
+            @include ipad-portrait{
+                padding: 0px 120px 40px 120px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px 0px;
             }
         }
         .--copy{
@@ -16,30 +25,6 @@
         }
         .--section {
             padding-bottom: 40px;
-        }
-    }
-    #b_cabecera{
-        min-height: 223px;
-        background-color: $grey-light;
-        @include notebook{
-            min-height: 173px;
-        }
-        .--copy{
-            margin-left: 17%;
-            padding-top: 125px;
-            @include notebook{
-                padding-top: 83px;
-            }
-            .--title{
-                color: $grey-dark;
-                font-weight: 500;
-                font-size: 50px;
-                margin: 0;
-                text-transform: uppercase;
-                @include notebook{
-                    font-size: 45px;
-                }
-            }
         }
     }
     #b_admisiones{
@@ -55,6 +40,16 @@
             margin-top: 75px;
             @include notebook{
                 font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
             }
         }
         .--subtitle{
@@ -75,6 +70,12 @@
             @include notebook{
                 font-size: 27px;
             }
+            @include ipad-portrait{
+                font-size: 23px;
+            }
+            @include tablet{
+                font-size: 20px;
+            }
         }
         .--admision_bloque_formulario{
             .--form_bloque{
@@ -89,6 +90,9 @@
                     @include notebook{
                         font-size: 27px;
                     }
+                    @include mobile{
+                        font-size: 24px;
+                    }
                     &::placeholder{
                         font-size: 39px;
                         color: $grey-light;
@@ -96,11 +100,17 @@
                         @include notebook{
                             font-size: 27px;
                         }
+                        @include mobile{
+                            font-size: 24px;
+                        }
                     }
                     &[type="text"],&[type="email"]{
                         display: block;
                         max-width: 100%;
                         width: 100%;
+                        @include mobile{
+                            width: auto;
+                        }
                     }
                 }
                 select{
@@ -116,12 +126,18 @@
                     @include notebook{
                         font-size: 27px;
                     }
+                    @include mobile{
+                        font-size: 24px;
+                    }
                     &::placeholder{
                         font-size: 30px;
                         color: $grey-light;
                         font-weight: 500;
                         @include notebook{
                             font-size: 27px;
+                        }
+                        @include mobile{
+                            font-size: 24px;
                         }
                     }
                 }
@@ -133,6 +149,9 @@
                     margin-bottom: 30px;
                     @include notebook{
                         font-size: 24px;
+                    }
+                    @include mobile{
+                        font-size: 20px;
                     }
                     span{
                         font-weight: bold;
@@ -206,6 +225,11 @@
                 @include notebook{
                     font-size: 22px;
                 }
+                @include mobile{
+                    font-size: 16px;
+                    max-width: 100%;
+                    margin-top: 50px;
+                }
             }
         }
     }
@@ -215,9 +239,21 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto 1fr;
             row-gap: 50px;
+            @include ipad-portrait{
+                column-gap: 40px;
+            }
+            @include mobile{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, auto);
+                margin-top: 0;
+                row-gap: 30px;
+            }
         }
         .--becas_bloque_title{
             grid-area: 1 / 1 / 2 / 2;
+        @include mobile{
+            grid-area: auto;
+        }
             .--title{
                 font-size: 55px;
                 font-weight: normal;
@@ -228,26 +264,46 @@
                 @include notebook{
                     font-size: 45px;
                 }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
             }
         }
         .--becas_bloque_copy_1{
             grid-area: 1 / 2 / 3 / 3;
+        @include mobile{
+            grid-area: auto;
+        }
             p{
                 font-weight: 300;
                 font-size: 33px;
                 @include notebook{
                     font-size: 24px;
                 }
+                @include tablet{
+                    font-size: 20px;
+                }
             }
         }
         .--becas_bloque_img{
             grid-area: 2 / 1 / 3 / 2;
+        @include mobile{
+            grid-area: auto;
+        }
             img{
                 max-width: 100%;
             }
         }
     }
     #b_cifras{
+        .--content{
+            @include tablet{
+                max-width: 100%;
+            }
+            @include mobile{
+                max-width: 80%;
+            }
+        }
         .--title{
             font-size: 70px;
             font-weight: normal;
@@ -257,6 +313,15 @@
             margin-top: 75px;
             @include notebook{
                 font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
             }
         }
         .--cifras_tabla{
@@ -274,6 +339,9 @@
                 column-gap: 30px;
                 grid-template-columns: 60% 40%;
                 align-items: end;
+                @include mobile{
+                    grid-template-columns: 1fr;
+                }
                 p{
                     margin-bottom: 0;
                 }
@@ -284,6 +352,12 @@
                         color: $grey-dark;
                         @include notebook{
                             font-size: 61px;
+                        }
+                        @include tablet{
+                            font-size: 40px;
+                        }
+                        @include mobile{
+                            margin-bottom: 20px;
                         }
                         span{
                             color: $green;
@@ -297,6 +371,9 @@
                         color: $grey-dark;
                         @include notebook{
                             font-size: 24px;
+                        }
+                        @include tablet{
+                            font-size: 20px;
                         }
                     }
                 }

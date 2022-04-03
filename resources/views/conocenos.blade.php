@@ -48,7 +48,7 @@
         <div class="--section">
         </div>
         <div class="--content">
-           <h2 class="--historia_title">La historia de <br>Ayuda T Pymes <br>es nuestra historia</h2>
+           <h2 class="--historia_title">La historia de <br class="d-none d-md-block">Ayuda T Pymes <br class="d-none d-md-block">es nuestra historia</h2>
            <div class="--transition_niveles" id="__transition_niveles">
             <div class="--content_transition" data="1">
                 <div class="--b_date_transition">
@@ -110,6 +110,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">PROFESORADO</p>
             <div class="--profesorado" data="1">
                 <div class="--profesorado_content_1">
                     <div class="--profesorado_foto_principal">
@@ -164,6 +165,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">EQUIPO</p>
             <h3 class="--equipo_title">Equipo de la escuela</h3>
             <div class="--equipo_column">
                 <p><span>+</span> <b>CARMEN MORENO</b><br> Directora</p>

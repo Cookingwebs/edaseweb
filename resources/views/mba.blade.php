@@ -48,11 +48,12 @@
         </div>
         <div class="--content">
            <div class="--2_columns">
-               <div class="--master_img">
+               <div class="--master_img d-none d-md-block">
                 <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
                </div>
                <div class="--master_copy_1">
                     <h1 class="--title">Programa MBA<br> en asesoría</h1>
+                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="" class="d-md-none">
                     <p class="--subtitle">ESTRATEGIA EMPRESARIAL CON LOS DIRECTIVOS DE AYUDA T PYMES</p>
                     <p>Aprovecha tus conocimientos y experiencia para conseguir un puesto directivo o desarrollar un negocio en el <b>mundo de la asesoría.</b></p>
                </div>
@@ -78,23 +79,24 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">recursos</p>
            <h2 class="--title">Empieza tu plan de acción<br> en el MBA Online</h2>
            <p class="--subtitle">TE DOTAMOS DE TODOS LOS RECURSOS NECESARIOS PARA PROYECTAR TU FUTURO COMO DIRECTIVO O IMPULSAR LA CREACIÓN DE TU ASESORÍA</p>
            <div class="--2_columns --2_rows">
                <div class="--objetivos_copy">
-                   <h3 class="--objetivos_title">ESTRATEGIA <br>FORMATIVA</h3>
+                   <h3 class="--objetivos_title">ESTRATEGIA <br class="d-none d-md-block">FORMATIVA</h3>
                    <p>Fortalece tus competencias.</p>
                </div>
                <div class="--objetivos_copy">
-                   <h3 class="--objetivos_title">FORMACIÓN <br>CONTINUA</h3>
+                   <h3 class="--objetivos_title">FORMACIÓN <br class="d-none d-md-block">CONTINUA</h3>
                    <p>No te pierdas ninguna novedad.</p>
                </div>
                <div class="--objetivos_copy">
                    <h3 class="--objetivos_title">BOLSA DE EMPLEO</h3>
-                   <p>Contacta con empresas de toda España.</p>
+                   <p>Contacta con empresas<br class="d-md-none"> de toda España.</p>
                </div>
                <div class="--objetivos_copy">
-                   <h3 class="--objetivos_title">TECNOLOGÍA Y <br>OUTSOURCING</h3>
+                   <h3 class="--objetivos_title">TECNOLOGÍA Y <br class="d-none d-md-block">OUTSOURCING</h3>
                    <p>Proporciona a tus clientes el mejor servicio.</p>
                </div>
            </div>
@@ -108,6 +110,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">DESCUBRE</p>
            <h2 class="--title">¿Qué incluye la estrategia formativa del MBA?</h2>
            <p class="--subtitle">GESTIÓN Y DIRECCIÓN EMPRESARIAL</p>
                <div class="--descubre_copy">
@@ -115,7 +118,7 @@
                    <p>Profesionales en activo te formarán con una visión global y actualizada del sector.</p>
                    <h3 class="--descubre_title">3 MESES de prácticas <br>Online o presencial</h3>
                    <p>Podrás realizar prácticas voluntarias en Ayuda T Pymes.</p>
-                   <h3 class="--descubre_title">6 MESES de aprendizaje empresarial <br>Con los directivos de la asesoría líder en España</h3>
+                   <h3 class="--descubre_title">6 MESES de aprendizaje empresarial. <br>Con los directivos de la asesoría líder en España</h3>
                    <p>Ampliarás tus conocimientos sobre las áreas más importantes de tu negocio.</p>
                    <h3 class="--descubre_title">Te ayudamos a crear una asesoría rentable</h3>
                    <p>Apuesta desde el primer momento por la atención al cliente.</p>
@@ -157,6 +160,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">actualización</p>
            <h2 class="--title">Con el MBA de EDASE no dejarás de actualizar tu perfil</h2>
            <div class="--3_columns">
                <div class="--programa_copy">

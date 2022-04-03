@@ -92,6 +92,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">RECURSOS</p>
            <h2 class="--title">Así es la formación de <br>asesor técnico en EDASE</h2>
            <p class="--subtitle">TTE PREPARAMOS PARA ACCEDER AL MERCADO LABORAL</p>
            <div class="--2_columns --2_rows">
@@ -122,6 +123,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">DESCUBRE</p>
            <h2 class="--title">Da tu primer paso en el sector de la asesoría</h2>
            <p class="--subtitle">ELIGE ESPECIALIZACIÓN</p>
            <div class="--cifras_tabla">
@@ -160,6 +162,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">FORMACIÓN</p>
            <h2 class="--title">¿Cómo vas a aprender?</h2>
            <div class="--3_columns">
                <div class="--programa_copy">
@@ -172,7 +175,7 @@
                </div>
                <div class="--programa_copy">
                    <h3 class="--programa_title">TUTORÍAS PERSONALES</h3>
-                   <p>Tus tutores podrán atenderte por teléfono<br> o chat.</p>
+                   <p>Tus tutores podrán atenderte por teléfono<br class="d-none d-md-block"> o chat.</p>
                </div>
            </div>
         </div>
@@ -184,6 +187,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">PRACTICAS</p>
             <h2 class="--title">Prácticas adicionales</h2>
             <p class="--subtitle">¡SOLO PARA LOS QUE CURSEN LAS 3 ÁREAS!</p>
             <p class="--text">Si te formas en las 3 especializaciones (fiscal, laboral y contable), podrás hacer prácticas online bajo la supervisión y el respaldo de tus profesores.</p>

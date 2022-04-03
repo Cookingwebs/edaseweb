@@ -1,4 +1,5 @@
 <form action="" method="post" name="cursos_form" id="cursos_form">
+    @csrf
     <div class="--form_bloque">
         <input type="text" name="name_input" id="name_input" placeholder="Nombre">
     </div>

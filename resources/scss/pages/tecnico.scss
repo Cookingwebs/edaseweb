@@ -5,10 +5,17 @@
     row-gap: 40px;
     .--aside{
         min-height: auto;
+        @include tablet{
+            max-width: 100%;
+            width: 100%;
+        }
         .--content{
-            padding: 0px 300px 40px 200px;
+            padding: 0px 200px 40px;
             @include notebook{
-                padding: 0px 230px 40px 120px;
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
             }
         }
         .--copy{
@@ -18,171 +25,13 @@
             padding-bottom: 40px;
         }
     }
-    #b_cabecera{
-        min-height: 223px;
-        background-color: $grey-light;
-        @include notebook{
-            min-height: 173px;
-        }
-        .--copy{
-            margin-left: 17%;
-            padding-top: 125px;
-            @include notebook{
-                padding-top: 83px;
-            }
-            .--title{
-                color: $grey-dark;
-                font-weight: 500;
-                font-size: 50px;
-                margin: 0;
-                text-transform: uppercase;
-                @include notebook{
-                    font-size: 45px;
-                }
-            }
-        }
-    }
-    #b_formulario{
-        .--copy{
-            top: 85px;
-        }
-        .--2_columns{
-            grid-template-columns: 50% 1fr;
-            margin-bottom: 100px;
-        }
-        .--title{
-            font-size: 50px;
-            font-weight: normal;
-            text-transform: uppercase;
-            color: $grey-dark;
-            line-height: 1.3em;
-            margin-top: 55px;
-            @include notebook{
-                font-size: 50px;
-            }
-        }
-        ul{
-            padding-left: 1.3em;
-            li{
-                font-size: 28px;
-                font-weight: 300;
-                color: $grey-dark;
-                padding-left: 10px;
-                &::marker{
-                    color: $green;
-                    content: "+";
-                }
-                ul{
-                    li{
-                        &::marker{
-                            color: $grey-dark;
-                            content: "·";
-                        }
-                    }
-                }
-            }
-        }
-        .--formulario_form{
-            margin-top: 55px;
-            .--form_title{
-                font-size: 31px;
-                margin-bottom: 0;
-                margin-top: 0;
-                font-weight: 500;
-            }.--form_extra{
-                font-size: 38px;
-                font-weight: 500;
-                text-transform: uppercase;
-                color: $blue;
-                margin-top: 0;
-            }
-            form{
-                input{
-                    font-size: 27px;
-                    color: $grey-dark;
-                    border: none;
-                    border-bottom: 1px solid $grey-light;
-                    padding: 15px 10px;
-                    font-weight: 500;
-                    @include notebook{
-                        font-size: 18px;
-                    }
-                    &::placeholder{
-                        font-size: 27px;
-                        color: $grey-light;
-                        font-weight: 500;
-                        @include notebook{
-                            font-size: 18px;
-                        }
-                    }
-                    &[type="text"],&[type="email"]{
-                        display: block;
-                        max-width: 100%;
-                        width: 100%;
-                    }
-                }
-                p{
-                    font-size: 25px;
-                    font-weight: 300;
-                    @include notebook{
-                        font-size: 20px;
-                    }
-                }
-                .--aviso_input{
-                    margin-top: 30px;
-                    input{
-                    display: inline-block;
-                    margin-right: 10px;
-                    }
-                    p{
-                        font-size: 12px;
-                        font-weight: 300;
-                        @include notebook{
-                            font-size: 12px;
-                        }
-                    }
-                }
-                .--aviso_notificaciones{
-                    margin-top: 20px;
-                    input{
-                    display: inline-block;
-                    margin-right: 10px;
-                    }
-                    p{
-                        font-size: 12px;
-                        font-weight: 300;
-                        @include notebook{
-                            font-size: 12px;
-                        }
-                    }
-                }
-                .--cta_submit{
-                    background-color: $green;
-                    display: block;
-                    font-weight: 500;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 100%;
-                    padding: 10px 0;
-                    text-transform: uppercase;
-                    color: $grey-dark;
-                    margin-top: 50px;
-                    cursor: pointer;
-                    transition: 500ms opacity ease-in-out;
-                    &:hover{
-                        opacity: .7;
-                        transition: 500ms opacity ease-in-out;
-                    }
-                    @include notebook{
-                        font-size: 22px;
-                    }
-                } 
-            }
-        }
-    }
     #b_master{
         .--2_columns{
             margin-top: 100px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 0;
+            }
             img{
                 max-width: 100%;
             }
@@ -196,6 +45,14 @@
                 @include notebook{
                     font-size: 45px;
                 }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
+                @include mobile{
+                    margin-top: 20px;
+                    font-size: 30px;
+                    margin-bottom: 50px;
+                }
             }
             .--subtitle{
                 font-size: 37px;
@@ -207,12 +64,29 @@
                     position: absolute;
                     left: -0.5em;
                     top: -3px;
+                    @include mobile{
+                        position: initial;
+                        margin-right: 10px;
+                    }
+                }
+                @include ipad-portrait{
+                    font-size: 30px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                    margin-top: 50px;
                 }
             }
         }
         .--master_copy_1{
             p{
                 font-size: 34px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 20px;
+                }
             }
         }
         .--title_2{
@@ -226,6 +100,13 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                margin-top: 50px;
+                font-size: 25px;
+            }
         }
         .--2_rows{
             margin-bottom: 50px;
@@ -235,6 +116,13 @@
                 font-size: 34px;
                 font-weight: normal;
                 max-width: 80%;
+                @include notebook{
+                    font-size: 24px;
+                    max-width: 100%;
+                }
+                @include mobile{
+                    font-size: 20px;
+                }
             }
         }
         .--title_3{
@@ -242,6 +130,12 @@
             font-weight: 500;
             line-height: 1.3em;
             color: $grey-dark;
+            @include ipad-portrait{
+                font-size: 30px;
+            }
+            @include mobile{
+                font-size: 25px;
+            }
             span{
                 color: $green;
             }
@@ -259,6 +153,14 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                margin-top: 30px;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
         }
         .--subtitle{
             font-size: 37px;
@@ -266,6 +168,11 @@
             line-height: 1.3em;
             text-transform: uppercase;
             position: relative;
+            @include mobile{
+                font-size: 20px;
+                padding-left: 25px;
+                margin-top: 30px;
+            }
             &::before{
                 content:"+";
                 position: absolute;
@@ -273,29 +180,59 @@
                 top: -1px;
                 font-weight: 300;
                 color: $green;
+                @include mobile{
+                    left: 0;
+                }
             }
         }
         .--2_columns{
             column-gap: 60px;
+            @include mobile{
+                grid-template-columns: 1fr;
+            }
         }
         .--2_rows{
             row-gap: 60px;
+            @include mobile{
+                row-gap: 0px;
+                padding-left: 30px;
+            }
             .--objetivos_title{
                 font-size: 50px;
                 font-weight: bold;
                 color: $blue;
                 line-height: 1.3em;
                 margin-bottom: 30px;
+                @include notebook{
+                    font-size: 40px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
                 span{
                     color: $grey-dark;
                     font-weight: 500;
                     font-size: 37px;
+                    @include notebook{
+                        font-size: 27px;
+                    }
+                    @include mobile{
+                        font-size: 20px;
+                    }
                 }
             }
             p{
                 font-size: 34px;
                 font-weight: bold;
                 max-width: 80%;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 17px;
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -311,20 +248,46 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include mobile{
+                font-size: 33px;
+                margin-top: 30px;
+            }
         }
         .--subtitle{
             font-size: 37px;
             font-weight: 500;
             line-height: 1.3em;
             text-transform: uppercase;
+            @include notebook{
+                font-size: 27px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
         }
         .--2_columns{
             margin-top: 100px;
             column-gap: 60px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+            }
             p{
                 font-size: 34px;
                 font-weight: 300;
                 margin-bottom: 60px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .--descubre_copy{
+            @include mobile{
+                padding-left: 30px;
             }
         }
         .--descubre_title{
@@ -333,6 +296,12 @@
             position: relative;
             margin: 0;
             color: $grey-dark;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
             &::before{
                 content:"+";
                 position: absolute;
@@ -357,6 +326,10 @@
                 column-gap: 30px;
                 grid-template-columns: 60% 40%;
                 align-items: end;
+                @include mobile{
+                    grid-template-columns: 1fr;
+                    margin-bottom: 60px;
+                }
                 p{
                     margin-bottom: 0;
                 }
@@ -367,6 +340,13 @@
                         color: $grey-dark;
                         @include notebook{
                             font-size: 61px;
+                        }
+                        @include tablet{
+                            font-size: 30px;
+                        }
+                        @include mobile{
+                            margin-bottom: 20px;
+                            font-size: 24px;
                         }
                         span{
                             color: $green;
@@ -380,6 +360,9 @@
                         color: $grey-dark;
                         @include notebook{
                             font-size: 24px;
+                        }
+                        @include tablet{
+                            font-size: 20px;
                         }
                     }
                 }
@@ -397,19 +380,37 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include mobile{
+                font-size: 33px;
+                margin-top: 30px;
+            }
         }
         .--subtitle{
             font-size: 37px;
             font-weight: 500;
             line-height: 1.3em;
             text-transform: uppercase;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
         }
         .--3_columns{
             margin-top: 100px;
             margin-bottom: 100px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+                padding-left: 25px;
+            }
             p{
-              font-size: 30px;
-              font-weight: 300;  
+                font-size: 30px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 20px;
+                } 
             }
         }
         .--programa_title{
@@ -418,6 +419,12 @@
             color: $blue;
             position: relative;
             margin: 0 0 20px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
             &::before{
                 content: "-";
                 position: absolute;
@@ -427,6 +434,9 @@
         .--cta{
             margin-top: 0;
             margin-bottom: 100px;
+            @include mobile{
+                max-width: max-content;
+            }
         }
         .--cta_sub{
             margin-left: 50px;
@@ -457,31 +467,72 @@
             @include notebook{
                 font-size: 45px;
             }
+            @include mobile{
+                font-size: 33px;
+                margin-top: 30px;
+            }
         }
         .--subtitle{
             font-size: 37px;
             font-weight: 500;
             line-height: 1.3em;
             text-transform: uppercase;
+            @include notebook{
+                font-size: 27px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
         }
         .--title_2{
             font-size: 58px;
             font-weight: bold;
             margin: 100px 0 0;
             color: $grey-dark;
+            @include notebook{
+                font-size: 48px;
+            }
+            @include mobile{
+                font-size: 40px;
+                margin-top: 50px;
+            }
         }
         .--subtitle_2{
             font-size: 37px;
             font-weight: 500;
             line-height: 1.3em;
             text-transform: uppercase;
+            @include notebook{
+                font-size: 27px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        .--practicas_img{
+            img{
+                max-width: 100%;
+            }
         }
         .--text{
             font-size: 34px;
             max-width: 800px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include tablet{
+                font-size: 20px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
         }
         .--2_columns{
             margin-top: 100px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+            }
                 .--practicas_copy{
                 .--practicas_title{
                     color: $blue-dark;
@@ -489,6 +540,12 @@
                     font-weight: bold;
                     position: relative;
                     margin-top: 0;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include mobile{
+                        font-size: 18px;
+                    }
                     &::before{
                         content:"+";
                         position: absolute;
@@ -501,155 +558,20 @@
                 p{
                     margin-bottom: 50px;
                     font-size: 34px;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include mobile{
+                        font-size: 18px;
+                    }
                 }
             }
         }
     }
-    #b_formulario_footer{
-        background-color: $grey-dark;
-        .--section{
-            &::before{
-                bottom: -40px;
-            }
-        }
-        .--copy{
-            p{
-                color: $white;
-            }
-        }
-        .--2_columns{
-            grid-template-columns: 50% 1fr;
-            margin-bottom: 100px;
-        }
-        .--title{
-            font-size: 60px;
-            font-weight: normal;
-            text-transform: uppercase;
-            color: $white;
-            line-height: 1.3em;
-            
-            span{
-                color: $green;
-                font-weight: bold;
-            }
-            @include notebook{
-                font-size: 50px;
-            }
-        }
-        .--subtitle{
-            margin-top: 75px;
-            font-size: 35px;
-            font-weight: normal;
-            color: $white;
-            span{
-                color: $green;
-            }
-        }
-        .--text{
-            color: $white;
-            font-size: 30px;
-            font-weight: bold;
-            max-width: 500px;
-        }
-        .--formulario_form{
-            margin-top: 75px;
-            .--form_title{
-                font-size: 31px;
-                margin-bottom: 0;
-                margin-top: 0;
-                font-weight: 500;
-                color: $white;
-            }
-            .--form_extra{
-                font-size: 38px;
-                font-weight: 500;
-                text-transform: uppercase;
-                color: $white;
-                margin-top: 0;
-            }
-            form{
-                input{
-                    font-size: 27px;
-                    color: $white;
-                    border: none;
-                    border-bottom: 1px solid $grey-light;
-                    padding: 15px 10px;
-                    font-weight: 500;
-                    background-color: transparent;
-                    @include notebook{
-                        font-size: 18px;
-                    }
-                    &::placeholder{
-                        font-size: 27px;
-                        color: $grey-light;
-                        font-weight: 500;
-                        @include notebook{
-                            font-size: 18px;
-                        }
-                    }
-                    &[type="text"],&[type="email"]{
-                        display: block;
-                        max-width: 100%;
-                        width: 100%;
-                    }
-                }
-                p{
-                    color: $white;
-                    font-size: 25px;
-                    font-weight: 300;
-                    @include notebook{
-                        font-size: 20px;
-                    }
-                }
-                .--aviso_input{
-                    margin-top: 30px;
-                    input{
-                    display: inline-block;
-                    margin-right: 10px;
-                    }
-                    p{
-                        font-size: 12px;
-                        font-weight: 300;
-                        @include notebook{
-                            font-size: 12px;
-                        }
-                    }
-                }
-                .--aviso_notificaciones{
-                    margin-top: 20px;
-                    input{
-                    display: inline-block;
-                    margin-right: 10px;
-                    }
-                    p{
-                        font-size: 12px;
-                        font-weight: 300;
-                        @include notebook{
-                            font-size: 12px;
-                        }
-                    }
-                }
-                .--cta_submit{
-                    background-color: $green;
-                    display: block;
-                    font-weight: 500;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 100%;
-                    padding: 10px 0;
-                    text-transform: uppercase;
-                    color: $grey-dark;
-                    margin-top: 50px;
-                    cursor: pointer;
-                    transition: 500ms opacity ease-in-out;
-                    &:hover{
-                        opacity: .7;
-                        transition: 500ms opacity ease-in-out;
-                    }
-                    @include notebook{
-                        font-size: 22px;
-                    }
-                } 
+    #b_formulario_footer {
+        .--title {
+            @include tablet{
+                font-size: 28px;
             }
         }
     }

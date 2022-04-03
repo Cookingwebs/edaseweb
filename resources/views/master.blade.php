@@ -47,11 +47,12 @@
         </div>
         <div class="--content">
            <div class="--2_columns">
-               <div class="--master_img">
+               <div class="--master_img d-none d-md-block">
                 <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
                </div>
                <div class="--master_copy_1">
-                    <h1 class="--title">Máster<br> Asesoría</h1>
+                    <h1 class="--title">Máster<br class="d-none d-md-block"> Asesoría</h1>
+                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="" class="d-md-none">
                     <p class="--subtitle">IMPARTIDO POR LOS PROFESIONALES DE LA ASESORÍA Nº1 EN ESPAÑA</p>
                     <p>Fórmate en el asesoramiento para empresas y autónomos con los líderes del sector desde un enfoque multidisciplinar y tecnológico. </p>
                </div>
@@ -68,7 +69,7 @@
                 </div>
                <div class="--master_copy_2">
                    <h3 class="--title_3">- PROFESORADO</h3>
-                   <p>Tus docentes son especialistas en activo.</p>
+                   <p>Tus docentes son <br class="d-md-none">especialistas en activo.</p>
                 </div>
                <div class="--master_img">
                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
@@ -84,6 +85,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">Objetivos</p>
            <h2 class="--title">Objetivos</h2>
            <p class="--subtitle">Te preparamos para<br> tu futuro profesional</p>
            <div class="--2_columns --2_rows">
@@ -114,8 +116,9 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">DESCUBRE</p>
            <h2 class="--title">¿Cómo es nuestro máster en asesoría de empresas?</h2>
-           <p class="--subtitle">DESCUBRE TODO LO QUE INCLUYE</p>
+           <p class="--subtitle">DESCUBRE TODO <br class="d-md-none">LO QUE INCLUYE</p>
            <div class="--2_columns">
                <div class="--descubre_copy">
                    <h3 class="--descubre_title">Bolsa de empleo</h3>
@@ -171,6 +174,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">PROGRAMA</p>
            <h2 class="--title">Plan de estudios</h2>
            <p class="--subtitle">LA FORMACIÓN TÉCNICA<br>
             SE DIVIDE EN LAS <b>TRES ÁREAS</b></p>
@@ -199,6 +203,7 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">PRACTICAS</p>
            <h2 class="--title">Prácticas aseguradas</h2>
            <p class="--subtitle">TE CONECTAMOS CON EL MERCADO LABORAL</p>
            <h2 class="--title_2">Modalidades</h2>

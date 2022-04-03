@@ -51,6 +51,9 @@ p{
     @include notebook{
         font-size: 22px;
     }
+    @include mobile{
+        max-width: 100%;
+    }
 } 
 
 .--cta_sub{
@@ -135,12 +138,22 @@ p{
             padding-left: 20%;
             background-color: $white;
             @include notebook{
-                justify-content: flex-end;
+                justify-content: center;
                 padding-left: 0;
                 padding-right: 5%;
             }
             @include ipad-portrait{
                background-color: $blue-dark;
+               justify-content: flex-end;
+               padding-left: 0;
+               padding-right: 0%;
+               margin-right: -26px;
+            }
+            @include tablet{
+                margin-right: 30px;
+            }
+            @include mobile{
+                margin-right: 0;
             }
             .--acceder_mobile{
                 display: none;
@@ -471,6 +484,12 @@ p{
             transform: translateX(100vw);
             width: 70%;
             transition: .5s transform;
+            @include ipad-portrait{
+                width: 85%;
+            }
+            @include mobile{
+                width: 70%;
+            }
             &[data-select="6"]{
                 li{
                     color: $green;
@@ -526,9 +545,17 @@ p{
             li{
                 border-bottom: 1px solid $white;
                 color: $white;
-                padding: 35px 0;
+                // padding: 35px 0;
                 list-style: none;
                 font-size: 18px;
+                min-height: 98px;
+                display: flex;
+                align-items: center;
+                a{
+                    min-height: 98px;
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }
@@ -679,7 +706,7 @@ p{
     grid-template-columns: 1fr 1fr;
     padding: 120px 74px 140px;
     @include notebook{
-        padding: 80px 74px 140px;
+        padding: 140px 87px 140px;
     }
     @include tablet{
         grid-template-columns: 1fr;
@@ -754,13 +781,26 @@ p{
                 grid-template-columns: 430px auto;
                 column-gap: 80px;
             }
+            @include ipad-portrait{
+                grid-template-columns: 300px auto;
+            }
             @include tablet{
                 grid-template-columns: auto;
-                grid-template-rows: 400px 240px;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "profesorado_content_1"
+                    "profesorado_content_2";
+                padding-right: 50px;
+                min-height: auto;
+                margin-top: 40px;
+            }
+            @include mobile{
+                grid-template-columns: auto;
+                grid-template-rows: 337px 240px;
                 grid-template-areas: "profesorado_content_1" 
                 "profesorado_content_2";
-                padding-right: 50px;
-                min-height: 700px;
+                padding-right: 12%;
+                min-height: auto;
                 margin-top: 40px;
             }
             .--profesorado_content_1{
@@ -776,8 +816,17 @@ p{
                         width: 430px;
                         min-height: 310px;
                     }
+                    @include ipad-portrait{
+                        width: 320px;
+                        min-height: 230px;
+                    }
                     @include tablet{
                         width: 100%;
+                        min-height: 400px;
+                    }
+                    @include mobile{
+                        width: 100%;
+                        min-height: 230px;
                     }
                     .--profesorado_mascara_img_principal{
                         position: absolute;
@@ -806,6 +855,12 @@ p{
                     padding-left: 50px;
                     position: absolute;
                     z-index: 2;
+                    @include ipad-portrait{
+                        padding-left: 20px;
+                    }
+                    @include mobile{
+                        padding-left: 40px;
+                    }
                     .--profesorado_nombre{
                         margin-top: 20px;
                         color: $blue;
@@ -881,6 +936,12 @@ p{
                         min-width: 317px;
                         left: -40px;
                     }
+                    @include ipad-portrait{
+                        min-height: 169px;
+                        min-width: 227px;
+                        left: -20px;
+                        top: 61px;
+                    }
                     @include tablet{
                         display: none;
                     }
@@ -920,8 +981,14 @@ p{
                         height: 240px;
                     }
                     @include tablet{
+                        top: 0px;
+                        padding: 30px 80px 30px 22px;
+                        height: 210px;
+                    }
+                    @include mobile{
                         height: auto;
-                        top: 180px;
+                        top: 160px;
+                        padding: 30px 80px 30px 40px;
                     }
                     p{
                         max-width: 407px;
@@ -992,8 +1059,15 @@ p{
                     right: 10%;
                     width: 44px;
                 }
+                @include ipad-portrait{
+                    right: 0;
+                }
                 @include tablet{
                     width: 50px;
+                    right: 0;
+                }
+                @include mobile{
+                    width: 12%;
                     right: 0;
                 }
                 &::after{
@@ -1054,7 +1128,7 @@ p{
         right: 5%;
     }
     @include mobile{
-        bottom: 5%;
+        bottom: 8vh;
         right: -2%;
     }
     #imgAlma{
@@ -1091,6 +1165,9 @@ p{
     @include tablet{
         bottom: 13%;
     }
+    @include mobile{
+        bottom: 18vh;
+    }
     #superiorIframeMovil, .superiorInferiorMovil{
         background-color: $white;
     }
@@ -1105,5 +1182,445 @@ p{
     }
     @include mobile{
         bottom: 2.7vh;
+    }
+}
+
+
+// cabecera
+
+#b_cabecera{
+    min-height: 223px;
+    background-color: $grey-light;
+    @include notebook{
+        min-height: 173px;
+    }
+    @include mobile{
+        min-height: 140px;
+    }
+    .--copy{
+        margin-left: 17%;
+        padding-top: 125px;
+        @include notebook{
+            padding-top: 83px;
+        }
+        @include tablet{
+            margin-left: 11%;
+        }
+        .--title{
+            color: $grey-dark;
+            font-weight: 500;
+            font-size: 50px;
+            margin: 0;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// Formulario
+
+#b_formulario{
+    .--copy{
+        top: 85px;
+    }
+    .--content{
+        @include tablet{
+            max-width: 80%;
+            width: 100%;
+        }
+    }
+    .--2_columns{
+        grid-template-columns: 50% 1fr;
+        margin-bottom: 100px;
+        @include ipad-portrait{
+            grid-template-columns: 40% 1fr;
+            column-gap: 90px;
+            margin-bottom: 50px;
+        }
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
+    }
+    .--title{
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $grey-dark;
+        line-height: 1.3em;
+        margin-top: 55px;
+        @include notebook{
+            font-size: 50px;
+        }
+        @include ipad-portrait{
+            font-size: 40px;
+        }
+        @include tablet{
+            font-size: 40px;
+            margin-top: 40px;
+        }
+        @include mobile{
+            font-size: 29px;
+            margin-top: 0;
+        }
+    }
+    ul{
+        padding-left: 1.3em;
+        @include ipad-portrait{
+            padding-left: 0;
+        }
+        li{
+            font-size: 28px;
+            font-weight: 300;
+            color: $grey-dark;
+            padding-left: 10px;
+            &::marker{
+                color: $green;
+                content: "+";
+            }
+            @include ipad-portrait{
+                font-size: 15px;
+            }
+        }
+    }
+    .--formulario_form{
+        margin-top: 55px;
+        @include mobile{
+            margin-top: 25px;
+        }
+        .--form_title{
+            font-size: 31px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 500;
+            @include ipad-portrait{
+                font-size: 23px;
+            }
+            @include mobile{
+                font-size: 17px;
+            }
+        }.--form_extra{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $blue;
+            margin-top: 0;
+            @include ipad-portrait{
+                font-size: 28px;
+            }
+            @include mobile{
+                font-size: 21px;
+            }
+        }
+        form{
+            input{
+                font-size: 27px;
+                color: $grey-dark;
+                border: none;
+                border-bottom: 1px solid $grey-light;
+                padding: 15px 10px;
+                font-weight: 500;
+                @include notebook{
+                    font-size: 18px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                }
+                &::placeholder{
+                    font-size: 27px;
+                    color: $grey-light;
+                    font-weight: 500;
+                    @include notebook{
+                        font-size: 18px;
+                    }
+                }
+                &[type="text"],&[type="email"]{
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    @include mobile{
+                        width: 90%;
+                    }
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                }
+            }
+            p{
+                font-size: 25px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 20px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
+            .--aviso_input{
+                margin-top: 30px;
+                input{
+                display: inline-block;
+                margin-right: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .--aviso_notificaciones{
+                margin-top: 20px;
+                input{
+                display: inline-block;
+                margin-right: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .--cta_submit{
+                background-color: $green;
+                display: block;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                max-width: 100%;
+                padding: 10px 0;
+                text-transform: uppercase;
+                color: $grey-dark;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 500ms opacity ease-in-out;
+                &:hover{
+                    opacity: .7;
+                    transition: 500ms opacity ease-in-out;
+                }
+                @include notebook{
+                    font-size: 22px;
+                }
+                @include mobile{
+                    font-size: 17px;
+                }
+            } 
+        }
+    }
+}
+
+#b_formulario_footer{
+    background-color: $grey-dark;
+    .--section{
+        &::before{
+            bottom: -40px;
+        }
+    }
+    .--copy{
+        p{
+            color: $white;
+        }
+    }
+    .--2_columns{
+        grid-template-columns: 50% 1fr;
+        margin-bottom: 100px;
+        @include ipad-portrait{
+            grid-template-columns: 40% 1fr;
+            column-gap: 90px;
+            margin-bottom: 50px;
+        }
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
+    }
+    .--title{
+        font-size: 60px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: $white;
+        line-height: 1.3em;
+        @include notebook{
+            font-size: 50px;
+        }
+        @include ipad-portrait{
+            font-size: 40px;
+        }
+        @include tablet{
+            font-size: 40px;
+            margin-top: 40px;
+        }
+        @include mobile{
+            font-size: 35px;
+            margin-top: 0;
+        }
+        span{
+            color: $green;
+            font-weight: bold;
+        }
+        @include notebook{
+            font-size: 50px;
+        }
+    }
+    .--subtitle{
+        margin-top: 75px;
+        font-size: 35px;
+        font-weight: normal;
+        color: $white;
+        @include notebook{
+            font-size: 25px;
+        }
+        span{
+            color: $green;
+        }
+    }
+    .--text{
+        color: $white;
+        font-size: 30px;
+        font-weight: bold;
+        max-width: 500px;
+        @include notebook{
+            font-size: 20px;
+        }
+        @include mobile{
+            font-size: 15px;
+        }
+    }
+    .--formulario_form{
+        margin-top: 75px;
+        @include mobile{
+            margin-top: 35px;
+        }
+        .--form_title{
+            font-size: 31px;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 500;
+            color: $white;
+            @include ipad-portrait{
+                font-size: 23px;
+            }
+            @include mobile{
+                font-size: 17px;
+            }
+        }
+        .--form_extra{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $white;
+            margin-top: 0;
+            @include ipad-portrait{
+                font-size: 28px;
+            }
+            @include mobile{
+                font-size: 21px;
+            }
+        }
+        form{
+            input{
+                font-size: 27px;
+                color: $white;
+                border: none;
+                border-bottom: 1px solid $grey-light;
+                padding: 15px 10px;
+                font-weight: 500;
+                background-color: transparent;
+                @include notebook{
+                    font-size: 18px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                }
+                &::placeholder{
+                    font-size: 27px;
+                    color: $grey-light;
+                    font-weight: 500;
+                    @include notebook{
+                        font-size: 18px;
+                    }
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                }
+                &[type="text"],&[type="email"]{
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    @include mobile{
+                        width: 90%;
+                    }
+                }
+            }
+            p{
+                color: $white;
+                font-size: 25px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 20px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
+            .--aviso_input{
+                margin-top: 30px;
+                input{
+                display: inline-block;
+                margin-right: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .--aviso_notificaciones{
+                margin-top: 20px;
+                input{
+                display: inline-block;
+                margin-right: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .--cta_submit{
+                background-color: $green;
+                display: block;
+                font-weight: 500;
+                font-size: 25px;
+                text-align: center;
+                max-width: 100%;
+                padding: 10px 0;
+                text-transform: uppercase;
+                color: $grey-dark;
+                margin-top: 50px;
+                cursor: pointer;
+                transition: 500ms opacity ease-in-out;
+                &:hover{
+                    opacity: .7;
+                    transition: 500ms opacity ease-in-out;
+                }
+                @include notebook{
+                    font-size: 22px;
+                }
+                @include mobile{
+                    font-size: 17px;
+                }
+            } 
+        }
     }
 }
