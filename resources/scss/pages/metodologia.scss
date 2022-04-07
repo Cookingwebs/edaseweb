@@ -175,14 +175,64 @@
         }
     }
     #b_experiencias{
+        .--content{
+            padding: 0 250px;
+            overflow-x: hidden;
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            @include notebook{
+                padding: 0 120px 40px;
+            }
+            @include ipad-portrait{
+                padding: 0 120px 40px;
+            }
+            @include tablet{
+                padding: 0;
+                max-width: 100%;
+                width: 100%;
+                padding-bottom: 50px;
+            }
+            .--section_title{
+                @include mobile{
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .--text_1{
+                font-weight: 300;
+                font-size: 30px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+            }
+            }
+        }
+        .--section{
+            &::before{
+                bottom: -50px;
+            }
+        }
         .--2_columns{
             margin-top: 100px;
             margin-bottom: 100px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            @include notebook{
+                max-width: 100%;
+            }
             @include tablet{
                 grid-template-columns: 1fr;
             }
             @include mobile{
                 margin-top: 0;
+                margin-bottom: 50px;
             }
         }
         .--title{
@@ -198,51 +248,258 @@
             @include ipad-portrait{
                 font-size: 35px;
             }
-        }
-        .--experiencias_bloque_copy_1{
-            display: flex;
-            align-items: center;
-        }
-        p{
-            font-weight: 300;
-            font-size: 33px;
-            @include notebook{
-                font-size: 24px;
+            @include mobile{
+                max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
             }
         }
-        .--experiencias_bloque_copy{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .--quote{
-            margin-top: 0;
-            font-size: 38px;
-            text-transform: uppercase;
-            font-weight: 300;
-            font-style: italic;
-            padding-right: 100px;
-            @include notebook{
-                padding-right: 0;
-                font-size: 27px;
+        .swiper {
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            @include mobile{
+
             }
-            @include tablet{
-                font-size: 22px;
+          }
+          .--testimonio_1{
+              margin-top: 100px;
+              @include mobile{
+                  margin-top: 50px;
+              }
+              .swiper-slide {
+                background: $white;
+        
+                /* Center slide text vertically */
+                display: grid;
+                grid-template-columns: auto 499px 66px;
+                column-gap: 34px;
+                @include notebook{
+                    grid-template-columns: auto 357px 44px;
+                }
+                @include tablet{
+                    grid-template-columns: auto 211px 29px;
+                    column-gap: 14px;
+                }
+                @include mobile{
+                    grid-template-columns: 1fr;
+                }
+                .--content_testimonios_copy{
+                    padding-right: 68px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    @include notebook{
+                        padding-right: 0;
+                    }
+                    @include mobile{
+                        max-width: 88%;
+                        min-height: 260px;
+                    }
+                }
+                .--content_testimonios_quote{
+                  margin-top: 0;
+                  font-size: 38px;
+                  text-transform: uppercase;
+                  font-weight: 300;
+                  font-style: italic;
+                  text-indent: -0.7rem;
+                  padding-left: 0.7rem;
+                  @include notebook{
+                      font-size: 25px;
+                      padding-right: 30px;
+                  }
+                  @include tablet{
+                      max-width: 100%;
+                      margin-left: auto;
+                      font-size: 20px;
+                  }
+                  @include mobile{
+                    font-size: 25px;
+                    margin-left: 10%;
+                  }
+                  b{
+                      font-weight: 500;
+                  }
+              }
+              .--content_testimonios_foto{
+                  @include mobile{  
+                    max-width: 83%;
+                  }
+              }
+              .--content_testimonios_author{
+                  font-size: 24px;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-bottom: 0;
+                  padding-left: 0.7rem;
+                  @include notebook{
+                      font-size: 17px;
+                  }
+                  @include tablet{
+                      max-width: 100%;
+                  }
+                  @include mobile{
+                    margin-left: 10%;
+                    margin-bottom: 50px;
+                  }
+              }
+              .--content_testimonios_foto{
+                  
+              }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+              }
+              .swiper-button-next{
+                display: block;
+                right: 0;
+                width: 66px;
+                top: 22px;
+                bottom: 0;
+                background-color: $green;
+                height: 100%;
+                @include notebook{
+                    width: 44px;
+                }
+                @include tablet{
+                    top: 0;
+                    width: 29px;
+                }
+                @include mobile{
+                    top: 22px;
+                    width: 29px;
+                    bottom: 0px;
+                }
+                  &::after{
+                    width: 40px;
+                    height: auto;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 2%;
+                    transform: rotate(180deg);
+                    content: '';
+                    @include notebook{
+                        width: 20px;
+                        right: 10px;
+                        bottom: -11px;
+                    }
+                    @include tablet{
+                        width: 15px;
+                        right: 9px;
+                        bottom: -20px;
+                    }
+                    @include mobile{
+                        content: url('/images/svg/arrow-testimonios.svg');
+                    }
+                  }
+              }
+          }
+          .--testimonio_2{
+            margin-top: 100px;
+            @include mobile{
+                display: none;
             }
-            b{
-                font-weight: 500;
-            }
-        }
-        .--author{
-            font-size: 24px;
-            font-weight: bold;
-            font-style: italic;
-            @include notebook{
-                font-size: 17px;
-            }
-        }
-        img{
-            max-width: 100%;
-        }
+              .swiper-slide {
+                background: $white;
+        
+                /* Center slide text vertically */
+                display: grid;
+                grid-template-columns: 66px 499px auto;
+                column-gap: 34px;
+                @include notebook{
+                    grid-template-columns: 44px 357px auto;
+                }
+                @include tablet{
+                    grid-template-columns: 29px 211px auto;
+                    column-gap: 14px;
+                }
+                .--content_testimonios_copy{
+                    padding-left: 68px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    @include notebook{
+                        padding-left: 0;
+                    }
+                    @include mobile{
+                        margin-left: 50px;
+                    }
+                }
+                .--content_testimonios_quote{
+                  margin-top: 0;
+                  font-size: 38px;
+                  text-transform: uppercase;
+                  font-weight: 300;
+                  font-style: italic;
+                  @include notebook{
+                      font-size: 25px;
+                      padding-right: 30px;
+                  }
+                  @include tablet{
+                    max-width: 100%;
+                    margin-left: auto;
+                    font-size: 20px;
+                }
+                  b{
+                      font-weight: 500;
+                  }
+              }
+              .--content_testimonios_author{
+                  font-size: 24px;
+                  font-weight: bold;
+                  font-style: italic;
+                  margin-bottom: 0;
+                  @include notebook{
+                      font-size: 17px;
+                  }
+                  @include tablet{
+                      max-width: 100%;
+                      
+                  }
+              }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+              }
+              .swiper-button-prev{
+                display: block;
+                left: 0;
+                width: 66px;
+                top: 22px;
+                bottom: 0;
+                background-color: $green;
+                height: 100%;
+                @include notebook{
+                    width: 44px;
+                }
+                @include tablet{
+                    width: 29px;
+                }
+                  &::after{
+                    width: 40px;
+                    height: auto;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 2%;
+                    content: '';
+                    @include notebook{
+                        width: 20px;
+                        right: 10px;
+                        bottom: 10px;
+                    }
+                    @include tablet{
+                        width: 15px;
+                        right: 9px;
+                        bottom: -20px;
+                    }
+                    @include mobile{
+                        content: url('/images/svg/arrow-testimonios.svg');
+                    }
+                  }
+              }
+          }
     }
 }

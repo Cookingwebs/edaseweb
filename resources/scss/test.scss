@@ -1,0 +1,148 @@
+#test-page{
+    .swiper {
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+      }
+      .--testimonio_1{
+          margin-top: 100px;
+          .swiper-slide {
+            background: $white;
+    
+            /* Center slide text vertically */
+            display: grid;
+            grid-template-columns: auto 500px 66px;
+            column-gap: 34px;
+            .--content_testimonios_copy{
+                padding-right: 68px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            .--content_testimonios_quote{
+              margin-top: 0;
+              font-size: 38px;
+              text-transform: uppercase;
+              font-weight: 300;
+              font-style: italic;
+              @include notebook{
+                  font-size: 27px;
+                  padding-right: 30px;
+              }
+              @include tablet{
+                  max-width: 80%;
+                  margin-left: auto;
+                  font-size: 22px;
+              }
+              b{
+                  font-weight: 500;
+              }
+          }
+          .--content_testimonios_author{
+              font-size: 24px;
+              font-weight: bold;
+              font-style: italic;
+              margin-bottom: 0;
+              @include notebook{
+                  font-size: 17px;
+              }
+              @include tablet{
+                  max-width: 90%;
+                  margin-left: auto;
+              }
+          }
+            img{
+                width: 100%;
+                height: auto;
+            }
+          }
+          .swiper-button-next{
+            display: block;
+            right: 0;
+            width: 66px;
+            top: 22px;
+            bottom: 0;
+            background-color: $green;
+            height: 100%;
+              &::after{
+                width: 40px;
+                height: auto;
+                position: absolute;
+                right: 15px;
+                bottom: 2%;
+                content: url('/images/svg/arrow-next-blue.svg');
+              }
+          }
+      }
+      .--testimonio_2{
+        margin-top: 100px;
+          .swiper-slide {
+            background: $white;
+    
+            /* Center slide text vertically */
+            display: grid;
+            grid-template-columns: 66px 500px auto;
+            column-gap: 34px;
+            .--content_testimonios_copy{
+                padding-left: 68px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            .--content_testimonios_quote{
+              margin-top: 0;
+              font-size: 38px;
+              text-transform: uppercase;
+              font-weight: 300;
+              font-style: italic;
+              @include notebook{
+                  font-size: 27px;
+                  padding-right: 30px;
+              }
+              @include tablet{
+                  max-width: 80%;
+                  margin-left: auto;
+                  font-size: 22px;
+              }
+              b{
+                  font-weight: 500;
+              }
+          }
+          .--content_testimonios_author{
+              font-size: 24px;
+              font-weight: bold;
+              font-style: italic;
+              margin-bottom: 0;
+              @include notebook{
+                  font-size: 17px;
+              }
+              @include tablet{
+                  max-width: 90%;
+                  margin-left: auto;
+              }
+          }
+            img{
+                width: 100%;
+                height: auto;
+            }
+          }
+          .swiper-button-prev{
+            display: block;
+            left: 0;
+            width: 66px;
+            top: 22px;
+            bottom: 0;
+            background-color: $green;
+            height: 100%;
+              &::after{
+                width: 40px;
+                height: auto;
+                position: absolute;
+                right: 15px;
+                bottom: 2%;
+                transform: rotate(180deg);
+                content: url('/images/svg/arrow-next-blue.svg');
+              }
+          }
+      }
+}

@@ -13,9 +13,94 @@ const init = () => {
   moveTransition();
   // moveTestimonios();
   moveProfesores();
+  scrollAnimation();
+  desplegableMobile();
+
+  formCabecera();
+  formBecas();
+
+  let cookie_consent = getCookie("user_cookie_consent");
+  if(cookie_consent != ""){
+      document.getElementById("cookies").style.display = "none";
+  }else{
+      document.getElementById("cookies").style.display = "block";
+  }
+
   $('#imgAlma').attr('src', '/images/svg/bubble_2.svg');
+
+  let idSesion = getCookie('ID-session');
+  if(idSesion){
+  console.log(idSesion)
+  }else{
+  setCookie('ID-session', guid(), 30);
+  }
+
+  var swiper = new Swiper(".--testimonio_1", {
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".--testimonio_1_button_next",
+      prevEl: ".--testimonio_1_button_prev",
+      },
+  });
+  var swiper = new Swiper(".--testimonio_2", {
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: ".--testimonio_2_button_next",
+      prevEl: ".--testimonio_2_button_prev",
+      },
+  });
 }
 
+
+const scrollAnimation = function(){
+    $('.--go_form').on('click', function(){
+        $('body, html').animate({
+            scrollTop: $('#b_cabecera').offset().top
+        }, 1000);
+    });
+    $('.--bottom').on('click', function(){
+        $('body, html').animate({
+            scrollTop: $('body').offset().top
+        }, 1000);
+    });
+    $('.--arrow').on('click', function(){
+        $('body, html').animate({
+            scrollTop: $('#b_creamos').offset().top
+        }, 1000);
+    });
+    var lastScrollTop = 0;
+
+    $(window).scroll(function(event){
+       var st = $(this).scrollTop();
+       const navHeight = Math.round($('#nav').outerHeight());
+       
+       $('#nav').css('top', `0px`);
+       $('.--icon_menu').css('top', `10px`);
+       if(st > navHeight){
+           if (st > lastScrollTop){
+            $('#nav').css('top', `-${navHeight}px`);
+            $('.--icon_menu').css('top', `-${navHeight}px`);
+            }
+            else {
+                $('#nav').css('top', `0px`);
+                $('.--icon_menu').css('top', `10px`);
+           }
+        }else{
+            $('#nav').css('top', `0px`);
+            $('.--icon_menu').css('top', `10px`);
+        }
+       lastScrollTop = st;
+    });
+}
+
+function acceptCookieConsent(){
+    deleteCookie('user_cookie_consent');
+    setCookie('user_cookie_consent', 1, 30);
+    document.getElementById("cookies").style.display = "none";
+  }
+  
 
 const moveProfesores = function(){
   $('.--profesorado').on('click', function(){
@@ -23,7 +108,7 @@ const moveProfesores = function(){
       var oldPage = page;
       page = parseInt(page);
       page++;
-      if(page > 3){
+      if(page > 6){
           page = 1;
       }
       $('.--profesorado').attr('data', page);
@@ -44,51 +129,9 @@ const moveProfesores = function(){
       setTimeout(function(){
           
       }, 500);
-      setTimeout(function(){
-          // $(`.--profesorado_bloque p[data="${oldPage}"]`).fadeOut();
-          // $(`.--profesorado_bloque p[data="${page}"]`).fadeIn();
-         
-      }, 450);
   });
 }
 
-
-const moveTestimonios = function(){
-  $('.--testimonios__1').on('click', function(){
-      var page = $('.--testimonios__1').attr('data');
-      var animation1 = $(`.--testimonios__1  .--content_testimonios[data="${page}"]`);
-      $(`.--testimonios__1 .--content_testimonios[data="${page}"]`).css('transform', 'translateX(50vw)');
-      $(`.--testimonios__1 .--content_testimonios[data="${page}"]`).fadeOut();
-      $(`.--testimonios__1 .--content_testimonios[data="${page}"]`).removeClass('--visible');
-      setTimeout(() => {
-          $(animation1).css('transform', 'translateX(-50vw)');
-      }, 500);
-      page = parseInt(page);
-      page++;
-      if(page > 2){
-          page = 1;
-      }
-      $('.--testimonios__1').attr('data', page);
-      $(`.--testimonios__1 .--content_testimonios[data="${page}"]`).fadeIn().css("display", "grid").addClass('--visible').css('transform', 'translateX(0px)');
-  });
-  $('.--testimonios__2').on('click', function(){
-      var page = $('.--testimonios__2').attr('data');
-      var animation1 = $(`.--testimonios__2  .--content_testimonios[data="${page}"]`);
-      $(`.--testimonios__2 .--content_testimonios[data="${page}"]`).css('transform', 'translateX(-50vw)');
-      $(`.--testimonios__2 .--content_testimonios[data="${page}"]`).fadeOut();
-      $(`.--testimonios__2 .--content_testimonios[data="${page}"]`).removeClass('--visible');
-      setTimeout(() => {
-          $(animation1).css('transform', 'translateX(50vw)');
-      }, 500);
-      page = parseInt(page);
-      page++;
-      if(page > 2){
-          page = 1;
-      }
-      $('.--testimonios__2').attr('data', page);
-      $(`.--testimonios__2 .--content_testimonios[data="${page}"]`).fadeIn().css("display", "grid").addClass('--visible').css('transform', 'translateX(0px)');
-  });
-}
 
 const contador = function(el, sumatoria){
   var contentContador = el.html();
@@ -127,30 +170,6 @@ const moveTransition = function(){
           $('.--mascara_transition').removeClass('--transition');
       }, 500);
   });
-  // var el = document.getElementById('__transition_niveles');
-  // swipedetect(el, function(swipedir){
-  //         // swipedir contains either "none", "left", "right", "top", or "down"
-  //        if(swipedir == "left"){
-  //         $('.--mascara_transition').addClass('--transition');
-  //         var page = $('.--content_transition').attr('data');
-  //         page = parseInt(page);
-  //         page++;
-  //         if(page > 4){
-  //             page = 1;
-  //         }
-  //         $('.--content_transition').attr('data', page);
-  //         $('.--progress_transition').attr('data', page);
-  //         setTimeout(function(){
-  //             $('.--b_title_transition h3').removeClass('--active');
-  //         $(`.--b_title_transition h3[data="${page}"]`).addClass('--active');
-  //         $('.--b_copy_transition p').removeClass('--active');
-  //         $(`.--b_copy_transition p[data="${page}"]`).addClass('--active');
-  //         }, 450);
-  //         setTimeout(function(){
-  //             $('.--mascara_transition').removeClass('--transition');
-  //         }, 500);
-  //        }
-  //     });
 }
 
 const moveCarrousel = function(){
@@ -174,30 +193,6 @@ const moveCarrousel = function(){
           $('.--franja_carrousel').removeClass('--transition');
       }, 500);
   });
-  // var el = document.getElementById('__container_carrousel');
-  // swipedetect(el, function(swipedir){
-  //         // swipedir contains either "none", "left", "right", "top", or "down"
-  //        if(swipedir == "left"){
-  //         $('.--franja_carrousel').addClass('--transition');
-  //         var page = $('#__page_carrousel span').html();
-  //         page = parseInt(page);
-  //         page++;
-  //         if(page > 4){
-  //             page = 1;
-  //         }
-  //         $('.--franja_carrousel').attr('data', page);
-  //         $('#__page_carrousel span').html(page);
-  //         setTimeout(function(){
-  //             $('.--b_title_carrousel h3').removeClass('--active');
-  //             $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
-  //             $('.--b_copy_carrousel p').removeClass('--active');
-  //             $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
-  //         }, 450);
-  //         setTimeout(function(){
-  //             $('.--franja_carrousel').removeClass('--transition');
-  //         }, 500);
-  //        }
-  //     });
 }
 
 
@@ -222,7 +217,7 @@ const moveSelect = function(){
 }
 
 const hoverMenu = function(){
-      $('.--menu_list_item_desp').on('mouseenter', function(){
+      $('.--menu_list_item_desp span').on('mouseenter', function(){
           // console.log('desplegar');
           let attrItemMenu = $(this).attr('data');
           $('.--desplegable').addClass('--desplegado');
@@ -329,4 +324,496 @@ function swipedetect(el, callback){
       handleswipe(swipedir)
       e.preventDefault()
   }, false)
+}
+
+// Generar id random
+let guid = () => {
+    let s4 = () => {
+        return Math.floor((1 + Math.random()) * 0x10000)
+            .toString(16)
+            .substring(1);
+    }
+    //return id of format 'aaaaaaaa'-'aaaa'-'aaaa'-'aaaa'-'aaaaaaaaaaaa'
+    return s4() + s4() + '-' + s4() + s4();
+}
+
+// Cookies
+
+    // Create cookie
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+    // Delete cookie
+function deleteCookie(cname) {
+    const d = new Date();
+    d.setTime(d.getTime() + (24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=;" + expires + ";path=/";
+}
+
+    // Read cookie
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+// GET GClid cookie
+
+// Get gclid de localstorage
+
+function getParam(p) {
+    var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function getExpiryRecord(value) {
+    var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // caducidad de 90 días, en milisegundos
+
+    var expiryDate = new Date().getTime() + expiryPeriod;
+    return {value: value, expiryDate: expiryDate};
+}
+
+function addGclid() {
+    var gclidParam = getParam('gclid');
+    // var gclidFormFields = ['gclid_field', 'gclid_field_footer']; // aquí se especifican todas las formas posibles de ID de campo de formulario
+    var gclidRecord = null;
+    // var currGclidFormField;
+
+    var gclsrcParam = getParam('gclsrc');
+    var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+    // gclidFormFields.forEach(function (field) {
+    //     if (document.getElementById(field)) {
+    //         currGclidFormField = document.getElementById(field);
+    //     }
+    // });
+
+    if (gclidParam && isGclsrcValid) {
+        gclidRecord = getExpiryRecord(gclidParam);
+        localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+    }
+
+    var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+    var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+
+    if (isGclidValid) {
+        return gclid.value;
+    }
+}
+
+// window.addEventListener('load', addGclid);
+
+// Forms
+
+const formCabecera = function(){
+    $('#cursos_form .--cta_submit').on('click', function(e){
+        e.preventDefault();
+        let validMail = false;
+        let validPhone = false;
+        let validAgree = false;
+        let expregPhone = new RegExp('[0-9]{9}');
+
+        let name = $('#cursos_form input[name="name_input"]');
+        let phone = $('#cursos_form input[name="phone_input"]');
+        let email = $('#cursos_form input[name="email_input"]');
+        let agree = $('#cursos_form input[name="aviso_input"]');
+        let notificaciones = $('#cursos_form input[name="notificaciones_input"]');
+        let enterprise = $('#cursos_form input[name="enterprise_input"]');
+        let canal = "Web";
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+    
+        if(urlParams.get('gclid')){
+            canal = "Adwords";
+        }
+        if(urlParams.get('utm_source')){
+            canal = urlParams.get('utm_source');
+        }
+        console.log(canal);
+        if(email){
+            if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
+                $('.--alert_cabecera_email').fadeIn();
+            }else{
+                $('.--alert_cabecera_email').fadeOut();
+                validMail = true;
+            }
+        }else{
+            $('.--alert_cabecera_email').fadeOut();
+            validMail = true;
+        }
+
+        if(!phone.val().match(expregPhone) || !phone){
+            $('.--alert_cabecera_phone').fadeIn();
+        }else{
+            $('.--alert_cabecera_phone').fadeOut();
+            validPhone = true;
+        }
+
+        if(!agree.prop('checked')){
+            $('.--alert_cabecera_agree').fadeIn();
+        }else{
+            $('.--alert_cabecera_agree').fadeOut();
+            validAgree = true;
+        }    
+
+        if(notificaciones.prop('checked')){
+            notificaciones = 1;
+        }else{
+            notificaciones = 0
+        }
+
+        if(validMail && validPhone && validAgree){
+            console.log('validación ok');
+            let datos = {
+                "_token": $("meta[name='csrf-token']").attr("content"),
+                'name': name.val(),
+                'phone': phone.val(),
+                'email': email.val(),
+                'notificaciones': notificaciones,
+                'canal': canal,
+                'url': window.location.href,
+                'idEnterprise': enterprise.val(),
+                'idAnalytics': getCookie('ID-session'),
+                'gclid': addGclid()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/send-email",
+                datatype: "text",
+                data: datos,
+                beforeSend: function() {
+                    $('#cursos_form .--cta_submit').attr('disabled');
+                    $('#cursos_form .--cta_submit').addClass('--spinner');
+                  },
+                success: function(result){
+                    $('#cursos_form .--cta_submit').removeAttr("disabled");
+                    $('#cursos_form').trigger("reset");
+                    $('#cursos_form .--cta_submit').removeClass('--spinner');
+                    // result = JSON.parse(JSON.stringify(result));
+                    console.log(result);
+                    if(result == 1){
+                        $('.--alert_cabecera_sucess').fadeIn();
+                        fbq('track', 'CompleteRegistration');
+                          var cookieSesion = getCookie('ID-session');
+                          window.lintrk('track', { conversion_id: 6105324 });
+                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','__gaCustomTracker');
+              
+                                if (typeof gaData !== 'undefined') {
+              
+                              __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
+                                }
+                               __gaCustomTracker('send', 'event', 'formulario', 'envio', 'cabecera', {'dimension3' : cookieSesion});
+                    }else{
+                        $('.--alert_cabecera_error').fadeIn();
+                    }
+                    
+                   
+                },  error: function(jqXHR, textStatus, errorThrown) {
+                              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+
+                      }
+            });
+        }
+    });
+        // console.log(datos);
+    $('#cursos_form_footer .--cta_submit').on('click', function(e){
+        e.preventDefault();
+        let validMail = false;
+        let validPhone = false;
+        let validAgree = false;
+        let expregPhone = new RegExp('[0-9]{9}');
+
+        let name = $('#cursos_form_footer input[name="name_input"]');
+        let phone = $('#cursos_form_footer input[name="phone_input"]');
+        let email = $('#cursos_form_footer input[name="email_input"]');
+        let agree = $('#cursos_form_footer input[name="aviso_input"]');
+        let notificaciones = $('#cursos_form_footer input[name="notificaciones_input"]');
+        let enterprise = $('#cursos_form_footer input[name="enterprise_input"]');
+        let canal = "Web";
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+    
+        if(urlParams.get('gclid')){
+            canal = "Adwords";
+        }
+        if(urlParams.get('utm_source')){
+            canal = urlParams.get('utm_source');
+        }
+        console.log(canal);
+        if(email){
+            if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
+                $('.--alert_footer_email').fadeIn();
+            }else{
+                $('.--alert_footer_email').fadeOut();
+                validMail = true;
+            }
+        }else{
+            $('.--alert_footer_email').fadeOut();
+            validMail = true;
+        }
+
+        if(!phone.val().match(expregPhone) || !phone){
+            $('.--alert_footer_phone').fadeIn();
+        }else{
+            $('.--alert_footer_phone').fadeOut();
+            validPhone = true;
+        }
+
+        if(!agree.prop('checked')){
+            $('.--alert_footer_agree').fadeIn();
+        }else{
+            $('.--alert_footer_agree').fadeOut();
+            validAgree = true;
+        }    
+
+        if(notificaciones.prop('checked')){
+            notificaciones = 1;
+        }else{
+            notificaciones = 0
+        }
+
+        if(validMail && validPhone && validAgree){
+            console.log('validación ok');
+            let datos = {
+                "_token": $("meta[name='csrf-token']").attr("content"),
+                'name': name.val(),
+                'phone': phone.val(),
+                'email': email.val(),
+                'notificaciones': notificaciones,
+                'canal': canal,
+                'url': window.location.href,
+                'idEnterprise': enterprise.val(),
+                'idAnalytics': getCookie('ID-session'),
+                'gclid': addGclid()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/send-email",
+                datatype: "text",
+                data: datos,
+                beforeSend: function() {
+                    $('#cursos_form_footer .--cta_submit').attr('disabled');
+                    $('#cursos_form_footer .--cta_submit').addClass('--spinner');
+                  },
+                success: function(result){
+                    $('#cursos_form_footer .--cta_submit').removeAttr("disabled");
+                    $('#cursos_form_footer').trigger("reset");
+                    $('#cursos_form_footer .--cta_submit').removeClass('--spinner');
+                    // result = JSON.parse(JSON.stringify(result));
+                    console.log(result);
+                    if(result == 1){
+                        $('.--alert_footer_sucess').fadeIn();
+                        fbq('track', 'CompleteRegistration');
+                          var cookieSesion = getCookie('ID-session');
+                          window.lintrk('track', { conversion_id: 6105324 });
+                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','__gaCustomTracker');
+              
+                                if (typeof gaData !== 'undefined') {
+              
+                              __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
+                                }
+                               __gaCustomTracker('send', 'event', 'formulario', 'envio', 'footer', {'dimension3' : cookieSesion});
+                    }else{
+                        $('.--alert_footer_error').fadeIn();
+                    }
+                    
+                   
+                },  error: function(jqXHR, textStatus, errorThrown) {
+                              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+
+                      }
+            });
+        }
+
+        // console.log(datos);
+    })
+
+}
+
+const formBecas = function(){
+        // console.log(datos);
+    $('#admision_form .--cta_submit').on('click', function(e){
+        e.preventDefault();
+        let validMail = false;
+        let validPhone = false;
+        let validAgree = false;
+        let validEstudios = false;
+        let validPrevia = false;
+        let validObjetivo = false;
+        let expregPhone = new RegExp('[0-9]{9}');
+
+        let name = $('#admision_form input[name="name_input"]');
+        let phone = $('#admision_form input[name="phone_input"]');
+        let email = $('#admision_form input[name="email_input"]');
+        let estudios = $('#admision_form select[name="plan_estudios_input"]');
+        let previa = $('#admision_form input[name="formacion_previa_input"]:checked');
+        let objetivo = $('#admision_form input[name="objetivo_input"]:checked');
+
+        let agree = $('#admision_form input[name="aviso_input"]');
+        let enterprise = $('#admision_form input[name="enterprise_input"]');
+        let canal = "Web";
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+    
+        if(urlParams.get('gclid')){
+            canal = "Adwords";
+        }
+        if(urlParams.get('utm_source')){
+            canal = urlParams.get('utm_source');
+        }
+
+        if(email){
+            if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
+                $('.--alert_becas_email').fadeIn();
+            }else{
+                $('.--alert_becas_email').fadeOut();
+                validMail = true;
+            }
+        }else{
+            $('.--alert_becas_email').fadeOut();
+            validMail = true;
+        }
+
+        if(!phone.val().match(expregPhone) || !phone){
+            $('.--alert_becas_phone').fadeIn();
+        }else{
+            $('.--alert_becas_phone').fadeOut();
+            validPhone = true;
+        }
+
+        if(!estudios.val() || estudios.val() == 'null' || estudios.val() == '0'){
+            $('.--alert_becas_estudios').fadeIn();
+        }else{
+             $('.--alert_becas_estudios').fadeOut();
+            validEstudios = true;
+        }
+
+        if(!previa.val()){
+            $('.--alert_becas_previa').fadeIn();
+        }else{
+             $('.--alert_becas_previa').fadeOut();
+            validPrevia = true;
+        }
+
+        if(!objetivo.val()){
+            $('.--alert_becas_objetivo').fadeIn();
+        }else{
+             $('.--alert_becas_objetivo').fadeOut();
+            validObjetivo = true;
+        }
+
+        if(!agree.prop('checked')){
+            $('.--alert_becas_agree').fadeIn();
+        }else{
+            $('.--alert_becas_agree').fadeOut();
+            validAgree = true;
+        }    
+
+
+
+        if(validMail && validPhone && validAgree && validEstudios && validPrevia && validObjetivo){
+            console.log('validación ok');
+            var consulta = `{
+  Plan de estudios : ${estudios.val()},
+  Experiencia previa : ${previa.val()},
+  Objetivo : ${objetivo.val()},
+}`;
+            // var consulta = {
+            //     'Plan de estudios' : estudios.val(),
+            //     'Experiencia previa' : previa.val(),
+            //     'Objetivo' : objetivo.val(),
+            // };
+            let datos = {
+                "_token": $("meta[name='csrf-token']").attr("content"),
+                'name': name.val(),
+                'phone': phone.val(),
+                'email': email.val(),
+                'notificaciones': 1,
+                'consulta': consulta,
+                'canal': canal,
+                'url': window.location.href,
+                'idEnterprise': enterprise.val(),
+                'idAnalytics': getCookie('ID-session'),
+                'gclid': addGclid()
+            };
+
+            console.log(datos);
+
+            $.ajax({
+                type: "POST",
+                url: "/send-email-becas",
+                datatype: "text",
+                data: datos,
+                beforeSend: function() {
+                    $('#admision_form .--cta_submit').attr('disabled');
+                  },
+                success: function(result){
+                    $('#admision_form .--cta_submit').removeAttr("disabled");
+                    $('#admision_form').trigger("reset");
+                    // result = JSON.parse(JSON.stringify(result));
+                    console.log(result);
+                    if(result == 1){
+                        $('.--alert_becas_sucess').fadeIn();
+                        fbq('track', 'CompleteRegistration');
+                          var cookieSesion = getCookie('ID-session');
+                          window.lintrk('track', { conversion_id: 6105324 });
+                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','__gaCustomTracker');
+              
+                                if (typeof gaData !== 'undefined') {
+              
+                              __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
+                                }
+                               __gaCustomTracker('send', 'event', 'formulario', 'envio', 'becas', {'dimension3' : cookieSesion});
+                    }else{
+                        $('.--alert_becas_error').fadeIn();
+                    }
+                    
+                   
+                },  error: function(jqXHR, textStatus, errorThrown) {
+                              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+
+                      }
+            });
+        }
+
+        // console.log(datos);
+    })
+
+}
+
+
+const desplegableMobile = () => {
+    $('.--vida_bloque_img').on('click', function(){
+        $('.--vida_bloque_img').removeClass('--active');
+        $(this).addClass('--active');
+    })
 }

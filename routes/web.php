@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AvisosController;
 use App\Http\Controllers\BecasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -9,6 +10,8 @@ use App\Http\Controllers\MbaController;
 use App\Http\Controllers\MetodologiaController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\TecnicoController;
+use App\Http\Controllers\EmailController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +35,17 @@ Route::get('/tecnico-asesoria', TecnicoController::class)->name('tecnico');
 Route::get('/sitemap-manually', [SitemapController::class, "manually"]);
 Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
 
+Route::post('/send-email', [EmailController::class, 'sendEmail']);
+Route::post('/send-email-becas', [EmailController::class, 'sendEmailBecas']);
 
 
-
-// Route::get('/terminos-condiciones', TecnicoController::class);
+Route::get('/terminos-condiciones', [AvisosController::class, "terminos"])->name('terminos');
+Route::get('/politica-privacidad', [AvisosController::class, "politica"])->name('politica');
+Route::get('/aviso-legal', [AvisosController::class, "aviso"])->name('aviso');
+Route::get('/politica-cookies', [AvisosController::class, "cookies"])->name('cookies');
 // Route::get('/politica-privacidad', TecnicoController::class);
 // Route::get('/procesamiento-datos', TecnicoController::class);
+
+
+
+Route::get('/test', TestController::class)->name('test');

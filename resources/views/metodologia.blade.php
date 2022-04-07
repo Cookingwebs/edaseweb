@@ -13,11 +13,16 @@
     </div>
     <div class="--aside" id="b_pilares">
         <div class="--copy">
-            <p class="--section_title">NUESTROS PILARES</p>
+            <p class="--section_title">PILARES</p>
         </div>
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --top">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <h2 class="--title">ESTUDIAR EN <b>EDASE</b></h2>
            <h2 class="--subtitle">LA ESCUELA DE ASESORES APUESTA POR<br class="d-none d-md-block">UNA METODOLOGÍA <b>BASADA EN 3 PILARES:</b></h2>
            <div class="--2_columns">
@@ -30,7 +35,7 @@
                 <p class="--pilares_boque_copy_text">Cuentas con el apoyo permanente de especialistas en las distintas materias</p>
                </div>
                <div class="--pilares_bloque_img">
-                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                    <img src="{{ URL::to('/') }}/images/metodologia/metodologia.webp" alt=""  class="lazyload">
                </div>
            </div>
         </div>
@@ -38,11 +43,12 @@
 
     <div class="--aside" id="b_especialistas">
         <div class="--copy">
-            
+            <p class="--section_title">ACOMPAÑAMIENTO</p>
         </div>
         <div class="--section">
         </div>
         <div class="--content">
+            <p class="--section_title d-xl-none">ACOMPAÑAMIENTO</p>
            <div class="--2_columns">
                <div class="--especialistas_bloque_title">
                 <h2 class="--title">Te enseñan especialistas en activo</h2>
@@ -53,7 +59,7 @@
            </div>
            <div class="--2_columns">
                <div class="--especialistas_bloque_img">
-                <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                <img src="{{ URL::to('/') }}/images/metodologia/metodologia_2.webp" alt=""  class="lazyload">
                </div>
                <div class="--especialistas_bloque_copy_2">
                 <h3 class="--pilares_bloque_copy_title">- SERVICIOS DE TUTORÍAS</h3>
@@ -72,6 +78,12 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --bottom">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
+            <p class="--section_title d-xl-none">EXPERIENCIAS</p>
            <div class="--2_columns">
                <div class="--experiencias_bloque_title">
                 <h2 class="--title">Casos 100% prácticos</h2>
@@ -80,24 +92,47 @@
                    <p class="--text_1">Los alumnos resuelven casos de clientes reales bajo supervisión para obtener el control práctico de todos los procesos, trámites y herramientas.</p>
                </div>
            </div>
-           <div class="--2_columns">
-               <div class="--experiencias_bloque_copy">
-                   <p class="--quote">“<b>Me han dado la seguridad que antes no tenía</b> a la hora de trabajar”</p>
-                   <p class="--author">José Miguel Molina</p>
-               </div>
-               <div class="--experiencias_bloque_img">
-                <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
-               </div>
-           </div>
-           <div class="--2_columns">
-               <div class="--experiencias_bloque_img">
-                   <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+           <div class="swiper mySwiper --testimonio_1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="--content_testimonios_copy">
+                    <p class="--content_testimonios_quote"><b>“No son de los que dan teoría que luego no te sirve en tu vida laboral”</b></p>
+                    <p class="--content_testimonios_author">Javier Arroyo</p>
                 </div>
-                <div class="--experiencias_bloque_copy">
-                    <p class="--quote">“Te ayudan realmente a mejorar y a <b>entender el mundo de la asesoría</b>”</p>
-                    <p class="--author">Lucía Alcaraz Fornes</p>
+                <div class="--content_testimonios_foto">
+                    <img src="{{ URL::to('/') }}/images/jose-miguel-molina.webp" alt="" class="lazyload">
                 </div>
-           </div>
+              </div>
+              <div class="swiper-slide d-md-none">
+                <div class="--content_testimonios_copy">
+                    <p class="--content_testimonios_quote">“Los casos prácticos se ajustan muy bien a la <b>realidad diaria de una asesoría”</b></p>
+                    <p class="--content_testimonios_author">Noélia Pérez</p>
+                </div>
+                <div class="--content_testimonios_foto">
+                    <img src="{{ URL::to('/') }}/images/cristina-riaza.webp" alt="" class="lazyload">
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class="swiper-button-next --testimonio_1_button_next"></div>
+            {{-- <div class="swiper-button-prev"></div> --}}
+        </div>
+
+        <div class="swiper mySwiper --testimonio_2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div></div>
+                  <div class="--content_testimonios_foto">
+                      <img src="{{ URL::to('/') }}/images/metodologia/noelia-perez.webp" alt="" class="lazyload">
+                  </div>
+                <div class="--content_testimonios_copy">
+                    <p class="--content_testimonios_quote">“Los casos prácticos se ajustan muy bien a la <b>realidad diaria de una asesoría”</b></p>
+                    <p class="--content_testimonios_author">Noélia Pérez</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev --testimonio_2_button_prev"></div>
+          </div>
         </div>
     </div>
 

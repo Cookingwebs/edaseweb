@@ -217,6 +217,7 @@
                 color: $grey-dark;
                 margin-top: 80px;
                 cursor: pointer;
+                border: none;
                 transition: 500ms opacity ease-in-out;
                 &:hover{
                     opacity: .7;
@@ -296,6 +297,11 @@
         }
     }
     #b_cifras{
+        .--section{
+            &::before{
+                bottom: -50px;
+            }
+        }
         .--content{
             @include tablet{
                 max-width: 100%;

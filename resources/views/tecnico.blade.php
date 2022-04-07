@@ -18,6 +18,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --top">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                     <h2 class="--title">TÉCNICO EN <br>
@@ -61,7 +66,7 @@
                    <p>Encuentra tu sitio en el sector de las asesorías, aunque no tengas experiencia ni formación previa.</p>
                 </div>
                 <div class="--master_img">
-                 <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                 <img src="{{ URL::to('/') }}/images/tecnico/tecnico.webp" alt=""  class="lazyload">
                 </div>
            </div>
            <p class="--title_2">Cuáles son las funciones de un asesor auxiliar</p>
@@ -79,7 +84,7 @@
                    <p><b>Presentar los impuestos trimestrales y anuales:</b>  IVA, retenciones, impuesto sobre sociedades, declaraciones de la renta, deducciones, etc. </p>
                 </div>
                <div class="--master_img">
-                   <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                   <img src="{{ URL::to('/') }}/images/tecnico/tecnico_2.webp" alt=""  class="lazyload">
                 </div>
         </div>
         </div>
@@ -113,7 +118,7 @@
                    <p>Accedes a ofertas exclusivas en asesorías de toda España.</p>
                </div>
            </div>
-           <div class="--cta">SOLICITA TU PLAZA</div>
+           <div class="--cta --go_form">SOLICITA TU PLAZA</div>
         </div>
     </div>
     <div class="--aside" id="b_descubre">
@@ -152,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="--cta">SOLICITA TU PLAZA</div>
+        <div class="--cta --go_form">SOLICITA TU PLAZA</div>
         </div>
     </div>
     <div class="--aside" id="b_programa">
@@ -178,6 +183,10 @@
                    <p>Tus tutores podrán atenderte por teléfono<br class="d-none d-md-block"> o chat.</p>
                </div>
            </div>
+           <div class="--cta_sub">DESCARGAR</div>
+           <div class="--cta">
+                <a href="/dossier/EDASE_Especializacion_tecnica.pdf" target="_blank">PROGRAMA</a>
+            </div>
         </div>
     </div>
     <div class="--aside" id="b_practicas">
@@ -199,7 +208,7 @@
                     <p>Obtendrás un diploma acreditativo por la formación teórica y práctica recibida.</p>
                 </div>
                 <div class="--practicas_img">
-                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                    <img src="{{ URL::to('/') }}/images/tecnico/tecnico_3.webp" alt=""  class="lazyload">
                  </div>
             </div>
         </div>
@@ -212,6 +221,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --bottom">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                    <p class="--subtitle">ACCESO <span>Y ADMISIÓN</span></p>

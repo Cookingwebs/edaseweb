@@ -10,8 +10,10 @@ use Illuminate\Http\Request;
 class MbaController extends Controller
 {
     public function __invoke(){
-        $robots = "noindex, nofollow";
-
+        $robots = "index, follow";
+        $datos = [
+            'enterprise' => 7
+        ];
         $title = "MBA";
         $description = "Estrategia formativa y empresarial ▷ Lanza tu carrera junto a los directivos de la mayor Asesoría de Empresas en España";
         $og_title = "MBA en Dirección de Asesorías y Despachos【EDASE】";
@@ -19,7 +21,7 @@ class MbaController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -27,6 +29,6 @@ class MbaController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('mba');
+        return view('mba', $datos);
     }
 }

@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class MetodologiaController extends Controller
 {
     public function __invoke(){
-        $robots = "noindex, nofollow";
+        $robots = "index, follow";
 
         $title = "Metodología";
         $description = "La metodología única y exclusiva que ponen en práctica en la Escuela de Asesores creada por Ayuda T Pymes";
@@ -19,7 +19,7 @@ class MetodologiaController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

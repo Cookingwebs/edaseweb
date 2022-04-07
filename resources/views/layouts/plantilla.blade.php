@@ -7,14 +7,20 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {!! Artesaos\SEOTools\Facades\SEOTools::generate() !!}
-    
+
+
+    <link rel="icon" type="image/png" href="/images/isotipo.png"> 
+
     {{-- <link async href="{{ mix('assets/css/app.css') }}" rel="stylesheet">
     <noscript><link rel="stylesheet" href="{{ mix('assets/css/app.css') }}"></noscript> --}}
     <link rel="preload" href="{{ mix('assets/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ mix('assets/css/app.css') }}"></noscript>
     {{-- <link  async  href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"   rel="preload" as="style" onload="this.rel='stylesheets'">
 	<noscript><link rel="stylesheet" href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"></noscript> --}}
-    
+    <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"></noscript>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-205246474-2"></script>
     <script async>
@@ -33,6 +39,7 @@
         }(window, document, 'ttq');
         </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer ></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 <script src='/assets/js/lazysizes.min.js' async ></script>
 <script src='/assets/js/app.js' defer ></script>
 </head>
@@ -42,9 +49,10 @@
     @yield('content')
 
     @include('layouts.footer')
+    @include('layouts.cookies')
 </div>
  <!-- Chatbot ALMA -->
- <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="91401df0-a368-11ec-9289-add28a26e8a2" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
+ <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="8db6d920-b655-11ec-8e32-575a89d49389" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
  <!-- Fin Chatbot ALMA -->
  <script>
 

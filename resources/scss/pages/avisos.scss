@@ -1,0 +1,64 @@
+#avisos-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        .--copy{
+            top: 100px;
+        }
+        .--section {
+            padding-bottom: 40px;
+            &::before{
+                bottom: -50px;
+            }
+        }
+    }
+    #b_pilares{
+        .--copy{
+            top: 100px;
+        }
+        h3{
+            color: $grey-dark;
+            margin-top: 50px;
+            line-height: 1.5em;
+        }
+        h4{
+            line-height: 1.5em;
+            color: $grey-dark;
+        }
+        ul{
+            li{
+                color: $grey-dark;
+                margin-bottom: 10px;
+                line-height: 1.5em;
+                &::marker{
+                    content: "+ ";
+                    color: $green;
+                }
+            }
+        }
+        p{
+            line-height: 1.5em;
+        }
+        a{
+            text-decoration: underline;
+        }
+        b{
+            font-weight: 500;
+        }
+    }
+}

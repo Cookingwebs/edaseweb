@@ -18,6 +18,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --top">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                     <h2 class="--title">Fiscal,<br>
@@ -48,13 +53,13 @@
         <div class="--content">
            <div class="--2_columns">
                <div class="--master_img d-none d-md-block">
-                <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                <img src="{{ URL::to('/') }}/images/master/master-asesoria.webp" alt="" class="lazyload">
                </div>
                <div class="--master_copy_1">
                     <h1 class="--title">Máster<br class="d-none d-md-block"> Asesoría</h1>
-                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="" class="d-md-none">
+                    <img src="{{ URL::to('/') }}/images/master/master-asesoria.webp" alt="" class="d-md-none lazyload">
                     <p class="--subtitle">IMPARTIDO POR LOS PROFESIONALES DE LA ASESORÍA Nº1 EN ESPAÑA</p>
-                    <p>Fórmate en el asesoramiento para empresas y autónomos con los líderes del sector desde un enfoque multidisciplinar y tecnológico. </p>
+                    <p class="--text_1">Fórmate en el asesoramiento para empresas y autónomos con los líderes del sector desde un enfoque multidisciplinar y tecnológico. </p>
                </div>
            </div>
            <p class="--title_2">Qué distingue al máster de asesoría fiscal, laboral y contable de EDASE</p>
@@ -72,7 +77,7 @@
                    <p>Tus docentes son <br class="d-md-none">especialistas en activo.</p>
                 </div>
                <div class="--master_img">
-                   <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                   <img src="{{ URL::to('/') }}/images/master/master-asesoria_2.webp" alt="" class="lazyload">
                 </div>
         </div>
         </div>
@@ -106,7 +111,7 @@
                    <p>Si quieres mejorar tus servicios.</p>
                </div>
            </div>
-           <div class="--cta">SOLICITA TU PLAZA</div>
+           <div class="--cta --go_form">SOLICITA TU PLAZA</div>
         </div>
     </div>
     <div class="--aside" id="b_descubre">
@@ -167,6 +172,65 @@
         </div>
         </div>
     </div>
+    <div class="--aside" id="b_experiencias">
+        <div class="--copy">
+            <p class="--section_title">EXPERIENCIAS </p>
+        </div>
+        <div class="--section">
+        </div>
+        <div class="--content">
+            <p class="--section_title d-xl-none">EXPERIENCIAS</p>
+            <h2 class="--title">QUÉ OPINAN<br class="d-none d-md-block">
+                NUESTROS ALUMNOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper --testimonio_1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="--content_testimonios_copy">
+                        <p class="--content_testimonios_quote">“Siempre me había llamado la atención la asesoría, pero en la carrera dejan pasar muchos aspectos. <b>Este máster sí te prepara para trabajar”</b></p>
+                        <p class="--content_testimonios_author">Juan Mayan</p>
+                    </div>
+                    <div class="--content_testimonios_foto">
+                        <img src="{{ URL::to('/') }}/images/master/juan-mayan.webp" alt="" class="lazyload">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="--content_testimonios_copy">
+                        <p class="--content_testimonios_quote">“Estudié Relaciones Laborales y RRHH y mis conocimientos se limitaban al área laboral. <b>El máster ha multiplicado mis posibilidades”</b></p>
+                        <p class="--content_testimonios_author">Noelia Pérez</p>
+                    </div>
+                    <div class="--content_testimonios_foto">
+                        <img src="{{ URL::to('/') }}/images/metodologia/noelia-perez.webp" alt="" class="lazyload">
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="--content_testimonios_copy">
+                        <p class="--content_testimonios_quote"><b>“Lo que más me ha gustado es la cercanía con los profesoras.</b> Estás en contacto con ellas y en cualquier momento pueden resolverte cualquier duda”</p>
+                        <p class="--content_testimonios_author">Sergio Pérez</p>
+                    </div>
+                    <div class="--content_testimonios_foto">
+                        <img src="{{ URL::to('/') }}/images/master/sergio-perez.webp" alt="" class="lazyload">
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="--content_testimonios_copy">
+                        <p class="--content_testimonios_quote">“Las profesoras lo hacen ameno y te lo explican todo muy bien, <b>mil veces si hace falta”</b></p>
+                            <p class="--content_testimonios_author">Manuel Rodríguez</p>
+                    </div>
+                    <div class="--content_testimonios_foto">
+                        <img src="{{ URL::to('/') }}/images/master/manuel-rodriguez.webp" alt="" class="lazyload">
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="swiper-button-next --testimonio_1_button_next"></div>
+                {{-- <div class="swiper-button-prev"></div> --}}
+            </div>
+        </div>
+              
+        </div>
     <div class="--aside" id="b_programa">
         <div class="--copy">
             <p class="--section_title">PROGRAMA </p>
@@ -176,8 +240,7 @@
         <div class="--content">
             <p class="--section_title d-xl-none">PROGRAMA</p>
            <h2 class="--title">Plan de estudios</h2>
-           <p class="--subtitle">LA FORMACIÓN TÉCNICA<br>
-            SE DIVIDE EN LAS <b>TRES ÁREAS</b></p>
+           <p class="--subtitle">FORMACIÓN TÉCNICA Y PRÁCTICAS<br> ASESORADAS EN LAS <b>TRES ÁREAS</b></p>
            <div class="--3_columns">
                <div class="--programa_copy">
                    <h3 class="--programa_title">LABORAL</h3>
@@ -193,21 +256,21 @@
                </div>
            </div>
            <div class="--cta_sub">DESCARGAR</div>
-           <div class="--cta">PROGRAMA</div>
+           <div class="--cta">
+                <a href="/dossier/EDASE_Master_asesor_experto.pdf" target="_blank">PROGRAMA</a>
+            </div>
         </div>
     </div>
     <div class="--aside" id="b_practicas">
         <div class="--copy">
-            <p class="--section_title">PRACTICAS</p>
+            <p class="--section_title">Modalidades</p>
         </div>
         <div class="--section">
         </div>
         <div class="--content">
-            <p class="--section_title d-xl-none">PRACTICAS</p>
-           <h2 class="--title">Prácticas aseguradas</h2>
-           <p class="--subtitle">TE CONECTAMOS CON EL MERCADO LABORAL</p>
-           <h2 class="--title_2">Modalidades</h2>
-           <p class="--subtitle_2"><b>3 tipos</b> de convocatorias</p>
+            <p class="--section_title d-xl-none">Modalidades</p>
+           <h2 class="--title">Modalidades</h2>
+           <p class="--subtitle"><b>3 tipos</b> de convocatorias</p>
            <div class="--transition_niveles" id="__transition_niveles">
             <div class="--content_transition" data="1">
                 <div class="--b_title_transition">
@@ -223,9 +286,9 @@
                 </div>
             </div>
             <div class="--b_foto_transition">
-                <img src="{{ URL::to('/') }}/images/conocenos/foto-6.jpg" alt="" data="1" class="--active">
-                <img src="{{ URL::to('/') }}/images/conocenos/foto-6.jpg" alt="" data="2">
-                <img src="{{ URL::to('/') }}/images/conocenos/foto-6.jpg" alt="" data="3">
+                <img src="{{ URL::to('/') }}/images/master/online.webp" alt="" data="1" class="--active lazyload">
+                <img src="{{ URL::to('/') }}/images/master/presencial.webp" alt="" data="2" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/master/streaming.webp" alt="" data="3" class="lazyload">
             </div>
             <div class="--mascara_transition">
             </div>
@@ -241,6 +304,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --bottom">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                    <p class="--subtitle">ACCESO <span>Y ADMISIÓN</span></p>

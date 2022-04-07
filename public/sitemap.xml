@@ -1,3 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://127.0.0.1:8000</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/metodologia</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/admisiones</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/master-asesoria</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/mba</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/tecnico-asesoria</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://127.0.0.1:8000/conocenos</loc>
+        <lastmod>2022-04-07T08:11:55+00:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>

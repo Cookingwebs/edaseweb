@@ -18,6 +18,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --top">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                     <h2 class="--title">Especialización <br>
@@ -49,11 +54,11 @@
         <div class="--content">
            <div class="--2_columns">
                <div class="--master_img d-none d-md-block">
-                <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
                </div>
                <div class="--master_copy_1">
                     <h1 class="--title">Programa MBA<br> en asesoría</h1>
-                    <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="" class="d-md-none">
+                    <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="d-md-none lazyload">
                     <p class="--subtitle">ESTRATEGIA EMPRESARIAL CON LOS DIRECTIVOS DE AYUDA T PYMES</p>
                     <p>Aprovecha tus conocimientos y experiencia para conseguir un puesto directivo o desarrollar un negocio en el <b>mundo de la asesoría.</b></p>
                </div>
@@ -66,7 +71,7 @@
                    <h3 class="--title_3"><span>- 03.</span> El mercado demanda perfiles directivos</h3>
                 </div>
                <div class="--master_img">
-                   <img src="{{ URL::to('/') }}/images/metodologia/foto-metodologia.jpg" alt="">
+                   <img src="{{ URL::to('/') }}/images/mba/mba_2.webp" alt="" class="lazyload">
                 </div>
         </div>
         </div>
@@ -100,7 +105,7 @@
                    <p>Proporciona a tus clientes el mejor servicio.</p>
                </div>
            </div>
-           <div class="--cta">SOLICITA TU PLAZA</div>
+           <div class="--cta --go_form">SOLICITA TU PLAZA</div>
         </div>
     </div>
     <div class="--aside" id="b_descubre">
@@ -120,11 +125,28 @@
                    <p>Podrás realizar prácticas voluntarias en Ayuda T Pymes.</p>
                    <h3 class="--descubre_title">6 MESES de aprendizaje empresarial. <br>Con los directivos de la asesoría líder en España</h3>
                    <p>Ampliarás tus conocimientos sobre las áreas más importantes de tu negocio.</p>
-                   <h3 class="--descubre_title">Te ayudamos a crear una asesoría rentable</h3>
-                   <p>Apuesta desde el primer momento por la atención al cliente.</p>
-                   <h3 class="--descubre_title">La tecnología de nuestros despachos te permitirá ofrecer un servicio eficiente</h3>
-                   <h3 class="--descubre_title">Los asesores de Ayuda T Pymes serán tu equipo de producción</h3>
                </div>
+        </div>
+    </div>
+    <div class="--aside" id="b_tecnologia">
+        <div class="--copy">
+            <p class="--section_title">TECNOLOGÍA Y OUTSOURCING</p>
+        </div>
+        <div class="--section">
+        </div>
+        <div class="--content">
+            <p class="--section_title d-xl-none">TECNOLOGÍA Y OUTSOURCING</p>
+           <h2 class="--title">Te ayudamos a crear una asesoría rentable</h2>
+           <p class="--subtitle">Apuesta desde el primer momento<br class="d-none d-md-block"> por la atención al cliente.</p>
+           <div class="--2_columns">
+               <div class="--tecnologia_copy">
+                   <h3 class="--tecnologia_title">La tecnología de nuestros despachos te permitirá ofrecer un servicio eficiente</h3>
+                   <h3 class="--tecnologia_title">Los asesores de Ayuda T Pymes serán tu equipo de producción</h3>
+               </div>
+               <div class="--tecnologia_img">
+                <img src="{{ URL::to('/') }}/images/mba/mba_3.webp" alt="" class="lazyload">
+               </div>
+           </div>
            <div class="--cifras_tabla">
             <div class="--cifras_tabla_item">
                 <div class="--cifras_tabla_item_datos">
@@ -173,7 +195,9 @@
                </div>
            </div>
            <div class="--cta_sub">DESCARGAR</div>
-           <div class="--cta">PROGRAMA</div>
+           <div class="--cta">
+                <a href="/dossier/EDASE_MBA.pdf" target="_blank">PROGRAMA</a>
+            </div>
         </div>
     </div>
     
@@ -185,6 +209,11 @@
         <div class="--section">
         </div>
         <div class="--content">
+            <div class="--arrow_interior d-none d-md-block --bottom">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
                    <p class="--subtitle">ACCESO <span>Y ADMISIÓN</span></p>

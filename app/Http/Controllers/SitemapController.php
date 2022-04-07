@@ -27,7 +27,7 @@ class SitemapController extends Controller
                     }
     }
     public function automatic(){
-        SitemapGenerator::create('url('/')')
+        SitemapGenerator::create(url('/'))
         ->getSitemap()
         ->writeToFile("sitemap.xml");
     }

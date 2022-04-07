@@ -15,7 +15,7 @@
                     futuro
                     <b>empieza
                     <span>aquí</span></b></h2>
-                <h1 class="--subtitle">Escuela de formación para asesores del mañana</h1>
+                <h1 class="--subtitle">Escuela <br class="d-md-none">de formación <br class="d-md-none">para asesores <br class="d-md-none">del mañana</h1>
                 <div class="--arrow d-md-none">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
@@ -67,12 +67,12 @@
         </div>
         <div class="--aside" id="b_niveles">
             <div class="--copy">
-                <p class="--section_title">niveles</p>
+                <p class="--section_title">PERFILES</p>
             </div>
             <div class="--section">
             </div>
             <div class="--content">
-                <p class="--section_title d-xl-none">niveles</p>
+                <p class="--section_title d-xl-none">PERFILES</p>
                 <div class="--content_copy">
                     <h2 class="--title">Preparamos<br> a profesionales<br> de la asesoría a todos<br> los niveles</h2>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="--aside" id="b_experiencias">
+        <div class="--aside" id="b_experiencias">
             <div class="--copy">
                 <p class="--section_title">EXPERIENCIAS </p>
             </div>
@@ -105,73 +105,81 @@
             </div>
             <div class="--content">
                 <p class="--section_title d-xl-none">EXPERIENCIAS</p>
-                <div class="--testimonios__1" data="1" id="__testimonios__1">
-                    <div class="--content_testimonios --visible" data="1">
+                <!-- Slider main container -->
+                <div class="swiper mySwiper --testimonio_1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. <b>Esto es como jugar en el Real Madrid”</b></p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                            <p class="--content_testimonios_quote">“Es muy diferente a la universidad. <b>Aquí te preparan para desenvolverte en tu día a día”</b></p>
+                            <p class="--content_testimonios_author">José Ramón Rosa</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
+                            <img src="{{ URL::to('/') }}/images/jose-ramon-rosa.webp" alt="" class="lazyload">
                         </div>
-                        <div class="--content_testimonios_franja"></div>
-                    </div>
-                    <div class="--content_testimonios" data="2">
+                      </div>
+                      <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                            <p class="--content_testimonios_quote"><b>“No son de los que dan teoría que luego no te sirve en tu vida laboral”</b></p>
+                            <p class="--content_testimonios_author">JAVIER ARROYO</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
+                            <img src="{{ URL::to('/') }}/images/jose-miguel-molina.webp" alt="" class="lazyload">
                         </div>
-                        <div class="--content_testimonios_franja"></div>
-                    </div>
-                    <div class="--content_testimonios d-lg-none" data="3">
+                        <div></div>
+                      </div>
+                      <div class="swiper-slide d-md-none">
                         <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                            <p class="--content_testimonios_quote">“Gracias a la escuela estoy <b>trabajando actualmente como asesora”</b></p>
+                            <p class="--content_testimonios_author">Cristina Riaza</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
+                            <img src="{{ URL::to('/') }}/images/cristina-riaza.webp" alt="" class="lazyload">
                         </div>
-                        <div class="--content_testimonios_franja"></div>
-                    </div>
-                    <div class="--content_testimonios d-lg-none" data="4">
+                        <div></div>
+                      </div>
+                      <div class="swiper-slide d-md-none">
                         <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
+                            <p class="--content_testimonios_quote">“Están orientados a lo que realmente interesa: <b>la práctica”</b></p>
+                                <p class="--content_testimonios_author">Teresa Lora</p>
                         </div>
                         <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
+                            <img src="{{ URL::to('/') }}/images/teresa-lora.webp" alt="" class="lazyload">
                         </div>
-                        <div class="--content_testimonios_franja"></div>
+                        <div></div>
+                      </div>
                     </div>
+                    <div class="swiper-button-next --testimonio_1_button_next"></div>
+                    {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
 
-                <div class="--testimonios__2 d-none d-xl-block" data="1" id="__testimonios__2">
-                    <div class="--content_testimonios --visible" data="1">
-                        <div class="--content_testimonios_franja"></div>
-                        <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
-                        </div>
+                <div class="swiper mySwiper --testimonio_2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div></div>
+                          <div class="--content_testimonios_foto">
+                              <img src="{{ URL::to('/') }}/images/cristina-riaza.webp" alt="" class="lazyload">
+                          </div>
                         <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. <b>Esto es como jugar en el Real Madrid”</b></p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
-                        </div> 
-                    </div>
-                    <div class="--content_testimonios" data="2">
-                        <div class="--content_testimonios_franja"></div>
-                        <div class="--content_testimonios_foto">
-                            <img src="{{ URL::to('/') }}/images/foto-testimonio_1.jpg" alt="" class="lazyload">
+                            <p class="--content_testimonios_quote">“Gracias a la escuela estoy <b>trabajando actualmente como asesora”</b></p>
+                            <p class="--content_testimonios_author">Cristina Riaza</p>
                         </div>
-                        <div class="--content_testimonios_copy">
-                            <p class="--content_testimonios_quote">“No tienen nada que ver con otras formaciones. Esto es como jugar en el Real Madrid”</p>
-                            <p class="--content_testimonios_author">José Miguel Molina</p>
-                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                            <div></div>
+                          <div class="--content_testimonios_foto">
+                              <img src="{{ URL::to('/') }}/images/teresa-lora.webp" alt="" class="lazyload">
+                          </div>
+                            <div class="--content_testimonios_copy">
+                                <p class="--content_testimonios_quote">“Están orientados a lo que realmente interesa: <b>la práctica”</b></p>
+                                <p class="--content_testimonios_author">Miriam Magrañal</p>
+                            </div>
+                      </div>
                     </div>
-                </div>
+                    <div class="swiper-button-prev --testimonio_2_button_prev"></div>
+                  </div>
             </div>
-        </div> --}}
+                  
+            </div>
 
         <div class="--aside" id="b_profesorado">
             <div class="--copy">
@@ -181,55 +189,16 @@
             </div>
             <div class="--content">
                 <p class="--section_title d-xl-none">PROFESORADO</p>
-                <div class="--profesorado" data="1">
-                    <div class="--profesorado_content_1">
-                        <div class="--profesorado_foto_principal">
-                            <div class="--profesorado_mascara_img_principal" data="1">
-                                
-                            </div>
-                            <div class="--profesorado_mascara_img_principal" data="2">
-                                
-                            </div>
-                            <div class="--profesorado_mascara_img_principal" data="3">
-                                
-                            </div>
-                        </div>
-                        <div class="--profesorado_copy" data="1">
-                            <p class="--profesorado_nombre" data="1">Cristina Castell</p>
-                            <p class="--profesorado_cargo" data="1">Profesora y coordinadora</p>
-                        </div>
-                        <div class="--profesorado_copy" data="2" style="display: none">
-                            <p class="--profesorado_nombre" data="2">Cristina Marin</p>
-                            <p class="--profesorado_cargo" data="2">Profesora y coordinadora</p>
-                        </div>
-                        <div class="--profesorado_copy" data="3" style="display: none">
-                            <p class="--profesorado_nombre" data="3">María José Izquierdo</p>
-                            <p class="--profesorado_cargo" data="3">Profesora y responsable contable</p>
-                        </div>
-                    </div>
-                    <div class="--profesorado_content_2">
-                        <div class="--profesorado_foto_secundaria">
-                            <div class="--profesorado_mascara_img_secundaria" data="1"></div>
-                            <div class="--profesorado_mascara_img_secundaria" data="2"></div>
-                            <div class="--profesorado_mascara_img_secundaria" data="3"></div>
-                        </div>
-                        <div class="--profesorado_texto" data="1">
-                            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. <b>Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</b></p>
-                        </div>
-                        <div class="--profesorado_texto" data="2" style="display: none">
-                            <p>Licenciada en Administración y Dirección de Empresas, y coaching profesional por Crearte (Madrid). Ejerció como asesora fiscal, laboral y contable durante más de 6 años. <b>Es profesora y coordinadora de nuestras formaciones, a la vez que coordina el dpto. laboral de Ayuda T Pymes que ya cuenta con 30 personas aproximadamente.</b></p>
-                        </div>
-                        <div class="--profesorado_texto" data="3" style="display: none">
-                            <p>Licenciada en Administración y Dirección de Empresas, Finanzas y Contabilidad, es especialista en Contabilidad y Auditoría. <b>Trabajó como asesora fiscal, laboral y contable durante más de 3 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes, con equipos de entre 30 y 50 trabajadores.</b></p>
-                        </div>
-                        <div class="--profesorado_bloque" data="1"></div>
-                    </div>
-                    <div class="--profesorado_franja" data="1"></div>
-                </div>
+                @include('layouts.profesorado')
             </div>
         </div>
 
         <div class="--aside" id="b_huella">
+            <div class="--arrow_interior d-none d-md-block --bottom">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
+            </div>
             <div class="--content">
                 <div class="--huella_claim">
                     <h2 class="--huella_title">Estudiar.<br>
@@ -246,7 +215,7 @@
                 </div>
                 <div class="--huella_img">
                     <div class="--huella_img_mascara">
-                        <img src="{{ URL::to('/') }}/images/foto-3.jpg" alt="" class="lazyload">
+                        <img src="{{ URL::to('/') }}/images/dejar-huella.webp" alt="" class="lazyload">
                         <div class="--huella_franja"></div>
                     </div>
                 </div>

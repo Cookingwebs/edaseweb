@@ -11,16 +11,16 @@ class ConocenosController extends Controller
 {
     public function __invoke(){
         
-        $robots = "noindex, nofollow";
+        $robots = "index, follow";
 
-        $title = "Conócenos【Escuela de Asesores】";
+        $title = "Conócenos";
         $description = "Descubre EDASE ▷ la primera escuela especializada en asesoría creada por Ayuda T Pymes";
         $og_title = "EDASE【Escuela de Asesores】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

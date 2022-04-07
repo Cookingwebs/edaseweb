@@ -20,7 +20,7 @@ class HomeController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

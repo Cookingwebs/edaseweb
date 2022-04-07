@@ -18,9 +18,6 @@
                 padding: 0px 0px 40px;
             }
         }
-        .--copy{
-            top: 100px;
-        }
         .--section {
             padding-bottom: 40px;
         }
@@ -29,6 +26,9 @@
         .--2_columns{
             margin-top: 100px;
             column-gap: 260px;
+            @include ipad-portrait{
+                column-gap: 60px;
+            }
             @include mobile{
                 grid-template-columns: 1fr;
                 margin-top: 0;
@@ -144,7 +144,7 @@
             line-height: 1.3em;
             text-transform: uppercase;
             margin-bottom: 30px;
-            margin-top: 80px;
+            margin-top: 70px;
             @include notebook{
                 font-size: 45px;
             }
@@ -239,7 +239,7 @@
             color: $blue;
             line-height: 1.3em;
             text-transform: uppercase;
-            margin-top: 80px;
+            margin-top: 70px;
             max-width: 650px;
             @include notebook{
                 font-size: 45px;
@@ -293,6 +293,94 @@
             @include mobile{
                 font-size: 20px;
                 margin-top: 30px;
+            }
+            &::before{
+                content:"+";
+                position: absolute;
+                left: -30px;
+                top: -1px;
+                font-weight: 300;
+                color: $green;
+            }
+        }
+    }
+    #b_tecnologia{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            margin-top: 70px;
+            max-width: 700px;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 33px;
+                margin-top: 30px;
+            }
+        }
+        .--subtitle{
+            font-size: 37px;
+            font-weight: 500;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 27px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        .--2_columns{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            @include ipad-portrait{
+                column-gap: 60px;
+            }
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 0;
+            }
+        }
+        .--tecnologia_img{
+            img{
+                max-width: 100%;
+            }
+        }
+        .--tecnologia_copy{
+            margin-top: 0;
+            max-width: 1000px;
+            @include mobile{
+                padding-left: 30px;
+                margin-top: 0;
+            }
+            p{
+                font-size: 34px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .--tecnologia_title{
+            font-size: 34px;
+            font-weight: bold;
+            position: relative;
+            margin: 0;
+            margin-bottom: 60px;
+            color: $grey-dark;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 20px;
+                margin-bottom: 30px;
             }
             &::before{
                 content:"+";
@@ -367,7 +455,7 @@
             color: $blue;
             line-height: 1.3em;
             text-transform: uppercase;
-            margin-top: 80px;
+            margin-top: 70px;
             max-width: 650px;
             @include notebook{
                 font-size: 45px;
@@ -426,6 +514,7 @@
             margin-top: 0;
             margin-bottom: 100px;
             @include mobile{
+                margin-bottom: 0px;
                 max-width: max-content;
             }
         }
@@ -463,7 +552,7 @@
             color: $blue;
             line-height: 1.3em;
             text-transform: uppercase;
-            margin-top: 80px;
+            margin-top: 70px;
             margin-bottom: 20px;
             @include notebook{
                 font-size: 45px;
