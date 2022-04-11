@@ -121,7 +121,6 @@
         <div class="swiper mySwiper --testimonio_2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <div></div>
                   <div class="--content_testimonios_foto">
                       <img src="{{ URL::to('/') }}/images/metodologia/noelia-perez.webp" alt="" class="lazyload">
                   </div>

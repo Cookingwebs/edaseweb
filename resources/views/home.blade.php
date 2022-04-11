@@ -120,14 +120,39 @@
                       <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote"><b>“No son de los que dan teoría que luego no te sirve en tu vida laboral”</b></p>
-                            <p class="--content_testimonios_author">JAVIER ARROYO</p>
+                            <p class="--content_testimonios_author">Javier Arroyo</p>
                         </div>
                         <div class="--content_testimonios_foto">
                             <img src="{{ URL::to('/') }}/images/jose-miguel-molina.webp" alt="" class="lazyload">
                         </div>
                         <div></div>
                       </div>
-                      <div class="swiper-slide d-md-none">
+                    </div>
+                    <div class="swiper-button-next --testimonio_1_button_next"></div>
+                    {{-- <div class="swiper-button-prev"></div> --}}
+                </div>
+                <div class="swiper mySwiper --testimonio_mobile d-md-none">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="--content_testimonios_copy">
+                            <p class="--content_testimonios_quote">“Es muy diferente a la universidad. <b>Aquí te preparan para desenvolverte en tu día a día”</b></p>
+                            <p class="--content_testimonios_author">José Ramón Rosa</p>
+                        </div>
+                        <div class="--content_testimonios_foto">
+                            <img src="{{ URL::to('/') }}/images/jose-ramon-rosa.webp" alt="" class="lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="--content_testimonios_copy">
+                            <p class="--content_testimonios_quote"><b>“No son de los que dan teoría que luego no te sirve en tu vida laboral”</b></p>
+                            <p class="--content_testimonios_author">Javier Arroyo</p>
+                        </div>
+                        <div class="--content_testimonios_foto">
+                            <img src="{{ URL::to('/') }}/images/jose-miguel-molina.webp" alt="" class="lazyload">
+                        </div>
+                        <div></div>
+                      </div>
+                      <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“Gracias a la escuela estoy <b>trabajando actualmente como asesora”</b></p>
                             <p class="--content_testimonios_author">Cristina Riaza</p>
@@ -137,7 +162,7 @@
                         </div>
                         <div></div>
                       </div>
-                      <div class="swiper-slide d-md-none">
+                      <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“Están orientados a lo que realmente interesa: <b>la práctica”</b></p>
                                 <p class="--content_testimonios_author">Teresa Lora</p>
@@ -148,7 +173,7 @@
                         <div></div>
                       </div>
                     </div>
-                    <div class="swiper-button-next --testimonio_1_button_next"></div>
+                    <div class="swiper-button-next --testimonio_mobile_button_next"></div>
                     {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
 
@@ -177,7 +202,7 @@
                     </div>
                     <div class="swiper-button-prev --testimonio_2_button_prev"></div>
                   </div>
-            </div>
+                </div>
                   
             </div>
 

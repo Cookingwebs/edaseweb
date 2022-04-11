@@ -22,11 +22,11 @@
         </div>
         <div class="--profesorado_copy" data="1">
             <p class="--profesorado_nombre" data="1">Cristina Marín</p>
-            <p class="--profesorado_cargo" data="2">Coordinadora EDASE y profesora laboral</p>
+            <p class="--profesorado_cargo" data="2">Coordinadora EDASE, profesora <br>y responsable laboral</p>
         </div>
         <div class="--profesorado_copy" data="2" style="display: none">
             <p class="--profesorado_nombre" data="2">Cristina Castell</p>
-            <p class="--profesorado_cargo" data="2">Profesora y coordinadora</p>
+            <p class="--profesorado_cargo" data="2">Profesora y responsable fiscal</p>
         </div>
         <div class="--profesorado_copy" data="3" style="display: none">
             <p class="--profesorado_nombre" data="3">María José Izquierdo</p>
@@ -34,11 +34,11 @@
         </div>
         <div class="--profesorado_copy" data="4" style="display: none">
             <p class="--profesorado_nombre" data="4">Teresa Carrasco</p>
-            <p class="--profesorado_cargo" data="4">Profesora y responsable contable</p>
+            <p class="--profesorado_cargo" data="4">Profesora contable</p>
         </div>
         <div class="--profesorado_copy" data="5" style="display: none">
             <p class="--profesorado_nombre" data="5">Lucía Domínguez</p>
-            <p class="--profesorado_cargo" data="5">Profesora y responsable laboral</p>
+            <p class="--profesorado_cargo" data="5">Profesora laboral</p>
         </div>
         <div class="--profesorado_copy" data="6" style="display: none">
             <p class="--profesorado_nombre" data="6">María José Izquierdo</p>
@@ -56,22 +56,22 @@
             <div class="--profesorado_mascara_img_secundaria" data="6"></div>
         </div>
         <div class="--profesorado_texto" data="1">
-            <p>Graduada en Administración y Dirección de Empresas, y coaching profesional por Crearte (Madrid). Ejerció como asesora fiscal, laboral y contable durante más de 8 años. <b>Es coordinadora de nuestra escuela y profesora del área laboral. Se encarga además de resolver consultas de nuestros despachos y ha coordinado el dpto.</b></p>
+            <p>Graduada en Administración y Dirección de Empresas, y experta en coaching profesional. Lleva ejerciendo como asesora fiscal, laboral y contable más de 8 años. <b>Es coordinadora de nuestra escuela y profesora del área laboral. Ha coordinado el dpto. laboral de Ayuda T Pymes con más de 30 personas a su cargo.</b></p>
         </div>
         <div class="--profesorado_texto" data="2" style="display: none">
-            <p>Licenciada en Derecho, en Administración y Dirección de Empresas. Ha trabajado durante años como asesora en departamentos de contabilidad y fiscalidad antes de especializarse en la formación. <b>Actualmente es profesora y coordinadora del dpto. de asesoría fiscal y laboral de Ayuda T Pymes, con más de 65 personas a su cargo.</b></p>
+            <p>Lda. en Derecho y en Admón. y Dirección de Empresas. Más de 5 años ejerciendo como asesora fiscal, laboral y contable. Ha coordinado el dpto. de asesoría en Ayuda T Pymes, con más de 65 personas a su cargo. <b>Es profesora del área fiscal y coordinadora del dpto. de formación en Ayuda T Pymes encargándose de formar a todos nuestros asesores.</b></p>
         </div>
         <div class="--profesorado_texto" data="3" style="display: none">
-            <p>Licenciada en Administración y Dirección de Empresas, Finanzas y Contabilidad, es especialista en Contabilidad y Auditoría. <b>Trabajó como asesora fiscal, laboral y contable durante más de 3 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes, con equipos de entre 30 y 50 trabajadores.</b></p>
+            <p>Graduada en Administración y Dirección de Empresas y Finanzas y Contabilidad, y especialista en Contabilidad y Auditoría. <b>Lleva ejerciendo como asesora fiscal, laboral y contable más de 7 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes. Actualmente es profesora de la escuela en el área contable y fiscal.</b></p>
         </div>
         <div class="--profesorado_texto" data="4" style="display: none">
-            <p>Licenciada en Finanzas y Contabilidad, Administración y Dirección de Empresas, ha desarrollado su carrera profesional en Ayuda T Pymes como administrativa y responsable del área contable. <b>Tras años de experiencia, hoy es profesora de contabilidad y coordinadora de equipo.</b></p>
+            <p>Licenciada en Finanzas y Contabilidad, Administración y Dirección de Empresas y Máster Universitario en FYCO. <b>Ha ejercido como responsable de área en contabilidad y ha desarrollado su carrera profesional en Ayuda T Pymes como dinamizadora de formación en el área contable. Tras años de experiencia, hoy es profesora del área de contabilidad.</b></p>
         </div>
         <div class="--profesorado_texto" data="5" style="display: none">
             <p>Licenciada en Administración y Dirección de Empresas, comenzó trabajando en Ayuda T Pymes como parte del dpto. de Administración y Facturación. <b>Desde hace 3 años es responsable de dinamización y  labores administrativas en EDASE y, actualmente, dedica su labor formativa al área laboral.</b></p>
         </div>
         <div class="--profesorado_texto" data="6" style="display: none">
-            <p>Licenciada en Administración y Dirección de Empresas, Finanzas y Contabilidad, es especialista en Contabilidad y Auditoría. <b>Trabajó como asesora fiscal, laboral y contable durante más de 3 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes, con equipos de entre 30 y 50 trabajadores.</b></p>
+            <p>Graduada en Administración y Dirección de Empresas y Finanzas y Contabilidad, y especialista en Contabilidad y Auditoría. <b>Lleva ejerciendo como asesora fiscal, laboral y contable más de 7 años y ha coordinado los departamentos fiscales y laborales de Ayuda T Pymes. Actualmente es profesora de la escuela en el área contable y fiscal.</b></p>
         </div>
 
         <div class="--profesorado_bloque" data="1"></div>

@@ -21,10 +21,10 @@ class EmailController extends Controller
     public string $idAnalytics;
     public string $consulta;
 
-    public function index()
-    {
-        return view('pruebaCorreo');
-    }
+    // public function index()
+    // {
+    //     return view('pruebaCorreo');
+    // }
     public function crmLogin(){
         $post = array(
             "email" => "juanrosales@ayudat.es",
@@ -69,19 +69,19 @@ class EmailController extends Controller
     public function sendEmail()
     {
 
-            $this -> name = $_POST['name'];
-            $this -> phone = $_POST['phone'];
-            $this -> email = $_POST['email'];
-            $this -> canal = $_POST['canal'];
-            $this -> url = $_POST['url'];
-            $this -> notificaciones = $_POST['notificaciones'];
-            if(isset($_POST['idEnterprise'])){
-                $this -> idEnterprise = $_POST['idEnterprise'];
+            $this -> name = $_GET['name'];
+            $this -> phone = $_GET['phone'];
+            $this -> email = $_GET['email'];
+            $this -> canal = $_GET['canal'];
+            $this -> url = $_GET['url'];
+            $this -> notificaciones = $_GET['notificaciones'];
+            if(isset($_GET['idEnterprise'])){
+                $this -> idEnterprise = $_GET['idEnterprise'];
             }else{
                 $this -> idEnterprise = 7;
             }
-            $this -> gclid = $_POST['gclid'];
-            $this -> idAnalytics = $_POST['idAnalytics'];
+            $this -> gclid = $_GET['gclid'];
+            $this -> idAnalytics = $_GET['idAnalytics'];
             
 
             // return var_dump($_POST);
@@ -99,7 +99,7 @@ class EmailController extends Controller
                 "idAnalytics" => $this -> idAnalytics,
                 "idEnterprise" => $this -> idEnterprise
             );
-            
+            // return json_encode(1);
             $data = $this -> crmLogin();
 
             if ($data->success) {
@@ -107,7 +107,7 @@ class EmailController extends Controller
                 if ($lead->success) {
                     return json_encode(1);
                 } else {
-                    Mail::to("j.rosalesweb@gmail.com")->send(new formVentas($this->name, $this->phone, $this->email, $this->notificaciones));
+                    // Mail::to("j.rosalesweb@gmail.com")->send(new formVentas($this->name, $this->phone, $this->email, $this->notificaciones));
                 //    return view('vistaEmail');
                    return json_encode(1);
                 }
@@ -118,19 +118,19 @@ class EmailController extends Controller
     public function sendEmailBecas()
     {
 
-            $this -> name = $_POST['name'];
-            $this -> phone = $_POST['phone'];
-            $this -> email = $_POST['email'];
-            $this -> canal = $_POST['canal'];
-            $this -> url = $_POST['url'];
-            $this -> consulta = $_POST['consulta'];
-            if(isset($_POST['idEnterprise'])){
-                $this -> idEnterprise = $_POST['idEnterprise'];
+            $this -> name = $_GET['name'];
+            $this -> phone = $_GET['phone'];
+            $this -> email = $_GET['email'];
+            $this -> canal = $_GET['canal'];
+            $this -> url = $_GET['url'];
+            $this -> consulta = $_GET['consulta'];
+            if(isset($_GET['idEnterprise'])){
+                $this -> idEnterprise = $_GET['idEnterprise'];
             }else{
                 $this -> idEnterprise = 7;
             }
-            $this -> gclid = $_POST['gclid'];
-            $this -> idAnalytics = $_POST['idAnalytics'];
+            $this -> gclid = $_GET['gclid'];
+            $this -> idAnalytics = $_GET['idAnalytics'];
             
 
             // return var_dump($_POST);

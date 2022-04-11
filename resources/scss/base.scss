@@ -38,7 +38,7 @@ p{
     font-size: 25px;
     text-align: center;
     max-width: max-content;
-    padding: 5px 30px;
+    padding: 10px 30px;
     text-transform: uppercase;
     color: $grey-dark;
     margin-top: 50px;
@@ -575,6 +575,23 @@ p{
             }
         }
     }
+    &.--nav_promo{
+        background-color: $blue-dark;
+        .--nav_primary{
+            .--menu{
+                background-color: transparent;
+            }
+            .--submenu{
+                background-color: transparent;
+                .--submenu_list{
+                    justify-content: flex-end;
+                    li{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .--llamar_mobile{
@@ -1062,7 +1079,7 @@ p{
                     }
                     @include mobile{
                         height: auto;
-                        top: 160px;
+                        top: 190px;
                         padding: 30px 80px 30px 40px;
                     }
                     p{
@@ -1906,7 +1923,7 @@ p{
         top: 0%;
     }
     &.--bottom{
-        right: 5%;
+        right: 2%;
         bottom: 13%;
         transform: rotate(180deg);
         cursor: pointer;
@@ -1916,5 +1933,8 @@ p{
         width: 100%;
         height: auto;
         display: block;
+        @include notebook{
+            max-width: 20px;
+        }
     }
 }

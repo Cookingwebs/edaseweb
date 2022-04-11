@@ -33,7 +33,7 @@ class AvisosController extends Controller
     }
     public function politica(){
 
-        $robots = "noindex, nofollow";
+        $robots = "noindex, follow";
 
         $title = "Política de privacidad";
         $description = "Política de privacidad de EDASE";
@@ -42,7 +42,7 @@ class AvisosController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -55,7 +55,7 @@ class AvisosController extends Controller
     }
     public function aviso(){
 
-        $robots = "noindex, nofollow";
+        $robots = "noindex, follow";
 
         $title = "Aviso legal";
         $description = "Aviso legal de EDASE";
@@ -64,7 +64,7 @@ class AvisosController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -77,7 +77,7 @@ class AvisosController extends Controller
     }
     public function cookies(){
 
-        $robots = "noindex, nofollow";
+        $robots = "noindex, follow";
 
         $title = "Política de cookies";
         $description = "Política de cookies de EDASE";
@@ -86,7 +86,7 @@ class AvisosController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

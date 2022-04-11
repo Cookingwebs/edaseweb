@@ -11,6 +11,7 @@ use App\Http\Controllers\MetodologiaController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\TecnicoController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\LanzamientoController;
 use App\Http\Controllers\TestController;
 
 /*
@@ -35,8 +36,8 @@ Route::get('/tecnico-asesoria', TecnicoController::class)->name('tecnico');
 Route::get('/sitemap-manually', [SitemapController::class, "manually"]);
 Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
 
-Route::post('/send-email', [EmailController::class, 'sendEmail']);
-Route::post('/send-email-becas', [EmailController::class, 'sendEmailBecas']);
+Route::get('/send-email', [EmailController::class, 'sendEmail']);
+Route::get('/send-email-becas', [EmailController::class, 'sendEmailBecas']);
 
 
 Route::get('/terminos-condiciones', [AvisosController::class, "terminos"])->name('terminos');
@@ -46,6 +47,8 @@ Route::get('/politica-cookies', [AvisosController::class, "cookies"])->name('coo
 // Route::get('/politica-privacidad', TecnicoController::class);
 // Route::get('/procesamiento-datos', TecnicoController::class);
 
+
+Route::get('/aula-abierta', [LanzamientoController::class, "aulaAbierta"])->name('aula-abierta');
 
 
 Route::get('/test', TestController::class)->name('test');
