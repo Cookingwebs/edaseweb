@@ -13,7 +13,8 @@ class LanzamientoController extends Controller
 
         $robots = "noindex, nofollow";
         $datos = [
-            'enterprise' => 7
+            'enterprise' => 7,
+            'action_form' => url()->current().'/gracias'
         ];
         $title = "Aula abierta";
         $description = "3, 4 y 5 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
@@ -31,6 +32,27 @@ class LanzamientoController extends Controller
         OpenGraph::addProperty('locale', 'es_ES');
 
         return view('lanzamiento.aula-abierta', $datos);
+
+    }
+    public function aulaAbiertaGracias(){
+
+        $robots = "noindex, nofollow";
+        $title = "Aula abierta";
+        $description = "3, 4 y 5 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
+        $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.aula-abierta-gracias');
 
     }
 }

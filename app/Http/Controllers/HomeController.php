@@ -13,7 +13,7 @@ class HomeController extends Controller
 
         $robots = "index, follow";
         
-        $title = "EDASE";
+        $title = "EDASE - Escuela de Asesores";
         $description = "Escuela de formación creada por Ayuda T Pymes ▷ Empieza aquí tu futuro en el sector de la asesoría";
         $og_title = "EDASE【Escuela de Asesores】";
 

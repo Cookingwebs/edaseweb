@@ -49,6 +49,7 @@ Route::get('/politica-cookies', [AvisosController::class, "cookies"])->name('coo
 
 
 Route::get('/aula-abierta', [LanzamientoController::class, "aulaAbierta"])->name('aula-abierta');
+Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
 
 Route::get('/test', TestController::class)->name('test');

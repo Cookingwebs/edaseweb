@@ -19,6 +19,7 @@
         <p><input type="checkbox" name="notificaciones_input" id="notificaciones_input"><span>Deseo recibir información acerca de los servicios de Ayuda T Soluciones Profesionales.</span></p>
     </div>
     <input type="hidden" name="enterprise_input" value="{{ $enterprise }}">
+    <input type="hidden" name="action" value="@if (!empty($action_form)){{ $action_form }}@endif">
     <button class="--cta_submit">
         @if (!empty($cta_copy))
             {{ $cta_copy }}

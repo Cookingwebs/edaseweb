@@ -6,12 +6,10 @@ $(document).ready(function(){
   const init = () => {
     const windowWidth = $(window).width();
     hoverMenu();
-    // marginTop();
     moveSelect();
     openMenu();
     moveCarrousel();
     moveTransition();
-    // moveTestimonios();
     moveProfesores();
     scrollAnimation();
     desplegableMobile();
@@ -66,6 +64,11 @@ $(document).ready(function(){
       $('.--go_form').on('click', function(){
           $('body, html').animate({
               scrollTop: $('#b_cabecera').offset().top
+          }, 1000);
+      });
+      $('.--go_form_down').on('click', function(){
+          $('body, html').animate({
+              scrollTop: $('#b_formulario_footer').offset().top
           }, 1000);
       });
       $('.--bottom').on('click', function(){
@@ -523,7 +526,7 @@ $(document).ready(function(){
                           fbq('track', 'CompleteRegistration');
                             var cookieSesion = getCookie('ID-session');
                             ttq.track('SubmitForm');
-                            // window.lintrk('track', { conversion_id: 6105324 });
+                            window.lintrk('track', { conversion_id: 6105324 });
                             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                                   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -561,6 +564,7 @@ $(document).ready(function(){
           let notificaciones = $('#cursos_form_footer input[name="notificaciones_input"]');
           let enterprise = $('#cursos_form_footer input[name="enterprise_input"]');
           let canal = "Web";
+          let action = $('#cursos_form_footer input[name="action"]');
   
           const queryString = window.location.search;
           const urlParams = new URLSearchParams(queryString);
@@ -639,7 +643,7 @@ $(document).ready(function(){
                           fbq('track', 'CompleteRegistration');
                             var cookieSesion = getCookie('ID-session');
                             ttq.track('SubmitForm');
-                            // window.lintrk('track', { conversion_id: 6105324 });
+                            window.lintrk('track', { conversion_id: 6105324 });
                             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                                   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -650,6 +654,9 @@ $(document).ready(function(){
                                 __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
                                   }
                                  __gaCustomTracker('send', 'event', 'formulario', 'envio', 'footer', {'dimension3' : cookieSesion});
+                                 if(action.val()){
+                                    window.location.href = action.val();
+                                 }
                       }else{
                           $('.--alert_footer_error').fadeIn();
                       }
@@ -795,7 +802,7 @@ $(document).ready(function(){
                           fbq('track', 'CompleteRegistration');
                             var cookieSesion = getCookie('ID-session');
                             ttq.track('SubmitForm');
-                            // window.lintrk('track', { conversion_id: 6105324 });
+                            window.lintrk('track', { conversion_id: 6105324 });
                             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                                   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

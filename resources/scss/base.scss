@@ -578,15 +578,36 @@ p{
     &.--nav_promo{
         background-color: $blue-dark;
         .--nav_primary{
+            border: none;
+            @include ipad-portrait{
+                grid-template-columns: 240px 50% 1fr;
+            }
+            @include tablet{
+                grid-template-columns: 240px 35% 1fr;
+            }
+            .--logo{
+                transform: translateY(0px);
+            }
             .--menu{
                 background-color: transparent;
             }
             .--submenu{
                 background-color: transparent;
+                @include ipad-portrait{
+                    display: inherit;
+                    padding-right: 0;
+                }
+                @include mobile{
+                    display: none;
+                }
                 .--submenu_list{
                     justify-content: flex-end;
                     li{
-                        color: $green;
+                        text-transform: initial;
+                        color: $white;
+                        a{
+                            color: $green;
+                        }
                     }
                 }
             }
@@ -1921,12 +1942,18 @@ p{
     &.--top{
         right: 5%;
         top: 0%;
+        @include tablet{
+            right: -5%;
+        }
     }
     &.--bottom{
         right: 2%;
         bottom: 13%;
         transform: rotate(180deg);
         cursor: pointer;
+        @include tablet{
+            right: -5%;
+        }
     }
     img{
         max-width: 30px;

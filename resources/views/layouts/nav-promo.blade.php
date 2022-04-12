@@ -8,7 +8,7 @@
             </div>
             <div class="--submenu">
                 <ul class="--submenu_list">
-                    <li class="--submenu_list_item"><a href="tel:900 866 336"><b>900 866 336</b></a></li>
+                    <li class="--submenu_list_item">Llama gratis al <a href="tel:900 866 336"><b>900 866 336</b></a></li>
                 </ul>
             </div>
         </div>

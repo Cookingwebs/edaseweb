@@ -18,8 +18,8 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
-           <h1 class="--title">CONVIERTE<br> <b class="--blue">LA GRAN RENUNCIA</b> EN TU<br> <b class="--green">GRAN OPORTUNIDAD</b> PARA SER<br> ASESOR FISCAL, LABORAL<br> Y CONTABLE</h1>
-           <h2 class="--subtitle">3, 4, 5 y 9 de mayo <span>¡TE ESPERAMOS!</span></h2>
+           <h1 class="--title">CONVIERTE<br class="d-none d-md-block"> <b class="--blue">LA GRAN RENUNCIA</b> EN TU<br class="d-none d-md-block"> <b class="--green">GRAN OPORTUNIDAD</b> PARA SER<br class="d-none d-md-block"> ASESOR FISCAL, LABORAL<br class="d-none d-md-block"> Y CONTABLE</h1>
+           <h2 class="--subtitle">3, 4, 5 y 9 de mayo <br class="d-md-none"><span>¡TE ESPERAMOS!</span></h2>
            <div class="--cta --go_form_down">RESERVA TU PLAZA AHORA</div>
         </div>
     </div>
@@ -34,7 +34,7 @@
            <div class="--2_columns">
                <div class="--master_img d-none d-md-block">
                 <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
-                <div class="--cta --go_form">INSCRÍBETE</div>
+                <div class="--cta --go_form_down">INSCRÍBETE</div>
                </div>
                <div class="--master_copy_1">
                     <h2 class="--title">JORNADAS DE <br>AULA ABIERTA</h2>
@@ -119,7 +119,7 @@
                     </ul>
                  </div>
                 <div class="--oportunidad_img">
-                    <img src="{{ URL::to('/') }}/images/mba/mba_2.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/gran-renuncia.webp" alt="" class="lazyload">
                 </div>
             </div>
             <div class="--2_columns --b_2">
@@ -146,13 +146,13 @@
             <div class="--2_columns">
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 01</h3>
-                    <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/clase-1.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Qué debe saber un asesor laboral sobre la nueva reforma?</p>
                     <div class="--date">En directo el 3 de mayo a las 10h.</div>
                 </div>
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 02</h3>
-                    <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/clase-2.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Cómo contabiliza un asesor contable?</p>
                     <div class="--date">En directo el 4 de mayo a las 10h.</div>
                 </div>
@@ -160,13 +160,13 @@
             <div class="--2_columns">
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 03</h3>
-                    <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/clase-3.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Cómo declara el IVA un asesor fiscal?</p>
                     <div class="--date">En directo el 5 de mayo a las 10h.</div>
                 </div>
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 04</h3>
-                    <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/clase-4.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Cuál es el camino para conseguir un buen puesto como asesor experto?</p>
                     <div class="--date">En directo el 9 de mayo a las 10h.</div>
                 </div>
@@ -189,7 +189,7 @@
                     <img src="{{ URL::to('/') }}/images/svg/ayudatpymes.svg" alt="" class="lazyload">
                 </div>
                 <div class="--quienes_img">
-                    <img src="{{ URL::to('/') }}/images/mba/mba_2.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/lanzamiento/quienes_somos.webp" alt="" class="lazyload">
                 </div>
             </div>
             <div class="--2_columns --b_2">
@@ -211,11 +211,6 @@
         <div class="--section">
         </div>
         <div class="--content">
-            <div class="--arrow_interior d-none d-md-block --bottom">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-            </div>
             <h3 class="--vida_title">conoce <span>nuestra escuela</span></h3>
             <div class="--vida_bloque">
                <div class="--vida_fila_1">
@@ -289,9 +284,9 @@
             </div>
            <div class="--2_columns">
                <div class="--formulario_claim">
-                    <h2 class="--title">Inscríbete<br>
+                    <h2 class="--title">Inscríbete<br class="d-md-none d-xl-block">
                         gratis <br>
-                        <span>al Aula <br>
+                        <span>al Aula <br class="d-md-none d-xl-block">
                         Abierta</span></h2>
                     <p class="--text">Si quieres que compartamos contigo el camino más directo para adentrarte al mundo de la asesoría, inscríbete al Aula Abierta gratis, súmate a <span>#LaGranOportunidad.</span></p>
                </div>
