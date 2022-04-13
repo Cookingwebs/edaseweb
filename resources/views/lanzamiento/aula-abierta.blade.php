@@ -19,7 +19,7 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
            <h1 class="--title">CONVIERTE<br class="d-none d-md-block"> <b class="--blue">LA GRAN RENUNCIA</b> EN TU<br class="d-none d-md-block"> <b class="--green">GRAN OPORTUNIDAD</b> PARA SER<br class="d-none d-md-block"> ASESOR FISCAL, LABORAL<br class="d-none d-md-block"> Y CONTABLE</h1>
-           <h2 class="--subtitle">3, 4, 5 y 9 de mayo <br class="d-md-none"><span>¡TE ESPERAMOS!</span></h2>
+           <h2 class="--subtitle">4, 5, 6 y 9 de mayo <br class="d-md-none"><span>¡TE ESPERAMOS!</span></h2>
            <div class="--cta --go_form_down">RESERVA TU PLAZA AHORA</div>
         </div>
     </div>
@@ -39,7 +39,7 @@
                <div class="--master_copy_1">
                     <h2 class="--title">JORNADAS DE <br>AULA ABIERTA</h2>
                     <img src="{{ URL::to('/') }}/images/mba/mba.webp" alt="" class="d-md-none lazyload">
-                    <p class="--subtitle">3, 4, 5 Y 9 DE MAYO</p>
+                    <p class="--subtitle">4, 5, 6 Y 9 DE MAYO</p>
                     <p class="--text_1">Descubre cómo pasar de trabajos precarios a empleos estables en el mundo de la asesoría <b>(aunque no tengas conocimientos ni experiencia previa).</b></p>
                </div>
            </div>
@@ -148,13 +148,13 @@
                     <h3 class="--title"><span>CLASE</span> 01</h3>
                     <img src="{{ URL::to('/') }}/images/lanzamiento/clase-1.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Qué debe saber un asesor laboral sobre la nueva reforma?</p>
-                    <div class="--date">En directo el 3 de mayo a las 10h.</div>
+                    <div class="--date">En directo el 4 de mayo a las 10h.</div>
                 </div>
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 02</h3>
                     <img src="{{ URL::to('/') }}/images/lanzamiento/clase-2.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Cómo contabiliza un asesor contable?</p>
-                    <div class="--date">En directo el 4 de mayo a las 10h.</div>
+                    <div class="--date">En directo el 5 de mayo a las 10h.</div>
                 </div>
             </div>
             <div class="--2_columns">
@@ -162,7 +162,7 @@
                     <h3 class="--title"><span>CLASE</span> 03</h3>
                     <img src="{{ URL::to('/') }}/images/lanzamiento/clase-3.webp" alt="" class="lazyload">
                     <p class="--clases_copy">¿Cómo declara el IVA un asesor fiscal?</p>
-                    <div class="--date">En directo el 5 de mayo a las 10h.</div>
+                    <div class="--date">En directo el 6 de mayo a las 10h.</div>
                 </div>
                 <div class="--clases_card">
                     <h3 class="--title"><span>CLASE</span> 04</h3>

@@ -41,7 +41,7 @@
                 </div>
                 <div class="--pasos_copy">
                     <h3 class="--pasos_title">02. APUNTA EN TU CALENDARIO LAS FECHAS.</h3>
-                    <p>Aula Abierta<br> <b>(4, 5 y 6 de mayo)</b></p>
+                    <p>Aula Abierta<br> <b>(4, 5, 6 y 9 de mayo)</b></p>
                 </div>
                 <div class="--pasos_copy">
                     <h3 class="--pasos_title">03. NO PIERDAS DE VISTA TU EMAIL.</h3>

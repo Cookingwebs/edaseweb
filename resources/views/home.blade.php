@@ -165,7 +165,7 @@
                       <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
                             <p class="--content_testimonios_quote">“Están orientados a lo que realmente interesa: <b>la práctica”</b></p>
-                                <p class="--content_testimonios_author">Teresa Lora</p>
+                                <p class="--content_testimonios_author">Miriam Magrañal</p>
                         </div>
                         <div class="--content_testimonios_foto">
                             <img src="{{ URL::to('/') }}/images/teresa-lora.webp" alt="" class="lazyload">

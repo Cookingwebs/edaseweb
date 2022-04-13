@@ -18,7 +18,8 @@ class SitemapController extends Controller
                     ->add(Url::create("/master-asesoria")) 
                     ->add(Url::create("/mba")) 
                     ->add(Url::create("/tecnico-asesoria")) 
-                    ->add(Url::create("/conocenos"));
+                    ->add(Url::create("/conocenos"))
+                    ->add(Url::create("/plan-de-carrera"));
                     try {
                         $sitemap->writeToFile(public_path("sitemap.xml"));
                         return "Sitemap Creado";

@@ -7,15 +7,15 @@ use Artesaos\SEOTools\Facades\OpenGraph;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class CarreraController extends Controller
 {
     public function __invoke(){
 
-        $robots = "index, follow";
+        $robots = "noindex, nofollow";
         
-        $title = "EDASE - Escuela de Asesores";
-        $description = "Escuela de formación creada por Ayuda T Pymes ▷ Empieza aquí tu futuro en el sector de la asesoría";
-        $og_title = "EDASE【Escuela de Asesores】";
+        $title = "Plan de Carrera";
+        $description = "Cumple tus objetivos profesionales forjando tu plan de carrera con la orientación de la Escuela de Asesores.";
+        $og_title = "Plan de Carrera con EDASE【 Formamos al asesor del futuro 】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -25,10 +25,9 @@ class HomeController extends Controller
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
         OpenGraph::setUrl(url()->full());
-        OpenGraph::addImage('https://edase.es/images/imagen_destacada.jpg');
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('home');
+        return view('carrera');
     }
 }
