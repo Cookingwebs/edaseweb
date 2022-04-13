@@ -204,6 +204,56 @@ $(document).ready(function(){
             $('.--franja_carrousel').removeClass('--transition');
         }, 500);
     });
+    let el = document.getElementById('__container_carrousel');
+        el.addEventListener('touchstart', handleTouchStart, false);        
+        el.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;  
+
+function getTouches(evt) {
+  return evt.touches ||             // browser API
+         evt.originalEvent.touches; // jQuery
+}                                                     
+                                                                         
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+};                                                
+                                                                         
+function handleTouchMove(evt) {
+    if ( ! xDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;  
+
+    var xDiff = xDown - xUp;
+                                                                         
+    
+        if ( xDiff > 0 ) {
+            $('.--franja_carrousel').addClass('--transition');
+        var page = $('#__page_carrousel span').html();
+        page = parseInt(page);
+        page++;
+        if(page > 4){
+            page = 1;
+        }
+        $('.--franja_carrousel').attr('data', page);
+        $('#__page_carrousel span').html(page);
+        setTimeout(function(){
+            $('.--b_title_carrousel h3').removeClass('--active');
+            $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
+            $('.--b_copy_carrousel p').removeClass('--active');
+            $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
+        }, 450);
+        setTimeout(function(){
+            $('.--franja_carrousel').removeClass('--transition');
+        }, 500);
+        }                      
+            
+    /* reset values */
+    xDown = null;                                           
+};
   }
   
   

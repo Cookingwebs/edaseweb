@@ -10,7 +10,10 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
- mix.sass('resources/scss/app.scss', 'public/assets/css', [
-     //
- ]);
+mix.sass('resources/scss/app.scss', 'public/assets/css', [
+    //
+]);
+mix.sass('resources/scss/animation.scss', 'public/assets/css', [
+    //
+]);
+// mix.minify(['public/assets/css/app.css', 'public/assets/css/animation.css'])

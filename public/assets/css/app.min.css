@@ -886,6 +886,12 @@ p {
   line-height: 1.3em;
 }
 
+u {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .--cta {
   background-color: #62fb9e;
   display: block;
@@ -2166,7 +2172,6 @@ p {
   opacity: 1;
   background-color: #dbdde1;
   cursor: pointer;
-  overflow: hidden;
   z-index: 1;
 }
 @media only screen and (max-width: 1450px) {
@@ -3571,7 +3576,6 @@ p {
 #home-page #b_creamos .--subaside_1 .--subaside_1_carrousel .--container_carrousel .--b_copy_carrousel {
   background-color: #dbdde1;
   padding: 40px 70px;
-  overflow: hidden;
 }
 @media only screen and (max-width: 1450px) {
   #home-page #b_creamos .--subaside_1 .--subaside_1_carrousel .--container_carrousel .--b_copy_carrousel {
@@ -3614,7 +3618,6 @@ p {
   top: 5%;
   transition: 500ms all ease-in-out;
   cursor: pointer;
-  overflow: hidden;
 }
 #home-page #b_creamos .--subaside_1 .--subaside_1_carrousel .--container_carrousel .--franja_carrousel[data="2"], #home-page #b_creamos .--subaside_1 .--subaside_1_carrousel .--container_carrousel .--franja_carrousel[data="4"] {
   background-color: #62fb9e;

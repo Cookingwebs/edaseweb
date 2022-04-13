@@ -322,6 +322,7 @@
                     .--b_copy_carrousel{
                         background-color: $grey-light;
                         padding: 40px 70px;
+                        overflow: hidden;
                         @include notebook{
                             padding: 40px;
                         }
@@ -358,6 +359,7 @@
                         top: 5%;
                         transition: 500ms all ease-in-out;
                         cursor: pointer;
+                        overflow: hidden;
                         &[data="2"], &[data="4"]{
                             background-color: $green;
                             &::after{

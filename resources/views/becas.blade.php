@@ -5,7 +5,7 @@
 @section('id-page', 'becas')
 
 @section('content')
-<div id="becas-page">
+<div id="becas-page" class="js-scroll fade-in">
     <div id="b_cabecera">
         <div class="--copy">
             <h1 class="--title">admisión y becas</h1>
@@ -93,14 +93,17 @@
         <div class="--content">
             <div class="--2_columns">
                 <div class="--becas_bloque_title">
-                    <p class="--title">Programa de<br> BECAS Ayuda<br> T Pymes</p>
+                    <p class="--title">
+                        <u class="js-scroll slide-left">Programa de</u> <br>
+                        <u class="js-scroll slide-left">BECAS Ayuda</u> <br> 
+                        <u class="js-scroll slide-left">T Pymes</u></p>
                 </div>
                 <div class="--becas_bloque_copy_1">
-                       <p class="--text">La Escuela de Asesores es el centro de formación especializado de <b>Ayuda T Pymes,</b> la mayor asesoría de empresas en España. Su Programa de Becas es una apuesta estratégica por el talento, la diversidad y la igualdad de oportunidades en el sector de la asesoría y el despacho profesional.</p>
-                       <p class="--text"><b>La herramienta para proyectar la carrera profesional de estudiantes con talento, pero sin los recursos económicos suficientes para acceder a la Escuela de Asesores.</b></p>
+                       <p class="--text js-scroll slide-right">La Escuela de Asesores es el centro de formación especializado de <b>Ayuda T Pymes,</b> la mayor asesoría de empresas en España. Su Programa de Becas es una apuesta estratégica por el talento, la diversidad y la igualdad de oportunidades en el sector de la asesoría y el despacho profesional.</p>
+                       <p class="--text js-scroll slide-right"><b>La herramienta para proyectar la carrera profesional de estudiantes con talento, pero sin los recursos económicos suficientes para acceder a la Escuela de Asesores.</b></p>
                 </div>
                 <div class="--becas_bloque_img">
-                    <img src="{{ URL::to('/') }}/images/becas/becas-admision.webp" alt="" class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/becas/becas-admision.webp" alt="" class="lazyload js-scroll slide-left">
                    </div>
             </div>
         </div>
@@ -117,29 +120,29 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
-            <p class="--title">El Programa de BECAS de<br> Ayuda T Pymes <b>en cifras</b></p>
+            <p class="--title js-scroll fade-in">El Programa de BECAS de<br> Ayuda T Pymes <b>en cifras</b></p>
             <div class="--cifras_tabla">
                 <div class="--cifras_tabla_item">
-                    <div class="--cifras_tabla_item_datos">
+                    <div class="--cifras_tabla_item_datos js-scroll slide-left">
                         <p><span>+</span>100</p>
                     </div>
-                    <div class="--cifras_tabla_item_copy">
+                    <div class="--cifras_tabla_item_copy js-scroll slide-right">
                         <p>+ de 100 BECAS <br>otorgadas en 2021</p>
                     </div>
                 </div>
                 <div class="--cifras_tabla_item">
-                    <div class="--cifras_tabla_item_datos">
+                    <div class="--cifras_tabla_item_datos js-scroll slide-left">
                         <p>70/100<span>%</span></p>
                     </div>
-                    <div class="--cifras_tabla_item_copy">
+                    <div class="--cifras_tabla_item_copy js-scroll slide-right">
                         <p>Becas del 70 al 100% en los distintos planes formativos de EDASE</p>
                     </div>
                 </div>
                 <div class="--cifras_tabla_item">
-                    <div class="--cifras_tabla_item_datos">
+                    <div class="--cifras_tabla_item_datos js-scroll slide-left">
                         <p>1,2 <span>M</span></p>
                     </div>
-                    <div class="--cifras_tabla_item_copy">
+                    <div class="--cifras_tabla_item_copy js-scroll slide-right">
                         <p>1’2 millones de euros otorgados desde 2019</p>
                     </div>
                 </div>

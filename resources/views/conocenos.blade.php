@@ -23,10 +23,10 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
-           <h2 class="--lideres_title">Somos escuela <br>
-            <b>y despacho<br> profesional</b></h2>
-            <p class="--lideres_subtitle"><span>+</span> LÍDERES EN NUESTRO SECTOR</p>
-            <p class="--lideres_copy">De nuestra experiencia trabajando con clientes de toda España nace la primera escuela especializada en asesoría. </p>
+           <h2 class="--lideres_title"><u class="slide-left-delay-0 --first-content">Somos escuela</u> <br>
+            <u class="slide-left-delay-1 --first-content"><b>y despacho</u><br> <u class="slide-left-delay-2 --first-content">profesional</u></b></h2>
+            <p class="--lideres_subtitle"><u class="slide-left-delay-4 --first-content_2"><span>+</span> LÍDERES EN NUESTRO SECTOR</u></p>
+            <p class="--lideres_copy"><u class="fade-in-delay-5 --first-content_3">De nuestra experiencia trabajando con clientes de toda España nace la primera escuela especializada en asesoría.</u></p>
         </div>
     </div>
 
@@ -38,12 +38,12 @@
         </div>
         <div class="--content">
             <p class="--section_title d-xl-none">compromiso</p>
-           <h2 class="--compromiso_title">Nuestro compromiso educativo se basa en la experiencia práctica y real</h2>
+           <h2 class="--compromiso_title js-scroll slide-left">Nuestro compromiso educativo se basa en la experiencia práctica y real</h2>
            <div class="--compromiso_copy">
-               <div class="--compromiso_text">
+               <div class="--compromiso_text js-scroll slide-left">
                    <p>Ponemos el foco en darles a nuestros alumnos el control de los procesos, trámites y herramientas que necesitan para avanzar y escalar en su trabajo.</p>
                </div>
-               <img src="{{ URL::to('/') }}/images/conocenos/compromiso.webp" alt="" class="lazyload">
+               <img src="{{ URL::to('/') }}/images/conocenos/compromiso.webp" alt="" class="lazyload js-scroll slide-right">
            </div>
         </div>
     </div>
@@ -55,8 +55,8 @@
         </div>
         <div class="--content">
             <p class="--section_title d-xl-none">historia</p>
-           <h2 class="--historia_title">La historia de <br class="d-none d-md-block">Ayuda T Pymes <br class="d-none d-md-block">es nuestra historia</h2>
-           <div class="--transition_niveles" id="__transition_niveles">
+           <h2 class="--historia_title js-scroll slide-left">La historia de <br class="d-none d-md-block">Ayuda T Pymes <br class="d-none d-md-block">es nuestra historia</h2>
+           <div class="--transition_niveles js-scroll slide-right" id="__transition_niveles">
             <div class="--content_transition" data="1">
                 <div class="--b_date_transition">
                     <p class="--active" data="1">2009</p>
@@ -114,8 +114,8 @@
         </div>
         <div class="--content">
             <p class="--section_title d-xl-none">PROFESORADO</p>
-            <h2 class="--title">Docentes y asesores en <br>continua formación</h2>
-                <p class="--subtitle"><span>+</span> CONECTADOS AL DÍA A DÍA DE CLIENTES Y DESPACHOS.</p>
+            <h2 class="--title js-scroll slide-left">Docentes y asesores en <br>continua formación</h2>
+                <p class="--subtitle js-scroll slide-left"><span>+</span> CONECTADOS AL DÍA A DÍA DE CLIENTES Y DESPACHOS.</p>
                 @include('layouts.profesorado')
         </div>
     </div>
@@ -126,8 +126,11 @@
         <div class="--section">
         </div>
         <div class="--content">
-            <h3 class="--equipo_title">Equipo de la escuela</h3>
-            <div class="--equipo_column">
+            <h3 class="--equipo_title">
+                <u class="js-scroll slide-left">Equipo</u> 
+                <u class="js-scroll slide-left">de la</u> 
+                <u class="js-scroll slide-left">escuela</u></h3>
+            <div class="--equipo_column js-scroll slide-right">
                 <p><span>+</span> <b>CARMEN MORENO</b><br> Directora</p>
                 <p><span>+</span> <b>VANESSA ROMERO</b><br> Asesora de formación</p>
                 <p><span>+</span> <b>MARÍA JOSE CASTRO</b><br> Asesora de formación</p>
@@ -135,7 +138,7 @@
                 <p><span>+</span> <b>VIRGINIA DÍAZ</b><br> Asesora de formación</p>
                 <p><span>+</span> <b>ÁNGELA DÍAZ</b><br> Consultora de despachos</p>
             </div>
-            <div class="--equipo_column">
+            <div class="--equipo_column js-scroll slide-right">
                 <p><span>+</span> <b>JUAN BRENES</b><br> Diseñador Audiovisual</p>
                 <p><span>+</span> <b>PACO MAZA</b><br> Community Manager</p>
                 <p><span>+</span> <b>ANA ROLDÁN</b><br> Creativa publicitaria</p>
@@ -145,7 +148,7 @@
             </div>
         </div>
     </div>
-    <div class="--aside" id="b_vida">
+    <div class="--aside js-scroll fade-in" id="b_vida">
         <div class="--copy">
             <p class="--section_title">EXPERIENCIA</p>
         </div>

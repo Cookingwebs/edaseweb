@@ -11,11 +11,12 @@
                 <source src="/images/HOME_EDASE.mp4" type="video/mp4">
               </video>
             <div class="--copy">
-                <h2 class="--title">Tu<br>
-                    futuro
-                    <b>empieza
-                    <span>aquí</span></b></h2>
-                <h1 class="--subtitle">Escuela <br class="d-md-none">de formación <br class="d-md-none">para asesores <br class="d-md-none">del mañana</h1>
+                <h2 class="--title"><u class="slide-left-delay-0 --first-content">Tu</u><br>
+                    <u class="slide-left-delay-1 --first-content">futuro</u>
+                    <u class="slide-left-delay-2 --first-content"><b>empieza</u>
+                    <u class="slide-left-delay-3 --first-content"><span>aquí</span></b></u></h2>
+                <h1 class="--subtitle">
+                    <u class="slide-left-delay-4 --first-content_2">Escuela <br class="d-md-none">de formación <br class="d-md-none">para asesores <br class="d-md-none">del mañana</u></h1>
                 <div class="--arrow d-md-none">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
@@ -35,31 +36,31 @@
             <div class="--section">
             </div>
             <div class="--content">
-                <h2 class="--title">CREAMOS<br> ESCUELA</h2>
+                <h2 class="--title js-scroll js-scroll slide-left">CREAMOS<br> ESCUELA</h2>
                 <div class="--subaside_1">
                     <div class="--subaside_1_copy">
                         <ul>
-                            <li data="1"><span>13</span> AÑOS DE EXPERIENCIA</li>
-                            <li data="2"><span>350</span> TRABAJADORES</li>
-                            <li data="3"><span>15000</span> CLIENTES</li>
+                            <li class="js-scroll slide-left-sm" data="1"><span>13</span> AÑOS DE EXPERIENCIA</li>
+                            <li class="js-scroll slide-left-sm" data="2"><span>350</span> TRABAJADORES</li>
+                            <li class="js-scroll slide-left-sm" data="3"><span>15000</span> CLIENTES</li>
                         </ul>
                     </div>
-                    <div class="--subaside_1_carrousel">
+                    <div class="--subaside_1_carrousel js-scroll fade-in">
                         <div class="--container_carrousel" id="__container_carrousel">
                             <span id="__page_carrousel"><span>1</span>/4</span>
                             <div class="--b_title_carrousel">
-                                <h3 class="--active" data="1">Somos la asesoría que más crece en España</h3>
-                                <h3 data="2">La formación es el motor de nuestro crecimiento</h3>
-                                <h3 data="3">En contacto con la realidad de autónomos y pymes</h3>
-                                <h3 data="4">Compartimos nuestras competencias como empresa líder</h3>
+                                <h3 class="js-scroll slide-right --active" data="1">Somos la asesoría que más crece en España</h3>
+                                <h3 class="js-scroll slide-right" data="2">La formación es el motor de nuestro crecimiento</h3>
+                                <h3 class="js-scroll slide-right" data="3">En contacto con la realidad de autónomos y pymes</h3>
+                                <h3 class="js-scroll slide-right" data="4">Compartimos nuestras competencias como empresa líder</h3>
                             </div>
-                            <div class="--b_copy_carrousel">
-                                <p class="--active" data="1">Ayuda T Pymes es la 1º asesoría que ha revolucionado el asesoramiento llevando la tecnología a todos los procesos.</p>
-                                <p data="2">Hemos formado a toda nuestra plantilla desde sus inicios con la misma metodología y contenidos.</p>
-                                <p data="3">Nos actualizamos día a día con las nuevas necesidades que van surgiendo.</p>
-                                <p data="4">Ya no valen las teorías. Los clientes quieren soluciones rápidas y eficientes.</p>
+                            <div class="--b_copy_carrousel js-scroll slide-right">
+                                <p class="js-scroll fade-in --active" data="1">Ayuda T Pymes es la 1º asesoría que ha revolucionado el asesoramiento llevando la tecnología a todos los procesos.</p>
+                                <p class="js-scroll fade-in" data="2">Hemos formado a toda nuestra plantilla desde sus inicios con la misma metodología y contenidos.</p>
+                                <p class="js-scroll fade-in" data="3">Nos actualizamos día a día con las nuevas necesidades que van surgiendo.</p>
+                                <p class="js-scroll fade-in" data="4">Ya no valen las teorías. Los clientes quieren soluciones rápidas y eficientes.</p>
                             </div>
-                            <div class="--franja_carrousel" data="1"></div>
+                            <div class="--franja_carrousel js-scroll slide-height" data="1"></div>
                         </div>
                     </div>
                 </div>
@@ -74,9 +75,9 @@
             <div class="--content">
                 <p class="--section_title d-xl-none">PERFILES</p>
                 <div class="--content_copy">
-                    <h2 class="--title">Preparamos<br> a profesionales<br> de la asesoría a todos<br> los niveles</h2>
+                    <h2 class="--title"><u class="js-scroll slide-left-sm">Preparamos</u> <br><u class="js-scroll slide-left-sm">a profesionales</u>  <br><u class="js-scroll slide-left-sm">de la asesoría a todos</u>  <br><u class="js-scroll slide-left-sm">los niveles</u></h2>
                 </div>
-                <div class="--transition_niveles" id="__transition_niveles">
+                <div class="--transition_niveles js-scroll slide-right" id="__transition_niveles">
                     <div class="--content_transition" data="1">
                         <div class="--b_title_transition">
                             <h3 class="--active" data="1">Sin conocimientos ni experiencia previa</h3>
@@ -106,7 +107,7 @@
             <div class="--content">
                 <p class="--section_title d-xl-none">EXPERIENCIAS</p>
                 <!-- Slider main container -->
-                <div class="swiper mySwiper --testimonio_1">
+                <div class="swiper mySwiper --testimonio_1 js-scroll slide-left">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="--content_testimonios_copy">
@@ -177,7 +178,7 @@
                     {{-- <div class="swiper-button-prev"></div> --}}
                 </div>
 
-                <div class="swiper mySwiper --testimonio_2">
+                <div class="swiper mySwiper --testimonio_2 js-scroll slide-right">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <div></div>
@@ -226,11 +227,11 @@
             </div>
             <div class="--content">
                 <div class="--huella_claim">
-                    <h2 class="--huella_title">Estudiar.<br>
-                        Superarse.<br>
-                        <span>dejar huella</span></h2>
+                    <h2 class="--huella_title"><u class="js-scroll slide-left-sm">Estudiar.</u><br>
+                        <u class="js-scroll slide-left-sm">Superarse.</u><br>
+                        <u class="js-scroll slide-left-sm"><span>dejar huella</span></u></h2>
                 </div>
-                <div class="--huella_copy">
+                <div class="--huella_copy js-scroll fade-in-bottom">
                     <p class="--huella_subtitle">
                         EL <span>70%</span> DE NUESTROS ALUMNOS COMPATIBILIZA SU TRABAJO CON LA FORMACIÓN 
                     </p>
@@ -238,7 +239,7 @@
                         Tenemos una metodología flexible que te permite organizar tu tiempo de estudio 
                     </p>
                 </div>
-                <div class="--huella_img">
+                <div class="--huella_img js-scroll slide-right">
                     <div class="--huella_img_mascara">
                         <img src="{{ URL::to('/') }}/images/dejar-huella.webp" alt="" class="lazyload">
                         <div class="--huella_franja"></div>
