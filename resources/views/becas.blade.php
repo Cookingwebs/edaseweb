@@ -23,9 +23,9 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
-            <h2 class="--title">Bienvenid@ al portal<br class="d-none d-md-block">
-                de admisiones<br class="d-md-none"> de <b>EDASE</b></h2>
-            <p class="--subtitle">ENVÍA TU AUTOMATRÍCULA Y UN FORMADOR SE PONDRÁ EN CONTACTO CONTIGO <b>EN MENOS DE 24 HORAS.</b></p>
+            <h2 class="--title">Portal de solicitud<br class="d-none d-md-block">
+                de becas <br class="d-md-none"> y admisiones</h2>
+            <p class="--subtitle">AL ENVIAR TU AUTOMATRÍCULA, NOS PONDREMOS EN CONTACTO CONTIGO EN MENOS DE 24 HORAS PARA HABLARTE DE NUESTRO PROGRAMA DE BECAS.</p>
             <div class="--admision_bloque_formulario">
                 <form method="post" name="admision_form" id="admision_form">
                     <div class="--form_bloque">

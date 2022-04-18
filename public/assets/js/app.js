@@ -141,6 +141,61 @@ $(document).ready(function(){
             
         }, 500);
     });
+        let el = document.getElementById('__profesorado');
+        if(el){
+            el.addEventListener('touchstart', handleTouchStart, false);        
+            el.addEventListener('touchmove', handleTouchMove, false);
+        }
+
+    var xDown = null;  
+
+    function getTouches(evt) {
+    return evt.touches ||             // browser API
+        evt.originalEvent.touches; // jQuery
+    }                                                     
+                                                                        
+    function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                      
+    };                                                
+                                                                        
+    function handleTouchMove(evt) {
+    if ( ! xDown) {
+        return;
+    }
+
+    var xUp = evt.touches[0].clientX;  
+
+    var xDiff = xDown - xUp;
+                                                                        
+
+        if ( xDiff > 0 ) {
+            var page = $('.--profesorado').attr('data');
+            var oldPage = page;
+            page = parseInt(page);
+            page++;
+            if(page > 6){
+                page = 1;
+            }
+            $('.--profesorado').attr('data', page);
+            $('.--profesorado_franja').attr('data', page);
+            $('.--profesorado_bloque').attr('data', page);
+            if(page == 1){
+                $(`.--profesorado_mascara_img_principal`).css('left', '0').css('right', '0');
+                $(`.--profesorado_mascara_img_secundaria`).css('left', '0').css('right', '0');
+            }else{
+                $(`.--profesorado_mascara_img_principal[data="${oldPage}"]`).css('left', '-100%').css('right', '100%');
+                $(`.--profesorado_mascara_img_secundaria[data="${oldPage}"]`).css('left', '-100%').css('right', '100%');
+            }
+            $(`.--profesorado_copy[data="${oldPage}"]`).fadeOut();
+            $(`.--profesorado_copy[data="${page}"]`).fadeIn();
+            $(`.--profesorado_texto[data="${oldPage}"]`).fadeOut();
+            $(`.--profesorado_texto[data="${page}"]`).fadeIn();
+        }                      
+            
+    /* reset values */
+    xDown = null;                                           
+    };
   }
   
   
@@ -155,105 +210,168 @@ $(document).ready(function(){
   }
   
   const moveTransition = function(){
-    $('.--transition_niveles').on('click', function(){
-        $('.--mascara_transition').addClass('--transition');
-        var lastPage = $('.--b_title_transition h3:nth-last-child(1)').attr('data');
-        lastPage = parseInt(lastPage);
-        var page = $('.--content_transition').attr('data');
-        page = parseInt(page);
-        page++;
-        if(page > lastPage){
-            page = 1;
+    if($( window ).width() >= 980){
+        $('.--transition_niveles').on('click', function(){
+            $('.--mascara_transition').addClass('--transition');
+            var lastPage = $('.--b_title_transition h3:nth-last-child(1)').attr('data');
+            lastPage = parseInt(lastPage);
+            var page = $('.--content_transition').attr('data');
+            page = parseInt(page);
+            page++;
+            if(page > lastPage){
+                page = 1;
+            }
+            $('.--content_transition').attr('data', page);
+            $('.--progress_transition').attr('data', page);
+            setTimeout(function(){
+                $('.--b_date_transition p').removeClass('--active');
+                $(`.--b_date_transition p[data="${page}"]`).addClass('--active');
+                $('.--b_foto_transition img').removeClass('--active');
+                $(`.--b_foto_transition img[data="${page}"]`).addClass('--active');
+                $('.--b_title_transition h3').removeClass('--active');
+                $(`.--b_title_transition h3[data="${page}"]`).addClass('--active');
+                $('.--b_copy_transition p').removeClass('--active');
+                $(`.--b_copy_transition p[data="${page}"]`).addClass('--active');
+            }, 450);
+            setTimeout(function(){
+                $('.--mascara_transition').removeClass('--transition');
+            }, 500);
+        });
+    }
+    let el = document.getElementById('__transition_niveles');
+    if(el){
+        el.addEventListener('touchstart', handleTouchStart, false);        
+        el.addEventListener('touchmove', handleTouchMove, false);
+    }
+    var xDown = null;  
+
+    function getTouches(evt) {
+    return evt.touches ||             // browser API
+            evt.originalEvent.touches; // jQuery
+    }                                                     
+                                                                            
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];                                      
+        xDown = firstTouch.clientX;                                      
+    };                                                
+                                                                            
+    function handleTouchMove(evt) {
+        if ( ! xDown) {
+            return;
         }
-        $('.--content_transition').attr('data', page);
-        $('.--progress_transition').attr('data', page);
-        setTimeout(function(){
-            $('.--b_date_transition p').removeClass('--active');
-            $(`.--b_date_transition p[data="${page}"]`).addClass('--active');
-            $('.--b_foto_transition img').removeClass('--active');
-            $(`.--b_foto_transition img[data="${page}"]`).addClass('--active');
-            $('.--b_title_transition h3').removeClass('--active');
-            $(`.--b_title_transition h3[data="${page}"]`).addClass('--active');
-            $('.--b_copy_transition p').removeClass('--active');
-            $(`.--b_copy_transition p[data="${page}"]`).addClass('--active');
-        }, 450);
-        setTimeout(function(){
-            $('.--mascara_transition').removeClass('--transition');
-        }, 500);
-    });
+
+        var xUp = evt.touches[0].clientX;  
+
+        var xDiff = xDown - xUp;
+                                                                            
+        
+            if ( xDiff > 0 ) {
+                $('.--mascara_transition').addClass('--transition');
+                var lastPage = $('.--b_title_transition h3:nth-last-child(1)').attr('data');
+                lastPage = parseInt(lastPage);
+                var page = $('.--content_transition').attr('data');
+                page = parseInt(page);
+                page++;
+                if(page > lastPage){
+                    page = 1;
+                }
+                $('.--content_transition').attr('data', page);
+                $('.--progress_transition').attr('data', page);
+                setTimeout(function(){
+                    $('.--b_date_transition p').removeClass('--active');
+                    $(`.--b_date_transition p[data="${page}"]`).addClass('--active');
+                    $('.--b_foto_transition img').removeClass('--active');
+                    $(`.--b_foto_transition img[data="${page}"]`).addClass('--active');
+                    $('.--b_title_transition h3').removeClass('--active');
+                    $(`.--b_title_transition h3[data="${page}"]`).addClass('--active');
+                    $('.--b_copy_transition p').removeClass('--active');
+                    $(`.--b_copy_transition p[data="${page}"]`).addClass('--active');
+                }, 450);
+                setTimeout(function(){
+                    $('.--mascara_transition').removeClass('--transition');
+                }, 500);
+            }                      
+                
+        /* reset values */
+        xDown = null;                                           
+    };
   }
   
   const moveCarrousel = function(){
-    $('#__container_carrousel').on('click', function(){
-        $('.--franja_carrousel').addClass('--transition');
-        var page = $('#__page_carrousel span').html();
-        page = parseInt(page);
-        page++;
-        if(page > 4){
-            page = 1;
-        }
-        $('.--franja_carrousel').attr('data', page);
-        $('#__page_carrousel span').html(page);
-        setTimeout(function(){
-            $('.--b_title_carrousel h3').removeClass('--active');
-            $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
-            $('.--b_copy_carrousel p').removeClass('--active');
-            $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
-        }, 450);
-        setTimeout(function(){
-            $('.--franja_carrousel').removeClass('--transition');
-        }, 500);
-    });
+    if($( window ).width() >= 980){
+        $('#__container_carrousel').on('click', function(){
+            $('.--franja_carrousel').addClass('--transition');
+            var page = $('#__page_carrousel span').html();
+            page = parseInt(page);
+            page++;
+            if(page > 4){
+                page = 1;
+            }
+            $('.--franja_carrousel').attr('data', page);
+            $('#__page_carrousel span').html(page);
+            setTimeout(function(){
+                $('.--b_title_carrousel h3').removeClass('--active');
+                $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
+                $('.--b_copy_carrousel p').removeClass('--active');
+                $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
+            }, 450);
+            setTimeout(function(){
+                $('.--franja_carrousel').removeClass('--transition');
+            }, 500);
+        });
+    }
     let el = document.getElementById('__container_carrousel');
+    if(el){
         el.addEventListener('touchstart', handleTouchStart, false);        
         el.addEventListener('touchmove', handleTouchMove, false);
-
-var xDown = null;  
-
-function getTouches(evt) {
-  return evt.touches ||             // browser API
-         evt.originalEvent.touches; // jQuery
-}                                                     
-                                                                         
-function handleTouchStart(evt) {
-    const firstTouch = getTouches(evt)[0];                                      
-    xDown = firstTouch.clientX;                                      
-};                                                
-                                                                         
-function handleTouchMove(evt) {
-    if ( ! xDown) {
-        return;
     }
 
-    var xUp = evt.touches[0].clientX;  
+    var xDown = null;  
 
-    var xDiff = xDown - xUp;
-                                                                         
-    
-        if ( xDiff > 0 ) {
-            $('.--franja_carrousel').addClass('--transition');
-        var page = $('#__page_carrousel span').html();
-        page = parseInt(page);
-        page++;
-        if(page > 4){
-            page = 1;
+    function getTouches(evt) {
+    return evt.touches ||             // browser API
+            evt.originalEvent.touches; // jQuery
+    }                                                     
+                                                                            
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];                                      
+        xDown = firstTouch.clientX;                                      
+    };                                                
+                                                                            
+    function handleTouchMove(evt) {
+        if ( ! xDown) {
+            return;
         }
-        $('.--franja_carrousel').attr('data', page);
-        $('#__page_carrousel span').html(page);
-        setTimeout(function(){
-            $('.--b_title_carrousel h3').removeClass('--active');
-            $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
-            $('.--b_copy_carrousel p').removeClass('--active');
-            $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
-        }, 450);
-        setTimeout(function(){
-            $('.--franja_carrousel').removeClass('--transition');
-        }, 500);
-        }                      
-            
-    /* reset values */
-    xDown = null;                                           
-};
+
+        var xUp = evt.touches[0].clientX;  
+
+        var xDiff = xDown - xUp;
+                                                                            
+        
+            if ( xDiff > 0 ) {
+                $('.--franja_carrousel').addClass('--transition');
+            var page = $('#__page_carrousel span').html();
+            page = parseInt(page);
+            page++;
+            if(page > 4){
+                page = 1;
+            }
+            $('.--franja_carrousel').attr('data', page);
+            $('#__page_carrousel span').html(page);
+            setTimeout(function(){
+                $('.--b_title_carrousel h3').removeClass('--active');
+                $(`.--b_title_carrousel h3[data="${page}"]`).addClass('--active');
+                $('.--b_copy_carrousel p').removeClass('--active');
+                $(`.--b_copy_carrousel p[data="${page}"]`).addClass('--active');
+            }, 450);
+            setTimeout(function(){
+                $('.--franja_carrousel').removeClass('--transition');
+            }, 500);
+            }                      
+                
+        /* reset values */
+        xDown = null;                                           
+    };
   }
   
   
@@ -340,52 +458,52 @@ function handleTouchMove(evt) {
   });
   }
   
-  function swipedetect(el, callback){
+//   function swipedetect(el, callback){
   
-    var touchsurface = el,
-    swipedir,
-    startX,
-    startY,
-    distX,
-    distY,
-    threshold = 150, //required min distance traveled to be considered swipe
-    restraint = 100, // maximum distance allowed at the same time in perpendicular direction
-    allowedTime = 300, // maximum time allowed to travel that distance
-    elapsedTime,
-    startTime,
-    handleswipe = callback || function(swipedir){}
+//     var touchsurface = el,
+//     swipedir,
+//     startX,
+//     startY,
+//     distX,
+//     distY,
+//     threshold = 150, //required min distance traveled to be considered swipe
+//     restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+//     allowedTime = 300, // maximum time allowed to travel that distance
+//     elapsedTime,
+//     startTime,
+//     handleswipe = callback || function(swipedir){}
   
-    touchsurface.addEventListener('touchstart', function(e){
-        var touchobj = e.changedTouches[0]
-        swipedir = 'none'
-        dist = 0
-        startX = touchobj.pageX
-        startY = touchobj.pageY
-        startTime = new Date().getTime() // record time when finger first makes contact with surface
-        e.preventDefault()
-    }, false)
+//     touchsurface.addEventListener('touchstart', function(e){
+//         var touchobj = e.changedTouches[0]
+//         swipedir = 'none'
+//         dist = 0
+//         startX = touchobj.pageX
+//         startY = touchobj.pageY
+//         startTime = new Date().getTime() // record time when finger first makes contact with surface
+//         e.preventDefault()
+//     }, false)
   
-    touchsurface.addEventListener('touchmove', function(e){
-        e.preventDefault() // prevent scrolling when inside DIV
-    }, false)
+//     touchsurface.addEventListener('touchmove', function(e){
+//         e.preventDefault() // prevent scrolling when inside DIV
+//     }, false)
   
-    touchsurface.addEventListener('touchend', function(e){
-        var touchobj = e.changedTouches[0]
-        distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
-        distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
-        elapsedTime = new Date().getTime() - startTime // get time elapsed
-        if (elapsedTime <= allowedTime){ // first condition for awipe met
-            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
-                swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
-            }
-            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
-                swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
-            }
-        }
-        handleswipe(swipedir)
-        e.preventDefault()
-    }, false)
-  }
+//     touchsurface.addEventListener('touchend', function(e){
+//         var touchobj = e.changedTouches[0]
+//         distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
+//         distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
+//         elapsedTime = new Date().getTime() - startTime // get time elapsed
+//         if (elapsedTime <= allowedTime){ // first condition for awipe met
+//             if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
+//                 swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+//             }
+//             else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
+//                 swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
+//             }
+//         }
+//         handleswipe(swipedir)
+//         e.preventDefault()
+//     }, false)
+//   }
   
   // Generar id random
   let guid = () => {

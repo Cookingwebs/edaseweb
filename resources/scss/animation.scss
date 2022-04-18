@@ -1,3 +1,5 @@
+@import 'functions';
+
 .js-scroll {
     opacity: 0;
     transition: opacity 500ms;
@@ -43,10 +45,24 @@
   }
 
   .scrolled.slide-height {
-    animation: slide-in-height 1s ease-in-out both;
+    animation: slide-in-height-desktop 1s ease-in-out both;
+    @include notebook{
+      animation: slide-in-height-notebook 1s ease-in-out both;
+    }
+    @include ipad-portrait{
+      animation: slide-in-height-ipad-portrait 1s ease-in-out both;
+    }
+    @include tablet{
+      animation: slide-in-height-tablet 1s ease-in-out both;
+    }
   }
+  
+
   .scrolled.slide-bottom {
-    animation: slide-in-bottom 1s ease-in-out both;
+    animation: slide-in-bottom-desktop 1s ease-in-out both;
+    @include notebook{
+      animation: slide-in-bottom-notebook 1s ease-in-out both;
+    }
   }
 
   @for $i from 0 through 5 {
@@ -64,7 +80,7 @@
 
   // Animations
 
-  @keyframes slide-in-height {
+  @keyframes slide-in-height-desktop {
     0% {
       height: 0px;
     }
@@ -72,13 +88,47 @@
       height: 560px;
     }
   }
-  @keyframes slide-in-bottom {
+  @keyframes slide-in-height-notebook {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 410px;
+    }
+  }
+  @keyframes slide-in-height-ipad-portrait {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 353px;
+    }
+  }
+  @keyframes slide-in-height-tablet {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: auto;
+    }
+  }
+  @keyframes slide-in-bottom-desktop {
     0% {
       bottom: 100%;
       opacity: 0;
     }
     100% {
       bottom: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom-notebook {
+    0% {
+      bottom: 100%;
+      opacity: 0;
+    }
+    100% {
+      bottom: 40px;
       opacity: 1;
     }
   }

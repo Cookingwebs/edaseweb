@@ -98,8 +98,8 @@
         </div>
         <div class="--content">
             <p class="--section_title d-xl-none">RECURSOS</p>
-           <h2 class="--title">Así es la formación de <br>asesor técnico en EDASE</h2>
-           <p class="--subtitle">TTE PREPARAMOS PARA ACCEDER AL MERCADO LABORAL</p>
+           <h2 class="--title">Así es la formación<br class="d-md-none"> de <br>asesor técnico en EDASE</h2>
+           <p class="--subtitle">TE PREPARAMOS PARA ACCEDER AL MERCADO LABORAL</p>
            <div class="--2_columns --2_rows">
                <div class="--objetivos_copy">
                    <h3 class="--objetivos_title">PROFESORADO <br>EN EJERCICIO</h3>

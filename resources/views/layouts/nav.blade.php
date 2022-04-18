@@ -99,7 +99,7 @@
                 </li> --}}
                 <li class="--content_menu_link {{ Route::currentRouteNamed('becas') ? '--active' : '' }}">
                         <a href="{{route('becas')}}">
-                        BECAS Y ADMINISIONES
+                        BECAS Y ADMISIONES
                     </a>
                 </li>
                 <li class="--content_menu_link" data-link="6">
