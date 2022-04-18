@@ -69,6 +69,9 @@
     .slide-left-delay-#{$i}{
       animation: slide-in-left 1s ease-in-out $i*200ms;
     }
+    .slide-right-delay-#{$i}{
+      animation: slide-in-right 1s ease-in-out $i*200ms;
+    }
     .fade-in-delay-#{$i}{
       animation: fade-in 1s ease-in-out $i*200ms;
     }

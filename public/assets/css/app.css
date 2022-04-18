@@ -944,7 +944,7 @@ p {
 }
 #nav .--nav_primary {
   display: grid;
-  grid-template-columns: 330px 2fr 1fr;
+  grid-template-columns: 330px 2fr auto;
   grid-template-rows: auto;
   grid-template-areas: "logo menu submenu" "desplegable desplegable desplegable";
   position: relative;
@@ -953,18 +953,18 @@ p {
 }
 @media only screen and (max-width: 1450px) {
   #nav .--nav_primary {
-    grid-template-columns: 240px 2fr 1fr;
+    grid-template-columns: 240px 2fr auto;
   }
 }
 @media only screen and (max-width: 1330px) {
   #nav .--nav_primary {
-    grid-template-columns: 240px 50% 1fr;
+    grid-template-columns: 240px 50% auto;
   }
 }
 @media only screen and (max-width: 1200px) {
   #nav .--nav_primary {
     background-color: #01193f;
-    grid-template-columns: 240px 69% 1fr;
+    grid-template-columns: 240px 69% auto;
     border: none;
   }
 }
@@ -1020,7 +1020,7 @@ p {
   flex-flow: row;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-left: 20%;
+  padding-left: 212px;
   background-color: #fff;
 }
 @media only screen and (max-width: 1450px) {
@@ -1090,7 +1090,8 @@ p {
 }
 @media only screen and (max-width: 767px) {
   #nav .--nav_primary .--menu .--phone_tablet {
-    display: none;
+    right: 67px;
+    display: block;
   }
 }
 #nav .--nav_primary .--menu .--menu_list {
@@ -1192,6 +1193,9 @@ p {
   position: relative;
   font-size: 16px;
   cursor: pointer;
+}
+#nav .--nav_primary .--submenu .--submenu_list .--submenu_list_item.--acceder {
+  margin-right: 30px;
 }
 @media only screen and (max-width: 1450px) {
   #nav .--nav_primary .--submenu .--submenu_list .--submenu_list_item {
@@ -1574,6 +1578,7 @@ p {
     border-bottom: 1px solid #dbdde1;
     max-width: 77%;
     margin: 0 auto;
+    overflow: hidden;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2576,7 +2581,7 @@ p {
 }
 #b_formulario .--formulario_form form input[type=text], #b_formulario .--formulario_form form input[type=email] {
   display: block;
-  max-width: 100%;
+  max-width: 95%;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -2710,6 +2715,7 @@ p {
 
 #b_formulario_footer {
   background-color: #3d4762;
+  overflow: hidden;
 }
 #b_formulario_footer .--section::before {
   bottom: -40px;
@@ -2902,7 +2908,7 @@ p {
 }
 #b_formulario_footer .--formulario_form form input[type=text], #b_formulario_footer .--formulario_form form input[type=email] {
   display: block;
-  max-width: 100%;
+  max-width: 95%;
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -3028,6 +3034,61 @@ p {
   #b_formulario_footer .--formulario_form form .--cta_submit {
     font-size: 17px;
   }
+}
+#b_formulario_footer.--light {
+  min-height: auto;
+  background-color: #fff;
+  margin-bottom: 50px;
+  overflow: initial;
+}
+@media only screen and (max-width: 980px) {
+  #b_formulario_footer.--light {
+    overflow: hidden;
+  }
+}
+#b_formulario_footer.--light .--content {
+  padding: 70px 200px 0px 100px;
+}
+@media only screen and (max-width: 980px) {
+  #b_formulario_footer.--light .--content {
+    padding: 70px 0px 0px 0px;
+  }
+}
+#b_formulario_footer.--light .--section {
+  padding-top: 0px;
+}
+#b_formulario_footer.--light .--copy {
+  top: 150px;
+}
+#b_formulario_footer.--light .--copy p {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--title {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--title span {
+  color: #0633c9;
+}
+#b_formulario_footer.--light .--subtitle {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--subtitle span {
+  color: #0633c9;
+}
+#b_formulario_footer.--light .--text {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--formulario_form .--form_title {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--formulario_form .--form_extra {
+  color: #0633c9;
+}
+#b_formulario_footer.--light .--formulario_form form input {
+  color: #3d4762;
+}
+#b_formulario_footer.--light .--formulario_form form p {
+  color: #3d4762;
 }
 
 @-webkit-keyframes spinner {
@@ -4379,6 +4440,7 @@ p {
   background-color: #3d4762;
   min-height: 580px;
   padding-bottom: 140px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1450px) {
   #home-page #b_huella {
@@ -4529,6 +4591,9 @@ p {
 }
 #home-page #b_huella .--content .--huella_img .--huella_img_mascara .--huella_franja {
   background-color: #62fb9e;
+}
+#home-page #b_formulario_footer.--light .--section {
+  padding-top: 70px;
 }
 
 #conocenos-page {

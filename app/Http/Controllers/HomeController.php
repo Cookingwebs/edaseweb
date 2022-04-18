@@ -12,7 +12,9 @@ class HomeController extends Controller
     public function __invoke(){
 
         $robots = "index, follow";
-        
+        $datos = [
+            'enterprise' => 7
+        ];
         $title = "EDASE - Escuela de Asesores";
         $description = "Escuela de formación creada por Ayuda T Pymes ▷ Empieza aquí tu futuro en el sector de la asesoría";
         $og_title = "EDASE【Escuela de Asesores】";
@@ -29,6 +31,6 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('home');
+        return view('home', $datos);
     }
 }

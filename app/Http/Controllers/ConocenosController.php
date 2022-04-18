@@ -12,7 +12,9 @@ class ConocenosController extends Controller
     public function __invoke(){
         
         $robots = "index, follow";
-
+        $datos = [
+            'enterprise' => 7
+        ];
         $title = "Conócenos";
         $description = "Descubre EDASE ▷ la primera escuela especializada en asesoría creada por Ayuda T Pymes";
         $og_title = "EDASE【Escuela de Asesores】";
@@ -28,6 +30,6 @@ class ConocenosController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('conocenos');
+        return view('conocenos', $datos);
     }
 }

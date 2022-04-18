@@ -17,6 +17,7 @@
                     <u class="slide-left-delay-3 --first-content"><span>aquí</span></b></u></h2>
                 <h1 class="--subtitle">
                     <u class="slide-left-delay-4 --first-content_2">Escuela <br class="d-md-none">de formación <br class="d-md-none">para asesores <br class="d-md-none">del mañana</u></h1>
+                    <div class="--cta --go_form_down slide-left-delay-4 --first-content_2 d-none d-md-block">SOLICITAR INFORMACIÓN</div>
                 <div class="--arrow d-md-none">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
                     <img src="{{ URL::to('/') }}/images/svg/arrow-down-white.svg" alt="" class="lazyload">
@@ -247,8 +248,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>
 
-    </script>
+        @include('layouts.footer-generico')
+    </div>
 @endsection

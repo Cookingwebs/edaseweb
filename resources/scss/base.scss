@@ -78,7 +78,7 @@ p{
     transition: 300ms all ease-in-out;
     .--nav_primary {
         display: grid;
-        grid-template-columns: 330px 2fr 1fr;
+        grid-template-columns: 330px 2fr auto;
         grid-template-rows: auto;
         grid-template-areas:
         "logo menu submenu"
@@ -88,14 +88,14 @@ p{
         border-bottom: 1px solid $grey-light;
         // box-shadow: 0 1px 5px 1px rgb(0, 0, 0, 20%);
         @include notebook{
-            grid-template-columns: 240px 2fr 1fr;
+            grid-template-columns: 240px 2fr auto;
         }
         @include notebook-small{
-            grid-template-columns: 240px 50% 1fr;
+            grid-template-columns: 240px 50% auto;
         }
         @include ipad-portrait{
             background-color: $blue-dark;
-            grid-template-columns: 240px 69% 1fr;
+            grid-template-columns: 240px 69% auto;
             border: none;
         }
         @include mobile{
@@ -143,7 +143,7 @@ p{
             flex-flow: row;
             justify-content: flex-start;
             align-items: flex-end;
-            padding-left: 20%;
+            padding-left: 212px;
             background-color: $white;
             @include notebook{
                 justify-content: center;
@@ -196,7 +196,8 @@ p{
                     display: block;
                 }
                 @include mobile{
-                    display: none;
+                    right: 67px;
+                    display: block;
                 }
             }
             .--menu_list {
@@ -301,6 +302,9 @@ p{
                     position: relative;
                     font-size: 16px;
                     cursor: pointer;
+                    &.--acceder{
+                        margin-right: 30px;
+                    }
                     @include notebook{
                         font-size: 12px;
                     }
@@ -664,6 +668,7 @@ p{
         border-bottom: 1px solid $grey-light;
         max-width: 77%;
         margin: 0 auto;
+        overflow: hidden;
     }
     @include mobile{
         max-width: 100%;
@@ -1487,7 +1492,7 @@ p{
                 }
                 &[type="text"],&[type="email"]{
                     display: block;
-                    max-width: 100%;
+                    max-width: 95%;
                     width: 100%;
                     @include mobile{
                         width: 90%;
@@ -1604,6 +1609,7 @@ p{
 
 #b_formulario_footer{
     background-color: $grey-dark;
+    overflow: hidden;
     .--section{
         &::before{
             bottom: -40px;
@@ -1737,7 +1743,7 @@ p{
                 }
                 &[type="text"],&[type="email"]{
                     display: block;
-                    max-width: 100%;
+                    max-width: 95%;
                     width: 100%;
                     @include mobile{
                         width: 90%;
@@ -1846,6 +1852,61 @@ p{
                     font-size: 17px;
                 }
             } 
+        }
+    }
+    &.--light{
+        min-height: auto;
+        background-color: $white;
+        margin-bottom: 50px;
+        overflow: initial;
+        @include tablet{
+            overflow: hidden;
+        }
+        .--content{
+            padding: 70px 200px 0px 100px;
+            @include tablet{
+                padding: 70px 0px 0px 0px;
+            }
+        }
+        .--section{
+            padding-top: 0px;
+        }
+        .--copy{
+            top: 150px;
+            p{
+                color: $grey-dark;
+            }
+        }
+        .--title{
+            color: $grey-dark;
+            span{
+                color: $blue;
+            }
+        }
+        .--subtitle{
+            color: $grey-dark;
+            span{
+                color: $blue;
+            }
+        }
+        .--text{
+            color: $grey-dark;
+        }
+        .--formulario_form{
+            .--form_title{
+                color: $grey-dark;
+            }
+            .--form_extra{
+                color: $blue;
+            }
+            form{
+                input{
+                    color: $grey-dark;
+                }
+                p{
+                    color: $grey-dark;
+                }
+            }
         }
     }
 }

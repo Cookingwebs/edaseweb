@@ -88,6 +88,11 @@ u {
           animation: slide-in-left 1s ease-in-out 0ms;
 }
 
+.slide-right-delay-0 {
+  -webkit-animation: slide-in-right 1s ease-in-out 0ms;
+          animation: slide-in-right 1s ease-in-out 0ms;
+}
+
 .fade-in-delay-0 {
   -webkit-animation: fade-in 1s ease-in-out 0ms;
           animation: fade-in 1s ease-in-out 0ms;
@@ -96,6 +101,11 @@ u {
 .slide-left-delay-1 {
   -webkit-animation: slide-in-left 1s ease-in-out 200ms;
           animation: slide-in-left 1s ease-in-out 200ms;
+}
+
+.slide-right-delay-1 {
+  -webkit-animation: slide-in-right 1s ease-in-out 200ms;
+          animation: slide-in-right 1s ease-in-out 200ms;
 }
 
 .fade-in-delay-1 {
@@ -108,6 +118,11 @@ u {
           animation: slide-in-left 1s ease-in-out 400ms;
 }
 
+.slide-right-delay-2 {
+  -webkit-animation: slide-in-right 1s ease-in-out 400ms;
+          animation: slide-in-right 1s ease-in-out 400ms;
+}
+
 .fade-in-delay-2 {
   -webkit-animation: fade-in 1s ease-in-out 400ms;
           animation: fade-in 1s ease-in-out 400ms;
@@ -116,6 +131,11 @@ u {
 .slide-left-delay-3 {
   -webkit-animation: slide-in-left 1s ease-in-out 600ms;
           animation: slide-in-left 1s ease-in-out 600ms;
+}
+
+.slide-right-delay-3 {
+  -webkit-animation: slide-in-right 1s ease-in-out 600ms;
+          animation: slide-in-right 1s ease-in-out 600ms;
 }
 
 .fade-in-delay-3 {
@@ -128,6 +148,11 @@ u {
           animation: slide-in-left 1s ease-in-out 800ms;
 }
 
+.slide-right-delay-4 {
+  -webkit-animation: slide-in-right 1s ease-in-out 800ms;
+          animation: slide-in-right 1s ease-in-out 800ms;
+}
+
 .fade-in-delay-4 {
   -webkit-animation: fade-in 1s ease-in-out 800ms;
           animation: fade-in 1s ease-in-out 800ms;
@@ -136,6 +161,11 @@ u {
 .slide-left-delay-5 {
   -webkit-animation: slide-in-left 1s ease-in-out 1000ms;
           animation: slide-in-left 1s ease-in-out 1000ms;
+}
+
+.slide-right-delay-5 {
+  -webkit-animation: slide-in-right 1s ease-in-out 1000ms;
+          animation: slide-in-right 1s ease-in-out 1000ms;
 }
 
 .fade-in-delay-5 {

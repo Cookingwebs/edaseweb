@@ -11,7 +11,9 @@ class MetodologiaController extends Controller
 {
     public function __invoke(){
         $robots = "index, follow";
-
+        $datos = [
+            'enterprise' => 7
+        ];
         $title = "Metodología";
         $description = "La metodología única y exclusiva que ponen en práctica en la Escuela de Asesores creada por Ayuda T Pymes";
         $og_title = "Metodología en EDASE 【Como se forman los asesores】";
@@ -27,6 +29,6 @@ class MetodologiaController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('metodologia');
+        return view('metodologia', $datos);
     }
 }

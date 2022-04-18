@@ -219,6 +219,6 @@
             </div>
         </div>
     </div>
-
+    @include('layouts.footer-generico')
 </div>
 @endsection

@@ -992,6 +992,7 @@
         background-color: $grey-dark;
         min-height: 580px;
         padding-bottom: 140px;
+        overflow: hidden;
         @include notebook{
             min-height: 410px;
             padding-bottom: 70px;
@@ -1109,6 +1110,13 @@
                         background-color: $green;
                     }
                 }
+            }
+        }
+    }
+    #b_formulario_footer{
+        &.--light{
+            .--section{
+                padding-top: 70px;
             }
         }
     }
