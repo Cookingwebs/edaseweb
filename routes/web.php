@@ -46,12 +46,15 @@ Route::get('/terminos-condiciones', [AvisosController::class, "terminos"])->name
 Route::get('/politica-privacidad', [AvisosController::class, "politica"])->name('politica');
 Route::get('/aviso-legal', [AvisosController::class, "aviso"])->name('aviso');
 Route::get('/politica-cookies', [AvisosController::class, "cookies"])->name('cookies');
-// Route::get('/politica-privacidad', TecnicoController::class);
-// Route::get('/procesamiento-datos', TecnicoController::class);
 
+// LANZAMIENTOS
 
 Route::get('/aula-abierta', [LanzamientoController::class, "aulaAbierta"])->name('aula-abierta');
 Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
+// PROMOS
 
+Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');
+
+// TESTS
 Route::get('/test', TestController::class)->name('test');

@@ -14,6 +14,7 @@ class LanzamientoController extends Controller
         $robots = "noindex, nofollow";
         $datos = [
             'enterprise' => 7,
+            'chat' => 'ok',
             'action_form' => url()->current().'/gracias'
         ];
         $title = "Aula abierta";
