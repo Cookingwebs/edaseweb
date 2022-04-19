@@ -33,7 +33,7 @@ Route::get('/admisiones', BecasController::class)->name('becas');
 Route::get('/master-asesoria', MasterController::class)->name('master');
 Route::get('/mba', MbaController::class)->name('mba');
 Route::get('/tecnico-asesoria', TecnicoController::class)->name('tecnico');
-Route::get('/plan-de-carrera', CarreraController::class)->name('carrera');
+// Route::get('/plan-de-carrera', CarreraController::class)->name('carrera');
 
 Route::get('/sitemap-manually', [SitemapController::class, "manually"]);
 Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);

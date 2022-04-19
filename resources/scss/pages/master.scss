@@ -498,9 +498,6 @@
                     margin-bottom: 50px;
                   }
               }
-              .--content_testimonios_foto{
-                  
-              }
                 img{
                     width: 100%;
                     height: auto;
@@ -523,7 +520,7 @@
                 }
                 @include mobile{
                     top: 22px;
-                    width: 29px;
+                    width: 45px;
                     bottom: 0px;
                 }
                   &::after{

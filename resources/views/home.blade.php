@@ -221,11 +221,6 @@
         </div>
 
         <div class="--aside" id="b_huella">
-            <div class="--arrow_interior d-none d-md-block --bottom">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-            </div>
             <div class="--content">
                 <div class="--huella_claim">
                     <h2 class="--huella_title"><u class="js-scroll slide-left-sm">Estudiar.</u><br>

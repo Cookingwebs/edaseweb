@@ -86,7 +86,7 @@
         <div class="--content">
             <p class="--section_title d-xl-none">recursos</p>
            <h2 class="--title js-scroll slide-left">Empieza tu plan de acción<br> en el MBA Online</h2>
-           <p class="--subtitle js-scroll slide-left">TE DOTAMOS DE TODOS LOS RECURSOS NECESARIOS PARA PROYECTAR TU FUTURO COMO DIRECTIVO O IMPULSAR LA CREACIÓN DE TU ASESORÍA</p>
+           <p class="--subtitle js-scroll slide-left">Te dotamos de todos los recursos necesarios para proyectar tu futuro como directivo o impulsar la creación de tu asesoría</p>
            <div class="--2_columns --2_rows">
                <div class="--objetivos_copy js-scroll slide-left">
                    <h3 class="--objetivos_title">ESTRATEGIA <br class="d-none d-md-block">FORMATIVA</h3>
@@ -169,7 +169,7 @@
                     <p><span>+</span>300</p>
                 </div>
                 <div class="--cifras_tabla_item_copy js-scroll slide-right">
-                    <p>Aspecialistas para externalizar tus servicios</p>
+                    <p>Especialistas para externalizar tus servicios</p>
                 </div>
             </div>
         </div>

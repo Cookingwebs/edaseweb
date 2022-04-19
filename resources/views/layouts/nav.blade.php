@@ -88,10 +88,10 @@
                 <li>
                     HOME
                 </li>
-                <li class="--content_menu_link" data-link="2">
+                <li class="--content_menu_link __cambio_seccion" data-link="2">
                     TITULACIONES
                 </li>
-                <li class="--content_menu_link" data-link="3">
+                <li class="--content_menu_link __cambio_seccion" data-link="3">
                     LA ESCUELA
                 </li>
                 {{-- <li class="--content_menu_link" data-link="4">
@@ -102,8 +102,10 @@
                         BECAS Y ADMISIONES
                     </a>
                 </li>
-                <li class="--content_menu_link" data-link="6">
-                    RRSS
+                <li class="--content_menu_link --green">
+                    <a href="https://campusayudatlearning.com/iniciar/">
+                    <span>ACCESO ALUMNO</span>
+                    </a>
                 </li>
             </ul>
             <ul class="--links" data-select="2">

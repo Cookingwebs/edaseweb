@@ -32,7 +32,7 @@
                         <li><b>Formación técnica</b> 9 meses </li>
                         <li><b>Prácticas en empresas</b> 3 meses </li>
                         <li><b>Experiencia total certificada</b> 1 año </li>
-                        <li><b>Modalidad</b> Online, presencial u streaming</li>
+                        <li><b>Modalidad</b> Online, presencial o streaming</li>
                     </ul>
                </div>
                <div class="--formulario_form fade-in-delay-4 --first-content_2">
@@ -206,7 +206,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="--content_testimonios_copy">
-                        <p class="--content_testimonios_quote"><b>“Lo que más me ha gustado es la cercanía con los profesoras.</b> Estás en contacto con ellas y en cualquier momento pueden resolverte cualquier duda”</p>
+                        <p class="--content_testimonios_quote"><b>“Lo que más me ha gustado es la cercanía con las profesoras.</b> Estás en contacto con ellas y en cualquier momento pueden resolverte cualquier duda”</p>
                         <p class="--content_testimonios_author">Sergio Pérez</p>
                     </div>
                     <div class="--content_testimonios_foto">

@@ -937,7 +937,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9;
+  z-index: 1000;
   max-width: 1920px;
   margin: 0 auto;
   transition: 300ms all ease-in-out;
@@ -1448,6 +1448,19 @@ p {
   color: #62fb9e;
   font-weight: bold;
 }
+#nav .--content_menu .--links .--content_menu_link.--green {
+  color: #62fb9e;
+  border: none;
+  margin-top: 30px;
+  line-height: 1em;
+}
+#nav .--content_menu .--links .--content_menu_link.--green::before {
+  display: none;
+}
+#nav .--content_menu .--links .--content_menu_link.--green a span {
+  border: 1px solid #62fb9e;
+  padding: 10px 13px;
+}
 #nav .--content_menu .--links .--content_menu_link::before {
   content: url("/images/svg/arrow-green.svg");
   width: 10px;
@@ -1752,6 +1765,11 @@ p {
   }
 }
 
+@media only screen and (min-width: 1024px) and (max-height: 1400px) and (min-height: 900px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+  #b_profesorado {
+    min-height: auto;
+  }
+}
 #b_profesorado .--content {
   padding-right: 0 !important;
 }
@@ -1776,17 +1794,20 @@ p {
        column-gap: 125px;
   position: relative;
   margin-top: 90px;
-  min-height: 530px;
+  min-height: 49vh;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 1450px) {
   #b_profesorado .--content .--profesorado {
     grid-template-columns: 430px auto;
     -moz-column-gap: 80px;
          column-gap: 80px;
+    min-height: 49vh;
   }
 }
 @media only screen and (max-width: 1200px) {
   #b_profesorado .--content .--profesorado {
+    min-height: 34.5vh;
     grid-template-columns: 300px auto;
   }
 }
@@ -3311,11 +3332,14 @@ p {
   #home-page #b_cabecera_home .--copy {
     max-width: 431px;
     margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 1200px) {
   #home-page #b_cabecera_home .--copy {
     margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 980px) {
@@ -3733,6 +3757,7 @@ p {
 }
 #home-page #b_niveles .--content {
   padding-right: 0;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 980px) {
   #home-page #b_niveles .--content {
@@ -3887,7 +3912,7 @@ p {
 }
 @media only screen and (max-width: 980px) {
   #home-page #b_niveles .--content .--transition_niveles .--mascara_transition {
-    width: 12%;
+    width: 45px;
   }
 }
 #home-page #b_niveles .--content .--transition_niveles .--mascara_transition::after {
@@ -4118,7 +4143,7 @@ p {
 @media only screen and (max-width: 767px) {
   #home-page #b_experiencias .--testimonio_1 .swiper-button-next {
     top: 22px;
-    width: 29px;
+    width: 45px;
     bottom: 0px;
   }
 }
@@ -4281,7 +4306,7 @@ p {
 @media only screen and (max-width: 767px) {
   #home-page #b_experiencias .--testimonio_mobile .swiper-button-next {
     top: 22px;
-    width: 29px;
+    width: 45px;
     bottom: 0px;
   }
 }
@@ -4465,8 +4490,8 @@ p {
   padding-right: 0;
   display: grid;
   grid-template-columns: 650px 331px auto;
-  -moz-column-gap: 75px;
-       column-gap: 75px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
 }
 @media only screen and (max-width: 1450px) {
   #home-page #b_huella .--content {
@@ -5864,7 +5889,7 @@ p {
 @media only screen and (max-width: 767px) {
   #metodologia-page #b_experiencias .--testimonio_1 .swiper-button-next {
     top: 22px;
-    width: 29px;
+    width: 45px;
     bottom: 0px;
     display: block;
   }
@@ -6029,6 +6054,10 @@ p {
   #metodologia-page #b_experiencias .--testimonio_2 .swiper-button-prev::after {
     content: url("/images/svg/arrow-testimonios.svg");
   }
+}
+
+#becas .--llamar_mobile {
+  display: none;
 }
 
 #becas-page {
@@ -7202,7 +7231,7 @@ p {
 @media only screen and (max-width: 767px) {
   #master-page #b_experiencias .--testimonio_1 .swiper-button-next {
     top: 22px;
-    width: 29px;
+    width: 45px;
     bottom: 0px;
   }
 }
@@ -7816,9 +7845,8 @@ p {
   font-size: 37px;
   font-weight: 500;
   line-height: 1.3em;
-  text-transform: uppercase;
   position: relative;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 @media only screen and (max-width: 767px) {
   #mba-page #b_objetivos .--subtitle {

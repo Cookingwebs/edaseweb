@@ -273,7 +273,7 @@ $('.--return').on('click', function(){
           $('.--links[data-select="1"]').addClass('--open_menu');
           $('.--links[data-select="1"]').addClass('--content_menu_visible');
   });
-  $('.--content_menu_link').on('click', function(){
+  $('.__cambio_seccion').on('click', function(){
     let dataLink = $(this).attr('data-link');
     $('.--links[data-select="1"]').removeClass('--content_menu_visible');
     setTimeout(function(){

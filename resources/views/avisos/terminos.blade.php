@@ -23,7 +23,7 @@
            <ul>
                 <li>Dirección: Av. Isaac Newton, Edificio 287, 11500 El Puerto de Sta. María, Cádiz.</li>
                 <li>Teléfono de contacto: 685482310</li>
-                <li>Email de contacto: INFO@AYUDATLEARNING.COM</li>
+                <li>Email de contacto: info@edase.es</li>
            </ul>
            <p>Este documento (así como todos otros documentos que aquí se mencionen) regula las condiciones por las que se rige el uso de esta actividad y la adquisición de servicios en el mismo (en adelante, Condiciones).</p>
            <p>Además de leer las presentes Condiciones, antes de acceder, navegar y/o usar esta interfaz, el Usuario ha de haber leído el Aviso Legal y las Condiciones Generales de Uso, incluyendo, la política de privacidad y de protección de datos de <b>EDASE ESCUELA DE ASESORES</b> </p>

@@ -1,7 +1,7 @@
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+  let elementTop = el.getBoundingClientRect().top;
 
   return (
     elementTop <=
@@ -10,8 +10,10 @@ const elementInView = (el, dividend = 1) => {
 };
 
 const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
-
+  let elementTop = el.getBoundingClientRect().top;
+  if($( window ).width() <= 980){
+    elementTop = el.getBoundingClientRect().top - 100;
+  }
   return (
     elementTop > (window.innerHeight || document.documentElement.clientHeight)
   );
@@ -40,6 +42,7 @@ window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
 
+if($( window ).width() >= 980){
 setTimeout(() => {
   $('.--first-content').css('opacity', "1");
 }, 600);
@@ -49,3 +52,8 @@ setTimeout(() => {
 setTimeout(() => {
   $('.--first-content_3').css('opacity', "1");
 }, 1000);
+}else{
+    $('.--first-content').css('opacity', "1");
+    $('.--first-content_2').css('opacity', "1");
+    $('.--first-content_3').css('opacity', "1");
+}

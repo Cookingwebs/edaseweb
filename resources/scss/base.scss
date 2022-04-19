@@ -72,7 +72,7 @@ p{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9;
+    z-index: 1000;
     max-width: 1920px;
     margin: 0 auto;
     transition: 300ms all ease-in-out;
@@ -549,6 +549,21 @@ p{
                     color: $green;
                     font-weight: bold;
                 }
+                &.--green{
+                    color: $green;
+                    border: none;
+                    margin-top: 30px;
+                    line-height: 1em;
+                    &::before{
+                        display: none;
+                    }
+                    a{
+                        span{
+                            border: 1px solid $green;
+                            padding: 10px 13px;
+                        }
+                    }
+                }
                 &::before{
                     content: url('/images/svg/arrow-green.svg');
                     width: 10px;
@@ -818,6 +833,9 @@ p{
 // Profesorado
 
 #b_profesorado{
+    @include ipad-landscape{
+        min-height: auto;
+    }
     .--content{
         padding-right: 0 !important;
         @include tablet{
@@ -838,12 +856,15 @@ p{
             column-gap: 125px;
             position: relative;
             margin-top: 90px;
-            min-height: 530px;
+            min-height: 49vh;
+            overflow-x: hidden;
             @include notebook{
                 grid-template-columns: 430px auto;
                 column-gap: 80px;
+                min-height: 49vh;
             }
             @include ipad-portrait{
+                min-height: 34.5vh;
                 grid-template-columns: 300px auto;
             }
             @include tablet{

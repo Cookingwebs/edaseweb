@@ -3,10 +3,17 @@
 .js-scroll {
     opacity: 0;
     transition: opacity 500ms;
+    &.--profesorado_texto{
+    }
   }
    
   .js-scroll.scrolled {
     opacity: 1;
+    &.--profesorado_texto{
+      @include tablet{
+        animation: fade-in 1s ease-in-out both;
+      }
+    }
   }
   u{
     position: relative;
@@ -23,25 +30,43 @@
 
   .scrolled.fade-in {
     animation: fade-in 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
   
   .scrolled.fade-in-bottom {
     animation: fade-in-bottom 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
   
   .scrolled.fade-in-top {
     animation: fade-in-top 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
   
   .scrolled.slide-left {
     animation: slide-in-left 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
   .scrolled.slide-left-sm {
     animation: slide-in-left-small 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
   
   .scrolled.slide-right {
     animation: slide-in-right 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
   }
 
   .scrolled.slide-height {
@@ -52,8 +77,11 @@
     @include ipad-portrait{
       animation: slide-in-height-ipad-portrait 1s ease-in-out both;
     }
+    // @include tablet{
+    //   animation: slide-in-height-tablet 1s ease-in-out both;
+    // }
     @include tablet{
-      animation: slide-in-height-tablet 1s ease-in-out both;
+      animation: none;
     }
   }
   
@@ -63,17 +91,29 @@
     @include notebook{
       animation: slide-in-bottom-notebook 1s ease-in-out both;
     }
+    @include tablet{
+      animation: none;
+    }
   }
 
   @for $i from 0 through 5 {
     .slide-left-delay-#{$i}{
       animation: slide-in-left 1s ease-in-out $i*200ms;
+      @include tablet{
+        animation: none;
+      }
     }
     .slide-right-delay-#{$i}{
       animation: slide-in-right 1s ease-in-out $i*200ms;
+      @include tablet{
+        animation: none;
+      }
     }
     .fade-in-delay-#{$i}{
       animation: fade-in 1s ease-in-out $i*200ms;
+      @include tablet{
+        animation: none;
+      }
     }
     // .slide-right-time-#{$i}{
     //   animation: slide-in-right $i*0.5s ease-in both;

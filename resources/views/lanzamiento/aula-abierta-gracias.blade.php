@@ -70,7 +70,7 @@
             <ul>
                 <li>Busca en tu carpeta de spam (A veces nuestro correo llega ahí por error)</li>
                 <li>Si usas Gmail, mira también la pestaña de Promociones.</li>
-                <li>Si aun así no recibes nada, escríbenos a <a href="mailto:info@masterasesor.es">info@masterasesor.es</a></li>
+                <li>Si aun así no recibes nada, escríbenos a <a href="mailto:info@edase.es">info@edase.es</a></li>
             </ul>
         </div>
     </div>

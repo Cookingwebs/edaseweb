@@ -180,7 +180,7 @@
                </div>
                <div class="--programa_copy js-scroll fade-in">
                    <h3 class="--programa_title">TUTORÍAS PERSONALES</h3>
-                   <p>Tus tutores podrán atenderte por teléfono<br class="d-none d-md-block"> o chat.</p>
+                   <p>Tus tutores podrán atenderte por teléfono o chat.</p>
                </div>
            </div>
            <div class="--cta_sub js-scroll slide-left">DESCARGAR</div>

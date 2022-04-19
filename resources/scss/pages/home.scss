@@ -67,9 +67,12 @@
             @include notebook{
                 max-width: 431px;
                 margin-top: 40px;
+                margin-bottom: 0;
             }
             @include ipad-portrait{
                 margin-left: 10%;
+                margin-top: 20px;
+                margin-bottom: 0;
             }
             @include tablet{
                 max-width: 50%;
@@ -410,6 +413,7 @@
     #b_niveles{
         .--content{
             padding-right: 0;
+            overflow-x: hidden;
             @include tablet{
                 max-width: 100%;
                 padding-bottom: 50px;
@@ -536,7 +540,7 @@
                         transition: 500ms all ease-in-out;
                     }
                     @include tablet{
-                        width: 12%;
+                        width: 45px;
                     }
                     &::after{
                         content: url('/images/svg/arrow-next-big.svg');
@@ -704,9 +708,6 @@
                     margin-bottom: 50px;
                   }
               }
-              .--content_testimonios_foto{
-                  
-              }
                 img{
                     width: 100%;
                     height: auto;
@@ -729,7 +730,7 @@
                 }
                 @include mobile{
                     top: 22px;
-                    width: 29px;
+                    width: 45px;
                     bottom: 0px;
                 }
                   &::after{
@@ -835,9 +836,6 @@
                     margin-bottom: 50px;
                   }
               }
-              .--content_testimonios_foto{
-                  
-              }
                 img{
                     width: 100%;
                     height: auto;
@@ -860,7 +858,7 @@
                 }
                 @include mobile{
                     top: 22px;
-                    width: 29px;
+                    width: 45px;
                     bottom: 0px;
                 }
                   &::after{
@@ -1012,7 +1010,7 @@
             padding-right: 0;
             display: grid;
             grid-template-columns: 650px 331px auto;
-            column-gap: 75px;
+            column-gap: 80px;
             @include notebook{
                 grid-template-columns: 474px 235px auto;
                 column-gap: 60px;

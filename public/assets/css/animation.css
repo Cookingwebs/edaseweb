@@ -2,9 +2,14 @@
   opacity: 0;
   transition: opacity 500ms;
 }
-
 .js-scroll.scrolled {
   opacity: 1;
+}
+@media only screen and (max-width: 980px) {
+  .js-scroll.scrolled.--profesorado_texto {
+    -webkit-animation: fade-in 1s ease-in-out both;
+            animation: fade-in 1s ease-in-out both;
+  }
 }
 
 u {
@@ -23,30 +28,66 @@ u {
   -webkit-animation: fade-in 1s ease-in-out both;
           animation: fade-in 1s ease-in-out both;
 }
+@media only screen and (max-width: 980px) {
+  .scrolled.fade-in {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .scrolled.fade-in-bottom {
   -webkit-animation: fade-in-bottom 1s ease-in-out both;
           animation: fade-in-bottom 1s ease-in-out both;
+}
+@media only screen and (max-width: 980px) {
+  .scrolled.fade-in-bottom {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .scrolled.fade-in-top {
   -webkit-animation: fade-in-top 1s ease-in-out both;
           animation: fade-in-top 1s ease-in-out both;
 }
+@media only screen and (max-width: 980px) {
+  .scrolled.fade-in-top {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .scrolled.slide-left {
   -webkit-animation: slide-in-left 1s ease-in-out both;
           animation: slide-in-left 1s ease-in-out both;
+}
+@media only screen and (max-width: 980px) {
+  .scrolled.slide-left {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .scrolled.slide-left-sm {
   -webkit-animation: slide-in-left-small 1s ease-in-out both;
           animation: slide-in-left-small 1s ease-in-out both;
 }
+@media only screen and (max-width: 980px) {
+  .scrolled.slide-left-sm {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .scrolled.slide-right {
   -webkit-animation: slide-in-right 1s ease-in-out both;
           animation: slide-in-right 1s ease-in-out both;
+}
+@media only screen and (max-width: 980px) {
+  .scrolled.slide-right {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .scrolled.slide-height {
@@ -67,8 +108,8 @@ u {
 }
 @media only screen and (max-width: 980px) {
   .scrolled.slide-height {
-    -webkit-animation: slide-in-height-tablet 1s ease-in-out both;
-            animation: slide-in-height-tablet 1s ease-in-out both;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -82,95 +123,209 @@ u {
             animation: slide-in-bottom-notebook 1s ease-in-out both;
   }
 }
+@media only screen and (max-width: 980px) {
+  .scrolled.slide-bottom {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-left-delay-0 {
   -webkit-animation: slide-in-left 1s ease-in-out 0ms;
           animation: slide-in-left 1s ease-in-out 0ms;
+}
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-0 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-right-delay-0 {
   -webkit-animation: slide-in-right 1s ease-in-out 0ms;
           animation: slide-in-right 1s ease-in-out 0ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-0 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .fade-in-delay-0 {
   -webkit-animation: fade-in 1s ease-in-out 0ms;
           animation: fade-in 1s ease-in-out 0ms;
+}
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-0 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-left-delay-1 {
   -webkit-animation: slide-in-left 1s ease-in-out 200ms;
           animation: slide-in-left 1s ease-in-out 200ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-1 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-right-delay-1 {
   -webkit-animation: slide-in-right 1s ease-in-out 200ms;
           animation: slide-in-right 1s ease-in-out 200ms;
+}
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-1 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .fade-in-delay-1 {
   -webkit-animation: fade-in 1s ease-in-out 200ms;
           animation: fade-in 1s ease-in-out 200ms;
 }
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-1 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-left-delay-2 {
   -webkit-animation: slide-in-left 1s ease-in-out 400ms;
           animation: slide-in-left 1s ease-in-out 400ms;
+}
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-2 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-right-delay-2 {
   -webkit-animation: slide-in-right 1s ease-in-out 400ms;
           animation: slide-in-right 1s ease-in-out 400ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-2 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .fade-in-delay-2 {
   -webkit-animation: fade-in 1s ease-in-out 400ms;
           animation: fade-in 1s ease-in-out 400ms;
+}
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-2 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-left-delay-3 {
   -webkit-animation: slide-in-left 1s ease-in-out 600ms;
           animation: slide-in-left 1s ease-in-out 600ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-3 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-right-delay-3 {
   -webkit-animation: slide-in-right 1s ease-in-out 600ms;
           animation: slide-in-right 1s ease-in-out 600ms;
+}
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-3 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .fade-in-delay-3 {
   -webkit-animation: fade-in 1s ease-in-out 600ms;
           animation: fade-in 1s ease-in-out 600ms;
 }
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-3 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-left-delay-4 {
   -webkit-animation: slide-in-left 1s ease-in-out 800ms;
           animation: slide-in-left 1s ease-in-out 800ms;
+}
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-4 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-right-delay-4 {
   -webkit-animation: slide-in-right 1s ease-in-out 800ms;
           animation: slide-in-right 1s ease-in-out 800ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-4 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .fade-in-delay-4 {
   -webkit-animation: fade-in 1s ease-in-out 800ms;
           animation: fade-in 1s ease-in-out 800ms;
+}
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-4 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 .slide-left-delay-5 {
   -webkit-animation: slide-in-left 1s ease-in-out 1000ms;
           animation: slide-in-left 1s ease-in-out 1000ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-left-delay-5 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .slide-right-delay-5 {
   -webkit-animation: slide-in-right 1s ease-in-out 1000ms;
           animation: slide-in-right 1s ease-in-out 1000ms;
 }
+@media only screen and (max-width: 980px) {
+  .slide-right-delay-5 {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
 
 .fade-in-delay-5 {
   -webkit-animation: fade-in 1s ease-in-out 1000ms;
           animation: fade-in 1s ease-in-out 1000ms;
+}
+@media only screen and (max-width: 980px) {
+  .fade-in-delay-5 {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 @-webkit-keyframes slide-in-height-desktop {

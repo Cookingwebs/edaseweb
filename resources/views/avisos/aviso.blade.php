@@ -23,8 +23,8 @@
                 Nombre Comercial: EDASE ESCUELA DE ASESORES DE AYUDA T PYMES<br>
                 Domicilio Social: C ISAAC NEWTON ESQ.EDMON HALLEY, SN EDIFICIO 287 - 11500 - EL PUERTO DE STA MARIA - CADIZ<br>
                 NIF: B72329949<br>
-                Teléfono: <a href="tel:685089682">685089682</a><br>
-                e-Mail: <a href="mailto:carmenmoreno@ayudatlearning.com">carmenmoreno@ayudatlearning.com</a><br>
+                Teléfono: <a href="tel:685482310">685482310</a><br>
+                e-Mail: <a href="mailto:info@edase.es">info@edase.es</a><br>
                 Datos registrales: __________________<br>
                 Página Web: <a href="www.edase.es">www.edase.es</a><br>
                 </p>
