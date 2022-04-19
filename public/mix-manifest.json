@@ -1,4 +1,8 @@
 {
     "/assets/css/app.css": "/assets/css/app.css",
-    "/assets/css/animation.css": "/assets/css/animation.css"
+    "/assets/css/animation.css": "/assets/css/animation.css",
+    "/assets/css/app.min.css": "/assets/css/app.min.css",
+    "/assets/css/animation.min.css": "/assets/css/animation.min.css",
+    "/assets/js/animation.min.js": "/assets/js/animation.min.js",
+    "/assets/js/app.min.js": "/assets/js/app.min.js"
 }

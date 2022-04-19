@@ -13,10 +13,10 @@
 
     {{-- <link async href="{{ mix('assets/css/app.css') }}" rel="stylesheet">
     <noscript><link rel="stylesheet" href="{{ mix('assets/css/app.css') }}"></noscript> --}}
-    <link rel="preload" href="{{ mix('assets/css/animation.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ mix('assets/css/animation.css') }}"></noscript>
-    <link rel="preload" href="{{ mix('assets/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ mix('assets/css/app.css') }}"></noscript>
+    <link rel="preload" href="{{ mix('assets/css/animation.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ mix('assets/css/animation.min.css') }}"></noscript>
+    <link rel="preload" href="{{ mix('assets/css/app.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ mix('assets/css/app.min.css') }}"></noscript>
     {{-- <link  async  href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"   rel="preload" as="style" onload="this.rel='stylesheets'">
 	<noscript><link rel="stylesheet" href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"></noscript> --}}
     <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -82,8 +82,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer ></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 <script src='/assets/js/lazysizes.min.js' async ></script>
-<script src='/assets/js/app.js' defer ></script>
-<script src='/assets/js/animation.js' defer ></script>
+<script src='/assets/js/app.min.js' defer ></script>
+<script src='/assets/js/animation.min.js' defer ></script>
 </head>
 <div class="--wrapper" id="@yield('id-page')">
 @include('layouts.nav')
