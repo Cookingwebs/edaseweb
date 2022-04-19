@@ -1819,6 +1819,7 @@ p {
     padding-right: 50px;
     min-height: auto;
     margin-top: 40px;
+    overflow-x: initial;
   }
 }
 @media only screen and (max-width: 767px) {
