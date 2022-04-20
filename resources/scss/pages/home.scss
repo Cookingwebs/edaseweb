@@ -66,7 +66,7 @@
             margin-bottom: 50px;
             @include notebook{
                 max-width: 431px;
-                margin-top: 40px;
+                margin-top: 0px;
                 margin-bottom: 0;
             }
             @include ipad-portrait{
@@ -123,6 +123,9 @@
             position: absolute;
             right: 2.9%;
             bottom: 13%;
+            @include notebook{
+                bottom: 19%;
+            }
             @include mobile{
                 position: initial;
                 margin-top: 60px;
@@ -371,14 +374,14 @@
                         }
                         &::after{
                             content: url('/images/svg/arrow-next.svg');
-                            width: 40px;
+                            width: 20px;
                             height: auto;
                             position: absolute;
-                            right: 15px;
-                            bottom: 2%;
+                            right: 21px;
+                            bottom: 3%;
                             @include notebook{
-                                width: 30px;
-                                right: 10px;
+                                width: 20px;
+                                right: 13px;
                             }
                         }
                         &.--transition{
@@ -554,12 +557,15 @@
                             right: 100px;
                         }
                         @include ipad-portrait{
-                            max-width: 30px;
-                            right: 8px;
-                            top: auto;
+                            max-width: 150px;
+                            right: 60px;
                             bottom: 10px;
                         }
                         @include tablet{
+                            width: 20px;
+                            right: 11px;
+                            top: auto;
+                            bottom: 3%;
                             content: url('/images/svg/arrow-next.svg');
                         }
                     }
@@ -734,22 +740,19 @@
                     bottom: 0px;
                 }
                   &::after{
-                    width: 40px;
+                    width: 20px;
                     height: auto;
                     position: absolute;
-                    right: 15px;
-                    bottom: 2%;
-                    transform: rotate(180deg);
+                    right: 21px;
+                    bottom: 3%;
                     content: url('/images/svg/arrow-testimonios.svg');
                     @include notebook{
                         width: 20px;
                         right: 10px;
-                        bottom: -11px;
                     }
                     @include tablet{
                         width: 15px;
                         right: 9px;
-                        bottom: -20px;
                     }
                   }
               }
@@ -861,23 +864,20 @@
                     width: 45px;
                     bottom: 0px;
                 }
-                  &::after{
-                    width: 40px;
+                &::after{
+                    width: 20px;
                     height: auto;
                     position: absolute;
-                    right: 15px;
-                    bottom: 2%;
-                    transform: rotate(180deg);
+                    right: 21px;
+                    bottom: 3%;
                     content: url('/images/svg/arrow-testimonios.svg');
                     @include notebook{
                         width: 20px;
                         right: 10px;
-                        bottom: -11px;
                     }
                     @include tablet{
-                        width: 15px;
+                        width: 20px;
                         right: 9px;
-                        bottom: -20px;
                     }
                   }
               }
@@ -965,16 +965,17 @@
                     width: 29px;
                 }
                   &::after{
-                    width: 40px;
+                    width: 20px;
                     height: auto;
                     position: absolute;
-                    right: 15px;
-                    bottom: 2%;
+                    right: 21px;
+                    bottom: 3%;
+                    transform: rotate(180deg);
                     content: url('/images/svg/arrow-testimonios.svg');
                     @include notebook{
                         width: 20px;
-                        right: 10px;
-                        bottom: 10px;
+                        right: 13px;
+                        bottom: 0px;
                     }
                     @include tablet{
                         width: 15px;

@@ -437,7 +437,9 @@ $(document).ready(function(){
         console.log('open');
         $('.--nav_primary').toggleClass('--open');
         $('.--content_menu').fadeToggle();
-        $('.--links[data-select="1"]').toggleClass('--content_menu_visible');
+        if($('.--links[data-select="1"]').hasClass('__current')){
+            $('.--links[data-select="1"]').toggleClass('--content_menu_visible');
+        }
         $('body').toggleClass('--overflow');
       });
   

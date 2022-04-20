@@ -524,22 +524,20 @@
                     bottom: 0px;
                 }
                   &::after{
-                    width: 40px;
+                    width: 20px;
                     height: auto;
                     position: absolute;
-                    right: 15px;
-                    bottom: 2%;
-                    transform: rotate(180deg);
+                    right: 21px;
+                    bottom: 3%;
                     content: url('/images/svg/arrow-testimonios.svg');
                     @include notebook{
                         width: 20px;
                         right: 10px;
-                        bottom: -11px;
+                        bottom: 5px;
                     }
                     @include tablet{
-                        width: 15px;
+                        width: 20px;
                         right: 9px;
-                        bottom: -20px;
                     }
                   }
               }
@@ -828,11 +826,16 @@
                         max-width: 180px;
                         right: 100px;
                     }
+                    @include ipad-portrait{
+                        max-width: 150px;
+                        right: 60px;
+                        top: 45%;
+                    }
                     @include tablet{
-                        max-width: 30px;
-                        right: 20px;
+                        width: 20px;
+                        right: 11px;
                         top: auto;
-                        bottom: 10px;
+                        bottom: 3%;
                         content: url('/images/svg/arrow-next.svg');
                     }
                     @include mobile{

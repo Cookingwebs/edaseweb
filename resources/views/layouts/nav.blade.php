@@ -65,28 +65,13 @@
                 <li class="--desplegable_list_item">Lorem ipsum</li>
                 <li class="--desplegable_list_item">Lorem ipsum</li>
             </ul>
-            <ul class="--deplegable_list" data="rrss">
-                <a href="https://www.instagram.com/escueladeasesores_/" target="_blank">
-                    <li class="--desplegable_list_item">Instagram</li>
-                </a>
-                <a href="https://www.linkedin.com/company/edase-escuela-de-asesores-de-ayuda-t-pymes" target="_blank">
-                    <li class="--desplegable_list_item">LinkedIn</li>
-                </a>
-                <a href="https://www.tiktok.com/@edase_escuela" target="_blank">
-                    <li class="--desplegable_list_item">Tik tok</li>
-                </a>
-                <a href="https://www.facebook.com/escueladeasesores/" target="_blank">
-                    <li class="--desplegable_list_item">Facebook</li>
-                </a>
-                <a href="https://wa.link/zgjqi0" target="_blank">
-                    <li class="--desplegable_list_item">Whatsapp</li>
-                </a>
-            </ul>
         </div>
         <div class="--content_menu">
-            <ul class="--links --open_menu --left_menu" data-select="1">
-                <li>
-                    HOME
+            <ul class="--links --open_menu --left_menu {{ Route::currentRouteNamed('home') ||  Route::currentRouteNamed('becas') ? '__current' : '' }}" data-select="1">
+                <li class="--content_menu_link {{ Route::currentRouteNamed('home') ? '--active' : '' }}">
+                    <a href="{{route('home')}}">
+                        HOME
+                    </a>
                 </li>
                 <li class="--content_menu_link __cambio_seccion" data-link="2">
                     TITULACIONES
@@ -108,7 +93,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="--links" data-select="2">
+            <ul class="--links {{ Route::currentRouteNamed('master') ||  Route::currentRouteNamed('mba') || Route::currentRouteNamed('tecnico') ? '--open_menu' : '' }}" data-select="2">
                 <li class="--return">< Volver</li>
                 <a href="{{route('master')}}">
                     <li class=" {{ Route::currentRouteNamed('master') ? '--active' : '' }}">
@@ -126,7 +111,7 @@
                     </li>
                 </a>
             </ul>
-            <ul class="--links" data-select="3">
+            <ul class="--links {{ Route::currentRouteNamed('conocenos') ||  Route::currentRouteNamed('metodologia') ? '--open_menu' : '' }}" data-select="3">
                 <li class="--return">< Volver</li>
                 <a href="{{route('conocenos')}}">
                     <li class=" {{ Route::currentRouteNamed('conocenos') ? '--active' : '' }}">
@@ -152,24 +137,6 @@
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
                 <li>Lorem ipsum</li>
-            </ul>
-            <ul class="--links" data-select="6">
-                <li class="--return">< Volver</li>
-                <a href="https://www.instagram.com/escueladeasesores_/" target="_blank">
-                    <li>INSTAGRAM</li>
-                </a>
-                <a href="https://www.linkedin.com/company/edase-escuela-de-asesores-de-ayuda-t-pymes" target="_blank">
-                    <li>LINKEDIN</li>
-                </a>
-                <a href="https://www.tiktok.com/@edase_escuela" target="_blank">
-                    <li>TIK TOK</li>
-                </a>
-                <a href="https://www.facebook.com/escueladeasesores/" target="_blank">
-                    <li>FACEBOOK</li>
-                </a>
-                <a href="https://wa.link/zgjqi0" target="_blank">
-                    <li>WHATSAPP</li>
-                </a>
             </ul>
         </div>
     </nav>    

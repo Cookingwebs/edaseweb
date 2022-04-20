@@ -18,7 +18,7 @@ class LanzamientoController extends Controller
             'action_form' => url()->current().'/gracias'
         ];
         $title = "Aula abierta";
-        $description = "3, 4 y 5 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
+        $description = "4, 5, 6 y 9 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
 
         SEOMeta::setTitle($title);
@@ -39,7 +39,7 @@ class LanzamientoController extends Controller
 
         $robots = "noindex, nofollow";
         $title = "Aula abierta";
-        $description = "3, 4 y 5 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
+        $description = "4, 5, 6 y 9 de Mayo. Inscripción GRATUITA ▷ Descubre una nueva oportunidad en el mundo de la asesoría #LaGranRenuncia";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
 
         SEOMeta::setTitle($title);
