@@ -1,0 +1,232 @@
+#carrera-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        .--copy{
+            top: 100px;
+        }
+        .--section {
+            padding-bottom: 40px;
+        }
+    }
+    #b_objetivos{
+        .--copy{
+            top: 100px;
+        }
+        .--2_columns{
+            margin-top: 100px;
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
+            @include mobile{
+                margin-top: 50px;
+            }
+        }
+        .--title{
+            font-size: 70px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 75px;
+            @include notebook{
+                font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            @include mobile{
+                font-size: 35px;
+                margin-top: 0;
+            }
+        }
+        .--extra{
+            font-weight: 300;
+            font-size: 33px;
+            margin-bottom: 50px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--subtitle{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        .--objetivos_bloque_copy{
+            .--objetivos_bloque_copy_title{
+                font-size: 38px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $grey-dark;
+                line-height: 1.3em;
+                margin-top: 0;
+                margin-bottom: 50px;
+                position: relative;
+                &::before{
+                    content:"+";
+                    color: $green;
+                    position: absolute;
+                    left: -1em;
+                }
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            .--objetivos_boque_copy_text{
+                font-weight: 300;
+                font-size: 33px;
+                margin-bottom: 50px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+        }
+        .--objetivos_bloque_img{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    #b_salidas{
+        .--2_columns{
+                margin-top: 50px;
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    row-gap: 40px;
+                }
+                @include mobile{
+                    margin-top: 0;
+                }
+        }
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        .--salidas_bloque_copy_1{
+            display: flex;
+            align-items: center;
+            @include mobile{
+                margin-bottom: 50px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 33px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--salidas_bloque_copy{
+            @include mobile{
+                padding-left: 1.3em;
+            }
+        }
+        .--salidas_bloque_copy_title{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            min-height: 99px;
+            &::before{
+                content:"-";
+                position: absolute;
+                left: -1em;
+            }
+            @include notebook{
+                font-size: 27px;
+                min-height: 70px;
+                margin-bottom: 20px;
+            }
+            @include mobile{
+                min-height: auto;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+        .--salidas_boque_copy_text{
+            margin-bottom: 40px;
+        }
+    }
+    #b_admision{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $grey-dark;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            @include tablet{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .--salidas_copy{
+            font-weight: 300;
+            font-size: 33px;
+            max-width: 920px;
+            width: 100%;
+            @include notebook{
+                font-size: 24px;
+                max-width: 700px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+    }
+}

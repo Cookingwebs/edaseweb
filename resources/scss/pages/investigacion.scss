@@ -1,0 +1,460 @@
+#investigacion-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        .--copy{
+            top: 100px;
+        }
+        .--section {
+            padding-bottom: 40px;
+        }
+    }
+    #b_cabecera{
+        .--copy{
+            .--title{
+                @include ipad-portrait{
+                    font-size: 30px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #b_objetivos{
+        .--copy{
+            top: 100px;
+        }
+        .--2_columns{
+            margin-top: 100px;
+            @include ipad-portrait{
+                
+            }
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
+            @include mobile{
+                margin-top: 50px;
+            }
+        }
+        .--title{
+            font-size: 70px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 75px;
+            @include notebook{
+                font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            @include mobile{
+                font-size: 35px;
+                margin-top: 0;
+            }
+        }
+        .--extra{
+            font-weight: 300;
+            font-size: 33px;
+            margin-bottom: 50px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--subtitle{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        .--objetivos_bloque_copy{
+            .--objetivos_bloque_copy_title{
+                font-size: 38px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $grey-dark;
+                line-height: 1.3em;
+                margin-top: 0;
+                margin-bottom: 50px;
+                position: relative;
+                &::before{
+                    content:"+";
+                    color: $green;
+                    position: absolute;
+                    left: -1em;
+                }
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            .--objetivos_boque_copy_text{
+                font-weight: 300;
+                font-size: 33px;
+                margin-bottom: 50px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+        }
+        .--objetivos_bloque_img{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    #b_salidas{
+        .--2_columns{
+                margin-top: 50px;
+                @include ipad-portrait{
+                    grid-template-columns: 1fr 1fr;
+                }
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    row-gap: 40px;
+                }
+                @include mobile{
+                    margin-top: 0;
+                }
+        }
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 33px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--salidas_bloque_copy_title{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            margin-top: 60px;
+            @include notebook{
+                font-size: 27px;
+                margin-top: 40px;
+                margin-bottom: 25px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--salidas_boque_copy_text{
+            margin-bottom: 70px;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    #b_id{
+        .--2_columns{
+            margin-top: 50px;
+            @include tablet{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+        }
+        .--title{
+            margin-top: 80px;
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                margin-top: 40px;
+                font-size: 30px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 33px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--id_bloque_copy_title{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            margin-top: 60px;
+            &::before{
+                content:"-";
+                position: absolute;
+                left: -1em;
+            }
+            @include notebook{
+                font-size: 27px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--id_boque_copy_text{
+            margin-bottom: 70px;
+            @include mobile{
+                margin-bottom: 0;
+            }
+        }
+    }
+    #b_practicas{
+        .--2_columns{
+            margin-top: 50px;
+            @include ipad-portrait{
+                grid-template-columns: 1fr 1fr;
+            }
+            @include tablet{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $grey-dark;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 40px;
+                margin-bottom: 0px;
+            }
+        }
+        .--subtitle{
+            margin-top: 50px;
+            margin-bottom: 80px;
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            max-width: 800px;
+            width: 100%;
+            @include notebook{
+                font-size: 45px;
+                max-width: 770px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 33px;
+            margin-top: 50px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                margin-top: 0;
+                font-size: 18px;
+            }
+        }
+        ul{
+            padding-left: 1em;
+            li{
+                font-weight: 500;
+                font-size: 33px;
+                &::marker{
+                    content: "- ";
+                }
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #b_escuela{
+        background-color: $grey-dark;
+        padding-bottom: 140px;
+        overflow: hidden;
+        @include tablet{
+            margin-bottom: 0;
+        }
+        @include mobile{
+            padding-bottom: 40px;
+        }
+        .--section {
+            padding-bottom: 40px;
+            @include notebook{
+                padding-bottom: 40px;
+            }
+        }
+        .--content {
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 140px 40px;
+                padding-bottom: 40px;
+            }
+            @include tablet{
+                padding: 0px 90px 40px;
+            }
+            @include mobile{
+                padding: 0px 40px 40px;
+            }
+        }
+        .--section_title{
+            color: $white;
+        }
+        .--3_columns{
+            margin-top: 50px;
+            grid-template-columns: minmax(max-content, 35%) 1fr 1fr;
+            column-gap: 100px;
+            @include ipad-portrait{
+                margin-top: 20px;
+                column-gap: 40px;
+                grid-template-columns: max-content 1fr 1fr;
+            }
+            @include tablet{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
+                row-gap: 0;
+            }
+            .--title{
+                font-size: 70px;
+                color: $white;
+                text-transform: uppercase;
+                line-height: 1em;
+                @include notebook{
+                    font-size: 60px;
+                }
+                @include ipad-portrait{
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 47px;
+                    color: $green;
+                    @include notebook{
+                        font-size: 40px;
+                    }
+                    @include ipad-portrait{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .--subtitle{
+                color: $green;
+                font-size: 29px;
+                color: $green;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-top: 60px;
+                @include notebook{
+                    font-size: 19px;
+                }
+                @include ipad-portrait{
+                    margin-top: 20px;
+                }
+            }
+            p{
+                color: $white;
+                font-size: 27px;
+                @include notebook{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    #b_formulario_footer{
+        .--section{
+            &::before{
+                bottom: -40px;
+                top: -150px;
+            }
+        }  
+    } 
+}

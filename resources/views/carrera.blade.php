@@ -1,17 +1,17 @@
 @extends('layouts.plantilla')
 
-@section('title', 'Metodologia')
+@section('title', 'Plan de carrera')
 
-@section('id-page', 'metodologia')
+@section('id-page', 'carrera')
 
 @section('content')
-<div id="metodologia-page">
+<div id="carrera-page">
     <div id="b_cabecera">
         <div class="--copy">
             <h1 class="--title">PLAN DE CARRERA</h1>
         </div>
     </div>
-    <div class="--aside" id="b_pilares">
+    <div class="--aside" id="b_objetivos">
         <div class="--copy">
             <p class="--section_title">objetivos</p>
         </div>
@@ -23,119 +23,79 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
-           <p class="--title">Un paso más cerca<br> de <b>TU FUTURO</b></p>
-           <p class="--extra">Traza tu plan de carrera con EDASE</p>
-           <h2 class="--subtitle">CUÉNTANOS A DÓNDE QUIERES LLEGAR</h2>
-           <div class="--2_columns">
-               <div class="--pilares_bloque_copy">
-                <h3 class="--pilares_bloque_copy_title">VIVE TU PROPIA HISTORIA Y LA DE NADIE MÁS</h3>
-                <p class="--pilares_boque_copy_text">EDASE basa su metodología en el seguimiento personalizado del alumnado. Nos ponemos en tus zapatos para garantizarte el éxito en tu experiencia.</p>
+           <p class="--title"><u class="slide-left-delay-0 --first-content">Un paso más cerca</u><br> <u class="slide-left-delay-1 --first-content">de <b>TU FUTURO</b></u></p>
+           <p class="--extra slide-left-delay-2 --first-content_2">Traza tu plan de carrera con EDASE</p>
+           <h2 class="--subtitle slide-left-delay-2 --first-content_2">CUÉNTANOS A DÓNDE QUIERES LLEGAR</h2>
+           <div class="--2_columns slide-left-delay-3 --first-content_3">
+               <div class="--objetivos_bloque_copy">
+                <h3 class="--objetivos_bloque_copy_title">VIVE TU PROPIA HISTORIA<br class="d-none d-xl-block"> Y LA DE<br class="d-none d-lg-block d-xl-none"> NADIE MÁS</h3>
+                <p class="--objetivos_boque_copy_text"><b>EDASE</b> basa su metodología en el seguimiento personalizado del alumnado. Nos ponemos en tus zapatos para garantizarte el éxito en tu experiencia.</p>
                </div>
-               <div class="--pilares_bloque_img">
-                    <img src="{{ URL::to('/') }}/images/metodologia/metodologia.webp" alt=""  class="lazyload">
+               <div class="--objetivos_bloque_img">
+                    <img src="{{ URL::to('/') }}/images/carrera/plan-de-carrera.webp" alt=""  class="lazyload">
                </div>
            </div>
         </div>
     </div>
 
-    <div class="--aside" id="b_especialistas">
+    <div class="--aside" id="b_salidas">
         <div class="--copy">
-            <p class="--section_title">ACOMPAÑAMIENTO</p>
+            <p class="--section_title">SALIDAS</p>
         </div>
         <div class="--section">
         </div>
         <div class="--content">
-            <p class="--section_title d-xl-none">ACOMPAÑAMIENTO</p>
+            <p class="--section_title d-xl-none">SALIDAS</p>
            <div class="--2_columns">
-               <div class="--especialistas_bloque_title">
-                <h2 class="--title">Te enseñan especialistas en activo</h2>
+               <div class="--salidas_bloque_title">
+                <h2 class="--title js-scroll slide-left">Salidas profesionales en el sector de la asesoría</h2>
                </div>
-               <div class="--especialistas_bloque_copy_1">
-                   <p class="--text_1">El profesorado compatibiliza su labor docente con su actividad profesional para conocer las necesidades de empresas y asesorías.</p>
+               <div class="--salidas_bloque_copy_1">
+                   <p class="--text_1 js-scroll slide-right">Somos la principal institución del sector de la gestión y la asesoría en España. Nuestra misión es guiarte entre las distintas alternativas hacia una salida profesional real.</p>
                </div>
            </div>
            <div class="--2_columns">
-               <div class="--especialistas_bloque_img">
-                <img src="{{ URL::to('/') }}/images/metodologia/metodologia_2.webp" alt=""  class="lazyload">
+               <div class="--salidas_bloque_copy js-scroll slide-left">
+                    <h4 class="--salidas_bloque_copy_title">ORIENTACIÓN LABORAL<br> CONTINUA</h4>
+                    <p class="--salidas_boque_copy_text">Solicita una <b>entrevista con nuestras dinamizadoras formativas.</b> Estudiarán tu perfil y empezaremos a trazar tu propio plan de carrera. Llega a donde te propongas.</p>
                </div>
-               <div class="--especialistas_bloque_copy_2">
-                <h3 class="--pilares_bloque_copy_title">- SERVICIOS DE TUTORÍAS</h3>
-                <p class="--pilares_boque_copy_text">Resuelven todas tus consultas a través de tutorías online, teléfono o chat.</p>
-                <h3 class="--pilares_bloque_copy_title">- COACHING</h3>
-                <p class="--pilares_boque_copy_text">Trazan una ruta de aprendizaje personal dirigida a tus objetivos</p>
+               <div class="--salidas_bloque_copy js-scroll slide-right">
+                    <h4 class="--salidas_bloque_copy_title">EMPLEABILIDAD Y<br> BOLSA DE TRABAJO</h4>
+                    <p class="--salidas_boque_copy_text">Los alumnos matriculados en la Escuela de Asesores acceden inmediatamente a la <b>bolsa de empleo, con vacantes</b> en empresas, despachos y asesorías de toda España.</p>
+               </div>
+           </div>
+           <div class="--2_columns">
+               <div class="--salidas_bloque_copy js-scroll slide-left">
+                    <h4 class="--salidas_bloque_copy_title">EMPRENDIMIENTO</h4>
+                    <p class="--salidas_boque_copy_text">Si tu objetivo es crear tu propia asesoría, te proporcionaremos las herramientas y el apoyo profesional que necesites en cada etapa de tu proyecto.</p>
+               </div>
+               <div class="--salidas_bloque_copy js-scroll slide-right">
+                    <h4 class="--salidas_bloque_copy_title">RECICLAJE PROFESIONAL<br> Y ALTA DIRECCIÓN</h4>
+                    <p class="--salidas_boque_copy_text">Lanza tu carrera directiva y especialízate ampliando tu área funcional dentro del sector de la asesoría y el despacho profesional.</p>
                </div>
            </div>
         </div>
     </div>
 
-    <div class="--aside" id="b_experiencias">
+    <div class="--aside" id="b_admision">
         <div class="--copy">
-            <p class="--section_title">EXPERIENCIAS</p>
+            <p class="--section_title">ADMISIÓN</p>
         </div>
         <div class="--section">
         </div>
         <div class="--content">
-            <div class="--arrow_interior d-none d-md-block --bottom">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-                <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
-            </div>
-            <p class="--section_title d-xl-none">EXPERIENCIAS</p>
-           <div class="--2_columns">
-               <div class="--experiencias_bloque_title">
-                <h2 class="--title">Casos 100% prácticos</h2>
-               </div>
-               <div class="--experiencias_bloque_copy_1">
-                   <p class="--text_1">Los alumnos resuelven casos de clientes reales bajo supervisión para obtener el control práctico de todos los procesos, trámites y herramientas.</p>
-               </div>
-           </div>
-           <div class="swiper mySwiper --testimonio_1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="--content_testimonios_copy">
-                    <p class="--content_testimonios_quote"><b>“No son de los que dan teoría que luego no te sirve en tu vida laboral”</b></p>
-                    <p class="--content_testimonios_author">Javier Arroyo</p>
-                </div>
-                <div class="--content_testimonios_foto">
-                    <img src="{{ URL::to('/') }}/images/jose-miguel-molina.webp" alt="" class="lazyload">
-                </div>
-              </div>
-              <div class="swiper-slide d-md-none">
-                <div class="--content_testimonios_copy">
-                    <p class="--content_testimonios_quote">“Los casos prácticos se ajustan muy bien a la <b>realidad diaria de una asesoría”</b></p>
-                    <p class="--content_testimonios_author">Noélia Pérez</p>
-                </div>
-                <div class="--content_testimonios_foto">
-                    <img src="{{ URL::to('/') }}/images/cristina-riaza.webp" alt="" class="lazyload">
-                </div>
-                <div></div>
-              </div>
-            </div>
-            <div class="swiper-button-next --testimonio_1_button_next"></div>
-            {{-- <div class="swiper-button-prev"></div> --}}
-        </div>
-
-        <div class="swiper mySwiper --testimonio_2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="--content_testimonios_foto">
-                      <img src="{{ URL::to('/') }}/images/metodologia/noelia-perez.webp" alt="" class="lazyload">
-                  </div>
-                <div class="--content_testimonios_copy">
-                    <p class="--content_testimonios_quote">“Los casos prácticos se ajustan muy bien a la <b>realidad diaria de una asesoría”</b></p>
-                    <p class="--content_testimonios_author">Noélia Pérez</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev --testimonio_2_button_prev"></div>
-          </div>
+            <p class="--section_title d-xl-none">ADMISIÓN</p>
+            <h3 class="--title js-scroll slide-left">Da el primer paso</h3>
+            <p class="--salidas_copy js-scroll slide-left"><b>- Solicita una entrevista</b> con una dinamizadora formativa en EDASE.</p>
+            <p class="--salidas_copy js-scroll slide-left"><b>- Analizamos tu perfil</b> para ayudarte a desarrollar tu potencial.</p>
+            <p class="--salidas_copy js-scroll slide-left"><b>-</b> Proyéctate en el tiempo: <b>establece objetivos profesionales a corto, medio y largo plazo.</b></p>
+            <p class="--salidas_copy js-scroll slide-left"><b>- Plan de carrera:</b> trazamos tu hoja de ruta a seguir para la consecución de tus metas profesionales con la ayuda de la Escuela y el equipo docente.</p>
         </div>
     </div>
+
+    @include('layouts.footer-generico')
 
     
 
-    <script>
-
-    </script>
 </div>
 @endsection

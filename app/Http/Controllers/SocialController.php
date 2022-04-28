@@ -7,17 +7,23 @@ use Artesaos\SEOTools\Facades\OpenGraph;
 
 use Illuminate\Http\Request;
 
-class CarreraController extends Controller
+class SocialController extends Controller
 {
-    public function __invoke(){
-
+    /**
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function __invoke()
+    {
         $robots = "noindex, nofollow";
         $datos = [
             'enterprise' => 7
         ];
-        $title = "Plan de Carrera";
-        $description = "Cumple tus objetivos profesionales forjando tu plan de carrera con la orientación de la Escuela de Asesores.";
-        $og_title = "Plan de Carrera con EDASE【 Formamos al asesor del futuro 】";
+        $title = "Causa Social";
+        $description = "EDASE tiene un compromiso firme por la igualdad de oportunidades de formación e inserción laboral";
+        $og_title = "Causa Social【Escuela de Asesores EDASE】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -30,6 +36,6 @@ class CarreraController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('carrera', $datos);
+        return view('social', $datos);
     }
 }
