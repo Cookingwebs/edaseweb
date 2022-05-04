@@ -1,4 +1,4 @@
-@extends('layouts.plantilla-promo')
+@extends('layouts.plantilla-promo', ['chat' => $chat])
 
 @section('title', 'Aula Abierta')
 
