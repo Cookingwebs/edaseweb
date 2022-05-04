@@ -1,0 +1,225 @@
+#master_contador-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+            width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        
+        .--section {
+            padding-bottom: 40px;
+        }
+    }
+    #b_header{
+        .--copy{
+            top: 60px;
+        }
+        margin-top: 150px;
+        @include notebook{
+            margin-top: 100px;
+        }
+        .--title{
+            font-size: 36px;
+            text-align: center;
+            color: $blue;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: bold;
+            line-height: 1em;
+        }
+        .--subtitle{
+            font-size: 36px;
+            text-align: center;
+            color: $grey-dark;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .--extra{
+            font-size: 49px;
+            font-weight: bold;
+            color: $green;
+            text-align: center;
+        }
+        .--contador{
+            background-color: $grey-light;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            .--contador-item{
+                display: inline-block;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                position: relative;
+                p{
+                    margin-bottom: 0;
+                    color: $grey-dark;
+                    font-size: 13px;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                .--contador-number{
+                    font-size: 54px;
+                    font-weight: bold;
+                    color: $grey-dark;
+                    line-height: 1em;
+                    margin-bottom: 6px;
+                }
+                &::before{
+                    content: ":";
+                    position: absolute;
+                    font-size: 54px;
+                    font-weight: bold;
+                    line-height: 1em;
+                    left: 110%;
+                    top: 16%;
+                }
+                &[data="days"]{
+                    margin-right: 40px;
+                    p{
+                        color: $blue;
+                    }
+                    .--contador-number{
+                        color: $blue;
+                    }
+                    &::before{
+                        content: url('/images/svg/contador-arrow.svg');
+                        left: 120%;
+                        top: 16%;
+                        width: 20px;
+                    }
+                }
+                &[data="seconds"]{
+                    &::before{
+                        content: "";
+                    }
+                }
+            }
+        }
+        .--cta{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+    }
+    #b_punto{
+        .--2_columns{
+            margin-top: 50px;
+            @include tablet{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+            @include mobile{
+                margin-top: 0;
+            }
+        }
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        .--subtitle{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 100px;
+            position: relative;
+            &::before{
+                content:"+";
+                color: $green;
+                position: absolute;
+                left: -1em;
+            }
+            @include notebook{
+                font-size: 27px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--punto_bloque_copy_1{
+            display: flex;
+            align-items: center;
+            @include mobile{
+                margin-bottom: 50px;
+            }
+        }
+        p{
+            font-weight: 300;
+            font-size: 33px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--punto_bloque_copy{
+            @include mobile{
+                padding-left: 1.3em;
+            }
+        }
+        .--punto_bloque_copy_title{
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $blue;
+            line-height: 1.3em;
+            margin-top: 0;
+            margin-bottom: 40px;
+            position: relative;
+            min-height: 99px;
+            &::before{
+                content:"-";
+                position: absolute;
+                left: -1em;
+            }
+            @include notebook{
+                font-size: 27px;
+                min-height: 70px;
+                margin-bottom: 20px;
+            }
+            @include mobile{
+                min-height: auto;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+        }
+        .--punto_bloque_copy_text{
+            margin-bottom: 40px;
+            font-size: 25px;
+        }
+    }
+}

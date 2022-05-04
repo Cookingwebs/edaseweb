@@ -14,6 +14,7 @@ use App\Http\Controllers\TecnicoController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\InvestigacionController;
 use App\Http\Controllers\LanzamientoController;
+use App\Http\Controllers\PromoController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TestController;
 
@@ -54,11 +55,14 @@ Route::get('/politica-cookies', [AvisosController::class, "cookies"])->name('coo
 // LANZAMIENTOS
 
 Route::get('/aula-abierta', [LanzamientoController::class, "aulaAbierta"])->name('aula-abierta');
+Route::get('/aula-abierta/documentos', [LanzamientoController::class, "aulaAbiertaDocumentos"])->name('aula-abierta-documentos');
+Route::get('/aula-abierta/contable', [LanzamientoController::class, "aulaAbiertaContable"])->name('aula-abierta-contable');
 Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
 // PROMOS
 
 Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');
+Route::get('/unete', [PromoController::class, "masterContador"])->name('master-contador');
 
 // TESTS
 Route::get('/test', TestController::class)->name('test');

@@ -7,19 +7,18 @@ use Artesaos\SEOTools\Facades\OpenGraph;
 
 use Illuminate\Http\Request;
 
-class TecnicoController extends Controller
+class PromoController extends Controller
 {
-    public function __invoke(){
-
+    public function masterContador(){
+        $robots = "noindex, nofollow";
         $datos = [
-            'enterprise' => 7
+            'enterprise' => 7,
+            'chat' => 'ok',
+            'action_form' => url()->current().'/gracias'
         ];
-
-        $robots = "index, follow";
-  
-        $title = "Técnico";
-        $description = "Si quieres trabajar de asesor, esto es para ti ▷ Fórmate desde cero como técnico fiscal, laboral y contable";
-        $og_title = "Especialización técnico en Asesoría 【EDASE】";
+        $title = "Solicitud de Becas";
+        $description = "Solicita una beca antes del 17 de mayo para formarte en el Máster Asesor Experto  ▷ #LaGranOportunidad. Plazas limitadas.";
+        $og_title = "Solicitud de Becas【Edición Especial Mayo 2022】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -32,7 +31,6 @@ class TecnicoController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-
-        return view('tecnico', $datos);
+        return view('promo.master-contador', $datos);
     }
 }

@@ -24,7 +24,7 @@ class LanzamientoController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        SEOMeta::setRobots($robots);
+        //SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -45,7 +45,7 @@ class LanzamientoController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        SEOMeta::setRobots($robots);
+        //SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -54,6 +54,48 @@ class LanzamientoController extends Controller
         OpenGraph::addProperty('locale', 'es_ES');
 
         return view('lanzamiento.aula-abierta-gracias');
+
+    }
+    public function aulaAbiertaDocumentos(){
+
+        $robots = "noindex, nofollow";
+        $title = "Aula abierta - Documentación";
+        $description = " Descarga aquí todo el contenido y las tareas de las clases 1, 2 y 3 ▷ Aula Abierta de EDASE";
+        $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        //SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.aula-abierta-documentos');
+
+    }
+    public function aulaAbiertaContable(){
+
+        $robots = "noindex, nofollow";
+        $title = "Aula abierta - Clase 02";
+        $description = "Mira aquí la grabación completa de la Clase 02 ▷ ¿Qué debe saber un asesor laboral sobre la nueva reforma?";
+        $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        //SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.aula-abierta-contable');
 
     }
 }
