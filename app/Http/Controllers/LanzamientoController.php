@@ -62,6 +62,9 @@ class LanzamientoController extends Controller
         $title = "Aula abierta - Documentación";
         $description = " Descarga aquí todo el contenido y las tareas de las clases 1, 2 y 3 ▷ Aula Abierta de EDASE";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+        $datos = [
+            'chat' => 'no'
+        ];
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -74,7 +77,7 @@ class LanzamientoController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('lanzamiento.aula-abierta-documentos');
+        return view('lanzamiento.aula-abierta-documentos', $datos);
 
     }
     public function aulaAbiertaContable(){
@@ -83,6 +86,9 @@ class LanzamientoController extends Controller
         $title = "Aula abierta - Clase 02";
         $description = "Mira aquí la grabación completa de la Clase 02 ▷ ¿Qué debe saber un asesor laboral sobre la nueva reforma?";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+        $datos = [
+            'chat' => 'no'
+        ];
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -95,7 +101,7 @@ class LanzamientoController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('lanzamiento.aula-abierta-contable');
+        return view('lanzamiento.aula-abierta-contable', $datos);
 
     }
     public function aulaAbiertaLaboral(){
@@ -104,6 +110,9 @@ class LanzamientoController extends Controller
         $title = "Aula abierta - Clase 01";
         $description = "Mira aquí la grabación completa de la Clase 01 ▷ ¿Qué debe saber un asesor laboral sobre la nueva reforma?";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+        $datos = [
+            'chat' => 'no'
+        ];
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -116,7 +125,7 @@ class LanzamientoController extends Controller
         OpenGraph::addProperty('type', 'website');
         OpenGraph::addProperty('locale', 'es_ES');
 
-        return view('lanzamiento.aula-abierta-laboral');
+        return view('lanzamiento.aula-abierta-laboral', $datos);
 
     }
 }
