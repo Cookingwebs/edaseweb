@@ -45,7 +45,7 @@
                   //===
                   // VARIABLES
                   //===
-                  const DATE_TARGET = new Date('05/06/2022 0:01 AM');
+                  const DATE_TARGET = new Date('05/17/2022 0:01 AM');
                   // DOM for render
                   const SPAN_DAYS = document.querySelector('p#days');
                   const SPAN_HOURS = document.querySelector('p#hours');
@@ -165,29 +165,75 @@
             <p class="--section_title d-xl-none">hoja de ruta</p>
             <h2 class="--title js-scroll slide-left">EMPIEZA AQUÍ TU<br> GRAN OPORTUNIDAD</h2>
             <p class="--subtitle js-scroll slide-left">PREPÁRATE PARA TRABAJAR COMO ASESOR EXPERTO</p>
-           <div class="--2_columns">
-               <div class="--ruta_bloque_copy js-scroll slide-left">
-                    <h4 class="--ruta_bloque_copy_title">BUSCAS UN EMPLEO <br>DE CALIDAD</h4>
-                    <p class="--ruta_bloque_copy_text">No estás dispuesto a seguir conformándote con puestos inferiores y contratos basura. </p>
-               </div>
-               <div class="--ruta_bloque_copy js-scroll slide-right">
-                    <h4 class="--ruta_bloque_copy_title">TIENES ESTUDIOS <br>RELACIONADOS</h4>
-                    <p class="--ruta_bloque_copy_text">Te formaste en administración, finanzas, contabilidad, RRHH o derecho.</p>
-               </div>
-           </div>
-           <div class="--2_columns">
-               <div class="--ruta_bloque_copy js-scroll slide-left">
-                    <h4 class="--ruta_bloque_copy_title">NECESITAS RENOVAR <br>TU FORMACIÓN</h4>
-                    <p class="--ruta_bloque_copy_text">Ya trabajas en el sector de la asesoría, pero te sientes limitado en algunas áreas.</p>
-               </div>
-               <div class="--ruta_bloque_copy js-scroll slide-right">
-                    <h4 class="--ruta_bloque_copy_title">TE GUSTARÍA MONTAR <br>UNA ASESORÍA</h4>
-                    <p class="--ruta_bloque_copy_text">Quieres ofrecer servicios de asesoría a tus propios clientes, pero no sabes por dónde empezar.</p>
-               </div>
-           </div>
-           <div class="--cta --go_form_down">SOLICITA TU PLAZA</div>
+
+            <p class="--extra js-scroll slide-left">Con los profesionales de <br>la asesoría líder en España</p>
+            <p class="--ruta-copy js-scroll slide-left">Aprenderás de la mano de especialistas en activo.</p>
+
+            <p class="--extra js-scroll slide-left">9 MESES de especialización <br>Fiscal, laboral y contable</p>
+            <p class="--ruta-copy js-scroll slide-left">Dominarás las 3 áreas con conocimientos teóricos y prácticos.</p>
+
+            <p class="--extra js-scroll slide-left">3 MESES de prácticas <br>resolviendo casos de clientes reales</p>
+            <p class="--ruta-copy js-scroll slide-left">Realizarás prácticas online en Ayuda T Pymes.</p>
         </div>
     </div>
+
+    <div class="--aside" id="b_acceso">
+        <div class="--copy">
+            <p class="--section_title">acceso</p>
+        </div>
+        <div class="--section">
+        </div>
+        <div class="--content">
+            <p class="--section_title d-xl-none">acceso</p>
+            <h2 class="--title js-scroll slide-left">EMPIEZA AQUÍ TU<br> GRAN OPORTUNIDAD</h2>
+            <p class="--subtitle js-scroll slide-left">PREPÁRATE PARA TRABAJAR COMO ASESOR EXPERTO</p>
+
+            <div class="--2_columns">
+                <div class="--acceso_bloque">
+                    <p class="--extra js-scroll slide-left">Bolsa de empleo</p>
+                    <p class="--acceso-copy js-scroll slide-left">Ofertas exclusivas en todo el país.</p>
+                    <p class="--extra js-scroll slide-left">Campus online</p>
+                    <p class="--acceso-copy js-scroll slide-left">Contenido en vídeo disponible 24/7.</p>
+                    <p class="--extra js-scroll slide-left">Clases en directo</p>
+                    <p class="--acceso-copy js-scroll slide-left">Sesiones con profesores y alumnos.</p>
+                    <p class="--extra js-scroll slide-left">Tutorías personales</p>
+                    <p class="--acceso-copy js-scroll slide-left">Atención individual y directa.</p>
+                </div>
+                <div class="--acceso_bloque">
+                    <p class="--extra js-scroll slide-left">Herramientas</p>
+                    <p class="--acceso-copy js-scroll slide-left">Ejercicios utilizando la última tecnología.</p>
+                    <p class="--extra js-scroll slide-left">Formación continua</p>
+                    <p class="--acceso-copy js-scroll slide-left">Plataforma de actualidad.</p>
+                    <p class="--extra js-scroll slide-left">Diploma acreditativo</p>
+                    <p class="--acceso-copy js-scroll slide-left">12 meses de experiencia avalada por Ayuda T Pymes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="--aside" id="b_bonus">
+        <div class="--copy">
+            <p class="--section_title">#BONUS</p>
+        </div>
+        <div class="--section">
+        </div>
+        <div class="--content">
+            <p class="--section_title d-xl-none">#BONUS</p>
+            
+            <div class="--2_columns">
+                <div class="--bonus_bloque">
+                    <img src="{{ URL::to('/') }}/images/master/master-asesoria.webp" alt="" class="lazyload">
+                    <div class="--cta --go_form_down">ME INTERESA</div>
+                </div>
+                <div class="--bonus_bloque">
+                    <h2 class="--title js-scroll slide-left">¡EXCLUSIVO! Solo para esta edición de mayo</h2>
+                    <p class="--subtitle js-scroll slide-left"><span>Seminario</span> experto en Creación y Dirección de Asesorías y Despachos.</p>
+                    <p class="js-scroll slide-left">El primer paso para autoemplearte o conseguir un puesto directivo en la asesoría de empresas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="--aside" id="b_formulario_footer">
         <div class="--copy">

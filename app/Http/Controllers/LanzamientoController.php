@@ -98,4 +98,25 @@ class LanzamientoController extends Controller
         return view('lanzamiento.aula-abierta-contable');
 
     }
+    public function aulaAbiertaLaboral(){
+
+        $robots = "noindex, nofollow";
+        $title = "Aula abierta - Clase 01";
+        $description = "Mira aquí la grabación completa de la Clase 01 ▷ ¿Qué debe saber un asesor laboral sobre la nueva reforma?";
+        $og_title = "Aula abierta【EDASE Escuela de Asesores】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.aula-abierta-laboral');
+
+    }
 }
