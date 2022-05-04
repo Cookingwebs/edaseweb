@@ -8,7 +8,7 @@
 <div id="lanzamiento-page" class="--aula-abierta-documentos">
     <div id="b_cabecera">
         <div class="--copy">
-            <h2 class="--title">DOCUMENTOS DEL AULA ABIERTA</h2>
+            <h2 class="--title">DOCUMENTOS</h2>
         </div>
     </div>
     
