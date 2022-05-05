@@ -108,7 +108,7 @@ class LanzamientoController extends Controller
 
         $robots = "noindex, nofollow";
         $title = "Aula abierta - Clase 03";
-        $description = "Mira aquí la grabación completa de la Clase 03 ▷ ¿Qué debe saber un asesor laboral sobre la nueva reforma?";
+        $description = "Mira aquí la grabación completa de la Clase 03 ▷ ¿Cómo declara el IVA un asesor fiscal?";
         $og_title = "Aula abierta【EDASE Escuela de Asesores】";
         $datos = [
             'chat' => 'no'
