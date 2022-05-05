@@ -77,15 +77,15 @@
                         <div class="--bloque_documentos-item-content-contenido">
                             <p class="--subtitle">CONTENIDO</p>
                             <ul>
-                                <li><a href="{{ URL::to('/') }}/aula-abierta/fiscal/Fiscal_IVA_Regimen_general.pdf">Iva - Régimen general</a></li>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/Fiscal_IVA_Regimen_general.pdf">Iva - Régimen general</a></li>
                             </ul>
                         </div>
                         <div class="--bloque_documentos-item-content-tarea">
                             <p class="--subtitle">TAREA</p>
                             <ul>
-                                <li><a href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Tarea_Fiscal.pdf">Tarea Fiscal</a></li>
-                                <li><a href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Modelo303.pdf">Modelo 303</a></li>
-                                <li><a href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Facturas.xlsx">Facturas.xlsx</a></li>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Tarea_Fiscal.pdf">Tarea Fiscal</a></li>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Modelo303.pdf">Modelo 303</a></li>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Facturas.xlsx">Facturas.xlsx</a></li>
                             </ul>
                         </div>
                     </div>
