@@ -10,7 +10,7 @@
                 <ul class="--menu_list">
                     <li class="--menu_list_item --menu_list_item_desp" data="1" data-order="1"><span data="1">titulaciones</span></li>
                     <li class="--menu_list_item --menu_list_item_desp" data="2" data-order="2"><span data="2">la escuela</span></li>
-                    {{-- <li class="--menu_list_item --menu_list_item_desp" data="3" data-order="3">plan de carrera</li> --}}
+                    <li class="--menu_list_item {{ Route::currentRouteNamed('carrera') ? '--active' : '' }}" data-order="3"><a href="{{route('carrera')}}"><span>plan de carrera</a></span></li>
                     <li class="--menu_list_item {{ Route::currentRouteNamed('becas') ? '--active' : '' }}" data-order="4"><a href="{{route('becas')}}"><span>becas y admisión</a></span></li>
                 </ul>
                 <p class="--phone_tablet"><a href="tel:900 866 336">900 866 336</a></p>
@@ -59,6 +59,16 @@
                         Metodología
                     </li>
                 </a>
+                <a href="{{route('social')}}">
+                    <li class="--desplegable_list_item {{ Route::currentRouteNamed('social') ? '--active' : '' }}">
+                        Causa Social
+                    </li>
+                </a>
+                <a href="{{route('investigacion')}}">
+                    <li class="--desplegable_list_item {{ Route::currentRouteNamed('investigacion') ? '--active' : '' }}">
+                        I + D
+                    </li>
+                </a>
             </ul>
             <ul class="--deplegable_list" data="3">
                 <li class="--desplegable_list_item">Lorem ipsum 3</li>
@@ -67,7 +77,7 @@
             </ul>
         </div>
         <div class="--content_menu">
-            <ul class="--links --open_menu --left_menu {{ Route::currentRouteNamed('home') ||  Route::currentRouteNamed('becas') ? '__current' : '' }}" data-select="1">
+            <ul class="--links --open_menu --left_menu {{ Route::currentRouteNamed('home') ||  Route::currentRouteNamed('becas') ||  Route::currentRouteNamed('carrera') ? '__current' : '' }}" data-select="1">
                 <li class="--content_menu_link {{ Route::currentRouteNamed('home') ? '--active' : '' }}">
                     <a href="{{route('home')}}">
                         HOME
@@ -82,6 +92,11 @@
                 {{-- <li class="--content_menu_link" data-link="4">
                     PLANES DE CARRERA
                 </li> --}}
+                <li class="--content_menu_link {{ Route::currentRouteNamed('carrera') ? '--active' : '' }}">
+                        <a href="{{route('carrera')}}">
+                        PLAN DE CARRERA
+                    </a>
+                </li>
                 <li class="--content_menu_link {{ Route::currentRouteNamed('becas') ? '--active' : '' }}">
                         <a href="{{route('becas')}}">
                         BECAS Y ADMISIONES
@@ -111,7 +126,7 @@
                     </li>
                 </a>
             </ul>
-            <ul class="--links {{ Route::currentRouteNamed('conocenos') ||  Route::currentRouteNamed('metodologia') ? '--open_menu' : '' }}" data-select="3">
+            <ul class="--links {{ Route::currentRouteNamed('conocenos') ||  Route::currentRouteNamed('metodologia') ||  Route::currentRouteNamed('social') ||  Route::currentRouteNamed('investigacion') ? '--open_menu' : '' }}" data-select="3">
                 <li class="--return">< Volver</li>
                 <a href="{{route('conocenos')}}">
                     <li class=" {{ Route::currentRouteNamed('conocenos') ? '--active' : '' }}">
@@ -121,6 +136,16 @@
                 <a href="{{route('metodologia')}}">
                     <li class=" {{ Route::currentRouteNamed('metodologia') ? '--active' : '' }}">
                         METODOLOGÍA
+                    </li>
+                </a>
+                <a href="{{route('social')}}">
+                    <li class=" {{ Route::currentRouteNamed('social') ? '--active' : '' }}">
+                        CAUSA SOCIAL
+                    </li>
+                </a>
+                <a href="{{route('investigacion')}}">
+                    <li class=" {{ Route::currentRouteNamed('investigacion') ? '--active' : '' }}">
+                        I + D
                     </li>
                 </a>
             </ul>

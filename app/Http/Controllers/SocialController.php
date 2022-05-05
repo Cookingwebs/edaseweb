@@ -17,7 +17,7 @@ class SocialController extends Controller
      */
     public function __invoke()
     {
-        $robots = "noindex, nofollow";
+        $robots = "index, follow";
         $datos = [
             'enterprise' => 7
         ];
