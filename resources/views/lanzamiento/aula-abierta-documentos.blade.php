@@ -78,6 +78,7 @@
                             <p class="--subtitle">CONTENIDO</p>
                             <ul>
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/Fiscal_IVA_Regimen_general.pdf">Iva - Régimen general</a></li>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/Ejemplo_Modelo_303.pdf">Ejemplo Modelo 303</a></li>
                             </ul>
                         </div>
                         <div class="--bloque_documentos-item-content-tarea">
