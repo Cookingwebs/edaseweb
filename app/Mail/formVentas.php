@@ -14,14 +14,12 @@ class formVentas extends Mailable
     public $name;
     public $phone;
     public $email;
-    public $checkPubli;
 
-    public function __construct($name, $phone, $email, $checkPubli)
+    public function __construct($name, $phone, $email)
     {
         $this->name=$name;
         $this->phone=$phone;
         $this->email=$email;
-        $this->checkPubli=$checkPubli;
     }
 
     /**

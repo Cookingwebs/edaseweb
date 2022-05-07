@@ -16,7 +16,7 @@ class MasterController extends Controller
         ];
         $title = "Máster";
         $description = "Fórmate con el máster de Asesor Experto en la Escuela de Asesores de Ayuda T Pymes ▷ Experiencia PRÁCTICA y REAL.";
-        $og_title = "Máster en Asesoría Fiscal, Laboral y Contable【EDASE】";
+        $og_title = "Máster en Asesoría Fiscal, Laboral y Contable 【EDASE】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
@@ -39,7 +39,7 @@ class MasterController extends Controller
         ];
         $title = "Máster";
         $description = "Fórmate con el máster de Asesor Experto en la Escuela de Asesores de Ayuda T Pymes ▷ Experiencia PRÁCTICA y REAL.";
-        $og_title = "Máster en Asesoría Fiscal, Laboral y Contable【EDASE】";
+        $og_title = "Máster en Asesoría Fiscal, Laboral y Contable 【EDASE】";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);

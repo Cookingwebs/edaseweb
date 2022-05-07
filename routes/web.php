@@ -65,6 +65,7 @@ Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaG
 
 Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');
 Route::get('/unete', [PromoController::class, "masterContador"])->name('master-contador');
+Route::get('/unete/gracias', [PromoController::class, "masterContadorGracias"])->name('master-contador-gracias');
 
 // TESTS
 Route::get('/test', TestController::class)->name('test');
