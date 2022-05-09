@@ -58,6 +58,7 @@ Route::get('/aula-abierta', [LanzamientoController::class, "aulaAbierta"])->name
 Route::get('/aula-abierta/documentos', [LanzamientoController::class, "aulaAbiertaDocumentos"])->name('aula-abierta-documentos');
 Route::get('/aula-abierta/laboral', [LanzamientoController::class, "aulaAbiertaLaboral"])->name('aula-abierta-laboral');
 Route::get('/aula-abierta/contable', [LanzamientoController::class, "aulaAbiertaContable"])->name('aula-abierta-contable');
+Route::get('/aula-abierta/final', [LanzamientoController::class, "aulaAbiertaFinal"])->name('aula-abierta-final');
 Route::get('/aula-abierta/fiscal', [LanzamientoController::class, "aulaAbiertaFiscal"])->name('aula-abierta-fiscal');
 Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
