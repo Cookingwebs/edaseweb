@@ -40,6 +40,10 @@
                             <ul>
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/laboral/tarea/Tarea_laboral.pdf">Tarea Laboral</a></li>
                             </ul>
+                            <p class="--subtitle">SOLUCIÓN DE TAREAS</p>
+                            <ul>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/laboral/tarea/Solucion_Tarea_Laboral.pdf">Solución Tarea Laboral</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -66,6 +70,10 @@
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/contable/tarea/Venta_mercaderias_1.pdf">Venta mercaderías 1</a></li>
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/contable/tarea/Venta_Mercaderias_2.pdf">Venta mercaderías 2</a></li>
                             </ul>
+                            <p class="--subtitle">SOLUCIÓN DE TAREAS</p>
+                            <ul>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/contable/tarea/Solucion_Tarea_Contable.pdf">Solución Tarea Contable</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -87,6 +95,10 @@
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Tarea_Fiscal.pdf">Tarea Fiscal</a></li>
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Modelo303.pdf">Modelo 303</a></li>
                                 <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Facturas.xlsx">Facturas.xlsx</a></li>
+                            </ul>
+                            <p class="--subtitle">SOLUCIÓN DE TAREAS</p>
+                            <ul>
+                                <li><a target="_blank" href="{{ URL::to('/') }}/aula-abierta/fiscal/tarea/Solucion_Tarea_Fiscal.pdf">Solución Tarea Fiscal</a></li>
                             </ul>
                         </div>
                     </div>
