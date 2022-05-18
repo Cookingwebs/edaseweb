@@ -21,7 +21,7 @@
             </div>
            <h1 class="--title">MÁSTER ASESOR EXPERTO</h1>
            <h2 class="--subtitle">EDICIÓN ESPECIAL<br class="d-md-none"> MAYO DE 2022</h2>
-           <p class="--extra">SOLICITA UNA DE LAS PLAZAS BECADAS<br class="d-none d-md-block"> ANTES DEL 17 DE MAYO</p>
+           <p class="--extra">SOLICITA UNA DE LAS PLAZAS BECADAS<br class="d-none d-md-block"> ANTES DEL 21 DE MAYO</p>
            <div class="--contador">
             <div class="--contador-item" data="days">
                 <p class="--contador-number" id="days"></p>
@@ -45,7 +45,7 @@
                   //===
                   // VARIABLES
                   //===
-                  const DATE_TARGET = new Date('05/17/2022 0:01 AM');
+                  const DATE_TARGET = new Date('05/21/2022 0:01 AM');
                   // DOM for render
                   const SPAN_DAYS = document.querySelector('p#days');
                   const SPAN_HOURS = document.querySelector('p#hours');
@@ -473,7 +473,7 @@
                         limitadas! <br>
                         <span>Solicita <br class="d-md-none d-xl-block">
                         la tuya antes <br class="d-md-none d-xl-block">
-                        del 17 de mayo.</span></h2>
+                        del 21 de mayo.</span></h2>
                     <p class="--text">Si quieres optar a una beca para formarte en la edición especial de mayo del máster asesor experto, rellena el formulario.</p>
                </div>
                <div class="--formulario_form js-scroll slide-right">
