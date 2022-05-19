@@ -62,6 +62,9 @@ Route::get('/aula-abierta/final', [LanzamientoController::class, "aulaAbiertaFin
 Route::get('/aula-abierta/fiscal', [LanzamientoController::class, "aulaAbiertaFiscal"])->name('aula-abierta-fiscal');
 Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
+Route::get('/edicion-especial/faqs', [LanzamientoController::class, "edicionEspecialFaqs"])->name('edicion-especial-faqs');
+Route::get('/edicion-especial/clase', [LanzamientoController::class, "edicionEspecialClase"])->name('edicion-especial-clase');
+
 // PROMOS
 
 Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');

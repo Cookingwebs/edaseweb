@@ -176,4 +176,52 @@ class LanzamientoController extends Controller
         return view('lanzamiento.aula-abierta-final', $datos);
 
     }
+    public function edicionEspecialFaqs(){
+
+        $robots = "noindex, nofollow";
+        $title = "Edición Especial de Mayo - FAQs";
+        $description = "Resolvemos las preguntas más frecuentes sobre el Máster Asesor Experto ▷ Bolsa de trabajo, oportunidades de empleo, webinars, clases, profesores";
+        $og_title = "Edición Especial de Mayo 【Máster Asesor Experto】";
+        $datos = [
+            'chat' => 'no'
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.edicion-especial-faqs', $datos);
+
+    }
+    public function edicionEspecialClase(){
+
+        $robots = "noindex, nofollow";
+        $title = "Edición Especial de Mayo";
+        $description = "Acompáñanos a la primera clase del Máster Asesor Experto  ▷ Introducción y tour por el campus virtual con las profesoras";
+        $og_title = "Edición Especial de Mayo 【1º Clase】";
+        $datos = [
+            'chat' => 'no'
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.edicion-especial-clase', $datos);
+
+    }
 }
