@@ -47,8 +47,8 @@
                             <option selected disabled value="0">Seleccionar uno</option>
                             <option value="mba">MBA en administración y dirección de empresas, asesorías y despachos profesionales (18 meses)</option>
                             <option value="master">Máster Asesor Experto fiscal, laboral y contable (12 meses)</option>
-                            <option value="tecnico_laboral">Especialización Técnica en Asesoría laboral y contable (8 meses)</option>
-                            <option value="tecnico_fiscal">Especialización Técnica en Asesoría fiscal y contable (8 meses)</option>
+                            <option value="tecnico_laboral">Especialización Técnica en Asesoría laboral y contable (6 meses)</option>
+                            <option value="tecnico_fiscal">Especialización Técnica en Asesoría fiscal y contable (6 meses)</option>
                         </select>
                         <span class="--error --alert_becas_estudios">Debes seleccionar una opción</span>
                     </div>
