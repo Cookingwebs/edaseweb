@@ -70,6 +70,7 @@ Route::get('/edicion-especial/clase', [LanzamientoController::class, "edicionEsp
 Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');
 Route::get('/unete', [PromoController::class, "masterContador"])->name('master-contador');
 Route::get('/unete/gracias', [PromoController::class, "masterContadorGracias"])->name('master-contador-gracias');
+Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomienda');
 
 // TESTS
 Route::get('/test', TestController::class)->name('test');

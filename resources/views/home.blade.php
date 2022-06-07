@@ -5,6 +5,21 @@
 @section('id-page', 'home')
 
 @section('content')
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollegeOrUniversity",
+      "name": "EDASE",
+      "alternateName": "Escuela de Asesores",
+      "url": "https://edase.es/",
+      "logo": "https://edase.es/images/svg/escudo.svg",
+      "sameAs": [
+        "https://www.facebook.com/escueladeasesores/",
+        "https://www.instagram.com/escueladeasesores_/",
+        "https://www.linkedin.com/company/edase-escuela-de-asesores-de-ayuda-t-pymes/"
+      ]
+    }
+    </script>
     <div id="home-page">
         <div id="b_cabecera_home">
             <video autoplay muted loop id="myVideo" preload="none" class="lazyload">

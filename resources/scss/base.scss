@@ -67,6 +67,10 @@ p{
     }
 }
 
+.--down_one{
+    cursor: pointer;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -605,7 +609,7 @@ p{
                 grid-template-columns: 240px 35% 1fr;
             }
             .--logo{
-                transform: translateY(0px);
+                transform: translateY(-1px);
             }
             .--menu{
                 background-color: transparent;

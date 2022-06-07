@@ -81,6 +81,11 @@ $(document).ready(function(){
               scrollTop: $('#b_creamos').offset().top
           }, 1000);
       });
+      $('.--down_one').on('click', function(){
+          $('body, html').animate({
+              scrollTop: $('.--aside[data=down_2]').offset().top
+          }, 1000);
+      });
       var lastScrollTop = 0;
   
       $(window).scroll(function(event){

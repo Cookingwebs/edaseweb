@@ -54,4 +54,27 @@ class PromoController extends Controller
         return view('promo.master-contador-gracias');
 
     }
+    public function recomienda(){
+        $robots = "noindex, nofollow";
+        $datos = [
+            'enterprise' => 7,
+            'chat' => 'no'
+        ];
+        $title = "Solicitud de Becas";
+        $description = "Solicita una beca antes del 17 de mayo para formarte en el Máster Asesor Experto  ▷ #LaGranOportunidad. Plazas limitadas.";
+        $og_title = "Solicitud de Becas【Edición Especial Mayo 2022】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('promo.recomienda', $datos);
+    }
 }
