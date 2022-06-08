@@ -45,6 +45,7 @@ Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
 
 Route::get('/send-email', [EmailController::class, 'sendEmail']);
 Route::get('/send-email-becas', [EmailController::class, 'sendEmailBecas']);
+Route::get('/send-email-recomienda', [EmailController::class, 'sendEmailRecomienda']);
 
 
 Route::get('/terminos-condiciones', [AvisosController::class, "terminos"])->name('terminos');

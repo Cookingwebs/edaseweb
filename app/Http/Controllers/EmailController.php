@@ -115,6 +115,52 @@ class EmailController extends Controller
                 return json_encode(0);
             }
     }
+    public function sendEmailRecomienda()
+    {
+
+            $this -> name = $_GET['name'];
+            $this -> phone = $_GET['phone'];
+            $this -> canal = $_GET['canal'];
+            $this -> url = $_GET['url'];
+            $this -> consulta = $_GET['consulta'];
+            $this -> notificaciones = $_GET['notificaciones'];
+            if(isset($_GET['idEnterprise'])){
+                $this -> idEnterprise = $_GET['idEnterprise'];
+            }else{
+                $this -> idEnterprise = 7;
+            }
+            $this -> gclid = $_GET['gclid'];
+            $this -> idAnalytics = $_GET['idAnalytics'];
+            // return var_dump($_POST);
+
+            $datosFormulario = array(
+                "name" =>  $this -> name,
+                "email" => 'No registrado',
+                "phone" =>  $this -> phone,
+                "consulta" => $this -> consulta,
+                "canal" => $this -> canal,
+                "url" => $this -> url,
+                "notificaciones" => $this -> notificaciones,
+                "gclid" =>$this -> gclid,
+                "idAnalytics" => $this -> idAnalytics,
+                "idEnterprise" => $this -> idEnterprise
+            );
+            // return json_encode(1);
+            $data = $this -> crmLogin();
+
+            if ($data->success) {
+                $lead = $this -> crmSend($datosFormulario, $data);
+                if ($lead->success) {
+                    return json_encode(1);
+                } else {
+                    // Mail::to("j.rosalesweb@gmail.com")->send(new formVentas($this->name, $this->phone, $this->email, $this->notificaciones));
+                //    return view('vistaEmail');
+                   return json_encode(1);
+                }
+            } else {
+                return json_encode(0);
+            }
+    }
     public function sendEmailBecas()
     {
 

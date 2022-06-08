@@ -846,6 +846,129 @@ $(document).ready(function(){
   
           // console.log(datos);
       })
+
+      $('#recomienda_form .--cta_submit').on('click', function(e){
+        e.preventDefault();
+        let validMail = false;
+        let validPhone = false;
+        let validAgree = false;
+        let expregPhone = new RegExp('[0-9]{9}');
+
+        let name = $('#recomienda_form input[name="name_input"]');
+        let currentName = $('#recomienda_form input[name="current_name_input"]');
+        let phone = $('#recomienda_form input[name="phone_input"]');
+        let email = $('#recomienda_form input[name="email_input"]');
+        let agree = $('#recomienda_form input[name="aviso_input"]');
+        let notificaciones = $('#recomienda_form input[name="notificaciones_input"]');
+        let enterprise = $('#recomienda_form input[name="enterprise_input"]');
+        let canal = "Recomendado Master";
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+    
+        if(urlParams.get('gclid')){
+            canal += " | Adwords";
+        }
+        if(urlParams.get('utm_source')){
+            canal += " | " + urlParams.get('utm_source');
+        }
+        console.log(canal);
+        if(email){
+            if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
+                $('.--alert_cabecera_email').fadeIn();
+            }else{
+                $('.--alert_cabecera_email').fadeOut();
+                validMail = true;
+            }
+        }else{
+            $('.--alert_cabecera_email').fadeOut();
+            validMail = true;
+        }
+
+        if(!phone.val().match(expregPhone) || !phone){
+            $('.--alert_cabecera_phone').fadeIn();
+        }else{
+            $('.--alert_cabecera_phone').fadeOut();
+            validPhone = true;
+        }
+
+        if(!agree.prop('checked')){
+            $('.--alert_cabecera_agree').fadeIn();
+        }else{
+            $('.--alert_cabecera_agree').fadeOut();
+            validAgree = true;
+        }    
+
+        if(notificaciones.prop('checked')){
+            notificaciones = 1;
+        }else{
+            notificaciones = 0
+        }
+
+        if(validMail && validPhone && validAgree){
+            console.log('validación ok');
+
+            var consulta = `{
+                Nombre del que recomienda : ${currentName.val()},
+                Email del que recomienda : ${email.val()}
+              }`;
+
+            let datos = {
+                "_token": $("meta[name='csrf-token']").attr("content"),
+                'name': name.val(),
+                'phone': phone.val(),
+                'consulta': consulta,
+                'notificaciones': notificaciones,
+                'canal': canal,
+                'url': window.location.href,
+                'idEnterprise': enterprise.val(),
+                'idAnalytics': getCookie('ID-session'),
+                'gclid': addGclid()
+            };
+            console.log(datos);
+            $.ajax({
+                type: "GET",
+                url: "/send-email-recomienda",
+                datatype: "text",
+                data: datos,
+                beforeSend: function() {
+                    $('#cursos_form .--cta_submit').attr('disabled');
+                    $('#cursos_form .--cta_submit').addClass('--spinner');
+                  },
+                success: function(result){
+                    $('#cursos_form .--cta_submit').removeAttr("disabled");
+                    $('#cursos_form').trigger("reset");
+                    $('#cursos_form .--cta_submit').removeClass('--spinner');
+                    // result = JSON.parse(JSON.stringify(result));
+                    console.log(result);
+                    if(result == 1){
+                        $('.--alert_cabecera_sucess').fadeIn();
+                        fbq('track', 'CompleteRegistration');
+                          var cookieSesion = getCookie('ID-session');
+                          ttq.track('SubmitForm');
+                          window.lintrk('track', { conversion_id: 6105324 });
+                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','__gaCustomTracker');
+              
+                                if (typeof gaData !== 'undefined') {
+              
+                              __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
+                                }
+                               __gaCustomTracker('send', 'event', 'formulario', 'envio', 'cabecera', {'dimension3' : cookieSesion});
+                    }else{
+                        $('.--alert_cabecera_error').fadeIn();
+                    }
+                    
+                   
+                },  error: function(jqXHR, textStatus, errorThrown) {
+                              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+
+                      }
+            });
+        }
+    });
   
   }
   

@@ -66,9 +66,9 @@
                     
                </div>
            </div>
-           <h4 class="--subtitle">Por ejemplo:</h4>
-           <p class="--subcopy">Si recomiendas a 10 amigos y 5 se matriculan en el Máster, recibirás <b>500€ en tarjetas para comprar en Amazon.</b> Tus 5 amigos se ahorrarán la matrícula del Máster.</p>
-           <div class="--cta --go_form_down">TRAE UN AMIGO</div>
+           <h4 class="--subtitle js-scroll slide-left">Por ejemplo:</h4>
+           <p class="--subcopy js-scroll slide-left">Si recomiendas a 10 amigos y 5 se matriculan en el Máster, recibirás <b>500€ en tarjetas para comprar en Amazon.</b> Tus 5 amigos se ahorrarán la matrícula del Máster.</p>
+           <div class="--cta --go_form_down js-scroll slide-left">TRAE UN AMIGO</div>
         </div>
     </div>
 

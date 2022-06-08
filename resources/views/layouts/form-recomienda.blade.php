@@ -8,7 +8,7 @@
         <span class="--error --alert_cabecera_email">El Teléfono no es correcto</span>
     </div>
     <div class="--form_bloque">
-        <input type="text" name="name_input" id="name_input" placeholder="Tu Nombre">
+        <input type="text" name="current_name_input" id="current_name_input" placeholder="Tu Nombre">
     </div>
     <div class="--form_bloque">
         <input type="email" name="email_input" id="email_input" placeholder="Tu Email como alumno*">

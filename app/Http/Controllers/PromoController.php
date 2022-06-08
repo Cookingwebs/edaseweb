@@ -60,9 +60,9 @@ class PromoController extends Controller
             'enterprise' => 7,
             'chat' => 'no'
         ];
-        $title = "Solicitud de Becas";
-        $description = "Solicita una beca antes del 17 de mayo para formarte en el Máster Asesor Experto  ▷ #LaGranOportunidad. Plazas limitadas.";
-        $og_title = "Solicitud de Becas【Edición Especial Mayo 2022】";
+        $title = "Promoción Amigo Máster";
+        $description = "Por venir de tu parte, tu amigo NO PAGARÁ MATRÍCULA, se ahorrará 95€. Entra e infórmate. Plazas límitadas ⌛";
+        $og_title = "Trae un amigo y te regalamos un cheque de Amazon de 100€";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
