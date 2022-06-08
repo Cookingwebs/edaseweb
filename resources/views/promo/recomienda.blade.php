@@ -95,7 +95,7 @@
                <div class="--formulario_form js-scroll slide-right">
                 <p class="--form_title">Matrícula GRATIS para tus amigos.</p>
                 <p class="--form_extra"><span>Ahorrarán 95€</span></p>
-                @include('layouts.form-recomienda')
+                @include('layouts.form-footer-recomienda')
                </div>
            </div>
         </div>
