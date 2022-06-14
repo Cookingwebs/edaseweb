@@ -27,7 +27,7 @@
             <p class="--subtitle slide-left-delay-4 --first-content_3">EDASE trabaja activamente por la inclusión social y empleabilidad de las personas</p>
             <div class="--2_columns">
                 <div class="--compromiso_bloque_copy">
-                    <p class="--compromiso_bloque_copy_title js-scroll slide-left">CREAMOS TECNOLOGÍA</p>
+                    <p class="--compromiso_bloque_copy_title js-scroll slide-left">FORMACIÓN DE CALIDAD</p>
                     <p class="--compromiso_boque_copy_text js-scroll slide-left">A partir de una docencia alineada con las necesidades actuales del sector, <b>pretendemos incorporar a profesionales altamente cualificados al ámbito laboral.</b></p>
                 </div>
                 <div class="--compromiso_bloque_copy">
