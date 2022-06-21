@@ -19,8 +19,8 @@
 <noscript><link rel="stylesheet" href="{{ mix('assets/css/app.min.css') }}"></noscript>
     {{-- <link  async  href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"   rel="preload" as="style" onload="this.rel='stylesheets'">
 	<noscript><link rel="stylesheet" href="https://www.mecagoenlos.com/Posicionamiento/assets/pages/css/components.css"></noscript> --}}
-    <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"></noscript>
+    <link rel="preload" href="/assets/css/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"></noscript>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -80,7 +80,7 @@
         <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4287201&fmt=gif" />
         </noscript>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer ></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+<script src="/assets/js/swiper-bundle.min.js" defer></script>
 <script src='/assets/js/lazysizes.min.js' async ></script>
 <script src='/assets/js/app.min.js' defer ></script>
 <script src='/assets/js/animation.min.js' defer ></script>
