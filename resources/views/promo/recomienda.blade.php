@@ -59,7 +59,7 @@
            </div>
            <div class="--2_columns">
                <div class="--punto_bloque_copy js-scroll slide-left">
-                    <h4 class="--punto_bloque_copy_title">LO LLAMAREMOS <br>PARA INFORMARLO, <br>SIN NINGÚN COMPROMISO</h4>
+                    <h4 class="--punto_bloque_copy_title">LO LLAMAREMOS <br>PARA INFORMARLO <br>SIN NINGÚN COMPROMISO</h4>
                     <p class="--punto_bloque_copy_text">Es importante que lo avises de esto, no queremos molestar a nadie.</p>
                </div>
                <div class="--punto_bloque_copy js-scroll slide-right">
