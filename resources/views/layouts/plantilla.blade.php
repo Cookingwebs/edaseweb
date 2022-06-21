@@ -94,7 +94,7 @@
     @include('layouts.cookies')
 </div>
  <!-- Chatbot ALMA -->
- <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="8db6d920-b655-11ec-8e32-575a89d49389" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
+ {{-- <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="8db6d920-b655-11ec-8e32-575a89d49389" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script> --}}
  {{-- <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="e68bee40-4d2a-11ec-a2c3-db310abc81ab" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js" async></script> --}}
  <!-- Fin Chatbot ALMA -->
  <script>
