@@ -49,7 +49,7 @@
                <div class="--master_copy_1">
                     <h1 class="--title js-scroll slide-right">¿Qué es el Programa<br> Empresarial EDASE?</h1>
                     <img src="{{ URL::to('/') }}/images/mba/promo-mba.webp" alt="" class="d-md-none lazyload js-scroll slide-right">
-                    <p class="--subtitle js-scroll slide-right">ORIENTADO A PROFESIONALES DE LA ASESORÍA Y EL DESPACHO PROFESIONAL</p>
+                    <p class="--subtitle js-scroll slide-right">ORIENTADO A PROFESIONALES DE LA ASESORÍA Y EL DESPACHO</p>
                     <p class="js-scroll slide-right">Control sobre las principales áreas de la gestión estratégica, con el apoyo de los directivos de la mayor firma de asesorías de empresas en España.</p>
                </div>
            </div>   
