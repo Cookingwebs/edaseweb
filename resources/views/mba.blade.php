@@ -196,7 +196,7 @@
            </div>
            <div class="--cta_sub js-scroll slide-left">DESCARGAR</div>
            <div class="--cta js-scroll slide-left">
-                <a href="/dossier/EDASE_MBA.pdf" target="_blank">PROGRAMA</a>
+                <a href="/dossier/creacion-y-direccion-edase.pdf" target="_blank">PROGRAMA</a>
             </div>
         </div>
     </div>

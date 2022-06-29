@@ -69,6 +69,7 @@ Route::get('/edicion-especial/clase', [LanzamientoController::class, "edicionEsp
 // PROMOS
 
 Route::get('/master-promo', [MasterController::class, "promo"])->name('master-promo');
+Route::get('/promo-plan-empresarial', [MbaController::class, "promo"])->name('mba-promo');
 Route::get('/unete', [PromoController::class, "masterContador"])->name('master-contador');
 Route::get('/unete/gracias', [PromoController::class, "masterContadorGracias"])->name('master-contador-gracias');
 Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomienda');
