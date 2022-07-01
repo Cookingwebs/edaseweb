@@ -167,7 +167,7 @@
                <div class="--formulario_form js-scroll slide-right">
                     <p class="--form_title">Rellena el formulario para <br>
                         continuar con el programa:</p>
-                    @include('layouts.form-footer')
+                    @include('layouts.form-footer-mba')
                </div>
            </div>
         </div>

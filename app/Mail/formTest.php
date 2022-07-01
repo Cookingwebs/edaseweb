@@ -7,15 +7,15 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class formVentas extends Mailable
+class formTest extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $name;
     public $phone;
     public $email;
-    public $url;
     public $canal;
+    public $url;
 
     public function __construct($name, $phone, $email, $canal, $url)
     {
@@ -33,6 +33,6 @@ class formVentas extends Mailable
      */
     public function build()
     {
-        return $this->subject('Solicitud Programa Empresarial')->view('mails.leadMail');
+        return $this->subject('Solicitud Programa Empresarial - '.$this->canal)->view('mails.leadTest');
     }
 }

@@ -12,7 +12,7 @@
     <h2>Nombre: </h2><p>{{$name}}</p>
     <h2>Teléfono: </h2><p>{{$phone}}</p>
     <h2>Email: </h2><p>{{$email}}</p>
-    <h2>URL: </h2><p>{{$url}}</p>
     <h2>Canal: </h2><p>{{$canal}}</p>
+    <h2>URL: </h2><p>{{$url}}</p>
 </body>
 </html>

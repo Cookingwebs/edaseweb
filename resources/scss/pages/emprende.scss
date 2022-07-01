@@ -1,0 +1,497 @@
+#emprende-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        .--copy{
+            top: 100px;
+            font-weight: 300;
+        }
+        .--section {
+            padding-bottom: 40px;
+        }
+    }
+    #b_objetivos{
+        .--copy{
+            top: 100px;
+        }
+        .--2_columns{
+            margin-top: 100px;
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
+            @include mobile{
+                margin-top: 50px;
+            }
+        }
+        .--title{
+            font-size: 70px;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: $grey-dark;
+            line-height: 1.3em;
+            margin-top: 75px;
+            margin-bottom: 0;
+            @include notebook{
+                font-size: 60px;
+            }
+            @include ipad-portrait{
+                font-size: 50px;
+            }
+            @include tablet{
+                font-size: 40px;
+                margin-top: 40px;
+            }
+            @include mobile{
+                font-size: 30px;
+                margin-top: 0;
+            }
+        }
+        .--extra{
+            font-weight: 300;
+            font-size: 33px;
+            margin-bottom: 50px;
+            @include notebook{
+                font-size: 24px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--subtitle{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+        }
+        .--objetivos_bloque_copy{
+            .--objetivos_bloque_copy_title{
+                font-size: 38px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $grey-dark;
+                line-height: 1.3em;
+                margin-top: 0;
+                margin-bottom: 0px;
+                position: relative;
+                &::before{
+                    content:"+";
+                    color: $green;
+                    position: absolute;
+                    left: -1em;
+                }
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            .--objetivos_boque_copy_text{
+                font-weight: 300;
+                font-size: 30px;
+                margin-bottom: 50px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+        }
+        .--objetivos_bloque_img{
+            img{
+                max-width: 100%;
+                @include notebook{
+                    max-width: 80%;
+                }
+                @include mobile{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    #b_salidas{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+        .--text{
+            font-size: 30px;
+            position: relative;
+            max-width: 800px;
+            &::before{
+                content:"+";
+                color: $green;
+                position: absolute;
+                left: -1em;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        .--transition_niveles{
+            margin-top: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            cursor: pointer;
+            .--content_transition{
+                background-color: $grey-light;
+                min-height: 270px;
+                max-width: 52%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                padding: 0 70px;
+                @include notebook{
+                    min-height: 212px;
+                    overflow: hidden;
+                }
+                @include tablet{
+                    padding: 40px 113px 40px 46px;
+                    max-width: 74%;
+                    min-height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                @include mobile{
+                    padding: 40px 70px 40px 46px;
+                    min-height: 90px;
+                }
+                .--b_title_transition{
+                    h3{
+                        color: $blue-dark;
+                        font-weight: bold;
+                        font-size: 39px;
+                        text-transform: uppercase;
+                        display: none;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        line-height: 1.3em;
+                        @include notebook{
+                            font-size: 27px;
+                        }
+                        @include ipad-portrait{
+                            font-size: 25px;
+                        }
+                        @include mobile{
+                            font-size: 20px;
+                        }
+                        &.--active{
+                            display: block;
+                        }
+                    }
+                }
+                .--b_copy_transition{
+                    p{
+                        color: $blue-dark;
+                        font-weight: 300;
+                        font-size: 30px;
+                        display: none;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                        line-height: 1.3em;
+                        @include notebook{
+                            font-size: 27px;
+                        }
+                        @include ipad-portrait{
+                            font-size: 25px;
+                        }
+                        @include mobile{
+                            font-size: 20px;
+                        }
+                        &.--active{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .--b_foto_transition{
+                position: absolute;
+                right: 26%;
+                top: 0;
+                bottom: 0;
+                @include notebook{
+                    width: 10.5%;
+                    right: 30%;
+                }
+                @include notebook-medium{
+                    width: 10.9%;
+                }
+                @include ipad-portrait{
+                    width: 14%;
+                }
+                @include tablet{
+                    display: none;
+                }
+                img{
+                    max-width: 75%;
+                    display: none;
+                    @include notebook{
+                        max-width: 100%;
+                    }
+                    &.--active{
+                        display: block;
+                    }
+                }
+            }
+            .--mascara_transition{
+                position: absolute;
+                background-color: $grey-dark;
+                width: 30%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                transition: 500ms all ease-in-out;
+                &.--transition{
+                    width: 100%;
+                    transition: 500ms all ease-in-out;
+                }
+                @include tablet{
+                    width: 12%;
+                }
+                &::after{
+                    content: url('/images/svg/arrow-next-big.svg');
+                    max-width: 200px;
+                    width: 100%;
+                    position: absolute;
+                    right: 200px;
+                    top: 40%;
+                    @include notebook{
+                        max-width: 180px;
+                        right: 100px;
+                    }
+                    @include ipad-portrait{
+                        max-width: 150px;
+                        right: 60px;
+                        top: 45%;
+                    }
+                    @include tablet{
+                        width: 20px;
+                        right: 11px;
+                        top: auto;
+                        bottom: 3%;
+                        content: url('/images/svg/arrow-next.svg');
+                    }
+                    @include mobile{
+                        right: 10px;
+                    }
+                }
+            }
+            .--progress_transition{
+                position: absolute;
+                bottom: -10px;
+                height: 10px;
+                left: 0;
+                background-color: $green;
+                transition: 500ms width ease-in-out;
+                cursor: pointer;
+                @include notebook{
+                    height: 5px;
+                    bottom: -5px;
+                }
+                &[data="1"]{
+                    width: 20%;
+                }
+                &[data="2"]{
+                    width: 40%;
+                }
+                &[data="3"]{
+                    width: 60%;
+                }
+                &[data="4"]{
+                    width: 80%;
+                }
+                &[data="5"]{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #b_admision{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $grey-dark;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include tablet{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .--subtitle{
+            font-size: 40px;
+            color: $blue;
+            font-weight: 300;
+            margin-bottom: 50px;
+            @include notebook{
+                font-size: 35px;
+            }
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+        .--salidas_title{
+            font-size: 34px;
+            font-weight: bold;
+            position: relative;
+            margin: 0;
+            color: $grey-dark;
+            &::before{
+                content:"+";
+                color: $green;
+                position: absolute;
+                left: -1em;
+            }
+            @include notebook{
+                font-size: 24px;
+                max-width: 700px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        .--salidas_copy{
+            font-weight: 300;
+            font-size: 33px;
+            max-width: 920px;
+            width: 100%;
+            @include notebook{
+                font-size: 24px;
+                max-width: 700px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+    }
+    #b_escuela{
+        background-color: $grey-dark;
+        padding-bottom: 140px;
+        overflow: hidden;
+        @include tablet{
+            margin-bottom: 0;
+        }
+        @include mobile{
+            padding-bottom: 40px;
+        }
+        .--section {
+            padding-bottom: 40px;
+            @include notebook{
+                padding-bottom: 40px;
+            }
+        }
+        .--content {
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 140px 40px;
+                padding-bottom: 40px;
+            }
+            @include tablet{
+                padding: 0px 90px 40px;
+            }
+            @include mobile{
+                padding: 0px 40px 40px;
+            }
+        }
+        .--2_columns{
+            column-gap: 85px;
+            margin-top: 70px;
+            @include notebook{
+                grid-template-columns: 50% auto;
+            }
+            @include ipad-portrait{
+                margin-top: 0;
+            }
+            @include mobile{
+                grid-template-columns: 1fr;
+            }
+        }
+        .--section_title{
+            color: $white;
+        }
+        .--title{
+            color: $green;
+            font-weight: bold;
+            font-size: 70px;
+            margin-bottom: 30px;
+            line-height: 1.3em;
+            @include notebook{
+                font-size: 60px;
+            }
+            @include mobile{
+                font-size: 35px;
+            }
+        }
+        p{
+            color: $white;
+            font-size: 33px;
+            @include notebook{
+                font-size: 25px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        .--extra{
+            max-width: 1000px;
+        }
+        .--subtitle{
+            font-size: 55px;
+            font-weight: normal;
+            margin-bottom: 30px;
+            color: $white;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+        img{
+            margin-top: 50px;
+            max-width: 100%;
+        }
+    }
+}
