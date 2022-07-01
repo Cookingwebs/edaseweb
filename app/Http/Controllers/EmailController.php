@@ -126,7 +126,7 @@ class EmailController extends Controller
         $this -> url = $_POST['url'];
 
         try {
-            Mail::to("info@edase.es")->send(new formTest($this->name, $this->phone, $this->email, $this->canal, $this->url));
+            Mail::to("juanrosales@ayudat.es")->send(new formTest($this->name, $this->phone, $this->email, $this->canal, $this->url));
             return json_encode(1);
         } catch (\Throwable $th) {
             return json_encode(0);
