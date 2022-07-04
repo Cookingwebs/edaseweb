@@ -94,7 +94,11 @@
 </div>
 @if (empty($chat) || $chat == 'ok')
 <!-- Chatbot ALMA -->
-<script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="8db6d920-b655-11ec-8e32-575a89d49389" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
+    @if (Route::currentRouteNamed('mba-promo'))
+    <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="d0243ca0-f909-11ec-a06d-b7c740c4d56d" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
+    @else
+    <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="8db6d920-b655-11ec-8e32-575a89d49389" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js"></script>
+    @endif
 {{-- <script id="helper" data-idEmpresa="11b575c0-3b73-11ea-9b14-afbcefb5bb52" data-idChatbot="e68bee40-4d2a-11ec-a2c3-db310abc81ab" data-install="1" src="https://assistant.almaintelligence.com:7777/stylesAndScripts/version3/iframe.js" async></script> --}}
 @endif
  <!-- Fin Chatbot ALMA -->
