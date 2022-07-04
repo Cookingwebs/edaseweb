@@ -20,7 +20,13 @@ class TestController extends Controller
        
 
         $robots = "noindex, nofollow";
-  
+        $datos = [
+            'enterprise' => 7
+        ];
+        $title = "MBA";
+        $description = "Estrategia formativa y empresarial ▷ Lanza tu carrera junto a los directivos de la mayor Asesoría de Empresas en España";
+        $og_title = "MBA en Dirección de Asesorías y Despachos【EDASE】";
+
         $title = "Test";
         $description = "";
         $og_title = "";
@@ -28,7 +34,7 @@ class TestController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        // //SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -37,6 +43,6 @@ class TestController extends Controller
         OpenGraph::addProperty('locale', 'es_ES');
 
 
-        return view('test');
+        return view('test', $datos);
     }
 }

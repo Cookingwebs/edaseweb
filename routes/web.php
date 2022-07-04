@@ -90,6 +90,7 @@ Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomie
 
 // TESTS
 Route::get('/test', TestController::class)->name('test');
+Route::post('/send-email-test', [EmailController::class, 'sendEmailTest']);
 
 // REDIRECCIONES
 

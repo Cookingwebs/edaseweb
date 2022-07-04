@@ -15,7 +15,7 @@ class TecnicoController extends Controller
             'enterprise' => 7
         ];
 
-        //$robots = "index, follow";
+        $robots = "index, follow";
   
         $title = "Técnico";
         $description = "Si quieres trabajar de asesor, esto es para ti ▷ Fórmate desde cero como técnico fiscal, laboral y contable";
@@ -24,7 +24,7 @@ class TecnicoController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        //SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

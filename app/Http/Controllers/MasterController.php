@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class MasterController extends Controller
 {
     public function __invoke(){
-        //$robots = "index, follow";
+        $robots = "index, follow";
         $datos = [
             'enterprise' => 7
         ];
@@ -21,7 +21,7 @@ class MasterController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        //SEOMeta::setRobots($robots);
+        SEOMeta::setRobots($robots);
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);
@@ -44,7 +44,7 @@ class MasterController extends Controller
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
         SEOMeta::setCanonical(url()->full());
-        //SEOMeta::setRobots($robots);;
+        SEOMeta::setRobots($robots);;
 
         OpenGraph::setDescription($description);
         OpenGraph::setTitle($og_title);

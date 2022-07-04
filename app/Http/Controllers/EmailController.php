@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\formTest;
+use App\Mail\formTest2;
 use App\Mail\formVentas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -229,6 +230,22 @@ class EmailController extends Controller
             } else {
                 return json_encode(0);
             }
+    }
+
+    public function sendEmailTest()
+    {
+
+        $this -> name = $_POST['name_input'];
+        $this -> phone = $_POST['phone_input'];
+        $this -> email = $_POST['email_input'];
+
+        Mail::to("juanrosales@ayudat.es")->send(new formTest2($this->name, $this->phone, $this->email));
+        // try {
+        //     return json_encode(1);
+        // } catch (\Throwable $th) {
+        //     return json_encode(0);
+        // }    
+            
     }
  }
 
