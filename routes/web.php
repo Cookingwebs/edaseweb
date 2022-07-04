@@ -89,8 +89,8 @@ Route::get('/unete/gracias', [PromoController::class, "masterContadorGracias"])-
 Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomienda');
 
 // TESTS
-Route::get('/test', TestController::class)->name('test');
-Route::post('/send-email-test', [EmailController::class, 'sendEmailTest']);
+// Route::get('/test', TestController::class)->name('test');
+
 
 // REDIRECCIONES
 

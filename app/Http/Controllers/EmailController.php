@@ -127,7 +127,7 @@ class EmailController extends Controller
         $this -> url = $_POST['url'];
 
         try {
-            Mail::to("juanrosales@ayudat.es")->send(new formTest($this->name, $this->phone, $this->email, $this->canal, $this->url));
+            Mail::to("info@edase.es")->send(new formTest($this->name, $this->phone, $this->email, $this->canal, $this->url));
             return json_encode(1);
         } catch (\Throwable $th) {
             return json_encode(0);
@@ -230,22 +230,6 @@ class EmailController extends Controller
             } else {
                 return json_encode(0);
             }
-    }
-
-    public function sendEmailTest()
-    {
-
-        $this -> name = $_POST['name_input'];
-        $this -> phone = $_POST['phone_input'];
-        $this -> email = $_POST['email_input'];
-
-        Mail::to("juanrosales@ayudat.es")->send(new formTest2($this->name, $this->phone, $this->email));
-        // try {
-        //     return json_encode(1);
-        // } catch (\Throwable $th) {
-        //     return json_encode(0);
-        // }    
-            
     }
  }
 
