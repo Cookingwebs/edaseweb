@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function __invoke(){
 
-        $robots = "index, follow";
+        //$robots = "index, follow";
         $datos = [
             'enterprise' => 7
         ];

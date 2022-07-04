@@ -15,7 +15,7 @@ class TecnicoController extends Controller
             'enterprise' => 7
         ];
 
-        $robots = "index, follow";
+        //$robots = "index, follow";
   
         $title = "Técnico";
         $description = "Si quieres trabajar de asesor, esto es para ti ▷ Fórmate desde cero como técnico fiscal, laboral y contable";
