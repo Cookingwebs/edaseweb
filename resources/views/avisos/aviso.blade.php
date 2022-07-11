@@ -26,7 +26,7 @@
                 Teléfono: <a href="tel:685482310">685482310</a><br>
                 e-Mail: <a href="mailto:info@edase.es">info@edase.es</a><br>
                 Datos registrales: __________________<br>
-                Página Web: <a href="www.edase.es">www.edase.es</a><br>
+                Página Web: <a href="https://edase.es/">https://edase.es/</a><br>
                 </p>
 
             <h3>1. OBJETO</h3>
