@@ -19,7 +19,8 @@ class SitemapController extends Controller
                     ->add(Url::create("/mba")) 
                     ->add(Url::create("/tecnico-asesoria")) 
                     ->add(Url::create("/conocenos"))
-                    ->add(Url::create("/plan-de-carrera"))
+                    ->add(Url::create("/trabaja"))
+                    ->add(Url::create("/emprende"))
                     ->add(Url::create("/causa-social"))
                     ->add(Url::create("/investigacion"));
                     try {

@@ -16,6 +16,7 @@ $(document).ready(function(){
   
     formCabecera();
     formBecas();
+    formCv();
   
     let cookie_consent = getCookie("user_cookie_consent");
     if(cookie_consent != ""){
@@ -69,6 +70,11 @@ $(document).ready(function(){
       $('.--go_form_down').on('click', function(){
           $('body, html').animate({
               scrollTop: $('#b_formulario_footer').offset().top
+          }, 1000);
+      });
+      $('.--go_cv').on('click', function(){
+          $('body, html').animate({
+              scrollTop: $('#b_curriculum').offset().top
           }, 1000);
       });
       $('.--bottom').on('click', function(){
@@ -1484,6 +1490,125 @@ $(document).ready(function(){
           // console.log(datos);
       })
   
+  }
+  const formCv = function () {
+    $('#upload_form .--cta_submit').on('click', function(e){
+        e.preventDefault();
+        let validMail = false;
+        let validPhone = false;
+        let validAgree = false;
+        let validFile = false;
+        let expregPhone = new RegExp('[0-9]{9}');
+
+        let name = $('#upload_form input[name="name_input"]');
+        let phone = $('#upload_form input[name="phone_input"]');
+        let email = $('#upload_form input[name="email_input"]');
+        // let file = $('#upload_form input[name="inputTag"]');
+        let agree = $('#upload_form input[name="aviso_input"]');
+        let notificaciones = $('#upload_form input[name="notificaciones_input"]');
+        let enterprise = $('#upload_form input[name="enterprise_input"]');
+        let canal = "Web";
+        let file = document.getElementById('inputTag');
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+    
+        if(urlParams.get('gclid')){
+            canal = "Adwords";
+        }
+        if(urlParams.get('utm_source')){
+            canal = urlParams.get('utm_source');
+        }
+        if(file.files[0].size <= 1000000 && file.files[0].type == "application/pdf"){
+            validFile = true;
+        }
+        if(email){
+            if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
+                $('.--alert_cabecera_email').fadeIn();
+            }else{
+                $('.--alert_cabecera_email').fadeOut();
+                validMail = true;
+            }
+        }else{
+            $('.--alert_footer_email').fadeOut();
+            validMail = true;
+        }
+
+        if(!phone.val().match(expregPhone) || !phone){
+            $('.--alert_cabecera_phone').fadeIn();
+        }else{
+            $('.--alert_cabecera_phone').fadeOut();
+            validPhone = true;
+        }
+
+        if(!agree.prop('checked')){
+            $('.--alert_cabecera_agree').fadeIn();
+        }else{
+            $('.--alert_cabecera_agree').fadeOut();
+            validAgree = true;
+        }    
+
+        if(notificaciones.prop('checked')){
+            notificaciones = 1;
+        }else{
+            notificaciones = 0
+        }
+
+        if(validMail && validPhone && validAgree && validFile){
+            console.log('validación ok');
+            
+            $('#upload_form input[name="canal"]').val(canal);
+            $('#upload_form input[name="url"]').val(window.location.href);
+            $('#upload_form input[name="idAnalytics"]').val(getCookie('ID-session'));
+            $('#upload_form input[name="gclid"]').val(addGclid());
+            $('#upload_form input[name="notificaciones"]').val(notificaciones);
+            let datos = {
+                "_token": $("meta[name='csrf-token']").attr("content"),
+            };
+            $.ajax({
+                type: "POST",
+                url: "/send-event",
+                datatype: "text",
+                data: datos,
+                beforeSend: function() {
+                    $('#upload_form .--cta_submit').attr('disabled');
+                    $('#upload_form .--cta_submit').addClass('--spinner');
+                  },
+                success: function(result){
+                    $('#upload_form .--cta_submit').removeAttr("disabled");
+                    $('#upload_form').trigger("reset");
+                    $('#upload_form .--cta_submit').removeClass('--spinner');
+                    document.getElementById("fileName").innerHTML = "";
+                    // result = JSON.parse(JSON.stringify(result));
+                    console.log(result);
+                    if(result == 1){
+                        $('.--alert_cabecera_sucess').fadeIn();
+                        fbq('track', 'CompleteRegistration');
+                          var cookieSesion = getCookie('ID-session');
+                          ttq.track('SubmitForm');
+                          window.lintrk('track', { conversion_id: 6105324 });
+                          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','__gaCustomTracker');
+              
+                                if (typeof gaData !== 'undefined') {
+              
+                              __gaCustomTracker('create', Object.keys(gaData)[0] , 'auto');
+                                }
+                               __gaCustomTracker('send', 'event', 'curriculum', 'envio', 'cabecera', {'dimension3' : cookieSesion});
+                               
+                    }else{
+                        $('.--alert_cabecera_error').fadeIn();
+                    }
+                   
+                },  error: function(jqXHR, textStatus, errorThrown) {
+                              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+
+                      }
+            });
+            $('#upload_form').submit();
+        }
+    });
   }
   
   

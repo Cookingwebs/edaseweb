@@ -163,72 +163,173 @@
                 font-size: 20px;
             }
         }
-    }
-    #b_admision{
-        .--title{
-            font-size: 55px;
-            font-weight: normal;
-            color: $grey-dark;
-            text-transform: uppercase;
+        #upload_form{
             margin-bottom: 20px;
-            @include notebook{
-                font-size: 45px;
+            input{
+                font-size: 39px;
+                color: $grey-dark;
+                border: none;
+                border-bottom: 1px solid $grey-light;
+                padding: 15px 10px;
+                font-weight: 500;
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include mobile{
+                    font-size: 24px;
+                }
+                &::placeholder{
+                    font-size: 39px;
+                    color: $grey-light;
+                    font-weight: 500;
+                    @include notebook{
+                        font-size: 27px;
+                    }
+                    @include mobile{
+                        font-size: 24px;
+                    }
+                }
+                &[type="text"],&[type="email"]{
+                    display: block;
+                    max-width: 100%;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    @include mobile{
+                        width: auto;
+                    }
+                }
+                &[type="file"]{
+                    display: none;
+                }
             }
-            @include tablet{
-                font-size: 45px;
-            }
-            @include mobile{
-                font-size: 30px;
-                margin-bottom: 20px;
+            label{
+                font-size: 33px;
+                font-weight: 300;
+                display: block;
+                color: $grey-dark;
+                margin-bottom: 30px;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 20px;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 20px;
+                    @include notebook{
+                        font-size: 15px;
+                    }
+                }
             }
         }
-        .--subtitle{
-            font-size: 40px;
-            color: $blue;
+        .--label_file{
+            cursor: pointer;
+            max-width: max-content;
+            &:hover{
+                .--label_file-text{
+                    transition: .5s all;
+                    opacity: .7;
+                }
+                .--label_file-cta{
+                    transition: .5s all;
+                    opacity: .7;
+                }
+            }
+            &-text{
+                position: relative;
+                font-size: 30px;
+                font-weight: 300;
+                margin-bottom: 15px;
+                padding-left: 30px;
+                margin-top: 50px;
+                transition: .5s all;
+                display: inline-block;
+                @include mobile{
+                    font-size: 20px;
+                }
+                &::before{
+                    content: url('/images/svg/upload.svg');
+                    width: 20px;
+                    height: auto;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+            &-cta{
+                transition: .5s all;
+                font-weight: bold;
+                font-size: 25px;
+                background-color: $grey-light;
+                max-width: max-content;
+                margin-bottom: 0;
+                padding: 10px 20px;
+                @include mobile{
+                    font-size: 20px;
+                }
+            }
+            &-small{
+                font-size: 12px;
+                font-weight: 300;
+                margin-top: 10px;
+            }
+            &-name{
+                font-size: 14px;
+                font-weight: 300;
+                &--error{
+                    color: red;
+                }
+                &--success{
+                    color: green;
+                }
+            }
+        }
+        p{
+            font-size: 25px;
             font-weight: 300;
-            margin-bottom: 50px;
             @include notebook{
-                font-size: 35px;
-            }
-            @include mobile{
-                font-size: 30px;
+                font-size: 20px;
             }
         }
-        .--salidas_title{
-            font-size: 34px;
-            font-weight: bold;
-            position: relative;
-            margin: 0;
+        .--aviso_input, .--aviso_notificaciones{
+            p{
+                font-size: 15px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 15px;
+                }
+            }
+        }
+        .--cta_submit{
+            background-color: $green;
+            display: block;
+            font-weight: 500;
+            font-size: 38px;
+            text-align: center;
+            max-width: max-content;
+            padding: 20px 30px;
+            text-transform: uppercase;
             color: $grey-dark;
-            &::before{
-                content:"+";
-                color: $green;
-                position: absolute;
-                left: -1em;
+            margin-top: 80px;
+            cursor: pointer;
+            border: none;
+            transition: 500ms opacity ease-in-out;
+            &:hover{
+                opacity: .7;
+                transition: 500ms opacity ease-in-out;
             }
             @include notebook{
-                font-size: 24px;
-                max-width: 700px;
+                font-size: 22px;
             }
             @include mobile{
-                font-size: 18px;
+                font-size: 16px;
+                max-width: 100%;
+                margin-top: 50px;
             }
         }
-        .--salidas_copy{
-            font-weight: 300;
-            font-size: 33px;
-            max-width: 920px;
-            width: 100%;
-            @include notebook{
-                font-size: 24px;
-                max-width: 700px;
-            }
-            @include mobile{
-                font-size: 18px;
-            }
-        }
+    
     }
-    #b_escuela{
+    #b_map{
         background-color: $grey-dark;
         padding-bottom: 140px;
         overflow: hidden;
@@ -262,6 +363,7 @@
             margin-top: 70px;
             @include notebook{
                 grid-template-columns: 50% auto;
+                column-gap: 0px;
             }
             @include ipad-portrait{
                 margin-top: 0;
@@ -280,7 +382,7 @@
             margin-bottom: 30px;
             line-height: 1.3em;
             @include notebook{
-                font-size: 60px;
+                font-size: 50px;
             }
             @include mobile{
                 font-size: 35px;
@@ -290,7 +392,7 @@
             color: $white;
             font-size: 33px;
             @include notebook{
-                font-size: 25px;
+                font-size: 21px;
             }
             @include mobile{
                 font-size: 20px;
@@ -305,15 +407,336 @@
             margin-bottom: 30px;
             color: $white;
             @include notebook{
-                font-size: 45px;
+                font-size: 35px;
             }
             @include mobile{
                 font-size: 30px;
             }
         }
-        img{
-            margin-top: 50px;
-            max-width: 100%;
+        .--map_area{
+            position: relative;
+            margin-top: 170px;
+            @include notebook{
+                margin-top: 100px;
+            }
+            @include mobile{
+                margin-top: 20px;
+            }
+            svg{
+                position: relative;
+                width: 100%;
+                .cls-1{
+                    fill:#C15340;
+                    transform-origin: center;
+                }
+                .cls-2{
+                    fill:#82e5fa;
+                    transform-origin: center;
+                }
+                .cls-3{
+                    fill:none;
+                    stroke:$white
+                    ;stroke-miterlimit:10;
+                    stroke-width:1.13px;
+                }
+            }
+            .--leyenda{
+                position: relative;
+                top: -30px;
+                @include ipad-portrait{
+                    top: 30px;
+                }
+                .--buble_copy{
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: $white;
+                    position: relative;
+                    margin-bottom: 10px;
+                    max-width: max-content;
+                    margin-right: 25px;
+                    margin-left: auto;
+                    @include notebook{
+                        font-size: 17px;
+                    }
+                    &-red{
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 13px;
+                            height: 13px;
+                            background-color: #C15340;
+                            border-radius: 100px;
+                            right: -21px;
+                            top: 9px;
+                            @include notebook{
+                                top: 7px;
+                            }
+                        }
+                    }
+                    &-blue{
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 13px;
+                            height: 13px;
+                            background-color: #82e5fa;
+                            border-radius: 100px;
+                            right: -21px;
+                            top: 9px;
+                            @include notebook{
+                                top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+    #b_tecnologia{
+        .--cifras_tabla{
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 100px;
+            @include notebook{
+                max-width: 750px;
+            }
+            .--cifras_tabla_item{
+                margin-bottom: 100px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $grey-light;
+                display: grid;
+                column-gap: 30px;
+                grid-template-columns: 30% auto;
+                align-items: end;
+                @include mobile{
+                    grid-template-columns: 1fr;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .--cifras_tabla_item_datos{
+                    p{
+                        font-size: 90px;
+                        font-weight: bold;
+                        color: $grey-dark;
+                        @include notebook{
+                            font-size: 61px;
+                        }
+                        @include tablet{
+                            font-size: 40px;
+                        }
+                        @include mobile{
+                            margin-bottom: 20px;
+                            font-size: 60px;
+                        }
+                        span{
+                            color: $green;
+                        }
+                    }
+                }
+                .--cifras_tabla_item_copy{
+                    p{
+                        font-size: 33px;
+                        font-weight: 300;
+                        color: $grey-dark;
+                        @include notebook{
+                            font-size: 24px;
+                        }
+                        @include tablet{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #b_master{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            margin-top: 100px;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                margin-top: 20px;
+                font-size: 22px;
+                margin-bottom: 50px;
+            }
+        }
+        .--2_columns{
+            margin-top: 100px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 0;
+            }
+            img{
+                max-width: 100%;
+            }
+            .--text_1{
+                font-size: 30px;
+                font-weight: 300;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            .--title{
+                font-size: 55px;
+                font-weight: normal;
+                color: $blue;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                margin-top: -20px;
+                @include notebook{
+                    font-size: 45px;
+                }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
+                @include mobile{
+                    margin-top: 20px;
+                    font-size: 30px;
+                    margin-bottom: 50px;
+                }
+            }
+            .--subtitle{
+                margin-top: 50px;
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 1.3em;
+                position: relative;
+                margin-bottom: 20px;
+                &::before{
+                    content:"-";
+                    position: absolute;
+                    left: -0.5em;
+                    top: -3px;
+                    @include mobile{
+                        position: initial;
+                        margin-right: 10px;
+                    }
+                }
+                @include ipad-portrait{
+                    font-size: 30px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                    margin-top: 50px;
+                }
+            }
+        }  
+        .--cifras{
+            @include mobile{
+                margin-top: 50px;
+            }
+            .--cifra_copy{
+                .--cifra-title{
+                    font-size: 47px;
+                    font-weight: bold;
+                    color: $blue;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &::before{
+                        content:"-";
+                        position: absolute;
+                        left: -0.5em;
+                        top: -3px;
+                        @include mobile{
+                            position: initial;
+                            margin-right: 10px;
+                        }
+                    }
+                    @include notebook{
+                        font-size: 45px;
+                    }
+                    span{
+                        font-size: 36px;
+                        @include notebook{
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .--cifra-text{
+                    font-size: 34px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    #b_claves{
+        .--title{
+            font-size: 55px;
+            font-weight: normal;
+            color: $blue;
+            line-height: 1.3em;
+            text-transform: uppercase;
+            margin-top: 100px;
+            @include notebook{
+                font-size: 45px;
+            }
+            @include ipad-portrait{
+                font-size: 35px;
+            }
+            @include mobile{
+                margin-top: 20px;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+        }
+        .--2_columns{
+            margin-top: 100px;
+            @include mobile{
+                grid-template-columns: 1fr;
+                margin-top: 0;
+            }
+            .--claves_title{
+                margin-top: 50px;
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 1.3em;
+                position: relative;
+                margin-bottom: 20px;
+                color: $grey-dark;
+                span{
+                    color: $green;
+                }
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include ipad-portrait{
+                    font-size: 30px;
+                }
+                @include mobile{
+                    font-size: 15px;
+                    margin-top: 20px;
+                    margin-bottom: 3px;
+                }
+            }
+            .--claves_text{
+                font-size: 30px;
+                font-weight: 500;
+                @include notebook{
+                    font-size: 24px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
 }

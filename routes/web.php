@@ -41,11 +41,12 @@ Route::get('/admisiones', BecasController::class)->name('becas');
 Route::get('/master-asesoria', MasterController::class)->name('master');
 Route::get('/mba', MbaController::class)->name('mba');
 Route::get('/tecnico-asesoria', TecnicoController::class)->name('tecnico');
-Route::get('/plan-de-carrera', CarreraController::class)->name('carrera');
+// Route::get('/plan-de-carrera', CarreraController::class)->name('carrera');⁄
 
 Route::get('/investigacion', InvestigacionController::class)->name('investigacion');
 Route::get('/causa-social', SocialController::class)->name('social');
 Route::get('/emprende', EmprendeController::class)->name('emprende');
+Route::get('/trabaja/gracias', [TrabajaController::class, "gracias"])->name('trabaja-gracias');
 Route::get('/trabaja', TrabajaController::class)->name('trabaja');
 
 // HERRAMIENTAS
@@ -59,6 +60,9 @@ Route::get('/send-email', [EmailController::class, 'sendEmail']);
 Route::post('/send-email-mba', [EmailController::class, 'sendEmailMBA']);
 Route::get('/send-email-becas', [EmailController::class, 'sendEmailBecas']);
 Route::get('/send-email-recomienda', [EmailController::class, 'sendEmailRecomienda']);
+
+Route::post('/upload-file', [EmailController::class, 'sendFile']);
+Route::post('/send-event', [EmailController::class, 'sendEvent']);
 
 // AVISOS LEGALES
 
@@ -88,12 +92,16 @@ Route::get('/unete', [PromoController::class, "masterContador"])->name('master-c
 Route::get('/unete/gracias', [PromoController::class, "masterContadorGracias"])->name('master-contador-gracias');
 Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomienda');
 
+// GRACIAS
+
+
+
 // TESTS
 // Route::get('/test', TestController::class)->name('test');
 
 
 // REDIRECCIONES
 
-// Route::get('/plan-de-carrera', function(){ 
-//     return Redirect::to('/trabaja', 301);
-// });
+Route::get('/plan-de-carrera', function(){ 
+    return Redirect::to('/trabaja', 301);
+});

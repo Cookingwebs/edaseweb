@@ -8,6 +8,8 @@ use App\Mail\formVentas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\TestMail;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\URL;
 
 class EmailController extends Controller
 {
@@ -22,6 +24,7 @@ class EmailController extends Controller
     public string $gclid;
     public string $idAnalytics;
     public string $consulta;
+    public string $file;
 
     // public function index()
     // {
@@ -231,5 +234,47 @@ class EmailController extends Controller
                 return json_encode(0);
             }
     }
- }
+    public function sendFile(Request $request)
+    {
+        $form = $request->all();
+        if ($file = $request->file('inputTag')) {
+            $nombreArchivo = $request->phone_input.'.'.$file->getClientOriginalExtension();
+            $nuevaRuta = public_path('/cv/'.$nombreArchivo);
+            copy($file->getRealPath(), $nuevaRuta);
+            $form['inputTag'] = URL::to('/').'/cv/'.$nombreArchivo;
+            $datosFormulario = array(
 
+                "name" =>  $form['name_input'],
+                "email" => $form['email_input'],
+                "phone" =>  $form['phone_input'],
+                "consulta" => $form['inputTag'],
+                "canal" => $form['canal'],
+                "url" => $form['url'],
+                "notificaciones" => 1,
+                "gclid" =>$form['gclid'],
+                "idAnalytics" => $form['idAnalytics'],
+                "idEnterprise" => $form['enterprise_input']
+            );
+
+            // return var_dump($_POST);
+
+            // return json_encode(1); 
+            
+            $data = $this -> crmLogin();
+
+            if ($data->success) {
+                $lead = $this -> crmSend($datosFormulario, $data);
+                if ($lead->success) {
+                    return redirect()->route('trabaja-gracias');
+                }
+            }
+          
+        }else{
+            return "no file";
+        }
+    }
+    public function sendEvent()
+    {
+        return json_encode(1);
+    }
+}

@@ -10,7 +10,7 @@
                 <ul class="--menu_list">
                     <li class="--menu_list_item --menu_list_item_desp" data="1" data-order="1"><span data="1">titulaciones</span></li>
                     <li class="--menu_list_item --menu_list_item_desp" data="2" data-order="2"><span data="2">la escuela</span></li>
-                    <li class="--menu_list_item {{ Route::currentRouteNamed('carrera') ? '--active' : '' }}" data-order="3"><a href="{{route('carrera')}}"><span>plan de carrera</a></span></li>
+                    <li class="--menu_list_item --menu_list_item_desp" data="3" data-order="3"><span data="3">plan de carrera</span></li>
                     <li class="--menu_list_item {{ Route::currentRouteNamed('becas') ? '--active' : '' }}" data-order="4"><a href="{{route('becas')}}"><span>becas y admisión</a></span></li>
                 </ul>
                 <p class="--phone_tablet"><a href="tel:900 866 336">900 866 336</a></p>
@@ -71,9 +71,12 @@
                 </a>
             </ul>
             <ul class="--deplegable_list" data="3">
-                {{-- <li class="--desplegable_list_item">Lorem ipsum 3</li>
-                <li class="--desplegable_list_item">Lorem ipsum</li>
-                <li class="--desplegable_list_item">Lorem ipsum</li> --}}
+                <a href="{{route('emprende')}}">
+                    <li class="--desplegable_list_item {{ Route::currentRouteNamed('emprende') ? '--active' : '' }}">Emprende</li>
+                </a>
+                <a href="{{route('trabaja')}}">
+                    <li class="--desplegable_list_item {{ Route::currentRouteNamed('trabaja') ? '--active' : '' }}">Trabaja</li>
+                </a>
             </ul>
         </div>
         <div class="--content_menu">
@@ -89,13 +92,8 @@
                 <li class="--content_menu_link __cambio_seccion" data-link="3">
                     LA ESCUELA
                 </li>
-                {{-- <li class="--content_menu_link" data-link="4">
-                    PLANES DE CARRERA
-                </li> --}}
-                <li class="--content_menu_link {{ Route::currentRouteNamed('carrera') ? '--active' : '' }}">
-                        <a href="{{route('carrera')}}">
-                        PLAN DE CARRERA
-                    </a>
+                <li class="--content_menu_link __cambio_seccion" data-link="4">
+                    PLAN DE CARRERA
                 </li>
                 <li class="--content_menu_link {{ Route::currentRouteNamed('becas') ? '--active' : '' }}">
                         <a href="{{route('becas')}}">
@@ -149,13 +147,20 @@
                     </li>
                 </a>
             </ul>
-            <ul class="--links" data-select="4">
+            <ul class="--links {{ Route::currentRouteNamed('emprende') ||  Route::currentRouteNamed('trabaja') ? '--open_menu' : '' }}" data-select="4">
                 <li class="--return">< Volver</li>
-                {{-- <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li> --}}
+                <a href="{{route('emprende')}}">
+                    <li class=" {{ Route::currentRouteNamed('emprende') ? '--active' : '' }}">
+                        EMPRENDE
+                    </li>
+                </a>
+                <a href="{{route('trabaja')}}">
+                    <li class=" {{ Route::currentRouteNamed('trabaja') ? '--active' : '' }}">
+                        TRABAJA
+                    </li>
+                </a>
             </ul>
+
             <ul class="--links" data-select="5">
                 <li class="--return">< Volver</li>
                 {{-- <li>Lorem ipsum</li>

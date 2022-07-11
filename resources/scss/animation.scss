@@ -34,6 +34,12 @@
       animation: none;
     }
   }
+  .scrolled.scale {
+    animation: scale-in 1s ease-in-out both;
+    @include tablet{
+      animation: none;
+    }
+  }
   
   .scrolled.fade-in-bottom {
     animation: fade-in-bottom 1s ease-in-out both;
@@ -184,6 +190,18 @@
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
+      opacity: 1 !important;
+    }
+  }
+  @keyframes scale-in {
+    0% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
       opacity: 1 !important;
     }
   }
