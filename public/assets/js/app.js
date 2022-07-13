@@ -1518,9 +1518,9 @@ $(document).ready(function(){
         if(urlParams.get('utm_source')){
             canal = urlParams.get('utm_source');
         }
-        if(file.files[0].size <= 1000000 && file.files[0].type == "application/pdf"){
-            validFile = true;
-        }
+        // if(file.files[0].size <= 1000000 && file.files[0].type == "application/pdf"){
+        //     validFile = true;
+        // }
         if(email){
             if(email.val().indexOf('@', 0) == -1 || email.val().indexOf('.', 0) == -1) {
                 $('.--alert_cabecera_email').fadeIn();
