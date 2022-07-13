@@ -242,35 +242,34 @@ class EmailController extends Controller
             $nuevaRuta = public_path('/cv/'.$nombreArchivo);
             copy($file->getRealPath(), $nuevaRuta);
             $form['inputTag'] = URL::to('/').'/cv/'.$nombreArchivo;
-            $datosFormulario = array(
-
-                "name" =>  $form['name_input'],
-                "email" => $form['email_input'],
-                "phone" =>  $form['phone_input'],
-                "consulta" => $form['inputTag'],
-                "canal" => $form['canal'],
-                "url" => $form['url'],
-                "notificaciones" => 1,
-                "gclid" =>$form['gclid'],
-                "idAnalytics" => $form['idAnalytics'],
-                "idEnterprise" => $form['enterprise_input']
-            );
-
-            // return var_dump($_POST);
-
-            // return json_encode(1); 
-            
-            $data = $this -> crmLogin();
-
-            if ($data->success) {
-                $lead = $this -> crmSend($datosFormulario, $data);
-                if ($lead->success) {
-                    return redirect()->route('trabaja-gracias');
-                }
-            }
-          
         }else{
-            return "no file";
+            $form['inputTag'] = "no cv";
+        }
+        $datosFormulario = array(
+
+            "name" =>  $form['name_input'],
+            "email" => $form['email_input'],
+            "phone" =>  $form['phone_input'],
+            "consulta" => $form['inputTag'],
+            "canal" => $form['canal'],
+            "url" => $form['url'],
+            "notificaciones" => 1,
+            "gclid" =>$form['gclid'],
+            "idAnalytics" => $form['idAnalytics'],
+            "idEnterprise" => $form['enterprise_input']
+        );
+
+        // return var_dump($_POST);
+
+        // return json_encode(1); 
+        
+        $data = $this -> crmLogin();
+
+        if ($data->success) {
+            $lead = $this -> crmSend($datosFormulario, $data);
+            if ($lead->success) {
+                return redirect()->route('trabaja-gracias');
+            }
         }
     }
     public function sendEvent()
