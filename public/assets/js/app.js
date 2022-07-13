@@ -1553,7 +1553,7 @@ $(document).ready(function(){
             notificaciones = 0
         }
 
-        if(validMail && validPhone && validAgree && validFile){
+        if(validMail && validPhone && validAgree){
             console.log('validación ok');
             
             $('#upload_form input[name="canal"]').val(canal);

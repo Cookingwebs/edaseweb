@@ -30,7 +30,7 @@
                 <p class="--objetivos_boque_copy_text">Trazamos tu hoja de ruta personalizada. Te dirigimos hacia tu primera salida profesional real o hacia el puesto directivo que mereces en el mundo de la asesoría.</p>
                </div>
                <div class="--objetivos_bloque_img">
-                    <img src="{{ URL::to('/') }}/images/emprende/crear-asesoria-2.webp" alt=""  class="lazyload">
+                    <img src="{{ URL::to('/') }}/images/trabaja/trabaja-1.webp" alt=""  class="lazyload">
                </div>
            </div>
         </div>
@@ -63,6 +63,7 @@
                     <label for="inputTag" class="--label_file">
                         <p class="--label_file-text">ADJUNTAR</p>
                         <p class="--label_file-cta">CURRÍCULUM VITAE</p>
+                        <p class="--label_file-small"><b>(OPCIONAL)</b></p>
                         <p class="--label_file-small">PDF / Máx. 1 MB</p>
                         <p class="--label_file-name" id="fileName"></p>
                         <input type="file" id="inputTag" accept="application/pdf" name="inputTag"/>

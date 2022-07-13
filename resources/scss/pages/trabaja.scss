@@ -645,16 +645,6 @@
                     color: $blue;
                     position: relative;
                     margin-bottom: 20px;
-                    &::before{
-                        content:"-";
-                        position: absolute;
-                        left: -0.5em;
-                        top: -3px;
-                        @include mobile{
-                            position: initial;
-                            margin-right: 10px;
-                        }
-                    }
                     @include notebook{
                         font-size: 45px;
                     }

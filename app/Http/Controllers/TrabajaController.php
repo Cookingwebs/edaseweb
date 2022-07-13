@@ -15,7 +15,7 @@ class TrabajaController extends Controller
         $datos = [
             'enterprise' => 7
         ];
-        $title = "Emprende";
+        $title = "Trabaja";
         $description = "Lanza tu carrera como asesor de empresas. Ofertas de empleo en toda la red nacional de asesorías. Da el primer paso aquí.";
         $og_title = "Bolsa de Empleo【Trabaja como asesor con EDASE】";
 
@@ -34,7 +34,7 @@ class TrabajaController extends Controller
     }
     public function gracias(){
         $robots = "noindex, follow";
-        $title = "Emprende";
+        $title = "Trabaja";
         $description = "Lanza tu carrera como asesor de empresas. Ofertas de empleo en toda la red nacional de asesorías. Da el primer paso aquí.";
         $og_title = "Bolsa de Empleo【Trabaja como asesor con EDASE】";
 
