@@ -1,0 +1,2306 @@
+<!-- saved from url=(0075)https://ayudatlearning35148.activehosted.com/designer/761/preview?theme=761 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office" style="margin: 0; outline: none; padding: 0;">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+		.ac-social-icon {
+			display: inline-block !important;
+		}
+	</style>
+	<meta http-equiv="Content-Language" content="es-es">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="viewport"
+		content="width=device-width, minimal-ui, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script type="text/javascript" src="./Vista Previa_files/d3d5c809d5"></script>
+	<script src="./Vista Previa_files/nr-spa-1216.min.js"></script>
+	<script
+		type="text/javascript">(window.NREUM || (NREUM = {})).init = { privacy: { cookies_enabled: true }, ajax: { deny_list: ["bam.nr-data.net"] }, distributed_tracing: { enabled: true } }; (window.NREUM || (NREUM = {})).loader_config = { agentID: "456980009", accountID: "149034", trustKey: "149034", xpid: "VQIOUVVXGwcFUlhVDwgCUw==", licenseKey: "d3d5c809d5", applicationID: "456978955" }; window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) { function r(n) { if (!e[n]) { var o = e[n] = { exports: {} }; t[n][0].call(o.exports, function (e) { var o = t[n][1][e]; return r(o || e) }, o, o.exports) } return e[n].exports } if ("function" == typeof __nr_require) return __nr_require; for (var o = 0; o < n.length; o++)r(n[o]); return r }({ 1: [function (t, e, n) { function r(t) { try { s.console && console.log(t) } catch (e) { } } var o, i = t("ee"), a = t(31), s = {}; try { o = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (s.console = !0, o.indexOf("dev") !== -1 && (s.dev = !0), o.indexOf("nr_dev") !== -1 && (s.nrDev = !0)) } catch (c) { } s.nrDev && i.on("internal-error", function (t) { r(t.stack) }), s.dev && i.on("fn-err", function (t, e, n) { r(n.stack) }), s.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(s, function (t, e) { return t }).join(", "))) }, {}], 2: [function (t, e, n) { function r(t, e, n, r, s) { try { l ? l -= 1 : o(s || new UncaughtException(t, e, n), !0) } catch (f) { try { i("ierr", [f, c.now(), !0]) } catch (d) { } } return "function" == typeof u && u.apply(this, a(arguments)) } function UncaughtException(t, e, n) { this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n } function o(t, e) { var n = e ? null : c.now(); i("err", [t, n]) } var i = t("handle"), a = t(32), s = t("ee"), c = t("loader"), f = t("gos"), u = window.onerror, d = !1, p = "nr@seenError"; if (!c.disabled) { var l = 0; c.features.err = !0, t(1), window.onerror = r; try { throw new Error } catch (h) { "stack" in h && (t(14), t(13), "addEventListener" in window && t(7), c.xhrWrappable && t(15), d = !0) } s.on("fn-start", function (t, e, n) { d && (l += 1) }), s.on("fn-err", function (t, e, n) { d && !n[p] && (f(n, p, function () { return !0 }), this.thrown = !0, o(n)) }), s.on("fn-end", function () { d && !this.thrown && l > 0 && (l -= 1) }), s.on("internal-error", function (t) { i("ierr", [t, c.now(), !0]) }) } }, {}], 3: [function (t, e, n) { var r = t("loader"); r.disabled || (r.features.ins = !0) }, {}], 4: [function (t, e, n) { function r() { U++, L = g.hash, this[u] = y.now() } function o() { U--, g.hash !== L && i(0, !0); var t = y.now(); this[h] = ~~this[h] + t - this[u], this[d] = t } function i(t, e) { E.emit("newURL", ["" + g, e]) } function a(t, e) { t.on(e, function () { this[e] = y.now() }) } var s = "-start", c = "-end", f = "-body", u = "fn" + s, d = "fn" + c, p = "cb" + s, l = "cb" + c, h = "jsTime", m = "fetch", v = "addEventListener", w = window, g = w.location, y = t("loader"); if (w[v] && y.xhrWrappable && !y.disabled) { var x = t(11), b = t(12), E = t(9), R = t(7), O = t(14), T = t(8), S = t(15), P = t(10), M = t("ee"), C = M.get("tracer"), N = t(23); t(17), y.features.spa = !0; var L, U = 0; M.on(u, r), b.on(p, r), P.on(p, r), M.on(d, o), b.on(l, o), P.on(l, o), M.buffer([u, d, "xhr-resolved"]), R.buffer([u]), O.buffer(["setTimeout" + c, "clearTimeout" + s, u]), S.buffer([u, "new-xhr", "send-xhr" + s]), T.buffer([m + s, m + "-done", m + f + s, m + f + c]), E.buffer(["newURL"]), x.buffer([u]), b.buffer(["propagate", p, l, "executor-err", "resolve" + s]), C.buffer([u, "no-" + u]), P.buffer(["new-jsonp", "cb-start", "jsonp-error", "jsonp-end"]), a(T, m + s), a(T, m + "-done"), a(P, "new-jsonp"), a(P, "jsonp-end"), a(P, "cb-start"), E.on("pushState-end", i), E.on("replaceState-end", i), w[v]("hashchange", i, N(!0)), w[v]("load", i, N(!0)), w[v]("popstate", function () { i(0, U > 1) }, N(!0)) } }, {}], 5: [function (t, e, n) { function r() { var t = new PerformanceObserver(function (t, e) { var n = t.getEntries(); s(v, [n]) }); try { t.observe({ entryTypes: ["resource"] }) } catch (e) { } } function o(t) { if (s(v, [window.performance.getEntriesByType(w)]), window.performance["c" + p]) try { window.performance[h](m, o, !1) } catch (t) { } else try { window.performance[h]("webkit" + m, o, !1) } catch (t) { } } function i(t) { } if (window.performance && window.performance.timing && window.performance.getEntriesByType) { var a = t("ee"), s = t("handle"), c = t(14), f = t(13), u = t(6), d = t(23), p = "learResourceTimings", l = "addEventListener", h = "removeEventListener", m = "resourcetimingbufferfull", v = "bstResource", w = "resource", g = "-start", y = "-end", x = "fn" + g, b = "fn" + y, E = "bstTimer", R = "pushState", O = t("loader"); if (!O.disabled) { O.features.stn = !0, t(9), "addEventListener" in window && t(7); var T = NREUM.o.EV; a.on(x, function (t, e) { var n = t[0]; n instanceof T && (this.bstStart = O.now()) }), a.on(b, function (t, e) { var n = t[0]; n instanceof T && s("bst", [n, e, this.bstStart, O.now()]) }), c.on(x, function (t, e, n) { this.bstStart = O.now(), this.bstType = n }), c.on(b, function (t, e) { s(E, [e, this.bstStart, O.now(), this.bstType]) }), f.on(x, function () { this.bstStart = O.now() }), f.on(b, function (t, e) { s(E, [e, this.bstStart, O.now(), "requestAnimationFrame"]) }), a.on(R + g, function (t) { this.time = O.now(), this.startPath = location.pathname + location.hash }), a.on(R + y, function (t) { s("bstHist", [location.pathname + location.hash, this.startPath, this.time]) }), u() ? (s(v, [window.performance.getEntriesByType("resource")]), r()) : l in window.performance && (window.performance["c" + p] ? window.performance[l](m, o, d(!1)) : window.performance[l]("webkit" + m, o, d(!1))), document[l]("scroll", i, d(!1)), document[l]("keypress", i, d(!1)), document[l]("click", i, d(!1)) } } }, {}], 6: [function (t, e, n) { e.exports = function () { return "PerformanceObserver" in window && "function" == typeof window.PerformanceObserver } }, {}], 7: [function (t, e, n) { function r(t) { for (var e = t; e && !e.hasOwnProperty(u);)e = Object.getPrototypeOf(e); e && o(e) } function o(t) { s.inPlace(t, [u, d], "-", i) } function i(t, e) { return t[1] } var a = t("ee").get("events"), s = t("wrap-function")(a, !0), c = t("gos"), f = XMLHttpRequest, u = "addEventListener", d = "removeEventListener"; e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (o(window), o(f.prototype)), a.on(u + "-start", function (t, e) { var n = t[1]; if (null !== n && ("function" == typeof n || "object" == typeof n)) { var r = c(n, "nr@wrapped", function () { function t() { if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments) } var e = { object: t, "function": n }[typeof n]; return e ? s(e, "fn-", null, e.name || "anonymous") : n }); this.wrapped = t[1] = r } }), a.on(d + "-start", function (t) { t[1] = this.wrapped || t[1] }) }, {}], 8: [function (t, e, n) { function r(t, e, n) { var r = t[e]; "function" == typeof r && (t[e] = function () { var t = i(arguments), e = {}; o.emit(n + "before-start", [t], e); var a; e[m] && e[m].dt && (a = e[m].dt); var s = r.apply(this, t); return o.emit(n + "start", [t, a], s), s.then(function (t) { return o.emit(n + "end", [null, t], s), t }, function (t) { throw o.emit(n + "end", [t], s), t }) }) } var o = t("ee").get("fetch"), i = t(32), a = t(31); e.exports = o; var s = window, c = "fetch-", f = c + "body-", u = ["arrayBuffer", "blob", "json", "text", "formData"], d = s.Request, p = s.Response, l = s.fetch, h = "prototype", m = "nr@context"; d && p && l && (a(u, function (t, e) { r(d[h], e, f), r(p[h], e, f) }), r(s, "fetch", c), o.on(c + "end", function (t, e) { var n = this; if (e) { var r = e.headers.get("content-length"); null !== r && (n.rxSize = r), o.emit(c + "done", [null, e], n) } else o.emit(c + "done", [t], n) })) }, {}], 9: [function (t, e, n) { var r = t("ee").get("history"), o = t("wrap-function")(r); e.exports = r; var i = window.history && window.history.constructor && window.history.constructor.prototype, a = window.history; i && i.pushState && i.replaceState && (a = i), o.inPlace(a, ["pushState", "replaceState"], "-") }, {}], 10: [function (t, e, n) { function r(t) { function e() { f.emit("jsonp-end", [], l), t.removeEventListener("load", e, c(!1)), t.removeEventListener("error", n, c(!1)) } function n() { f.emit("jsonp-error", [], l), f.emit("jsonp-end", [], l), t.removeEventListener("load", e, c(!1)), t.removeEventListener("error", n, c(!1)) } var r = t && "string" == typeof t.nodeName && "script" === t.nodeName.toLowerCase(); if (r) { var o = "function" == typeof t.addEventListener; if (o) { var a = i(t.src); if (a) { var d = s(a), p = "function" == typeof d.parent[d.key]; if (p) { var l = {}; u.inPlace(d.parent, [d.key], "cb-", l), t.addEventListener("load", e, c(!1)), t.addEventListener("error", n, c(!1)), f.emit("new-jsonp", [t.src], l) } } } } } function o() { return "addEventListener" in window } function i(t) { var e = t.match(d); return e ? e[1] : null } function a(t, e) { var n = t.match(l), r = n[1], o = n[3]; return o ? a(o, e[r]) : e[r] } function s(t) { var e = t.match(p); return e && e.length >= 3 ? { key: e[2], parent: a(e[1], window) } : { key: t, parent: window } } var c = t(23), f = t("ee").get("jsonp"), u = t("wrap-function")(f); if (e.exports = f, o()) { var d = /[?&](?:callback|cb)=([^&#]+)/, p = /(.*)\.([^.]+)/, l = /^(\w+)(\.|$)(.*)$/, h = ["appendChild", "insertBefore", "replaceChild"]; Node && Node.prototype && Node.prototype.appendChild ? u.inPlace(Node.prototype, h, "dom-") : (u.inPlace(HTMLElement.prototype, h, "dom-"), u.inPlace(HTMLHeadElement.prototype, h, "dom-"), u.inPlace(HTMLBodyElement.prototype, h, "dom-")), f.on("dom-start", function (t) { r(t[0]) }) } }, {}], 11: [function (t, e, n) { var r = t("ee").get("mutation"), o = t("wrap-function")(r), i = NREUM.o.MO; e.exports = r, i && (window.MutationObserver = function (t) { return this instanceof i ? new i(o(t, "fn-")) : i.apply(this, arguments) }, MutationObserver.prototype = i.prototype) }, {}], 12: [function (t, e, n) { function r(t) { var e = i.context(), n = s(t, "executor-", e, null, !1), r = new f(n); return i.context(r).getCtx = function () { return e }, r } var o = t("wrap-function"), i = t("ee").get("promise"), a = t("ee").getOrSetContext, s = o(i), c = t(31), f = NREUM.o.PR; e.exports = i, f && (window.Promise = r, ["all", "race"].forEach(function (t) { var e = f[t]; f[t] = function (n) { function r(t) { return function () { i.emit("propagate", [null, !o], a, !1, !1), o = o || !t } } var o = !1; c(n, function (e, n) { Promise.resolve(n).then(r("all" === t), r(!1)) }); var a = e.apply(f, arguments), s = f.resolve(a); return s } }), ["resolve", "reject"].forEach(function (t) { var e = f[t]; f[t] = function (t) { var n = e.apply(f, arguments); return t !== n && i.emit("propagate", [t, !0], n, !1, !1), n } }), f.prototype["catch"] = function (t) { return this.then(null, t) }, f.prototype = Object.create(f.prototype, { constructor: { value: r } }), c(Object.getOwnPropertyNames(f), function (t, e) { try { r[e] = f[e] } catch (n) { } }), o.wrapInPlace(f.prototype, "then", function (t) { return function () { var e = this, n = o.argsToArray.apply(this, arguments), r = a(e); r.promise = e, n[0] = s(n[0], "cb-", r, null, !1), n[1] = s(n[1], "cb-", r, null, !1); var c = t.apply(this, n); return r.nextPromise = c, i.emit("propagate", [e, !0], c, !1, !1), c } }), i.on("executor-start", function (t) { t[0] = s(t[0], "resolve-", this, null, !1), t[1] = s(t[1], "resolve-", this, null, !1) }), i.on("executor-err", function (t, e, n) { t[1](n) }), i.on("cb-end", function (t, e, n) { i.emit("propagate", [n, !0], this.nextPromise, !1, !1) }), i.on("propagate", function (t, e, n) { this.getCtx && !e || (this.getCtx = function () { if (t instanceof Promise) var e = i.context(t); return e && e.getCtx ? e.getCtx() : this }) }), r.toString = function () { return "" + f }) }, {}], 13: [function (t, e, n) { var r = t("ee").get("raf"), o = t("wrap-function")(r), i = "equestAnimationFrame"; e.exports = r, o.inPlace(window, ["r" + i, "mozR" + i, "webkitR" + i, "msR" + i], "raf-"), r.on("raf-start", function (t) { t[0] = o(t[0], "fn-") }) }, {}], 14: [function (t, e, n) { function r(t, e, n) { t[0] = a(t[0], "fn-", null, n) } function o(t, e, n) { this.method = n, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, n) } var i = t("ee").get("timer"), a = t("wrap-function")(i), s = "setTimeout", c = "setInterval", f = "clearTimeout", u = "-start", d = "-"; e.exports = i, a.inPlace(window, [s, "setImmediate"], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [f, "clearImmediate"], f + d), i.on(c + u, r), i.on(s + u, o) }, {}], 15: [function (t, e, n) { function r(t, e) { d.inPlace(e, ["onreadystatechange"], "fn-", s) } function o() { var t = this, e = u.context(t); t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, y, "fn-", s) } function i(t) { x.push(t), m && (E ? E.then(a) : w ? w(a) : (R = -R, O.data = R)) } function a() { for (var t = 0; t < x.length; t++)r([], x[t]); x.length && (x = []) } function s(t, e) { return e } function c(t, e) { for (var n in t) e[n] = t[n]; return e } t(7); var f = t("ee"), u = f.get("xhr"), d = t("wrap-function")(u), p = t(23), l = NREUM.o, h = l.XHR, m = l.MO, v = l.PR, w = l.SI, g = "readystatechange", y = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], x = []; e.exports = u; var b = window.XMLHttpRequest = function (t) { var e = new h(t); try { u.emit("new-xhr", [e], e), e.addEventListener(g, o, p(!1)) } catch (n) { try { u.emit("internal-error", [n]) } catch (r) { } } return e }; if (c(h, b), b.prototype = h.prototype, d.inPlace(b.prototype, ["open", "send"], "-xhr-", s), u.on("send-xhr-start", function (t, e) { r(t, e), i(e) }), u.on("open-xhr-start", r), m) { var E = v && v.resolve(); if (!w && !v) { var R = 1, O = document.createTextNode(R); new m(a).observe(O, { characterData: !0 }) } } else f.on("fn-end", function (t) { t[0] && t[0].type === g || a() }) }, {}], 16: [function (t, e, n) { function r(t) { if (!s(t)) return null; var e = window.NREUM; if (!e.loader_config) return null; var n = (e.loader_config.accountID || "").toString() || null, r = (e.loader_config.agentID || "").toString() || null, f = (e.loader_config.trustKey || "").toString() || null; if (!n || !r) return null; var h = l.generateSpanId(), m = l.generateTraceId(), v = Date.now(), w = { spanId: h, traceId: m, timestamp: v }; return (t.sameOrigin || c(t) && p()) && (w.traceContextParentHeader = o(h, m), w.traceContextStateHeader = i(h, v, n, r, f)), (t.sameOrigin && !u() || !t.sameOrigin && c(t) && d()) && (w.newrelicHeader = a(h, m, v, n, r, f)), w } function o(t, e) { return "00-" + e + "-" + t + "-01" } function i(t, e, n, r, o) { var i = 0, a = "", s = 1, c = "", f = ""; return o + "@nr=" + i + "-" + s + "-" + n + "-" + r + "-" + t + "-" + a + "-" + c + "-" + f + "-" + e } function a(t, e, n, r, o, i) { var a = "btoa" in window && "function" == typeof window.btoa; if (!a) return null; var s = { v: [0, 1], d: { ty: "Browser", ac: r, ap: o, id: t, tr: e, ti: n } }; return i && r !== i && (s.d.tk = i), btoa(JSON.stringify(s)) } function s(t) { return f() && c(t) } function c(t) { var e = !1, n = {}; if ("init" in NREUM && "distributed_tracing" in NREUM.init && (n = NREUM.init.distributed_tracing), t.sameOrigin) e = !0; else if (n.allowed_origins instanceof Array) for (var r = 0; r < n.allowed_origins.length; r++) { var o = h(n.allowed_origins[r]); if (t.hostname === o.hostname && t.protocol === o.protocol && t.port === o.port) { e = !0; break } } return e } function f() { return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.enabled } function u() { return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.exclude_newrelic_header } function d() { return "init" in NREUM && "distributed_tracing" in NREUM.init && NREUM.init.distributed_tracing.cors_use_newrelic_header !== !1 } function p() { return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.cors_use_tracecontext_headers } var l = t(28), h = t(18); e.exports = { generateTracePayload: r, shouldGenerateTrace: s } }, {}], 17: [function (t, e, n) { function r(t) { var e = this.params, n = this.metrics; if (!this.ended) { this.ended = !0; for (var r = 0; r < p; r++)t.removeEventListener(d[r], this.listener, !1); return e.protocol && "data" === e.protocol ? void g("Ajax/DataUrl/Excluded") : void (e.aborted || (n.duration = a.now() - this.startTime, this.loadCaptureCalled || 4 !== t.readyState ? null == e.status && (e.status = 0) : i(this, t), n.cbTime = this.cbTime, s("xhr", [e, n, this.startTime, this.endTime, "xhr"], this))) } } function o(t, e) { var n = c(e), r = t.params; r.hostname = n.hostname, r.port = n.port, r.protocol = n.protocol, r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.parsedOrigin = n, t.sameOrigin = n.sameOrigin } function i(t, e) { t.params.status = e.status; var n = v(e, t.lastSize); if (n && (t.metrics.rxSize = n), t.sameOrigin) { var r = e.getResponseHeader("X-NewRelic-App-Data"); r && (t.params.cat = r.split(", ").pop()) } t.loadCaptureCalled = !0 } var a = t("loader"); if (a.xhrWrappable && !a.disabled) { var s = t("handle"), c = t(18), f = t(16).generateTracePayload, u = t("ee"), d = ["load", "error", "abort", "timeout"], p = d.length, l = t("id"), h = t(24), m = t(22), v = t(19), w = t(23), g = t(25).recordSupportability, y = NREUM.o.REQ, x = window.XMLHttpRequest; a.features.xhr = !0, t(15), t(8), u.on("new-xhr", function (t) { var e = this; e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, e.loadCaptureCalled = !1, e.params = this.params || {}, e.metrics = this.metrics || {}, t.addEventListener("load", function (n) { i(e, t) }, w(!1)), h && (h > 34 || h < 10) || t.addEventListener("progress", function (t) { e.lastSize = t.loaded }, w(!1)) }), u.on("open-xhr-start", function (t) { this.params = { method: t[0] }, o(this, t[1]), this.metrics = {} }), u.on("open-xhr-end", function (t, e) { "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid); var n = f(this.parsedOrigin); if (n) { var r = !1; n.newrelicHeader && (e.setRequestHeader("newrelic", n.newrelicHeader), r = !0), n.traceContextParentHeader && (e.setRequestHeader("traceparent", n.traceContextParentHeader), n.traceContextStateHeader && e.setRequestHeader("tracestate", n.traceContextStateHeader), r = !0), r && (this.dt = n) } }), u.on("send-xhr-start", function (t, e) { var n = this.metrics, r = t[0], o = this; if (n && r) { var i = m(r); i && (n.txSize = i) } this.startTime = a.now(), this.listener = function (t) { try { "abort" !== t.type || o.loadCaptureCalled || (o.params.aborted = !0), ("load" !== t.type || o.called === o.totalCbs && (o.onloadCalled || "function" != typeof e.onload)) && o.end(e) } catch (n) { try { u.emit("internal-error", [n]) } catch (r) { } } }; for (var s = 0; s < p; s++)e.addEventListener(d[s], this.listener, w(!1)) }), u.on("xhr-cb-time", function (t, e, n) { this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n) }), u.on("xhr-load-added", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1) }), u.on("xhr-load-removed", function (t, e) { var n = "" + l(t) + !!e; this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1) }), u.on("xhr-resolved", function () { this.endTime = a.now() }), u.on("addEventListener-end", function (t, e) { e instanceof x && "load" === t[0] && u.emit("xhr-load-added", [t[1], t[2]], e) }), u.on("removeEventListener-end", function (t, e) { e instanceof x && "load" === t[0] && u.emit("xhr-load-removed", [t[1], t[2]], e) }), u.on("fn-start", function (t, e, n) { e instanceof x && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now())) }), u.on("fn-end", function (t, e) { this.xhrCbStart && u.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e) }), u.on("fetch-before-start", function (t) { function e(t, e) { var n = !1; return e.newrelicHeader && (t.set("newrelic", e.newrelicHeader), n = !0), e.traceContextParentHeader && (t.set("traceparent", e.traceContextParentHeader), e.traceContextStateHeader && t.set("tracestate", e.traceContextStateHeader), n = !0), n } var n, r = t[1] || {}; "string" == typeof t[0] ? n = t[0] : t[0] && t[0].url ? n = t[0].url : window.URL && t[0] && t[0] instanceof URL && (n = t[0].href), n && (this.parsedOrigin = c(n), this.sameOrigin = this.parsedOrigin.sameOrigin); var o = f(this.parsedOrigin); if (o && (o.newrelicHeader || o.traceContextParentHeader)) if ("string" == typeof t[0] || window.URL && t[0] && t[0] instanceof URL) { var i = {}; for (var a in r) i[a] = r[a]; i.headers = new Headers(r.headers || {}), e(i.headers, o) && (this.dt = o), t.length > 1 ? t[1] = i : t.push(i) } else t[0] && t[0].headers && e(t[0].headers, o) && (this.dt = o) }), u.on("fetch-start", function (t, e) { this.params = {}, this.metrics = {}, this.startTime = a.now(), this.dt = e, t.length >= 1 && (this.target = t[0]), t.length >= 2 && (this.opts = t[1]); var n, r = this.opts || {}, i = this.target; if ("string" == typeof i ? n = i : "object" == typeof i && i instanceof y ? n = i.url : window.URL && "object" == typeof i && i instanceof URL && (n = i.href), o(this, n), "data" !== this.params.protocol) { var s = ("" + (i && i instanceof y && i.method || r.method || "GET")).toUpperCase(); this.params.method = s, this.txSize = m(r.body) || 0 } }), u.on("fetch-done", function (t, e) { if (this.endTime = a.now(), this.params || (this.params = {}), "data" === this.params.protocol) return void g("Ajax/DataUrl/Excluded"); this.params.status = e ? e.status : 0; var n; "string" == typeof this.rxSize && this.rxSize.length > 0 && (n = +this.rxSize); var r = { txSize: this.txSize, rxSize: n, duration: a.now() - this.startTime }; s("xhr", [this.params, r, this.startTime, this.endTime, "fetch"], this) }) } }, {}], 18: [function (t, e, n) { var r = {}; e.exports = function (t) { if (t in r) return r[t]; if (0 === (t || "").indexOf("data:")) return { protocol: "data" }; var e = document.createElement("a"), n = window.location, o = {}; e.href = t, o.port = e.port; var i = e.href.split("://"); !o.port && i[1] && (o.port = i[1].split("/")[0].split("@").pop().split(":")[1]), o.port && "0" !== o.port || (o.port = "https" === i[0] ? "443" : "80"), o.hostname = e.hostname || n.hostname, o.pathname = e.pathname, o.protocol = i[0], "/" !== o.pathname.charAt(0) && (o.pathname = "/" + o.pathname); var a = !e.protocol || ":" === e.protocol || e.protocol === n.protocol, s = e.hostname === document.domain && e.port === n.port; return o.sameOrigin = a && (!e.hostname || s), "/" === o.pathname && (r[t] = o), o } }, {}], 19: [function (t, e, n) { function r(t, e) { var n = t.responseType; return "json" === n && null !== e ? e : "arraybuffer" === n || "blob" === n || "json" === n ? o(t.response) : "text" === n || "" === n || void 0 === n ? o(t.responseText) : void 0 } var o = t(22); e.exports = r }, {}], 20: [function (t, e, n) { function r() { } function o(t, e, n, r) { return function () { return u.recordSupportability("API/" + e + "/called"), i(t + e, [f.now()].concat(s(arguments)), n ? null : this, r), n ? void 0 : this } } var i = t("handle"), a = t(31), s = t(32), c = t("ee").get("tracer"), f = t("loader"), u = t(25), d = NREUM; "undefined" == typeof window.newrelic && (newrelic = d); var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"], l = "api-", h = l + "ixn-"; a(p, function (t, e) { d[e] = o(l, e, !0, "api") }), d.addPageAction = o(l, "addPageAction", !0), d.setCurrentRouteName = o(l, "routeName", !0), e.exports = newrelic, d.interaction = function () { return (new r).get() }; var m = r.prototype = { createTracer: function (t, e) { var n = {}, r = this, o = "function" == typeof e; return i(h + "tracer", [f.now(), t, n], r), function () { if (c.emit((o ? "" : "no-") + "fn-start", [f.now(), r, o], n), o) try { return e.apply(this, arguments) } catch (t) { throw c.emit("fn-err", [arguments, this, t], n), t } finally { c.emit("fn-end", [f.now()], n) } } } }; a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) { m[e] = o(h, e) }), newrelic.noticeError = function (t, e) { "string" == typeof t && (t = new Error(t)), u.recordSupportability("API/noticeError/called"), i("err", [t, f.now(), !1, e]) } }, {}], 21: [function (t, e, n) { function r(t) { if (NREUM.init) { for (var e = NREUM.init, n = t.split("."), r = 0; r < n.length - 1; r++)if (e = e[n[r]], "object" != typeof e) return; return e = e[n[n.length - 1]] } } e.exports = { getConfiguration: r } }, {}], 22: [function (t, e, n) { e.exports = function (t) { if ("string" == typeof t && t.length) return t.length; if ("object" == typeof t) { if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength; if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size; if (!("undefined" != typeof FormData && t instanceof FormData)) try { return JSON.stringify(t).length } catch (e) { return } } } }, {}], 23: [function (t, e, n) { var r = !1; try { var o = Object.defineProperty({}, "passive", { get: function () { r = !0 } }); window.addEventListener("testPassive", null, o), window.removeEventListener("testPassive", null, o) } catch (i) { } e.exports = function (t) { return r ? { passive: !0, capture: !!t } : !!t } }, {}], 24: [function (t, e, n) { var r = 0, o = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/); o && (r = +o[1]), e.exports = r }, {}], 25: [function (t, e, n) { function r(t, e) { var n = [a, t, { name: t }, e]; return i("storeMetric", n, null, "api"), n } function o(t, e) { var n = [s, t, { name: t }, e]; return i("storeEventMetrics", n, null, "api"), n } var i = t("handle"), a = "sm", s = "cm"; e.exports = { constants: { SUPPORTABILITY_METRIC: a, CUSTOM_METRIC: s }, recordSupportability: r, recordCustom: o } }, {}], 26: [function (t, e, n) { function r() { return s.exists && performance.now ? Math.round(performance.now()) : (i = Math.max((new Date).getTime(), i)) - a } function o() { return i } var i = (new Date).getTime(), a = i, s = t(33); e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = o }, {}], 27: [function (t, e, n) { function r(t, e) { var n = t.getEntries(); n.forEach(function (t) { "first-paint" === t.name ? l("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && l("timing", ["fcp", Math.floor(t.startTime)]) }) } function o(t, e) { var n = t.getEntries(); if (n.length > 0) { var r = n[n.length - 1]; if (f && f < r.startTime) return; var o = [r], i = a({}); i && o.push(i), l("lcp", o) } } function i(t) { t.getEntries().forEach(function (t) { t.hadRecentInput || l("cls", [t]) }) } function a(t) { var e = navigator.connection || navigator.mozConnection || navigator.webkitConnection; if (e) return e.type && (t["net-type"] = e.type), e.effectiveType && (t["net-etype"] = e.effectiveType), e.rtt && (t["net-rtt"] = e.rtt), e.downlink && (t["net-dlink"] = e.downlink), t } function s(t) { if (t instanceof w && !y) { var e = Math.round(t.timeStamp), n = { type: t.type }; a(n), e <= h.now() ? n.fid = h.now() - e : e > h.offset && e <= Date.now() ? (e -= h.offset, n.fid = h.now() - e) : e = h.now(), y = !0, l("timing", ["fi", e, n]) } } function c(t) { "hidden" === t && (f = h.now(), l("pageHide", [f])) } if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) { var f, u, d, p, l = t("handle"), h = t("loader"), m = t(30), v = t(23), w = NREUM.o.EV; if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) { u = new PerformanceObserver(r); try { u.observe({ entryTypes: ["paint"] }) } catch (g) { } d = new PerformanceObserver(o); try { d.observe({ entryTypes: ["largest-contentful-paint"] }) } catch (g) { } p = new PerformanceObserver(i); try { p.observe({ type: "layout-shift", buffered: !0 }) } catch (g) { } } if ("addEventListener" in document) { var y = !1, x = ["click", "keydown", "mousedown", "pointerdown", "touchstart"]; x.forEach(function (t) { document.addEventListener(t, s, v(!1)) }) } m(c) } }, {}], 28: [function (t, e, n) { function r() { function t() { return e ? 15 & e[n++] : 16 * Math.random() | 0 } var e = null, n = 0, r = window.crypto || window.msCrypto; r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31))); for (var o, i = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", s = 0; s < i.length; s++)o = i[s], "x" === o ? a += t().toString(16) : "y" === o ? (o = 3 & t() | 8, a += o.toString(16)) : a += o; return a } function o() { return a(16) } function i() { return a(32) } function a(t) { function e() { return n ? 15 & n[r++] : 16 * Math.random() | 0 } var n = null, r = 0, o = window.crypto || window.msCrypto; o && o.getRandomValues && Uint8Array && (n = o.getRandomValues(new Uint8Array(t))); for (var i = [], a = 0; a < t; a++)i.push(e().toString(16)); return i.join("") } e.exports = { generateUuid: r, generateSpanId: o, generateTraceId: i } }, {}], 29: [function (t, e, n) { function r(t, e) { if (!o) return !1; if (t !== o) return !1; if (!e) return !0; if (!i) return !1; for (var n = i.split("."), r = e.split("."), a = 0; a < r.length; a++)if (r[a] !== n[a]) return !1; return !0 } var o = null, i = null, a = /Version\/(\S+)\s+Safari/; if (navigator.userAgent) { var s = navigator.userAgent, c = s.match(a); c && s.indexOf("Chrome") === -1 && s.indexOf("Chromium") === -1 && (o = "Safari", i = c[1]) } e.exports = { agent: o, version: i, match: r } }, {}], 30: [function (t, e, n) { function r(t) { function e() { t(s && document[s] ? document[s] : document[i] ? "hidden" : "visible") } "addEventListener" in document && a && document.addEventListener(a, e, o(!1)) } var o = t(23); e.exports = r; var i, a, s; "undefined" != typeof document.hidden ? (i = "hidden", a = "visibilitychange", s = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", a = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", a = "webkitvisibilitychange", s = "webkitVisibilityState") }, {}], 31: [function (t, e, n) { function r(t, e) { var n = [], r = "", i = 0; for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1); return n } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], 32: [function (t, e, n) { function r(t, e, n) { e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0); for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;)i[r] = t[e + r]; return i } e.exports = r }, {}], 33: [function (t, e, n) { e.exports = { exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart } }, {}], ee: [function (t, e, n) { function r() { } function o(t) { function e(t) { return t && t instanceof r ? t : t ? f(t, c, a) : a() } function n(n, r, o, i, a) { if (a !== !1 && (a = !0), !l.aborted || i) { t && a && t(n, r, o); for (var s = e(o), c = m(n), f = c.length, u = 0; u < f; u++)c[u].apply(s, r); var p = d[y[n]]; return p && p.push([x, n, r, s]), s } } function i(t, e) { g[t] = m(t).concat(e) } function h(t, e) { var n = g[t]; if (n) for (var r = 0; r < n.length; r++)n[r] === e && n.splice(r, 1) } function m(t) { return g[t] || [] } function v(t) { return p[t] = p[t] || o(n) } function w(t, e) { l.aborted || u(t, function (t, n) { e = e || "feature", y[n] = e, e in d || (d[e] = []) }) } var g = {}, y = {}, x = { on: i, addEventListener: i, removeEventListener: h, emit: n, get: v, listeners: m, context: e, buffer: w, abort: s, aborted: !1 }; return x } function i(t) { return f(t, c, a) } function a() { return new r } function s() { (d.api || d.feature) && (l.aborted = !0, d = l.backlog = {}) } var c = "nr@context", f = t("gos"), u = t(31), d = {}, p = {}, l = e.exports = o(); e.exports.getOrSetContext = i, l.backlog = d }, {}], gos: [function (t, e, n) { function r(t, e, n) { if (o.call(t, e)) return t[e]; var r = n(); if (Object.defineProperty && Object.keys) try { return Object.defineProperty(t, e, { value: r, writable: !0, enumerable: !1 }), r } catch (i) { } return t[e] = r, r } var o = Object.prototype.hasOwnProperty; e.exports = r }, {}], handle: [function (t, e, n) { function r(t, e, n, r) { o.buffer([t], r), o.emit(t, e, n) } var o = t("ee").get("handle"); e.exports = r, r.ee = o }, {}], id: [function (t, e, n) { function r(t) { var e = typeof t; return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function () { return o++ }) } var o = 1, i = "nr@id", a = t("gos"); e.exports = r }, {}], loader: [function (t, e, n) { function r() { if (!T++) { var t = O.info = NREUM.info, e = m.getElementsByTagName("script")[0]; if (setTimeout(f.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return f.abort(); c(E, function (e, n) { t[e] || (t[e] = n) }); var n = a(); s("mark", ["onload", n + O.offset], null, "api"), s("timing", ["load", n]); var r = m.createElement("script"); 0 === t.agent.indexOf("http://") || 0 === t.agent.indexOf("https://") ? r.src = t.agent : r.src = l + "://" + t.agent, e.parentNode.insertBefore(r, e) } } function o() { "complete" === m.readyState && i() } function i() { s("mark", ["domContent", a() + O.offset], null, "api") } var a = t(26), s = t("handle"), c = t(31), f = t("ee"), u = t(29), d = t(21), p = t(23), l = d.getConfiguration("ssl") === !1 ? "http" : "https", h = window, m = h.document, v = "addEventListener", w = "attachEvent", g = h.XMLHttpRequest, y = g && g.prototype, x = !1; NREUM.o = { ST: setTimeout, SI: h.setImmediate, CT: clearTimeout, XHR: g, REQ: h.Request, EV: h.Event, PR: h.Promise, MO: h.MutationObserver }; var b = "" + location, E = { beacon: "bam.nr-data.net", errorBeacon: "bam.nr-data.net", agent: "js-agent.newrelic.com/nr-spa-1216.min.js" }, R = g && y && y[v] && !/CriOS/.test(navigator.userAgent), O = e.exports = { offset: a.getLastTimestamp(), now: a, origin: b, features: {}, xhrWrappable: R, userAgent: u, disabled: x }; if (!x) { t(20), t(27), m[v] ? (m[v]("DOMContentLoaded", i, p(!1)), h[v]("load", r, p(!1))) : (m[w]("onreadystatechange", o), h[w]("onload", r)), s("mark", ["firstbyte", a.getLastTimestamp()], null, "api"); var T = 0 } }, {}], "wrap-function": [function (t, e, n) { function r(t, e) { function n(e, n, r, c, f) { function nrWrapper() { var i, a, u, p; try { a = this, i = d(arguments), u = "function" == typeof r ? r(i, a) : r || {} } catch (l) { o([l, "", [i, a, c], u], t) } s(n + "start", [i, a, c], u, f); try { return p = e.apply(a, i) } catch (h) { throw s(n + "err", [i, a, h], u, f), h } finally { s(n + "end", [i, a, p], u, f) } } return a(e) ? e : (n || (n = ""), nrWrapper[p] = e, i(e, nrWrapper, t), nrWrapper) } function r(t, e, r, o, i) { r || (r = ""); var s, c, f, u = "-" === r.charAt(0); for (f = 0; f < e.length; f++)c = e[f], s = t[c], a(s) || (t[c] = n(s, u ? c + r : r, o, c, i)) } function s(n, r, i, a) { if (!h || e) { var s = h; h = !0; try { t.emit(n, r, i, e, a) } catch (c) { o([c, n, r, i], t) } h = s } } return t || (t = u), n.inPlace = r, n.flag = p, n } function o(t, e) { e || (e = u); try { e.emit("internal-error", t) } catch (n) { } } function i(t, e, n) { if (Object.defineProperty && Object.keys) try { var r = Object.keys(t); return r.forEach(function (n) { Object.defineProperty(e, n, { get: function () { return t[n] }, set: function (e) { return t[n] = e, e } }) }), e } catch (i) { o([i], n) } for (var a in t) l.call(t, a) && (e[a] = t[a]); return e } function a(t) { return !(t && t instanceof Function && t.apply && !t[p]) } function s(t, e) { var n = e(t); return n[p] = t, i(t, n, u), n } function c(t, e, n) { var r = t[e]; t[e] = s(r, n) } function f() { for (var t = arguments.length, e = new Array(t), n = 0; n < t; ++n)e[n] = arguments[n]; return e } var u = t("ee"), d = t(32), p = "nr@original", l = Object.prototype.hasOwnProperty, h = !1; e.exports = r, e.exports.wrapFunction = s, e.exports.wrapInPlace = c, e.exports.argsToArray = f }, {}] }, {}, ["loader", 2, 17, 5, 3, 4]);</script>
+	<title>Vista Previa</title>
+	<style data-ac-keep="true">
+		.ExternalClass {
+			width: 100%;
+			background: inherit;
+			background-color: inherit;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height: 100%;
+		}
+
+		.ExternalClass p,
+		.ExternalClass ul,
+		.ExternalClass ol {
+			Margin: 0;
+		}
+
+		.undoreset div p,
+		.undoreset p {
+			margin-bottom: 20px;
+		}
+
+		div[class^="aolmail_divbody"] {
+			overflow: auto;
+		}
+
+		[owa] #ac-footer {
+			padding: 20px 0px !important;
+			background: inherit;
+			background-color: inherit;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		@-ms-viewport {
+			width: device-width;
+		}
+	</style>
+	<style data-ac-keep="true">
+		@media only screen and (max-width: 600px) {
+
+			/*-------------------------------------------------------------------------*\ Abandoned Cart widget \*------------------------------------------------------------------------*/
+			.td_abandoned-cart img {
+				display: block;
+				padding-right: 0 !important;
+				padding-bottom: 0 !important;
+				width: 100% !important;
+				max-width: 100% !important;
+				height: auto !important;
+			}
+
+			body {
+				padding: 0 !important;
+				font-size: 1em !important;
+			}
+
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			*[class].divbody {
+				-webkit-text-size-adjust: none !important;
+			}
+
+			*[class].td_picture img {
+				width: auto !important;
+			}
+
+			*[class].td_text {
+				line-height: 110%;
+			}
+
+			*[class].td_button {
+				width: auto;
+			}
+
+			/* Collapse all block elements */
+			:not(.body) table {
+				display: block !important;
+				float: none !important;
+				border-collapse: collapse !important;
+				width: 100% !important;
+				min-width: 100% !important;
+				clear: both !important;
+			}
+
+			:not(.body) thead,
+			:not(.body) tbody,
+			:not(.body) tr {
+				display: block !important;
+				float: none !important;
+				width: 100% !important;
+			}
+
+			:not(.body) th,
+			:not(.body) td,
+			:not(.body) p {
+				display: block !important;
+				float: none !important;
+				width: 100% !important;
+				clear: both !important;
+			}
+
+			/* Remove browser default styling for elements */
+			ul,
+			ol {
+				margin-left: 20px;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				-webkit-margin-before: 0;
+				-webkit-margin-after: 0;
+				-webkit-padding-start: 0;
+			}
+
+			/* Set default height for spacer once collapse */
+			*[class].spacer {
+				height: auto !important;
+			}
+
+			a[href^=date] {
+				color: inherit !important;
+				text-decoration: none !important;
+			}
+
+			a[href^=telephone] {
+				color: inherit !important;
+				text-decoration: none !important;
+			}
+
+			a[href^=address] {
+				color: inherit !important;
+				text-decoration: none !important;
+			}
+
+			a[href^=email] {
+				color: inherit !important;
+				text-decoration: none !important;
+			}
+
+			/* Default table cell height */
+			td[height="14"] {
+				height: 14px !important;
+				font-size: 14px !important;
+				line-height: 14px !important;
+			}
+
+			td[height="12"] {
+				height: 12px !important;
+				font-size: 12px !important;
+				line-height: 12px !important;
+			}
+
+			/*-------------------------------------------------------------------------*\ Product Widget \*-------------------------------------------------------------------------*/
+			.td_product div,
+			.td_product .products-display {
+				float: none !important;
+				display: block !important;
+				width: 100% !important;
+				Margin-bottom: 20px !important;
+			}
+
+			.td_product img {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			/* Default social icons */
+			*[class].ac-social-icon-16 {
+				width: 16px !important;
+				height: 16px !important;
+			}
+
+			*[class].ac-social-icon-24 {
+				width: 24px !important;
+				height: 24px !important;
+			}
+
+			*[class].ac-social-icon-28 {
+				width: 28px !important;
+				height: 28px !important;
+			}
+
+			*[class].__ac_social_icons {
+				margin-right: 0px !important;
+			}
+		}
+	</style>
+	<style data-ac-keep="true">
+		@media only screen and (max-width: 320px) {
+			#layout-row11986 .imgtext {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 54px;
+			}
+
+			#layout-row11987 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11989 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11994 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 66px !important;
+			}
+
+			#layout-row12001 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 320px !important;
+			}
+
+			table,
+			tbody,
+			td,
+			.divbody {
+				display: table !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.td_rss .rss-item img.iphone_large_image {
+				width: auto !important;
+			}
+
+			u+.body {
+				display: table !important;
+				width: 100vw !important;
+				min-width: 100vw !important;
+			}
+
+			u+.body table {
+				display: table !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body td {
+				display: block !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				vertical-align: bottom !important;
+			}
+
+			u+.body center {
+				display: block !important;
+				margin: auto !important;
+				width: 100% !important;
+				min-width: 100% !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table,
+			u+.body table._ac_social_table td,
+			u+.body table._ac_social_table div,
+			u+.body table._ac_social_table a {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				min-width: auto !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: 32px !important;
+				min-width: 32px !important;
+				max-width: 32px !important;
+			}
+		}
+
+		@media only screen and (max-width: 375px) {
+			#layout-row11986 .imgtext {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 54px;
+			}
+
+			#layout-row11987 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11989 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11994 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 66px !important;
+			}
+
+			#layout-row12001 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 375px !important;
+			}
+
+			table,
+			tbody,
+			td,
+			.divbody {
+				display: table !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.td_rss .rss-item img.iphone_large_image {
+				width: auto !important;
+			}
+
+			u+.body {
+				display: table !important;
+				width: 100vw !important;
+				min-width: 100vw !important;
+			}
+
+			u+.body table {
+				display: table !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body td {
+				display: block !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				vertical-align: bottom !important;
+			}
+
+			u+.body center {
+				display: block !important;
+				margin: auto !important;
+				width: 100% !important;
+				min-width: 100% !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table,
+			u+.body table._ac_social_table td,
+			u+.body table._ac_social_table div,
+			u+.body table._ac_social_table a {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				min-width: auto !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: 32px !important;
+				min-width: 32px !important;
+				max-width: 32px !important;
+			}
+		}
+
+		@media only screen and (max-width: 414px) {
+			#layout-row11986 .imgtext {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 54px;
+			}
+
+			#layout-row11987 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11989 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11994 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 66px !important;
+			}
+
+			#layout-row12001 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 414px !important;
+			}
+
+			table,
+			tbody,
+			td,
+			.divbody {
+				display: table !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.td_rss .rss-item img.iphone_large_image {
+				width: auto !important;
+			}
+
+			u+.body {
+				display: table !important;
+				width: 100vw !important;
+				min-width: 100vw !important;
+			}
+
+			u+.body table {
+				display: table !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body td {
+				display: block !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				vertical-align: bottom !important;
+			}
+
+			u+.body center {
+				display: block !important;
+				margin: auto !important;
+				width: 100% !important;
+				min-width: 100% !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table,
+			u+.body table._ac_social_table td,
+			u+.body table._ac_social_table div,
+			u+.body table._ac_social_table a {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				min-width: auto !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: 32px !important;
+				min-width: 32px !important;
+				max-width: 32px !important;
+			}
+		}
+
+		@media only screen and (max-width: 667px) {
+			#layout-row11986 .imgtext {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 54px;
+			}
+
+			#layout-row11987 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11989 {
+				max-height: 0px !important;
+				font-size: 0px !important;
+				display: none !important;
+				visibility: hidden !important;
+			}
+
+			#layout-row11994 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 66px !important;
+			}
+
+			#layout-row12001 img {
+				width: 100% !important;
+				height: auto !important;
+				max-width: 600px !important;
+			}
+
+			table,
+			tbody,
+			td,
+			.divbody {
+				display: table !important;
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+
+			.td_rss .rss-item img.iphone_large_image {
+				width: auto !important;
+			}
+
+			u+.body {
+				display: table !important;
+				width: 100vw !important;
+				min-width: 100vw !important;
+			}
+
+			u+.body table {
+				display: table !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body td {
+				display: block !important;
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			u+.body img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				vertical-align: bottom !important;
+			}
+
+			u+.body center {
+				display: block !important;
+				margin: auto !important;
+				width: 100% !important;
+				min-width: 100% !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table,
+			u+.body table._ac_social_table td,
+			u+.body table._ac_social_table div,
+			u+.body table._ac_social_table a {
+				display: inline-block !important;
+				margin: auto !important;
+				width: auto !important;
+				min-width: auto !important;
+				text-align: center !important;
+			}
+
+			u+.body table._ac_social_table img {
+				display: inline-block !important;
+				margin: auto !important;
+				width: 32px !important;
+				min-width: 32px !important;
+				max-width: 32px !important;
+			}
+		}
+	</style>
+	<!--[if !mso]><!-- webfonts -->
+	<link href="./Vista Previa_files/css2" rel="stylesheet">
+	<!--<![endif]-->
+	<!--[if lt mso 12]> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><![endif]-->
+	<!--[if gte mso 9]>
+<xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+	<script
+		style="display: none;">var tvt = tvt || {}; tvt.captureVariables = function (a) {
+				for (var b =
+					new Date, c = {}, d = Object.keys(a || {}), e = 0, f; f = d[e]; e++)if (a.hasOwnProperty(f) && "undefined" != typeof a[f]) try { var g = []; c[f] = JSON.stringify(a[f], function (h, k) { try { if ("function" !== typeof k) { if ("object" === typeof k && null !== k) { if (k instanceof HTMLElement || k instanceof Node || -1 != g.indexOf(k)) return; g.push(k) } return k } } catch (m) { } }) } catch (h) { } a = document.createEvent("CustomEvent"); a.initCustomEvent("TvtRetrievedVariablesEvent", !0, !0, { variables: c, date: b }); window.dispatchEvent(a)
+			}; window.setTimeout(function () { tvt.captureVariables({ 'dataLayer.hide': (function (a) { a = a.split("."); for (var b = window, c = 0; c < a.length && (b = b[a[c]], b); c++); return b })('dataLayer.hide'), 'gaData': window['gaData'], 'dataLayer': window['dataLayer'] }) }, 2000);</script>
+</head>
+
+<body id="ac-designer" class="body"
+	style="font-family: Arial; line-height: 1.1; margin: 0px; background-color: #e1e3e8; width: 100%; text-align: center;">
+	<div class="divbody"
+		style="margin: 0px; outline: none; padding: 0px; color: #000000; font-family: arial; line-height: 1.1; width: 100%; background-color: #e1e3e8; background: #e1e3e8; text-align: center;">
+		<table class="template-table" border="0" cellpadding="0" cellspacing="0" width="100%" align="left"
+			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #e1e3e8; background: #e1e3e8;">
+			<tbody>
+				<tr style="mso-line-height-rule: exactly;">
+					<td align="center" valign="top" width="100%" style="mso-line-height-rule: exactly;">
+						<table class="template-table" border="0" cellpadding="0" cellspacing="0" width="650.938"
+							bgcolor="#e1e3e8"
+							style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 650.938px;">
+							<tbody>
+								<tr style="mso-line-height-rule: exactly;">
+									<td id="layout_table_4ff54081b89251b41d8914061d9550685cec4d87" valign="top"
+										align="center" width="651"
+										style="mso-line-height-rule: exactly; background-color: #fffffe;">
+										<table cellpadding="0" cellspacing="0" border="0"
+											class="layout layout-table root-table" width="651"
+											style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fffffe;">
+											<tbody>
+												<tr id="layout-row11988" class="layout layout-row clear-this "
+													style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-padding11988" valign="top"
+														style="mso-line-height-rule: exactly; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr style="mso-line-height-rule: exactly;">
+																	<td id="layout_table_7be768338fc3b3a2f6c46f6c06d96fb08cad8a2c"
+																		valign="top" width="551"
+																		style="mso-line-height-rule: exactly;">
+																		<table cellpadding="0" cellspacing="0"
+																			border="0" class="layout layout-table "
+																			width="551"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr id="layout-row11990"
+																					class="layout layout-row clear-this "
+																					style="mso-line-height-rule: exactly;">
+																					<td id="layout-row-padding11990"
+																						valign="top"
+																						style="mso-line-height-rule: exactly;">
+																						<table width="100%" border="0"
+																							cellpadding="0"
+																							cellspacing="0"
+																							style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																							<tbody>
+																								<tr
+																									style="mso-line-height-rule: exactly;">
+																									<td id="layout_table_b2f410507dd1b11acbb6db64c8262371e79a3f98"
+																										valign="top"
+																										width="95"
+																										style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																										<table
+																											cellpadding="0"
+																											cellspacing="0"
+																											border="0"
+																											class="layout layout-table "
+																											width="95"
+																											style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+																											<tbody>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin11989"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row11989"
+																																	class="layout layout-row widget _widget_spacer style11989"
+																																	style="mso-line-height-rule: exactly;">
+																																	<td id="layout-row-padding11989"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; padding: 0;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td valign="top"
+																																						height="75.9549"
+																																						style="mso-line-height-rule: exactly;">
+																																						<div class="spacer"
+																																							style="margin: 0; outline: none; padding: 0; height: 75.9549px;">
+																																							<table
+																																								cellpadding="0"
+																																								cellspacing="0"
+																																								border="0"
+																																								width="100%"
+																																								style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																								<tbody>
+																																									<tr
+																																										style="mso-line-height-rule: exactly;">
+																																										<td class="spacer-body"
+																																											valign="top"
+																																											height="75.9549"
+																																											width="95"
+																																											style="mso-line-height-rule: exactly; background-color: #fffffe;">
+																																											&nbsp;
+																																										</td>
+																																									</tr>
+																																								</tbody>
+																																							</table>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																									<td id="layout_table_32cfaf585c1b9eedf15c68bd834f885c00ee2962"
+																										valign="top"
+																										width="456"
+																										style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																										<table
+																											cellpadding="0"
+																											cellspacing="0"
+																											border="0"
+																											class="layout layout-table "
+																											width="456"
+																											style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+																											<tbody>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin11986"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row11986"
+																																	class="layout layout-row widget _widget_text style11986"
+																																	style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #ffffff;">
+																																	<td id="layout-row-padding11986"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 0px 10px 19px 10px;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td id="text_div10693"
+																																						class="td_text td_block"
+																																						valign="top"
+																																						align="left"
+																																						width="436"
+																																						style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;">
+																																						<div data-line-height="1.5"
+																																							style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;">
+																																							<div class="droparea"
+																																								contenteditable="false"
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																								<table
+																																									cellpadding="0"
+																																									cellspacing="0"
+																																									align="right"
+																																									style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: auto; mso-table-lspace: 10px; mso-table-rspace: 0pt; display: table;">
+																																									<tbody>
+																																										<tr
+																																											style="mso-line-height-rule: exactly;">
+																																											<td
+																																												style="mso-line-height-rule: exactly;">
+																																												<img style="width: 54px; margin: 0px; resize: none; position: static; zoom: 1; display: block; top: auto; left: auto; padding-left: 10px;"
+																																													class="imgtext"
+																																													src="./Vista Previa_files/01527479-ff85-46ac-84cb-73ba230a93ed.jpeg"
+																																													align="right"
+																																													width="54">
+																																											</td>
+																																										</tr>
+																																									</tbody>
+																																								</table>
+																																							</div>
+																																							<div
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																								<div
+																																									style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																									<div class="droparea"
+																																										contenteditable="false"
+																																										style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																									</div>
+																																									<div
+																																										style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																										<div
+																																											style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																											<div
+																																												style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;">
+																																												<div
+																																													style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;">
+																																												</div>
+																																												<div
+																																													style="margin: 0; outline: none; padding: 0; color: #002469; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; text-align: left;">
+																																													<br>
+																																												</div>
+																																											</div>
+																																										</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																							<div
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: justify;">
+																																								<br>
+																																							</div>
+																																						</div>
+																																						<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div10693, #text_div10693 div { line-height: 150% !important; };
+</style>
+<![endif]-->
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin11996"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row11996"
+																																	class="layout layout-row widget _widget_text style11996"
+																																	style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #ffffff;">
+																																	<td id="layout-row-padding11996"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 10px 10px 19px 10px;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td id="text_div10701"
+																																						class="td_text td_block"
+																																						valign="top"
+																																						align="left"
+																																						width="436"
+																																						style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;">
+																																						<div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;"
+																																							class=""
+																																							data-line-height="1.5">
+																																							<div class="droparea"
+																																								contenteditable="false"
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																							</div>
+																																							<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																								class="">
+																																								<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																									class="">
+																																									<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;"
+																																										class="">
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																										</div>
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																											<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; text-align: left;"
+																																												class="">
+																																												<span
+																																													style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																													class=""><span
+																																														style="color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">Hola
+																																														qué
+																																														tal,
+																																														soy
+																																														Alfredo.
+																																														Me
+																																														recordarás
+																																														por
+																																														correos
+																																														como:
+																																														"soy
+																																														el
+																																														fundador
+																																														de
+																																														Ayuda
+																																														T
+																																														Pymes
+																																														y
+																																														voy
+																																														a
+																																														explicarte
+																																														cómo
+																																														vamos
+																																														a
+																																														cambiar
+																																														el
+																																														sector".
+																																														<br
+																																															class=""><br
+																																															class="">Pues
+																																														mira,
+																																														necesito
+																																														que
+																																														me
+																																														leas
+																																														atentamente.
+																																													</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: inherit; font-size: 15px; font-weight: bold; line-height: inherit; text-decoration: inherit;"
+																																														class="">Quiero
+																																														contarte
+																																														un
+																																														proyecto
+																																														personal
+																																														que
+																																														te
+																																														va
+																																														a
+																																														interesar.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">Desde
+																																														hace
+																																														más
+																																														de
+																																														2
+																																														años,
+																																														llevo
+																																														trabajando
+																																														directamente
+																																														con
+																																														mi
+																																														equipo
+																																														directivo
+																																														(operaciones,
+																																														ventas,
+																																														marketing...)
+																																														para
+																																														diseñar
+																																														un
+																																														plan
+																																														estratégico
+																																														que
+																																														refleje
+																																														cómo
+																																														se
+																																														debe
+																																														organizar
+																																														e
+																																														impulsar
+																																														el
+																																														sector
+																																														de
+																																														las
+																																														asesorías
+																																														en
+																																														España
+																																														y
+																																														qué
+																																														conocimientos
+																																														empresariales
+																																														hacen
+																																														falta
+																																														para
+																																														hacerlo
+																																														posible.
+																																														Pero
+																																														sobre
+																																														todo,
+																																														cómo
+																																														<span
+																																															style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																															class="">en
+																																															Ayuda
+																																															T
+																																															Pymes
+																																															vamos
+																																															a</span>
+																																														liderar
+																																														todo
+																																														ese
+																																														cambio.<br
+																																															class=""></span></span><span
+																																													style="color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																													class=""><br
+																																														class=""><span
+																																														style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class=""><span
+																																															style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																															class="">Y
+																																															ahora
+																																															pensarás:
+																																														</span><br
+																																															class=""><br
+																																															class=""><span
+																																															style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;"
+																																															class="">E</span><span
+																																															style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-style: italic;"
+																																															class="">ste
+																																															hombre
+																																															ya
+																																															me
+																																															quiere
+																																															"vender"
+																																															otra
+																																															cosa
+																																															más.
+																																															Que
+																																															sí,
+																																															que
+																																															el
+																																															máster
+																																															de
+																																															asesoría
+																																															me
+																																															fue
+																																															genial
+																																															¿Pero
+																																															esto
+																																															que
+																																															tiene
+																																															que
+																																															ver
+																																															conmigo?<br
+																																																class=""></span><br
+																																															class=""><span
+																																															style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																															class="">No
+																																															te
+																																															preocupes,
+																																															te
+																																															lo
+																																															explico.
+																																															Este
+																																															plan,
+																																															al
+																																															que
+																																															hemos
+																																															llamado
+																																															programa
+																																															empresarial,
+																																															es
+																																															una
+																																															oportunidad
+																																															para
+																																															ti
+																																															porque
+																																															vas
+																																															a
+																																															tener
+																																															la
+																																															posibilidad
+																																															de
+																																															desarrollar
+																																															tu
+																																															propio
+																																															negocio,
+																																															e
+																																															incluso,
+																																															de
+																																															convertirte
+																																															en
+																																															nuestro
+																																															socio
+																																															(de
+																																															Ayuda
+																																															T
+																																															Pymes).</span></span></span><br
+																																													class=""><br
+																																													class=""><span
+																																													style="color: #353e58; font-size: 15px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-style: normal;"
+																																													class="">Pero
+																																													antes,
+																																													de
+																																													dónde
+																																													surge.</span><span
+																																													style="color: #353e58; font-size: 15px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-style: normal;"
+																																													class=""><br
+																																														class=""><span
+																																														style="color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class=""><br
+																																															class=""><span
+																																															style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																															class=""><span
+																																																style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-style: normal;"
+																																																class="">Como
+																																																siempre,
+																																																de
+																																																una
+																																																necesidad.
+																																															</span>
+																																														</span></span></span><span
+																																													style="color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																													class="">
+																																													<span
+																																														style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-style: normal;"
+																																														class=""><br
+																																															class=""><br
+																																															class=""></span><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">No
+																																														lo
+																																														sabrás,
+																																														pero
+																																														desde
+																																														Ayuda
+																																														T
+																																														Pymes
+																																														tenemos
+																																														un
+																																														plan
+																																														de
+																																														expansión
+																																														para
+																																														los
+																																														próximos
+																																														5
+																																														años.
+																																														<br
+																																															class=""><br
+																																															class="">La
+																																														idea
+																																														es
+																																														ir
+																																														integrando
+																																														asesorías
+																																														presenciales
+																																														donde
+																																														el
+																																														socio
+																																														fundador
+																																														se
+																																														quede
+																																														al
+																																														cargo
+																																														de
+																																														todo
+																																														mientras
+																																														nosotros
+																																														le
+																																														apoyamos,
+																																														le
+																																														damos
+																																														nuestra
+																																														imagen
+																																														de
+																																														marca,
+																																														potenciamos
+																																														su
+																																														tecnología
+																																														y
+																																														le
+																																														damos
+																																														acceso
+																																														a
+																																														financiación
+																																														para
+																																														adquirir
+																																														nuevos
+																																														despachos
+																																														en
+																																														su
+																																														zona.
+																																														Es
+																																														decir,
+																																														trabajamos
+																																														juntos
+																																														para
+																																														hacer
+																																														que
+																																														su
+																																														negocio
+																																														crezca.
+																																													</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">A
+																																														día
+																																														de
+																																														hoy
+																																														ya
+																																														tenemos
+																																														integradas
+																																														9
+																																														asesorías,
+																																														y
+																																														dentro
+																																														de
+																																														3
+																																														años
+																																														serán
+																																														más
+																																														de
+																																														40.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">No
+																																														te
+																																														aburras
+																																														todavía.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">Ahora
+																																														vas
+																																														a
+																																														ver
+																																														en
+																																														qué
+																																														puede
+																																														beneficiarte
+																																														a
+																																														ti
+																																														todo
+																																														esto,
+																																														pero
+																																														necesito
+																																														ponerte
+																																														en
+																																														contexto.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">Nos
+																																														dimos
+																																														cuenta
+																																														que
+																																														todos
+																																														los
+																																														gerentes
+																																														de
+																																														las
+																																														asesorías
+																																														que
+																																														estábamos
+																																														integrando,
+																																														tenían
+																																														un
+																																														perfil
+																																														muy
+																																														técnico
+																																														y
+																																														profesional,
+																																														pero
+																																														les
+																																														faltaba
+																																														un
+																																														punto
+																																														de
+																																														vista
+																																														empresarial
+																																														para
+																																														tomar
+																																														ciertas
+																																														decisiones.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																														class="">Así
+																																														que,
+																																														al
+																																														igual
+																																														que
+																																														creamos
+																																														nuestro
+																																														máster
+																																														para
+																																														incorporar
+																																														personal
+																																														a
+																																														trabajar,
+																																														comenzamos
+																																														a
+																																														crear
+																																														este
+																																														plan
+																																														estratégico
+																																														con
+																																														el
+																																														fin
+																																														de
+																																														enseñarles
+																																														a
+																																														nuestros
+																																														futuros
+																																														socios
+																																														nuestras
+																																														entrañas.
+																																														Un
+																																														programa
+																																														empresarial
+																																														que
+																																														les
+																																														ayude
+																																														a
+																																														hacer
+																																														que
+																																														sus
+																																														negocios,
+																																														junto
+																																														a
+																																														nosotros,
+																																														puedan
+																																														coger
+																																														velocidad
+																																														de
+																																														crucero.</span></span>
+																																											</div>
+																																										</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																						<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div10701, #text_div10701 div { line-height: 150% !important; };
+</style>
+<![endif]-->
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin12000"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row12000"
+																																	class="layout layout-row widget _widget_text style12000"
+																																	style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #ffffff;">
+																																	<td id="layout-row-padding12000"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 10px;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td id="text_div10705"
+																																						class="td_text td_block"
+																																						valign="top"
+																																						align="left"
+																																						width="436"
+																																						style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;">
+																																						<div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;"
+																																							class=""
+																																							data-line-height="1.5">
+																																							<div class="droparea"
+																																								contenteditable="false"
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																							</div>
+																																							<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																								class="">
+																																								<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																									class="">
+																																									<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;"
+																																										class="">
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																										</div>
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																											<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; text-align: left;"
+																																												class="">
+																																												<span
+																																													style="color: #000000; font-size: 12px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;"
+																																													class=""><span
+																																														style="color: #353e58; font-size: 15px; font-weight: 700; line-height: inherit; text-decoration: inherit; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																														class="">Qué
+																																														quiero
+																																														que
+																																														entiendas
+																																														sobre
+																																														el
+																																														programa
+																																														empresarial.</span><br
+																																														style=""
+																																														class=""><br
+																																														style=""
+																																														class=""></span>
+																																												<ul style="margin: 0 0px 0 40px; padding: 0; color: #353e58; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-weight: 400; text-align: left; font-size: 14px;"
+																																													class="">
+																																													<li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;"
+																																														class="">
+																																														<span
+																																															style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																															class="">Que
+																																															va
+																																															de
+																																															dirigir
+																																															una
+																																															asesoría,
+																																															organizarla
+																																															y
+																																															hacerla
+																																															verdaderamente
+																																															rentable.</span>
+																																													</li>
+																																												</ul>
+																																												<br class=""
+																																													style="color: #353e58; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">
+																																												<ul style="margin: 0 0px 0 40px; padding: 0; color: #353e58; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-weight: 400; text-align: left; font-size: 14px;"
+																																													class="">
+																																													<li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;"
+																																														class="">
+																																														<span
+																																															style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																															class="">Que
+																																															en
+																																															caso
+																																															de
+																																															que
+																																															hayas
+																																															pensado
+																																															en
+																																															crear
+																																															una
+																																															asesoría,
+																																															te
+																																															enseñamos
+																																															de
+																																															cero
+																																															a
+																																															ganarte
+																																															la
+																																															vida
+																																															con
+																																															ella.</span>
+																																													</li>
+																																												</ul>
+																																												<br class=""
+																																													style="color: #353e58; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-size: 14px;">
+																																												<ul style="margin: 0 0px 0 40px; padding: 0; color: #353e58; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-weight: 400; text-align: left; font-size: 14px;"
+																																													class="">
+																																													<li style="display: list-item; line-height: inherit; list-style-type: disc; margin: 0 0px 0 3px !important; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;"
+																																														class="">
+																																														<span
+																																															style="color: #353e58; font-size: inherit; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																															class="">Y
+																																															que
+																																															si
+																																															lo
+																																															que
+																																															quieres
+																																															es
+																																															trabajar,
+																																															te
+																																															damos
+																																															unas
+																																															habilidades
+																																															y
+																																															un
+																																															currículum
+																																															que
+																																															ninguna
+																																															otra
+																																															persona
+																																															podrá
+																																															tener,
+																																															para
+																																															abrirte
+																																															las
+																																															puertas
+																																															a
+																																															hacer
+																																															otras
+																																															cosas
+																																															dentro
+																																															de
+																																															nuestro
+																																															sector.
+																																															Con
+																																															más
+																																															relevancia,
+																																															más
+																																															progresión.</span>
+																																													</li>
+																																												</ul>
+																																												<div class=""
+																																													style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																													<span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class=""><br
+																																															class=""><span
+																																															style="color: inherit; font-size: inherit; font-weight: bold; line-height: inherit; text-decoration: inherit;"
+																																															class="">Aquí
+																																															tienes
+																																															una
+																																															muestra
+																																															GRATIS
+																																															de
+																																															lo
+																																															que
+																																															podemos
+																																															enseñarte:</span><br
+																																															class=""></span>
+																																												</div>
+																																												<div class=""
+																																													style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																												</div>
+																																											</div>
+																																										</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																						<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div10705, #text_div10705 div { line-height: 150% !important; };
+</style>
+<![endif]-->
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin11998"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row11998"
+																																	class="layout layout-row widget _widget_button style11998"
+																																	style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																																	<td id="layout-row-padding11998"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 12px 0px 12px 0px;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td class="td_button td_block customizable"
+																																						valign="top"
+																																						align="left"
+																																						width="456"
+																																						style="mso-line-height-rule: exactly;">
+																																						<div class="button-wrapper"
+																																							style="margin: 0; outline: none; padding: 0; text-align: center;">
+																																							<!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://edase.es/promo-plan-empresarial" style="v-text-anchor:middle; width:223px; height:63px; font-weight: bold;" arcsize="0%" strokecolor="#62fb9e" strokeweight="1pt" fillcolor="#62fb9e" o:button="true" o:allowincell="true" o:allowoverlap="false" > <v:textbox inset="2px,2px,2px,2px"> <center style="color:#3d4762;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size:14px; font-weight: bold;line-height: 1.1;">&nbsp;VER Programa Empresarial</center> </v:textbox> </v:roundrect>
+<![endif]--> <a href="https://edase.es/promo-plan-empresarial" style="margin: 0; outline: none; padding: 15px; color: #3d4762; background: #62fb9e; background-color: #62fb9e; font-family: Roboto, San Francisco, Helvetica, Arial, sans-serif; font-size: 14px; display: inline-block; line-height: 1.1; text-align: center; text-decoration: none; mso-hide: all;">
+																																								<span
+																																									style="color:#3d4762;font-family:Roboto, San Francisco, Helvetica, Arial, sans-serif;font-size:14px;font-weight: bold;">
+																																									&nbsp;VER
+																																									Programa
+																																									Empresarial
+																																								</span>
+																																							</a>
+																																						</div>
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																												<tr
+																													style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																													<td id="layout-row-margin12002"
+																														valign="top"
+																														style="mso-line-height-rule: exactly; padding: 0px; background-color: #ffffff;">
+																														<table
+																															width="100%"
+																															border="0"
+																															cellpadding="0"
+																															cellspacing="0"
+																															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																															<tbody>
+																																<tr id="layout-row12002"
+																																	class="layout layout-row widget _widget_text style12002"
+																																	style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #ffffff;">
+																																	<td id="layout-row-padding12002"
+																																		valign="top"
+																																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 10px 10px 19px 10px;">
+																																		<table
+																																			width="100%"
+																																			border="0"
+																																			cellpadding="0"
+																																			cellspacing="0"
+																																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																			<tbody>
+																																				<tr
+																																					style="mso-line-height-rule: exactly;">
+																																					<td id="text_div10707"
+																																						class="td_text td_block"
+																																						valign="top"
+																																						align="left"
+																																						width="436"
+																																						style="line-height: 150%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.5; text-decoration: inherit; font-family: arial;">
+																																						<div style="line-height: 150%; margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: 1.5; text-decoration: inherit; mso-line-height-rule: exactly;"
+																																							class=""
+																																							data-line-height="1.5">
+																																							<div class="droparea"
+																																								contenteditable="false"
+																																								style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																							</div>
+																																							<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																								class="">
+																																								<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																																									class="">
+																																									<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;"
+																																										class="">
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																										</div>
+																																										<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: left;"
+																																											class="">
+																																											<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; --tw-shadow: 0 0 transparent; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; text-align: left;"
+																																												class="">
+																																												<div class=""
+																																													style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">
+																																													<span
+																																														style="color: #353e58; font-size: 15px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																														class=""><span
+																																															style="color: #353e58; font-size: 14px; font-weight: 400; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; font-style: normal;"
+																																															class="">Ojo,
+																																															aún
+																																															hay
+																																															algo
+																																															más
+																																															importante.</span>
+																																														<br
+																																															class=""><br
+																																															class="">Qué
+																																														pasa
+																																														si
+																																														decides
+																																														entrar.</span>
+																																													<br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Tanto
+																																														si
+																																														creas
+																																														tu
+																																														propia
+																																														asesoría
+																																														como
+																																														si
+																																														identificas
+																																														a
+																																														otros
+																																														despachos
+																																														en
+																																														venta
+																																														por
+																																														tu
+																																														zona,
+																																														vas
+																																														a
+																																														tener
+																																														la
+																																														posibilidad
+																																														de
+																																														ser
+																																														socio
+																																														de
+																																														Ayuda
+																																														T
+																																														Pymes.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Hemos
+																																														creado
+																																														una
+																																													</span><span
+																																														style="color: #353e58; font-size: 14px; font-weight: bold; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">aceleradora
+																																														de
+																																														asesorías</span><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">,
+																																														con
+																																														la
+																																														que
+																																														te
+																																														financiamos
+																																														las
+																																														adquisiciones
+																																														de
+																																														otros
+																																														despachos
+																																														y
+																																														te
+																																														ayudamos
+																																														a
+																																														cumplir
+																																														los
+																																														objetivos
+																																														que
+																																														hemos
+																																														marcado
+																																														para
+																																														que
+																																														te
+																																														conviertas
+																																														en
+																																														nuestro
+																																														socio
+																																														por
+																																														derecho.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 15px; font-weight: 700; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">¿Quieres
+																																														crecer
+																																														y
+																																														dirigir
+																																														tu
+																																														propio
+																																														negocio?</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Entonces
+																																														eres
+																																														justo
+																																														con
+																																														quien
+																																														quería
+																																														cruzarme
+																																														un
+																																														par
+																																														de
+																																														emails.
+																																													</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Nuestro
+																																														modelo
+																																														de
+																																														crecimiento
+																																														va
+																																														a
+																																														ser
+																																														brutal
+																																														en
+																																														los
+																																														próximos
+																																														años
+																																														y
+																																														me
+																																														encantaría
+																																														que
+																																														te
+																																														unieras
+																																														a
+																																														este
+																																														proyecto,
+																																														que
+																																														cuentes
+																																														con
+																																														nuestro
+																																														apoyo
+																																														a
+																																														nivel
+																																														financiero,
+																																														empresarial,
+																																														tecnológico
+																																														y
+																																														de
+																																														marketing.</span><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Te
+																																														recomiendo
+																																														que
+																																														pidas
+																																														info,
+																																														mis
+																																														compañeras
+																																														te
+																																														informarán
+																																														de
+																																														todo.</span><br
+																																														class=""><br
+																																														class=""><br
+																																														class=""><span
+																																														style="color: #353e58; font-size: 14px; font-weight: bold; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																																														class="">Un
+																																														abrazo
+																																														muy
+																																														grande.</span><br
+																																														class="">
+																																												</div>
+																																											</div>
+																																										</div>
+																																									</div>
+																																								</div>
+																																							</div>
+																																						</div>
+																																						<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div10707, #text_div10707 div { line-height: 150% !important; };
+</style>
+<![endif]-->
+																																					</td>
+																																				</tr>
+																																			</tbody>
+																																		</table>
+																																	</td>
+																																</tr>
+																															</tbody>
+																														</table>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																	<td id="layout_table_06f9b174e7436d7c3227cbef861e6c0a5381eb8a"
+																		valign="top" width="100"
+																		style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																		<table cellpadding="0" cellspacing="0"
+																			border="0" class="layout layout-table "
+																			width="100"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																					<td id="layout-row-margin11987"
+																						valign="top"
+																						style="mso-line-height-rule: exactly; padding: 0; background-color: #ffffff;">
+																						<table width="100%" border="0"
+																							cellpadding="0"
+																							cellspacing="0"
+																							style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																							<tbody>
+																								<tr id="layout-row11987"
+																									class="layout layout-row widget _widget_spacer style11987"
+																									style="mso-line-height-rule: exactly;">
+																									<td id="layout-row-padding11987"
+																										valign="top"
+																										style="mso-line-height-rule: exactly; padding: 0;">
+																										<table
+																											width="100%"
+																											border="0"
+																											cellpadding="0"
+																											cellspacing="0"
+																											style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																											<tbody>
+																												<tr
+																													style="mso-line-height-rule: exactly;">
+																													<td valign="top"
+																														height="75.9549"
+																														style="mso-line-height-rule: exactly;">
+																														<div class="spacer"
+																															style="margin: 0; outline: none; padding: 0; height: 75.9549px;">
+																															<table
+																																cellpadding="0"
+																																cellspacing="0"
+																																border="0"
+																																width="100%"
+																																style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																																<tbody>
+																																	<tr
+																																		style="mso-line-height-rule: exactly;">
+																																		<td class="spacer-body"
+																																			valign="top"
+																																			height="75.9549"
+																																			width="100"
+																																			style="mso-line-height-rule: exactly; background-color: #fffffe;">
+																																			&nbsp;
+																																		</td>
+																																	</tr>
+																																</tbody>
+																															</table>
+																														</div>
+																													</td>
+																												</tr>
+																											</tbody>
+																										</table>
+																									</td>
+																								</tr>
+																							</tbody>
+																						</table>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin11993" valign="top"
+														style="mso-line-height-rule: exactly; padding: 0; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row11993"
+																	class="layout layout-row widget _widget_spacer style11993"
+																	style="mso-line-height-rule: exactly;">
+																	<td id="layout-row-padding11993" valign="top"
+																		style="mso-line-height-rule: exactly; padding: 0;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td valign="top" height="17.9688"
+																						style="mso-line-height-rule: exactly;">
+																						<div class="spacer"
+																							style="margin: 0; outline: none; padding: 0; height: 17.9688px;">
+																							<table cellpadding="0"
+																								cellspacing="0"
+																								border="0" width="100%"
+																								style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																								<tbody>
+																									<tr
+																										style="mso-line-height-rule: exactly;">
+																										<td class="spacer-body"
+																											valign="top"
+																											height="17.9688"
+																											width="651"
+																											style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																											&nbsp;</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin12001" valign="top"
+														style="mso-line-height-rule: exactly; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row12001"
+																	class="layout layout-row widget _widget_picture "
+																	align="left" style="mso-line-height-rule: exactly;">
+																	<td id="layout-row-padding12001" valign="top"
+																		style="mso-line-height-rule: exactly;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td class="image-td" align="left"
+																						valign="top" width="651"
+																						style="mso-line-height-rule: exactly;">
+																						<img src="./Vista Previa_files/65aba34e94091528059bdc53cb3bb248593ae5a4.jpeg"
+																							width="600"
+																							style="display: block; border: none; outline: none; width: 600px; opacity: 1; max-width: 100%;">
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin11994" valign="top"
+														style="mso-line-height-rule: exactly; padding: 20px 0 0 0; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row11994"
+																	class="layout layout-row widget _widget_picture style11994"
+																	align="center"
+																	style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																	<td id="layout-row-padding11994" valign="top"
+																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 0;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td class="image-td" align="center"
+																						valign="top" width="651"
+																						style="mso-line-height-rule: exactly;">
+																						<img src="./Vista Previa_files/1e68d42b-6dd3-4dc2-ba96-9b35b1ef3dc0.jpeg"
+																							width="66"
+																							style="display: block; border: none; outline: none; width: 66px; opacity: 1; max-width: 100%;">
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin11991" valign="top"
+														style="mso-line-height-rule: exactly; padding: 0; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row11991"
+																	class="layout layout-row widget _widget_spacer style11991"
+																	style="mso-line-height-rule: exactly;">
+																	<td id="layout-row-padding11991" valign="top"
+																		style="mso-line-height-rule: exactly; padding: 0;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td valign="top" height="10"
+																						style="mso-line-height-rule: exactly;">
+																						<div class="spacer"
+																							style="margin: 0; outline: none; padding: 0; height: 10px;">
+																							<table cellpadding="0"
+																								cellspacing="0"
+																								border="0" width="100%"
+																								style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																								<tbody>
+																									<tr
+																										style="mso-line-height-rule: exactly;">
+																										<td class="spacer-body"
+																											valign="top"
+																											height="10"
+																											width="651"
+																											style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																											&nbsp;</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin11992" valign="top"
+														style="mso-line-height-rule: exactly; padding: 0px; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row11992"
+																	class="layout layout-row widget _widget_text style11992"
+																	style="mso-line-height-rule: exactly; margin: 0; padding: 0; background-color: #ffffff;">
+																	<td id="layout-row-padding11992" valign="top"
+																		style="mso-line-height-rule: exactly; background-color: #ffffff; padding: 3px;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td id="text_div10697"
+																						class="td_text td_block"
+																						valign="top" align="left"
+																						width="645"
+																						style="line-height: 190%; mso-line-height-rule: exactly; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.9; text-decoration: inherit; font-family: arial;">
+																						<div style="line-height: 190%; margin: 0; outline: none; padding: 0; color: inherit; font-size: 12px; font-weight: inherit; line-height: 1.9; text-decoration: inherit; mso-line-height-rule: exactly;"
+																							data-line-height="1.9">
+																							<div style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;"
+																								class="">
+																								<div
+																									style="margin: 0; outline: none; padding: 0; color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; text-align: center;">
+																									<span
+																										style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;"
+																										class=""><span
+																											style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;">ESCUELA
+																											DE ASESORES
+																											EDASE ©
+																											2022</span><span
+																											style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;">
+																										</span></span>
+																								</div>
+																								<div
+																									style="margin: 0; outline: none; padding: 0; color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif; text-align: center;">
+																									<a href="https://edase.es/terminos-condiciones"
+																										style="margin: 0; outline: none; padding: 0; color: #353e58; text-decoration: underline; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																										class=""
+																										target="_blank"><span
+																											style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Términos
+																											y
+																											condiciones</span></a><span
+																										style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																										class=""> |
+																									</span><a
+																										href="https://edase.es/politica-privacidad"
+																										style="margin: 0; outline: none; padding: 0; color: #353e58; text-decoration: underline; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;"
+																										class=""
+																										target="_blank"><span
+																											style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Política
+																											de
+																											privacidad</span></a><span
+																										style="color: inherit; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit; font-family: Roboto, &quot;San Francisco&quot;, Helvetica, Arial, sans-serif;">
+																										| <a href="https://edase.es/aviso-legal"
+																											style="margin: 0; outline: none; padding: 0; color: #353e58; text-decoration: underline;"><span
+																												style="color: #353e58; font-size: inherit; font-weight: inherit; line-height: inherit; text-decoration: inherit;">Aviso
+																												legal</span></a></span>
+																								</div>
+																							</div>
+																						</div>
+																						<!--[if (gte mso 12)&(lte mso 15) ]>
+<style data-ac-keep="true" data-ac-inline="false"> #text_div10697, #text_div10697 div { line-height: 190% !important; };
+</style>
+<![endif]-->
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+												<tr style="mso-line-height-rule: exactly; background-color: #fffffe;">
+													<td id="layout-row-margin11995" valign="top"
+														style="mso-line-height-rule: exactly; padding: 0; background-color: #fffffe;">
+														<table width="100%" border="0" cellpadding="0" cellspacing="0"
+															style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: initial !important; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+															<tbody>
+																<tr id="layout-row11995"
+																	class="layout layout-row widget _widget_spacer style11995"
+																	style="mso-line-height-rule: exactly;">
+																	<td id="layout-row-padding11995" valign="top"
+																		style="mso-line-height-rule: exactly; padding: 0;">
+																		<table width="100%" border="0" cellpadding="0"
+																			cellspacing="0"
+																			style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<tbody>
+																				<tr
+																					style="mso-line-height-rule: exactly;">
+																					<td valign="top" height="31.9792"
+																						style="mso-line-height-rule: exactly;">
+																						<div class="spacer"
+																							style="margin: 0; outline: none; padding: 0; height: 31.9792px;">
+																							<table cellpadding="0"
+																								cellspacing="0"
+																								border="0" width="100%"
+																								style="-ms-text-size-adjust: auto; -webkit-text-size-adjust: 100%; border-collapse: collapse; font-size: 14px; min-width: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																								<tbody>
+																									<tr
+																										style="mso-line-height-rule: exactly;">
+																										<td class="spacer-body"
+																											valign="top"
+																											height="31.9792"
+																											width="651"
+																											style="mso-line-height-rule: exactly; background-color: #ffffff;">
+																											&nbsp;</td>
+																									</tr>
+																								</tbody>
+																							</table>
+																						</div>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script
+		type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "d3d5c809d5", "applicationID": "456978955", "transactionName": "M1JQYEMHVhFXB0AMXAoYZ0ZYSVwHRQ1TC1YWGEJGVBBRB0FLQgxWExlCXEE=", "queueTime": 0, "applicationTime": 1320, "atts": "HxVHFgsdRU4UBRZfSBlK", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
+</body>
+
+</html>
