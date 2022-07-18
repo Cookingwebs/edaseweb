@@ -13,7 +13,7 @@ class EmprendeController extends Controller
     {
         $robots = "index, follow";
         $datos = [
-            'enterprise' => 7
+            'enterprise' => 5
         ];
         $title = "Emprende";
         $description = "En la Escuela de Asesores te orientamos para montar una Asesoría de futuro. Entra aquí y da el primer paso.";

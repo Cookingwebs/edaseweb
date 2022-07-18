@@ -39,7 +39,7 @@
                <div class="--formulario_form fade-in-delay-4 --first-content_2">
                     <p class="--form_title">Muy pronto próxima convocatoria</p>
                     <p class="--form_extra">¡PLAZAS LIMITADAS!</p>
-                    @include('layouts.form-cabecera-mba')
+                    @include('layouts.form-cabecera')
                </div>
            </div>
         </div>
@@ -225,7 +225,7 @@
                <div class="--formulario_form js-scroll slide-right">
                     <p class="--form_title">Muy pronto próxima convocatoria</p>
                     <p class="--form_extra">¡PLAZAS LIMITADAS!</p>
-                    @include('layouts.form-footer-mba')
+                    @include('layouts.form-footer')
                </div>
            </div>
         </div>

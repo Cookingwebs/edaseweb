@@ -12,7 +12,7 @@ class MbaController extends Controller
     public function __invoke(){
         $robots = "index, follow";
         $datos = [
-            'enterprise' => 7
+            'enterprise' => 5
         ];
         $title = "MBA";
         $description = "Estrategia formativa y empresarial ▷ Lanza tu carrera junto a los directivos de la mayor Asesoría de Empresas en España";
@@ -35,7 +35,7 @@ class MbaController extends Controller
     public function promo(){
         $robots = "noindex, nofollow";
         $datos = [
-            'enterprise' => 7,
+            'enterprise' => 5,
             'chat' => 'ok'
         ];
         $title = "Plan Empresarial EDASE";
