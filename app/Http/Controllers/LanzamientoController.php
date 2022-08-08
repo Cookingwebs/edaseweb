@@ -224,4 +224,53 @@ class LanzamientoController extends Controller
         return view('lanzamiento.edicion-especial-clase', $datos);
 
     }
+    public function puertasAbiertas(){
+    
+        $robots = "noindex, nofollow";
+        $datos = [
+            'enterprise' => 7,
+            'chat' => 'ok',
+            'action_form' => url()->current().'/gracias'
+        ];
+        $title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+        $description = "29 agosto - 6 septiembre ▷ Accede a formación gratis y a becas para trabajar como asesor fiscal, laboral y contable.";
+        $og_title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+    
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+    
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+    
+        return view('lanzamiento.puertas-abiertas', $datos);
+    
+    }
+
+    public function puertasAbiertasGracias(){
+
+        $robots = "noindex, nofollow";
+        $title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+        $description = "29 agosto - 6 septiembre ▷ Accede a formación gratis y a becas para trabajar como asesor fiscal, laboral y contable.";
+        $og_title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-gracias');
+
+    }
 }
+

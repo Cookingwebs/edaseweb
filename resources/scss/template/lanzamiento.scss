@@ -893,7 +893,7 @@
     &.--aula-abierta-gracias{
         #b_gracias{
             .--content{
-                width: 100%;
+                width: auto;
             }
             .--copy{
                 top: 80px;
@@ -1179,6 +1179,585 @@
         .--content{
             @include mobile{
                 width: 100%;
+            }
+        }
+    }
+    &.--puertas-abiertas{
+        .--cta {
+            @include mobile{
+                font-size: 15px;
+            }
+        }
+        #b_header{
+            .--content{
+                .--title{
+                    @include tablet{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+        #b_jornada{
+            .--2_columns{
+                .--title{
+                    @include tablet{
+                        font-size: 25px;
+                    }
+                }
+                .--subtitle {
+                    font-size: 35px;
+                    @include notebook{
+                        font-size: 25px;
+                    }
+                    @include tablet{
+                        font-size: 15px;
+                    }
+                }
+            } 
+        }
+        #b_bolsa{
+            .--title{
+                font-size: 70px;
+                font-weight: normal;
+                text-transform: uppercase;
+                color: $grey-dark;
+                line-height: 1.3em;
+                margin-top: 75px;
+                margin-bottom: 30px;
+                @include notebook{
+                    font-size: 60px;
+                }
+                @include ipad-portrait{
+                    font-size: 50px;
+                }
+                @include tablet{
+                    font-size: 40px;
+                    margin-top: 40px;
+                }
+                @include mobile{
+                    font-size: 25px;
+                    margin-top: 0;
+                }
+            }
+            .--subtitle{
+                font-size: 35px;
+                font-weight: 500;
+                span{
+                    font-weight: 300;
+                    color: $green;
+                }
+                @include notebook{
+                    font-size: 30px;
+                }
+                @include tablet{
+                    font-size: 18px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            .--2_columns{
+                margin-top: 100px;
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    margin-top: 50px;
+                }
+                &.--b_1{
+                    grid-template-columns: 1fr minmax(max-content, 600px);
+                    column-gap: 180px;
+                    @include notebook{
+                        column-gap: 60px;
+                    }
+                    @include ipad-portrait{
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 45px;
+                    }
+                    @include tablet{
+                        grid-template-columns: 1fr;
+                        margin-top: 50px;
+                    }
+                }
+                @include mobile{
+                    grid-template-columns: 1fr;
+                    margin-top: 0;
+                }
+                img{
+                    max-width: 100%;
+                    @include notebook{
+                        width: 100%;
+                        max-width: 450px;
+                    }
+                    @include tablet{
+                        margin-top: 40px;
+                    }
+                }
+                p{
+                    font-size: 34px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                }
+            }
+        } 
+        #b_consigues{
+            .--title{
+                font-size: 50px;
+                font-weight: normal;
+                color: $blue;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                margin-top: 80px;
+                max-width: 980px;
+                margin-bottom: 80px;
+                @include notebook{
+                    font-size: 45px;
+                }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
+                @include tablet{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                }
+                @include mobile{
+                    margin-top: 50px;
+                    font-size: 25px;
+                }
+            }
+            .--2_columns{
+                column-gap: 200px;
+                @include tablet{
+                    column-gap: 80px;
+                }
+                @include mobile{
+                    grid-template-columns: 1fr;
+                    margin-top: 50px;
+                    padding-left: 20px;
+                }
+            }
+            .--b_consigues-copy{
+                &-title{
+                    font-size: 30px;
+                    font-weight: bold;
+                    position: relative;
+                    margin-bottom: 20px;
+                    &::before{
+                        content: "-";
+                        position: absolute;
+                        left: -20px;
+                    }
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include ipad-portrait{
+                        font-size: 24px;
+                    }
+                    @include tablet{
+                        font-size: 20px;
+                    }
+                    @include mobile{
+                        margin-top: 0px;
+                        font-size: 20px;
+                        margin-bottom: 10px;                    }
+                }
+                &-text{
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin-bottom: 80px;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include ipad-portrait{
+                        font-size: 24px;
+                    }
+                    @include tablet{
+                        margin-bottom: 40px;
+                        font-size: 20px;
+                    }
+                    @include mobile{
+                        margin-top: 0px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        #b_asignacion{
+            .--title{
+                font-size: 70px;
+                font-weight: normal;
+                color: $grey-dark;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                span{
+                    font-weight: bold;
+                    color: $green;
+                }
+                @include notebook{
+                    font-size: 60px;
+                }
+                @include ipad-portrait{
+                    font-size: 50px;
+                }
+                @include tablet{
+                    font-size: 40px;
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                }
+                @include mobile{
+                    margin-top: 50px;
+                    font-size: 40px;
+                }
+            }
+            .--b_asignacion-requisitos{
+                &-title{
+                    font-weight: bold;
+                    font-size: 35px;
+                    margin-bottom: 50px;
+                    @include notebook{
+                        font-size: 25px;
+                    }
+                    @include tablet{
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+                ul{
+                    padding-left: 0;
+                    li{
+                        font-weight: 300;
+                        font-size: 35px;
+                        color: $grey-dark;
+                        @include notebook{
+                            font-size: 25px;
+                        }
+                        @include tablet{
+                            font-size: 18px;
+                        }
+                        &::marker{
+                            content: "- ";
+                        }
+                    }
+                }
+            }
+            .--b_asignacion-pasos{
+                margin-top: 100px;
+                max-width: 690px;
+                margin-bottom: 100px;
+                @include tablet{
+                    margin-top: 50px;
+                }
+                &-title{
+                    font-weight: bold;
+                    font-size: 35px;
+                    margin-bottom: 50px;
+                    @include notebook{
+                        font-size: 25px;
+                    }
+                    @include tablet{
+                        font-size: 20px;
+                        margin-bottom: 40px;
+                    }
+                }
+                &-subtitle{
+                    color: $blue;
+                    font-weight: bold;
+                    font-size: 35px;
+                    margin-bottom: 10px;
+                    @include notebook{
+                        font-size: 25px;
+                    }
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                    span{
+                        font-size: 45px;
+                        @include notebook{
+                            font-size: 35px;
+                        }
+                        @include tablet{
+                            font-size: 24px;
+                        }
+                    }
+                }
+                &-copy{
+                    font-weight: 300;
+                    font-size: 35px;
+                    color: $grey-dark;
+                    margin-bottom: 50px; 
+                    @include notebook{
+                        font-size: 25px;
+                    }
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .--extra{
+                color: $blue;
+                font-weight: bold;
+                font-size: 35px;
+                margin-bottom: 20px;
+                text-align: center;
+                @include notebook{
+                    font-size: 25px;
+                }
+                @include tablet{
+                    font-size: 20px;
+                }
+            }
+            .--cta{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0;
+                margin-bottom: 50px;
+            }
+        }
+        #b_vida{
+            .--vida_title{
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+        }
+        #b_experiencias{
+            .--content{
+                padding: 0 200px 40px;
+                @include tablet{
+                    padding: 0;
+                }
+            }
+            .--testimonio_1{
+                .swiper-slide{
+                    .--content_testimonios_copy{
+                        justify-content: flex-start;
+                    }
+                    .--content_testimonios_quote{
+                        font-size: 35px;
+                        @include notebook{
+                            font-size: 25px;
+                        }
+                        @include tablet{
+                            font-size: 18px;
+                        }
+                    }
+                    .--content_testimonios_author{
+                        @include notebook{
+                            font-size: 20px;
+                        }
+                        @include tablet{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .swiper-button-next{
+                    &::after{
+                        @include mobile{
+                            bottom: -10px;
+                        }
+                    }
+                }
+            } 
+            .--testimonio_2{
+                .swiper-slide{
+                    .--content_testimonios_copy{
+                        justify-content: flex-start;
+                        @include notebook{
+                            padding-left: 68px;
+                        }
+                    }
+                    .--content_testimonios_quote{
+                        font-size: 35px;
+                        @include notebook{
+                            font-size: 25px;
+                        }
+                        @include tablet{
+                        font-size: 18px;
+                        }
+                    }
+                    .--content_testimonios_author{
+                        @include notebook{
+                            font-size: 20px;
+                        }
+                        @include tablet{
+                        font-size: 18px;
+                        }
+                    }
+                }
+            } 
+        }
+        
+        #b_unete{
+            .--title{
+                font-size: 55px;
+                font-weight: normal;
+                color: $blue;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                margin-top: 80px;
+                max-width: 980px;
+                margin-bottom: 80px;
+                @include notebook{
+                    font-size: 45px;
+                }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
+                @include tablet{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                }
+                @include mobile{
+                    margin-top: 50px;
+                    font-size: 25px;
+                }
+            }
+            .--2_columns{
+                column-gap: 250px;
+                @include tablet{
+                    column-gap: 80px;
+                }
+                @include mobile{
+                    grid-template-columns: 1fr;
+                    margin-top: 50px;
+                    padding-left: 20px;
+                }
+            }
+            .--b_unete-copy{
+                @include mobile{
+                    margin-bottom: 20px;
+                }
+                &-title{
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: $blue;
+                    position: relative;
+                    &::before{
+                        content: "-";
+                        position: absolute;
+                        left: -20px;
+                    }
+                    @include notebook{
+                        font-size: 40px;
+                    }
+                    @include tablet{
+                        font-size: 24px;
+                    }
+                }
+                &-text{
+                    font-size: 34px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        #b_formulario_footer{
+            .--title{
+                @include notebook{
+                    font-size: 60px;
+                }
+                @include mobile{
+                    font-size: 35px;
+                }
+            }
+            .--formulario_form{
+                @include mobile{
+                    margin-top: 10px;
+                }
+            }
+        }
+        #b_despues{
+            .--title{
+                font-size: 55px;
+                font-weight: normal;
+                color: $blue;
+                line-height: 1.3em;
+                text-transform: uppercase;
+                margin-top: 80px;
+                max-width: 980px;
+                margin-bottom: 80px;
+                @include notebook{
+                    font-size: 45px;
+                }
+                @include ipad-portrait{
+                    font-size: 35px;
+                }
+                @include tablet{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                }
+                @include mobile{
+                    margin-top: 50px;
+                    font-size: 25px;
+                }
+            }
+            .--2_columns{
+                column-gap: 250px;
+                margin-bottom: 50px;
+                @include notebook{
+                    column-gap: 120px;
+                }
+                @include mobile{
+                    grid-template-columns: 1fr;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .--despues-copy{
+                &-title{
+                    font-size: 45px;
+                    font-weight: bold;
+                    color: $blue;
+                    position: relative;
+                    @include notebook{
+                        font-size: 35px;
+                    }
+                    @include tablet{
+                        font-size: 24px;
+                    }
+                    @include mobile{
+                        margin-bottom: 10px;
+                        padding-left: 20px;
+                    }
+                    &::before{
+                        content: "-";
+                        position: absolute;
+                        left: -20px;
+                        @include mobile{
+                            left: 0;
+                        }
+                    }
+                }
+                &-text{
+                    font-size: 34px;
+                    font-weight: 300;
+                    @include notebook{
+                        font-size: 24px;
+                    }
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                    @include mobile{
+                        margin-bottom: 50px;
+                        padding-left: 20px;
+                    }
+                }
             }
         }
     }
