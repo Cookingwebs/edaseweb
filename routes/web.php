@@ -82,6 +82,7 @@ Route::get('/aula-abierta/fiscal', [LanzamientoController::class, "aulaAbiertaFi
 Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaGracias"])->name('aula-abierta-gracias');
 
 Route::get('/puertas-abiertas', [LanzamientoController::class, "puertasAbiertas"])->name('puertas-abiertas');
+Route::get('/puertas-abiertas-promo', [LanzamientoController::class, "puertasAbiertasPromo"])->name('puertas-abiertas-promo');
 Route::get('/puertas-abiertas/gracias', [LanzamientoController::class, "puertasAbiertasGracias"])->name('puertas-abiertas-gracias');
 
 
