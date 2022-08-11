@@ -298,5 +298,182 @@ class LanzamientoController extends Controller
         return view('lanzamiento.puertas-abiertas-gracias');
 
     }
+    public function puertasAbiertasClase1(Request $request){
+        $email = $request->email;
+        $email = base64_encode($email);
+        $phone = $request->phone;
+        $phone = base64_encode($phone);
+        $robots = "noindex, nofollow";
+        $title = "Clase 01 - CONTRATOS INDEFINIDOS";
+        $description = "Mira aquí la grabación completa de la Clase 01 ▷ CONTRATOS INDEFINIDOS";
+        $og_title = "Clase 01 - CONTRATOS INDEFINIDOS";
+        $datos = [
+            'chat' => 'no',
+            'clase' => '1',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-clase', $datos);
+
+    }
+    public function puertasAbiertasClase2(Request $request){
+        $email = $request->email;
+        $email = base64_encode($email);
+        $phone = $request->phone;
+        $phone = base64_encode($phone);
+        $robots = "noindex, nofollow";
+        $title = "Clase 02 - CONTRATOS TEMPORALES";
+        $description = "Mira aquí la grabación completa de la Clase 02 ▷ CONTRATOS TEMPORALES";
+        $og_title = "Clase 02 - CONTRATOS TEMPORALES";
+        $datos = [
+            'chat' => 'no',
+            'clase' => '2',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-clase', $datos);
+
+    }
+    public function puertasAbiertasClase3(Request $request){
+        $email = $request->email;
+        $email = base64_encode($email);
+        $phone = $request->phone;
+        $phone = base64_encode($phone);
+        $robots = "noindex, nofollow";
+        $title = "Clase 03 - CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $description = "Mira aquí la grabación completa de la Clase 03 ▷ CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $og_title = "Clase 03 - CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $datos = [
+            'chat' => 'no',
+            'clase' => '3',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-clase', $datos);
+
+    }
+    public function puertasAbiertasprueba1(Request $request){
+        $email = $request->e;
+        $email = base64_decode($email);
+        $phone = $request->p;
+        $phone = base64_decode($phone);
+        $robots = "noindex, nofollow";
+        $title = "PRUEBA 01 - CONTRATOS INDEFINIDOS";
+        $description = "Mira aquí la grabación completa de la PRUEBA 01 ▷ CONTRATOS INDEFINIDOS";
+        $og_title = "PRUEBA 01 - CONTRATOS INDEFINIDOS";
+        $datos = [
+            'chat' => 'no',
+            'prueba' => '1',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-prueba', $datos);
+    }
+    public function puertasAbiertasprueba2(Request $request){
+        $email = $request->e;
+        $email = base64_decode($email);
+        $phone = $request->p;
+        $phone = base64_decode($phone);
+        $robots = "noindex, nofollow";
+        $title = "PRUEBA 02 - CONTRATOS TEMPORALES";
+        $description = "Mira aquí la grabación completa de la PRUEBA 02 ▷ CONTRATOS TEMPORALES";
+        $og_title = "PRUEBA 02 - CONTRATOS TEMPORALES";
+        $datos = [
+            'chat' => 'no',
+            'prueba' => '2',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-prueba', $datos);
+    }
+    public function puertasAbiertasprueba3(Request $request){
+        $email = $request->e;
+        $email = base64_decode($email);
+        $phone = $request->p;
+        $phone = base64_decode($phone);
+        $robots = "noindex, nofollow";
+        $title = "PRUEBA 03 - CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $description = "Mira aquí la grabación completa de la PRUEBA 03 ▷ CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $og_title = "PRUEBA 03 - CONTRATOS DE FORMACIÓN Y PRÁCTICAS";
+        $datos = [
+            'chat' => 'no',
+            'prueba' => '3',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.puertas-abiertas-prueba', $datos);
+    }
 }
 

@@ -83,6 +83,9 @@
 <script src='/assets/js/lazysizes.min.js' async ></script>
 <script src='/assets/js/app.js' defer ></script>
 <script src='/assets/js/animation.js' defer ></script>
+@if (Route::currentRouteNamed('puertas-abiertas-prueba-1') || Route::currentRouteNamed('puertas-abiertas-prueba-2') || Route::currentRouteNamed('puertas-abiertas-prueba-3'))
+    <script src='/assets/js/cuestionario.js' defer ></script>
+@endif
 </head>
 <div class="--wrapper" id="@yield('id-page')">
 @include('layouts.nav-promo')

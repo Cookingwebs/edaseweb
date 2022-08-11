@@ -6,6 +6,7 @@ use App\Http\Controllers\CarreraController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ConocenosController;
+use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\MasterController;
 use App\Http\Controllers\MbaController;
 use App\Http\Controllers\MetodologiaController;
@@ -84,6 +85,12 @@ Route::get('/aula-abierta/gracias', [LanzamientoController::class, "aulaAbiertaG
 Route::get('/puertas-abiertas', [LanzamientoController::class, "puertasAbiertas"])->name('puertas-abiertas');
 Route::get('/puertas-abiertas-promo', [LanzamientoController::class, "puertasAbiertasPromo"])->name('puertas-abiertas-promo');
 Route::get('/puertas-abiertas/gracias', [LanzamientoController::class, "puertasAbiertasGracias"])->name('puertas-abiertas-gracias');
+Route::get('/puertas-abiertas/clase-1', [LanzamientoController::class, "puertasAbiertasClase1"])->name('puertas-abiertas-clase-1');
+Route::get('/puertas-abiertas/clase-2', [LanzamientoController::class, "puertasAbiertasClase2"])->name('puertas-abiertas-clase-2');
+Route::get('/puertas-abiertas/clase-3', [LanzamientoController::class, "puertasAbiertasClase3"])->name('puertas-abiertas-clase-3');
+Route::get('/puertas-abiertas/prueba-1', [LanzamientoController::class, "puertasAbiertasprueba1"])->name('puertas-abiertas-prueba-1');
+Route::get('/puertas-abiertas/prueba-2', [LanzamientoController::class, "puertasAbiertasprueba2"])->name('puertas-abiertas-prueba-2');
+Route::get('/puertas-abiertas/prueba-3', [LanzamientoController::class, "puertasAbiertasprueba3"])->name('puertas-abiertas-prueba-3');
 
 
 Route::get('/edicion-especial/faqs', [LanzamientoController::class, "edicionEspecialFaqs"])->name('edicion-especial-faqs');
@@ -110,3 +117,11 @@ Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomie
 Route::get('/plan-de-carrera', function(){ 
     return Redirect::to('/trabaja', 301);
 });
+
+// Cuestionarios
+// Route::get('/puertas-abiertas/cuestionarios', [CustomAuthController::class, 'dashboard']); 
+// Route::get('/puertas-abiertas/login', [CustomAuthController::class, 'index'])->name('login');
+// Route::post('/puertas-abiertas/custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+// Route::get('/puertas-abiertas/registration', [CustomAuthController::class, 'registration'])->name('register-user');
+// Route::post('/puertas-abiertas/custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+// Route::get('/puertas-abiertas/signout', [CustomAuthController::class, 'signOut'])->name('signout');

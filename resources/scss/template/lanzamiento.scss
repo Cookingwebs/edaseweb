@@ -1758,4 +1758,261 @@
             }
         }
     }
+    &.--puertas-abiertas-clase{
+        #b_cabecera{
+            .--copy{
+                .--title {
+                    @include mobile{
+                        margin-bottom: 17px;
+                    }
+                }
+            } 
+        } 
+        .--link_documentos{
+            margin-top: 50px;
+            position: relative;
+            .--big{
+                position: relative;
+                font-size: 25px;
+                font-weight: bold;
+                top: 2px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .--under{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background-color: $green;
+                    bottom: -3px;
+                }
+            }
+        }
+        .--b_cuestionario{
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid $grey-dark;
+            &-title{
+                font-size: 25px;
+                font-weight: bold;
+                color: $grey-dark;
+                margin-top: 0;
+            }
+            &-link{
+                position: relative;
+                .--big{
+                    position: relative;
+                    font-size: 25px;
+                    font-weight: bold;
+                    top: 2px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .--under{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 3px;
+                        background-color: $green;
+                        bottom: -3px;
+                    }
+                }
+                &--modify{
+                    padding-left: 33px;
+                    @include ipad-portrait{
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.--aula-abierta-prueba{
+        .--aside{
+            .--content{
+                padding: 0px 440px 40px;
+                @include notebook{
+                    padding: 0px 200px 40px;
+                }
+                @include tablet{
+                    padding: 0px 120px 40px;
+                }
+                @include mobile{
+                    padding: 0px 0px 40px;
+                }
+            }
+        }
+        #b_gracias{
+            margin-top: 80px;
+            padding-top: 80px;
+            @include mobile{
+                padding-top: 20px;
+            }
+        }
+        .--state{
+            margin-top: 50px;
+            margin-bottom: 0;
+            text-align: right;
+            font-weight: 300;
+            font-size: 15px;
+            color: $grey-dark;
+        }
+        .--process{
+            position: relative;
+            height: 10px;
+            background-color: $grey-light;
+            &::before{
+                content: "";
+                background-color: $green;
+                width: 0%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                transition: .5s width;
+            }
+            &[data="0"]{
+                &::before{
+                    width: 0%;
+                }
+            }
+            &[data="1"]{
+                &::before{
+                    width: 10%;
+                }
+            }
+            &[data="2"]{
+                &::before{
+                    width: 20%;
+                }
+            }
+            &[data="3"]{
+                &::before{
+                    width: 30%;
+                }
+            }
+            &[data="4"]{
+                &::before{
+                    width: 40%;
+                }
+            }
+            &[data="5"]{
+                &::before{
+                    width: 50%;
+                }
+            }
+            &[data="6"]{
+                &::before{
+                    width: 60%;
+                }
+            }
+            &[data="7"]{
+                &::before{
+                    width: 70%;
+                }
+            }
+            &[data="8"]{
+                &::before{
+                    width: 80%;
+                }
+            }
+            &[data="9"]{
+                &::before{
+                    width: 90%;
+                }
+            }
+            &[data="10"]{
+                &::before{
+                    width: 100%;
+                }
+            }
+        }
+        .--b_prueba_frame{
+            transition: .5s opacity;
+            opacity: 1;
+            &[data-show="0"]{
+                display: none;
+            }
+            &[data-show="1"]{
+                display: block;
+            }
+            &.opacity{
+                transition: .5s opacity;
+                opacity: 0;
+            }
+            &-question{
+                padding-bottom: 30px;
+            }
+            &-pregunta{
+                border-bottom: 1px solid $grey-light;
+                font-weight: bold;
+                color: $grey-dark;
+                margin-top: 0;
+                margin-bottom: 30px;
+                padding: 15px;
+                font-size: 20px;
+            }
+            label{
+                display: block;
+                padding-left: 15px;
+                margin-top: 20px;
+            }
+            input[type="radio"]{
+                accent-color: $grey-dark;
+            }
+            .--b_cta{
+                display: flex;
+                justify-content: space-between;
+            }
+            .--cta{
+                font-size: 15px;
+                display: inline-block;
+                @include notebook{
+                    margin-top: 0;
+                }
+            }
+            &-title{
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                color: $blue;
+                @include tablet{
+                    font-size: 35px;
+                }
+                @include mobile{
+                    font-size: 25px;
+                }
+            }
+            &-copy{
+                text-align: center;
+                font-size: 20px;
+            }
+            .--input{
+                display: block;
+                border: none;
+                border-bottom: 1px solid #dbdde1;
+                color: #3d4762;
+                font-size: 35px;
+                font-weight: 500;
+                padding: 15px 10px;
+                display: block;
+                margin-bottom: 20px;
+                max-width: 100%;
+                width: 100%;
+                &::placeholder{
+                    color: $grey-light;
+                }
+                @include mobile{
+                    font-size: 20px;
+                    width: 95%;
+                }
+            }
+        }
+    }
 }
