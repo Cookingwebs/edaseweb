@@ -1976,6 +1976,9 @@
                 @include notebook{
                     margin-top: 0;
                 }
+                @include mobile{
+                    font-size: 12px;
+                }
             }
             &-title{
                 text-align: center;
