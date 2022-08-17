@@ -14,6 +14,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\TecnicoController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\EmprendeController;
+use App\Http\Controllers\EncuestaController;
 use App\Http\Controllers\InvestigacionController;
 use App\Http\Controllers\LanzamientoController;
 use App\Http\Controllers\PromoController;
@@ -106,6 +107,9 @@ Route::get('/recomienda', [PromoController::class, "recomienda"])->name('recomie
 
 // GRACIAS
 
+// ENCUESTAS
+
+Route::get('/encuesta/9-meses', [EncuestaController::class, "encuesta9Meses"])->name('9-meses');
 
 
 // TESTS

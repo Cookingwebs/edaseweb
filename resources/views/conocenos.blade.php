@@ -140,7 +140,7 @@
             </div>
             <div class="--equipo_column js-scroll slide-right">
                 <p><span>+</span> <b>JUAN BRENES</b><br> Diseñador Audiovisual</p>
-                <p><span>+</span> <b>PACO MAZA</b><br> Community Manager</p>
+                <p><span>+</span> <b>DANIELA PEREZ</b><br> Community Manager</p>
                 <p><span>+</span> <b>ANA ROLDÁN</b><br> Creativa publicitaria</p>
                 <p><span>+</span> <b>ANA OJEDA</b><br> Copywriter</p>
                 <p><span>+</span> <b>JOSE ROA</b><br> Director creativo</p>

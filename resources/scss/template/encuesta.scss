@@ -1,0 +1,84 @@
+#encuesta-page{
+    #b_cuestionario{
+        .--b_cuestionario-copy{
+            margin-top: 70px;
+            font-size: 20px;
+            @include mobile{
+                margin-top: 30px;
+                font-size: 15px;
+            }
+        }
+        .--b_encuesta_form{
+            margin-top: 50px;
+            .--input{
+                display: block;
+                border: none;
+                border-bottom: 1px solid #dbdde1;
+                color: #3d4762;
+                font-size: 35px;
+                font-weight: 500;
+                padding: 15px 10px;
+                display: block;
+                margin-bottom: 20px;
+                max-width: 100%;
+                width: 90%;
+                &::placeholder{
+                    color: $grey-light;
+                }
+                @include mobile{
+                    font-size: 20px;
+                    width: 95%;
+                }
+            }
+            &-textarea{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 100px;
+                margin-top: 50px;
+                @include tablet{
+                    grid-template-columns: 1fr;
+                }
+                &-item{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        top: 0;
+                        bottom: 0;
+                        right: -50px;
+                        background-color: $grey-light;
+                    }
+                    @include tablet{
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    &:nth-last-child(1){
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    h3{
+                        text-align: center;
+                        margin-bottom: 30px;
+                        color: $blue;
+                    }
+                    textarea{
+                        width: 93%;
+                        height: 200px;
+                        padding: 10px;
+                        font-family: $default;
+                        border-color: $grey-light;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .--cta{
+                margin-right: 0;
+                margin-left: auto;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

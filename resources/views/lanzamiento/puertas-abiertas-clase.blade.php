@@ -49,13 +49,13 @@
               </div>
               <p class="--link_documentos"><a href="
                 @if ($clase == '1')
-
+                {{ URL::to('/') }}/puertas-abiertas/1_indefinidos.pdf
                 @elseif ($clase == '2')
-
+                {{ URL::to('/') }}/puertas-abiertas/2_temporales.pdf
                 @elseif ($clase = '3')    
-
+                {{ URL::to('/') }}/puertas-abiertas/3_formativos.pdf
                 @endif
-                "><span class="--big">></span> <b>Descarga <span class="--under">aquí</span></b> el documento anexo a la clase (PDF)</a></p>
+                " target="_blank"><span class="--big">></span> <b>Descarga <span class="--under">aquí</span></b> el documento anexo a la clase (PDF)</a></p>
               <div class="--b_cuestionario">
                 <h2 class="--b_cuestionario-title">PRUEBA</h2>
                 @if ($clase == '1')

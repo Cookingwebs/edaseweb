@@ -84,7 +84,8 @@
 <script src='/assets/js/app.js' defer ></script>
 <script src='/assets/js/animation.js' defer ></script>
 @if (Route::currentRouteNamed('puertas-abiertas-prueba-1') || Route::currentRouteNamed('puertas-abiertas-prueba-2') || Route::currentRouteNamed('puertas-abiertas-prueba-3'))
-    <script src='/assets/js/cuestionario.js' defer ></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.min.js" defer ></script>    
+<script src='/assets/js/cuestionario.js' defer ></script>
 @endif
 </head>
 <div class="--wrapper" id="@yield('id-page')">
