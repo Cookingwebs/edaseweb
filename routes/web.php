@@ -62,6 +62,8 @@ Route::get('create-pdf-file', [PDFController::class, 'index']);
 Route::get('/matricula-master', [MatriculaController::class, 'master']);
 Route::get('/matricula-master/condiciones-venta', [MatriculaController::class, 'condiciones'])->name('condiciones-master');
 Route::post('/matricula-master/pdf', [PDFController::class, 'matricula'])->name('pdf-master');
+Route::get('/puertas-abiertas/certificado', [MatriculaController::class, 'certificado']);
+Route::post('/puertas-abiertas/certificado/pdf', [PDFController::class, 'certificado'])->name('pdf-certificado');
 
 // MAIL CONTROLLER
 

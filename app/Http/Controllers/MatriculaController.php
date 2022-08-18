@@ -51,4 +51,26 @@ class MatriculaController extends Controller
 
         return view('avisos.condiciones');
     }
+    public function certificado(){
+        $robots = "noindex, nofollow";
+        $title = "Certificado";
+        $description = "Certificado";
+        $og_title = "Certificado";
+        $datos = [
+            'chat' => 'no'
+        ];
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('lanzamiento.certificado', $datos);
+    }
 }

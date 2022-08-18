@@ -161,4 +161,15 @@ class PDFController extends Controller
         
                 // return $pdf->download('matricula.pdf');
     }
+    public function certificado(Request $request)
+    {
+        $dni = $_POST['dni'];
+        $nombre = $_POST['nombre'];
+        $datos = [
+            "dni" => $dni,
+            "nombre" => $nombre
+        ];
+        $pdf = PDF::loadView('tools.certificado', $datos)->setPaper('a4', 'landscape');
+        return $pdf->stream();
+    }
 }
