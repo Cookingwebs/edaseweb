@@ -96,6 +96,8 @@ class PDFController extends Controller
             $mailfromF = $email;
         }
 
+        $imgCabecera = url('/')."/images/matricula/header.jpg";
+        $imagenBase64 = "data:image/jpeg;base64," . base64_encode(file_get_contents($imgCabecera));
         $datos = [
         "dni"    => $DNI,
         "sexo"    => $sexo,
@@ -132,8 +134,10 @@ class PDFController extends Controller
         "nombreFacT" => $nombreFacT,
         "numCuentaFacT" => $numCuentaFacT,
         "firma" => $firma,
+        "imgCabecera" => $imagenBase64
         ];
         $pdf = PDF::loadView('tools.matricula_master', $datos)->setPaper('a4', 'portrait');
         return $pdf->download('matricula.pdf');
+        // return view('tools.matricula_master', $datos);
     }
 }
