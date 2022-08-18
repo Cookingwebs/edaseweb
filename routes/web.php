@@ -60,6 +60,7 @@ Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
 
 Route::get('create-pdf-file', [PDFController::class, 'index']);
 Route::get('/matricula-master', [MatriculaController::class, 'master']);
+Route::get('/matricula-master/condiciones-venta', [MatriculaController::class, 'condiciones'])->name('condiciones-master');
 Route::post('/matricula-master/pdf', [PDFController::class, 'matricula'])->name('pdf-master');
 
 // MAIL CONTROLLER

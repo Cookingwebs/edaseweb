@@ -239,7 +239,7 @@
                     <div class="--matricula-legales">
                         <p>Autorizo a AYUDA T LEARNING S.L.U. para que gestione mis datos de carácter personal en
                         interés de la gestión formativa y académica.</p>
-                                <p>El solicitante acepta la <a href="{{route('politica')}}" target="_blank">política de privacidad</a> y <a href="condiciones-venta.php" target="_blank">condiciones de ventas.</a></p>
+                                <p>El solicitante acepta la <a href="{{route('politica')}}" target="_blank">política de privacidad</a> y <a href="{{route('condiciones-master')}}" target="_blank">condiciones de ventas.</a></p>
                           <p>Cedo a AYUDA T LEARNING S.L.U. la totalidad de los derechos que pudieran corresponderle sobre mi voz e imagenes, grabadas o captadas con motivo u ocasión de las webinars en directo con el resto de compañeros que se realiza semanalmente, autorizando solo la utilización de (captación, reproducción y difusión) de las mencionadas imagenes, o de parte de las mismas, dentro del campus virtual del Master Asesor Experto en gestión fiscal, laboral y contabilidad.</p>
                     </div>
                 <div class="--form-group">

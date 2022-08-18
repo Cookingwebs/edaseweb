@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
    
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Mail;
  
 use PDF;
    
@@ -78,7 +81,7 @@ class PDFController extends Controller
 
         if($tipoDePago == 'Financiación'){
             $date = $dateI;
-            $tramo = $cuota;
+            $tramo = $cuota . " €";
         }
 
         if($datosFinanciacion == "1"){
@@ -96,8 +99,6 @@ class PDFController extends Controller
             $mailfromF = $email;
         }
 
-        $imgCabecera = url('/')."/images/matricula/header.jpg";
-        $imagenBase64 = "data:image/jpeg;base64," . base64_encode(file_get_contents($imgCabecera));
         $datos = [
         "dni"    => $DNI,
         "sexo"    => $sexo,
@@ -134,10 +135,30 @@ class PDFController extends Controller
         "nombreFacT" => $nombreFacT,
         "numCuentaFacT" => $numCuentaFacT,
         "firma" => $firma,
-        "imgCabecera" => $imagenBase64
         ];
         $pdf = PDF::loadView('tools.matricula_master', $datos)->setPaper('a4', 'portrait');
-        return $pdf->download('matricula.pdf');
+        // return $pdf->download('matricula.pdf');
         // return view('tools.matricula_master', $datos);
+                //Email para usuario
+
+                    Mail::send("mails.mailtest", $datos, function ($message) use ($datos, $pdf) {
+                        $message->subject('Matrícula Master Asesor Experto');
+                        $message->attachData($pdf->output(), "Matricula_asesor_experto.pdf");
+                        $message->to($datos['email']);
+                    });
+                    Mail::send("mails.mailtest", $datos, function ($message) use ($datos, $pdf) {
+                        $message->subject('Matrícula Master Asesor Experto');
+                        $message->attachData($pdf->output(), "Matricula_asesor_experto.pdf");
+                        $message->to("matriculas@ayudatpymes.org");
+                    });
+                    return $pdf->stream();
+
+                // Mail::send('matricula', $datos, function ($message) use ($datos, $pdf) {
+                //     $message->to($datos['email'], "juanrosales@ayudat.es")
+                //       ->subject('Matrícula Master Asesor Experto')
+                //       ->attachData($pdf->output(), "Matricula_asesor_experto.pdf");
+                // });
+        
+                // return $pdf->download('matricula.pdf');
     }
 }

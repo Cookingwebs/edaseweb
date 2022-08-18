@@ -31,4 +31,24 @@ class MatriculaController extends Controller
 
         return view('matricula.master', $datos);
     }
+    public function condiciones(){
+        $robots = "noindex, follow";
+
+        $title = "Considicones de venta";
+        $description = "Considicones de venta de EDASE";
+        $og_title = "Considicones de venta 【Escuela de Asesores】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        return view('avisos.condiciones');
+    }
 }
