@@ -17,6 +17,8 @@ use App\Http\Controllers\EmprendeController;
 use App\Http\Controllers\EncuestaController;
 use App\Http\Controllers\InvestigacionController;
 use App\Http\Controllers\LanzamientoController;
+use App\Http\Controllers\MatriculaController;
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\PromoController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TestController;
@@ -55,6 +57,10 @@ Route::get('/trabaja', TrabajaController::class)->name('trabaja');
 
 Route::get('/sitemap-manually', [SitemapController::class, "manually"]);
 Route::get('/sitemap-automatic', [SitemapController::class, "automatic"]);
+
+Route::get('create-pdf-file', [PDFController::class, 'index']);
+Route::get('/matricula-master', [MatriculaController::class, 'master']);
+Route::post('/matricula-master/pdf', [PDFController::class, 'matricula'])->name('pdf-master');
 
 // MAIL CONTROLLER
 

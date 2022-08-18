@@ -256,7 +256,7 @@ class LanzamientoController extends Controller
         $datos = [
             'enterprise' => 7,
             'chat' => 'no',
-            'action_form' => url()->current().'/gracias'
+            'action_form' => '/puertas-abiertas/gracias'
         ];
         $title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
         $description = "29 agosto - 6 septiembre ▷ Accede a formación gratis y a becas para trabajar como asesor fiscal, laboral y contable.";

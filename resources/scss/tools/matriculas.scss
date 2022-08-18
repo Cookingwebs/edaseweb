@@ -1,0 +1,94 @@
+#matricula-page{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+    .--aside{
+        min-height: auto;
+        @include tablet{
+            max-width: 100%;
+            width: 100%;
+        }
+        .--content{
+            padding: 0px 200px 40px;
+            @include notebook{
+                padding: 0px 120px 40px;
+            }
+            @include tablet{
+                padding: 0px 0px 40px;
+            }
+        }
+        
+        .--section {
+            padding-bottom: 40px;
+        }
+    }
+    #b_matricula{
+        .--content{
+            width: auto;
+        }
+        .--copy{
+            top: 80px;
+        }
+        .--matricula{
+            &-title{
+                font-size: 37px;
+                font-weight: 500;
+                color: $grey-dark;
+                line-height: 1.3em;
+                @include notebook{
+                    font-size: 27px;
+                }
+                @include tablet{
+                    font-size: 20px;
+                }
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            label{
+                font-size: 20px;
+                font-weight: bold;
+                color: $grey-dark;
+            }
+            .form-control{
+                display: block;
+                border: none;
+                border-bottom: 1px solid #dbdde1;
+                color: #3d4762;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 15px 10px;
+                display: block;
+                margin-bottom: 20px;
+                max-width: 100%;
+                width: 100%;
+                &::placeholder{
+                    color: $grey-light;
+                }
+                @include mobile{
+                    font-size: 20px;
+                    width: 95%;
+                    }
+            }
+            input[type="radio"]{
+                accent-color: $grey-dark;
+            }
+            .financiacion{
+                margin-top: 30px;
+            }
+            .--firma-bloque_cta{
+                .--cta{
+                    display: inline-block;
+                    font-size: 15px;
+                }
+            }
+            .--matricula-legales{
+                margin-top: 40px;
+            }
+            .--cta{
+                border: none;
+            }
+        }
+    }
+}
