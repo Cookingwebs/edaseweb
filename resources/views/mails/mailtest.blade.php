@@ -9,6 +9,8 @@
 </head>
 
 <body>
-    PDF
+    <h3>¡Gracias por unirte a EDASE!</h3>
+    <p>Se ha adjuntado un pdf con la copia de la matrícula.</p>
+    <p>para cualquier duda contata con nosotros.</p>
 </body>
 </html>
