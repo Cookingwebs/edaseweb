@@ -78,7 +78,7 @@ class PDFController extends Controller
 
         if($tipoDePago == 'Íntegro'){
             $date = $fechaActual;
-            $tramo = 'Pago íntegro';
+            $tramo = '';
         }
 
         if($tipoDePago == 'Financiación'){
