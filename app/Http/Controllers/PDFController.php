@@ -32,6 +32,7 @@ class PDFController extends Controller
         $DNI = $_POST['dni'];
         $sexo = $_POST['sexo'];
         $dateN = $_POST['dateN'];
+        $nacionalidad = $_POST['nacionalidad'];
         $apellido1 = $_POST['apellido1'];
         $apellido2 = $_POST['apellido2'];
         $name = $_POST['firstname'];
@@ -53,6 +54,7 @@ class PDFController extends Controller
         $dniF = $_POST['dniF'];
         $sexoF = $_POST['sexoF'];
         $dateNF = $_POST['dateNF'];
+        $nacionalidadF = $_POST['nacionalidadF'];
         $apellido1F = $_POST['apellido1F'];
         $apellido2F = $_POST['apellido2F'];
         $nombreF = $_POST['nombreF'];
@@ -81,13 +83,14 @@ class PDFController extends Controller
 
         if($tipoDePago == 'Financiación'){
             $date = $dateI;
-            $tramo = $cuota . " €";
+            $tramo = $cuota;
         }
 
         if($datosFinanciacion == "1"){
             $dniF = $DNI;
             $sexoF = $sexo;
             $dateNF = $dateN;
+            $nacionalidadF = $nacionalidad;
             $apellido1F = $apellido1;
             $apellido2F = $apellido2;
             $nombreF = $name;
@@ -103,6 +106,7 @@ class PDFController extends Controller
         "dni"    => $DNI,
         "sexo"    => $sexo,
         "dateN"    => $dateN,
+        "nacionalidad" => $nacionalidad,
         "apellido1"    => $apellido1,
         "apellido2"    => $apellido2,
         "name"    => $name,
@@ -122,6 +126,7 @@ class PDFController extends Controller
         "dniF" => $dniF,
         "sexoF" => $sexoF,
         "dateNF"    => $dateNF,
+        "nacionalidadF" => $nacionalidadF,
         "apellido1F" => $apellido1F,
         "apellido2F" => $apellido2F,
         "nombreF" => $nombreF,

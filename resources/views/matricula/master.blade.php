@@ -43,6 +43,10 @@
                     <label class="control-label col-sm-2" for="dateN">Fecha de nacimiento:</label>
                         <input type="date" class="form-control" id="dateN" placeholder="Fecha de nacimiento" name="dateN" value="" required>
                 </div>
+                <div class="--form-group">
+                    <label class="control-label col-sm-2" for="nacionalidad">Nacionalidad:</label>
+                        <input type="text" class="form-control" id="nacionalidad" placeholder="Nacionalidad" name="nacionalidad" value="" required>
+                </div>
             
                 <div class="--form-group">
                     <label class="control-label col-sm-2" for="apellido1">1º Apellido:</label>
@@ -159,7 +163,10 @@
                         <label class="control-label col-sm-2" for="dateNF">Fecha de nacimiento:</label>
                             <input type="date" class="form-control" id="dateNF" placeholder="Fecha de nacimiento" name="dateNF" value="">
                     </div>
-            
+                    <div class="--form-group">
+                        <label class="control-label col-sm-2" for="nacionalidadF">Nacionalidad:</label>
+                            <input type="text" class="form-control" id="nacionalidadF" placeholder="Nacionalidad" name="nacionalidadF" value="">
+                    </div>
                     <div class="--form-group">
                         <label class="control-label col-sm-2" for="apellido1F">1º Apellido:</label>
                             <input type="text" class="form-control" id="apellido1F" placeholder="Ingrese Apellidos" name="apellido1F" value="">
