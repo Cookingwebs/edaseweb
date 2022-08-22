@@ -344,7 +344,7 @@
            <div class="--group_input">            
                <input type="radio" value="d" name="p9" id="p9-4">
                <label for="p9-4">
-               Opciones 1º y la 2º opción son correctas
+               Opciones 1º y 2º son correctas
             </label>
         </div>
     </div>

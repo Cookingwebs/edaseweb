@@ -116,7 +116,7 @@
     <div class="--group_input">
         <input type="radio" value="c" name="p3" id="p3-3">
         <label for="p3-3">
-            No podrá ser inferior al salario mínimo interprofesional en proporción al tiempo de trabajo efectivo 
+            No podrá ser inferior al 60% durante el primer año, durante el segundo año ya no tendrá reducción de salario.
         </label>
         </div>
     <div class="--group_input">
