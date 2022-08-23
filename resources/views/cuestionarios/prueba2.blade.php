@@ -137,7 +137,7 @@
 </div>
 <div class="--b_prueba_frame opacity" data-frame="4" data-show="0">
     <div class="--b_prueba_frame-question">
-    <h2 class="--b_prueba_frame-pregunta">4. Adquirirá la condición de fija la persona que ocupe un puesto de trabajo que haya estado ocupado con o sin solución de continuidad…</h2>
+    <h2 class="--b_prueba_frame-pregunta">4. Actualmente adquirirá la condición de fija la persona que ocupe un puesto de trabajo que haya estado ocupado con o sin solución de continuidad…</h2>
            <div class="--group_input">            
                <input type="radio" value="a" name="p4" id="p4-1">
                <label for="p4-1">
@@ -363,7 +363,7 @@
            <div class="--group_input">            
                <input type="radio" value="a" name="p10" id="p10-1">
                <label for="p10-1">
-               El trabajador puede rechazarla con 15 días de antelación
+               El trabajador puede rechazarla con 2 días de antelación
             </label>
         </div>
            <div class="--group_input">            
@@ -375,7 +375,7 @@
            <div class="--group_input">            
                <input type="radio" value="c" name="p10" id="p10-3">
                <label for="p10-3">
-               El trabajador puede rechazarla con 30 días de antelación
+               El trabajador puede rechazarla con 1 días de antelación
             </label>
         </div>
            <div class="--group_input">            
