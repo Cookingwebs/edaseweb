@@ -15,9 +15,9 @@ class HomeController extends Controller
         $datos = [
             'enterprise' => 7
         ];
-        $title = "EDASE - Escuela de Asesores";
+        $title = "EDASE - Escuela de Asesores de Ayuda T Pymes";
         $description = "Escuela de formación creada por Ayuda T Pymes ▷ Empieza aquí tu futuro en el sector de la asesoría";
-        $og_title = "EDASE【Escuela de Asesores】";
+        $og_title = "EDASE - Escuela de Asesores de Ayuda T Pymes";
 
         SEOMeta::setTitle($title);
         SEOMeta::setDescription($description);
