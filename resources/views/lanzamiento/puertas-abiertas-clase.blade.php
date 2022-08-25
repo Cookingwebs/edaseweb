@@ -40,11 +40,11 @@
             @endif
             <div class="ratio ratio-16x9">
                 @if ($clase == '1')
-                    <iframe src="https://player.vimeo.com/video/705333066?h=4e665f8990&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                    <iframe src="https://player.vimeo.com/video/743019684?h=2dbf43ea6a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                 @elseif ($clase == '2')
-                    <iframe src="https://player.vimeo.com/video/705333066?h=4e665f8990&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                    <iframe src="https://player.vimeo.com/video/743022172?h=96839fd058&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                 @elseif ($clase = '3')    
-                    <iframe src="https://player.vimeo.com/video/705333066?h=4e665f8990&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                    <iframe src="https://player.vimeo.com/video/743024135?h=e4f21e29b6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="GO_Directo_Contabilida.mp4"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                 @endif
               </div>
               <p class="--link_documentos"><a href="
