@@ -155,7 +155,7 @@ class PDFController extends Controller
                     Mail::send("mails.matriculaComercial", $datos, function ($message) use ($datos, $pdf) {
                         $message->subject('Matrícula Master Asesor Experto');
                         $message->attachData($pdf->output(), "Matricula_asesor_experto.pdf");
-                        $message->to("juanrosales@ayudat.es");
+                        $message->to("matriculas@ayudatpymes.org");
                     });
                     return $pdf->stream();
                     
