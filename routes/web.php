@@ -101,6 +101,7 @@ Route::get('/puertas-abiertas/clase-3', [LanzamientoController::class, "puertasA
 Route::get('/puertas-abiertas/prueba-1', [LanzamientoController::class, "puertasAbiertasprueba1"])->name('puertas-abiertas-prueba-1');
 Route::get('/puertas-abiertas/prueba-2', [LanzamientoController::class, "puertasAbiertasprueba2"])->name('puertas-abiertas-prueba-2');
 Route::get('/puertas-abiertas/prueba-3', [LanzamientoController::class, "puertasAbiertasprueba3"])->name('puertas-abiertas-prueba-3');
+Route::get('/puertas-abiertas/confirmacion', [LanzamientoController::class, "puertasAbiertasConfirmacion"])->name('puertas-abiertas-confirmacion');
 
 
 Route::get('/edicion-especial/faqs', [LanzamientoController::class, "edicionEspecialFaqs"])->name('edicion-especial-faqs');

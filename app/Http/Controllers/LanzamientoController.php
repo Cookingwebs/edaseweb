@@ -475,5 +475,35 @@ class LanzamientoController extends Controller
 
         return view('lanzamiento.puertas-abiertas-prueba', $datos);
     }
+    public function puertasAbiertasConfirmacion(Request $request){
+
+        $robots = "noindex, nofollow";
+        $title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+        $description = "29 agosto - 6 septiembre ▷ Accede a formación gratis y a becas para trabajar como asesor fiscal, laboral y contable.";
+        $og_title = "Puertas Abiertas de EDASE【100 BECAS DISPONIBLES】";
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        SEOMeta::setCanonical(url()->full());
+        SEOMeta::setRobots($robots);
+
+        OpenGraph::setDescription($description);
+        OpenGraph::setTitle($og_title);
+        OpenGraph::setUrl(url()->full());
+        OpenGraph::addProperty('type', 'website');
+        OpenGraph::addProperty('locale', 'es_ES');
+
+        $email = $request->e;
+        $phone = $request->p;
+
+        $datos = [
+            'chat' => 'no',
+            'email' => $email,
+            'phone' => $phone
+        ];
+
+        return view('lanzamiento.puertas-abiertas-confirmacion', $datos);
+
+    }
 }
 

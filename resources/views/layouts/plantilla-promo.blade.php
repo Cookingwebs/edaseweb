@@ -87,6 +87,9 @@
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.min.js" defer ></script>    
 <script src='/assets/js/cuestionario.js' defer ></script>
 @endif
+@if (Route::currentRouteNamed('puertas-abiertas-confirmacion'))  
+<script src='/assets/js/confirmacion.js' defer ></script>
+@endif
 </head>
 <div class="--wrapper" id="@yield('id-page')">
 @include('layouts.nav-promo')
