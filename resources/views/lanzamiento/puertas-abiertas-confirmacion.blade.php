@@ -24,11 +24,16 @@
                 <img src="{{ URL::to('/') }}/images/svg/arrow-down-green.svg" alt="" class="lazyload">
             </div>
             <h1 class="--title"><b>¡Solicitud recibida!</b></h1>
+            @if ($email2 == '2')
+            <h2 class="--subtitle"><span>+</span> Tu dinamizadora te llamará en las próximas horas para<br class="d-none d-lg-block"> matricularte en el Máster Asesor Experto.</h2>
+            @else
             <h2 class="--subtitle"><span>+</span> Te pedimos algo de paciencia, tu dinamizadora te llamará para<br class="d-none d-lg-block"> darte el diploma en las próximas horas.</h2>
+            @endif
             <form action="" name="confirmacion" method="post">
                 <input type="hidden" name="email" value="{{ $email }}">
                 <input type="hidden" name="telefono" value="{{ $phone }}">
                 <input type="hidden" name="date" id="__date" value="">
+                <input type="hidden" name="mail2" id="mail2" value="{{ $email2 }}">
             </form>
         </div>
     </div>

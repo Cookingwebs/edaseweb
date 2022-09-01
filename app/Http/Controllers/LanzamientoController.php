@@ -495,11 +495,15 @@ class LanzamientoController extends Controller
 
         $email = $request->e;
         $phone = $request->p;
-
+        $email2 = "";
+        if($request->m){
+            $email2 = $request->m;
+        }
         $datos = [
             'chat' => 'no',
             'email' => $email,
-            'phone' => $phone
+            'phone' => $phone,
+            'email2'=> $email2
         ];
 
         return view('lanzamiento.puertas-abiertas-confirmacion', $datos);
